@@ -1,0 +1,1265 @@
+unit MainFrm;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
+  StdCtrls, Buttons, ExtCtrls, Tabs, TeEngine, Series, TeeProcs, Chart,
+  ComCtrls, Spin, Grids, ToolWin, jpeg, ImgList, KatalogFrm, AdvPageControl,
+  jbStrGrd, AppEvnts, ActnList, TeeEdit ;
+
+type
+  TMainForm = class(TForm)
+    pcrlParams: TPageControl;
+    tshtRLS: TTabSheet;
+    sbxMainPar: TScrollBox;
+    Label34: TLabel;
+    spbtRefTable: TSpeedButton;
+    edtTestAmount: TEdit;
+    pnlRLS: TPanel;
+    Label33: TLabel;
+    Label35: TLabel;
+    Label25: TLabel;
+    Label26: TLabel;
+    cbRLSType: TComboBox;
+    edtPeriodObzora: TEdit;
+    GroupBox6: TGroupBox;
+    Label39: TLabel;
+    lblSigD: TLabel;
+    lblSigPel: TLabel;
+    lblSigElev: TLabel;
+    edtSigD: TEdit;
+    edtSigPel: TEdit;
+    edtSigElev: TEdit;
+    chbxRLSAdvPara: TCheckBox;
+    edtRLS_Range: TEdit;
+    edtRLS_H: TEdit;
+    GroupBox5: TGroupBox;
+    Label43: TLabel;
+    Label44: TLabel;
+    edtRLS_BearElev: TEdit;
+    edtRLS_BeamBear: TEdit;
+    tshtFilterPar: TTabSheet;
+    cbarButtons: TCoolBar;
+    pnlGraphs: TPanel;
+    pcrlGraphs: TAdvPageControl;
+    tshtSKOD: TAdvTabSheet;
+    tshtSKOAz: TAdvTabSheet;
+    tshtSKOE: TAdvTabSheet;
+    tshtD: TAdvTabSheet;
+    tshtAz: TAdvTabSheet;
+    il1: TImageList;
+    sbxFilterPar: TScrollBox;
+    Label1: TLabel;
+    cmbxSKF: TComboBox;
+    Label2: TLabel;
+    cmbxSKPVI: TComboBox;
+    GroupBox1: TGroupBox;
+    pnlBayes: TPanel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
+    Label6: TLabel;
+    edtVer1: TEdit;
+    edtVer2: TEdit;
+    edtVer3: TEdit;
+    edtManevrUsckor: TEdit;
+    edtExtraCoef: TEdit;
+    StaticText1: TStaticText;
+    chbFull: TCheckBox;
+    pnlKalman: TPanel;
+    pnlRazdFltr: TPanel;
+    Label13: TLabel;
+    Label14: TLabel;
+    rdgrpAdaptObnManevra: TRadioGroup;
+    rdbtnMemReset: TRadioButton;
+    rdbtnKorKu: TRadioButton;
+    cmbxLogikaRazdFltr: TComboBox;
+    StringGrid2: TStringGrid;
+    pnlOdnovrFltr: TPanel;
+    GroupBox2: TGroupBox;
+    Label15: TLabel;
+    Label16: TLabel;
+    edtMemAtManevr: TEdit;
+    edtMemAtNoManevr: TEdit;
+    GroupBox3: TGroupBox;
+    Label17: TLabel;
+    Label18: TLabel;
+    edtPorogUp: TEdit;
+    edtPorogLow: TEdit;
+    pnlIStrOsh: TPanel;
+    Label7: TLabel;
+    Label12: TLabel;
+    lblLogika: TLabel;
+    chkOdnovr: TCheckBox;
+    chkMemReset: TCheckBox;
+    grpbxPorogi: TGroupBox;
+    Label9: TLabel;
+    Label10: TLabel;
+    Label11: TLabel;
+    edtPorogD: TEdit;
+    edtPorogPel: TEdit;
+    edtPorogElev: TEdit;
+    edtGamma1: TEdit;
+    edtGamma2: TEdit;
+    cmbxLogika: TComboBox;
+    cmbxKalman: TComboBox;
+    cmbxFltr: TComboBox;
+    stxtDubl_cmbxSKPVI: TStaticText;
+    chartD: TChart;
+    LineSeries2: TLineSeries;
+    chartAz: TChart;
+    LineSeries3: TLineSeries;
+    tshtE: TAdvTabSheet;
+    tshtSKOv: TAdvTabSheet;
+    tshtSKOH: TAdvTabSheet;
+    ChartSKOAz: TChart;
+    LineSeries1: TLineSeries;
+    chartSKOD: TChart;
+    LineSeries4: TLineSeries;
+    chartSKOE: TChart;
+    LineSeries5: TLineSeries;
+    tshtSKOQ: TAdvTabSheet;
+    chartE: TChart;
+    LineSeries6: TLineSeries;
+    chartSKOv: TChart;
+    LineSeries8: TLineSeries;
+    chartSKOH: TChart;
+    LineSeries7: TLineSeries;
+    chartSKOQ: TChart;
+    LineSeries9: TLineSeries;
+    pnlToolBar: TPanel;
+    sbtnExit: TSpeedButton;
+    sbtnCalc: TSpeedButton;
+    ilGlyfz: TImageList;
+    StatusBar1: TStatusBar;
+    tshtTraek: TTabSheet;
+    ScrollBox1: TScrollBox;
+    pnlGraphicParams: TPanel;
+    Shape4: TShape;
+    Shape2: TShape;
+    Label24: TLabel;
+    chkCalcOn1Realiz: TCheckBox;
+    chkSKOv: TCheckBox;
+    chkSKO_HQ: TCheckBox;
+    cmbxSKO_HQ: TComboBox;
+    pnlTraek: TPanel;
+    Shape5: TShape;
+    Shape1: TShape;
+    Label32: TLabel;
+    Label23: TLabel;
+    sbtnTraekPar: TSpeedButton;
+    edtTracePointAmount: TEdit;
+    pnlTraekImage: TPanel;
+    imgTraek: TImage;
+    lblTraelNo: TLabel;
+    cboTraek: TComboBox;
+    chkVarDiskretMatrix: TCheckBox;
+    chbKachkiMatrix: TCheckBox;
+    sbtnKachkiMatrix: TSpeedButton;
+    Label8: TLabel;
+    cboAxeX: TComboBox;
+    sbtnVarDiskretMatrix: TSpeedButton;
+    edtFiltrMem: TEdit;
+    ApplicationEvents1: TApplicationEvents;
+    cmbxVVX: TComboBox;
+    Series3: TLineSeries;
+    Series4: TLineSeries;
+    Series5: TLineSeries;
+    ActionList1: TActionList;
+    actShowTraekKatalog: TAction;
+    actCalc: TAction;
+    lblRLSAddOn: TLabel;
+    stxtDubl_cboSKF: TStaticText;
+    sedtChanlNum: TSpinEdit;
+    VecUslVer: TPubStrGrid;
+    Bevel1: TBevel;
+    ChartEditor1: TChartEditor;
+    SpeedButton1: TSpeedButton;
+    edtY: TEdit;
+    Label19: TLabel;
+    Button1: TButton;
+    procedure FormCreate(Sender: TObject);
+    procedure chkOdnovrClick(Sender: TObject);
+    procedure cmbxFltrChange(Sender: TObject);
+    procedure rdbtnKorKuClick(Sender: TObject);
+    procedure rdbtnMemResetClick(Sender: TObject);
+    procedure cmbxKalmanChange(Sender: TObject);
+    procedure cmbxSKFChange(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure sb1Click(Sender: TObject);
+    procedure spbtRefTableClick(Sender: TObject);
+    procedure sbtnTraekParClick(Sender: TObject);
+    procedure chbxRLSAdvParaClick(Sender: TObject);
+    procedure imgTraekClick(Sender: TObject);
+    procedure tbstGraphicChange(Sender: TObject; NewTab: Integer;
+      var AllowChange: Boolean);
+
+    procedure chkSKO_HQClick(Sender: TObject);
+    procedure cboTraekChange(Sender: TObject);
+    procedure StatusBar1Resize(Sender: TObject);
+    procedure sbtnExitClick(Sender: TObject);
+    procedure FormMouseWheelDown(Sender: TObject; Shift: TShiftState;
+      MousePos: TPoint; var Handled: Boolean);
+    procedure FormMouseWheelUp(Sender: TObject; Shift: TShiftState;
+      MousePos: TPoint; var Handled: Boolean);
+    procedure pcrlGraphsMouseDown(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Integer);
+    procedure bbtnCalcClick(Sender: TObject);
+    procedure FormShow(Sender: TObject);
+    procedure sbtnCalcClick(Sender: TObject);
+    procedure sbtnOpenSKOFileClick(Sender: TObject);
+    procedure sbtnSKOParViewClick(Sender: TObject);
+    procedure sbtnKachkiMatrixClick(Sender: TObject);
+    procedure chkVarDiskretMatrixClick(Sender: TObject);
+    procedure chbKachkiMatrixClick(Sender: TObject);
+    procedure ApplicationEvents1ShortCut(var Msg: TWMKey;
+      var Handled: Boolean);
+    procedure lblRLSAddOnClick(Sender: TObject);
+    procedure actShowTraekKatalogExecute(Sender: TObject);
+    procedure spbTraekMatrixClick;
+    procedure sbtnVarDiskretMatrixClick(Sender: TObject);
+    procedure sedtChanlNumChange(Sender: TObject);
+    procedure SpeedButton1Click(Sender: TObject);
+    procedure chartDBeforeDrawSeries(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
+    procedure chartDAllowScroll(Sender: TChartAxis; var AMin, AMax: Double;
+      var AllowScroll: Boolean);
+    procedure chartDZoom(Sender: TObject);
+
+
+
+  //  stxtDubl_cmbxSKPVI
+  private
+    Saved_stxtTraekName : string;
+    TraekMatrixFileName : string;
+    KachkiMatrixFileName : string;
+    VarDiskretMatrixFileName : string;
+    procedure ShowTraekOnMainForm;
+    procedure GetDataFromMainForm;
+    procedure ResetMatrix;
+
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  MainForm: TMainForm;
+  KatalogForm : TKatalogForm;
+
+
+implementation
+
+uses RefTableFrm, TrParamsFrm, TraekParams, MatrixFrm, dan_cko, CKO, MathLib;
+type T1D12=array[1..12] of Double;
+     T1D3=array[1..3] of Double;
+const VecUslVerSize=9;
+var Series1,Series2 : TChartSeries;
+    frmKatalogPos : TRect;
+    frmKatalogScrlBarPos : integer;
+    UslVer2,UslVer3 : T1D12;
+    Ver2,Ver3 : T1D3;
+
+{$R *.DFM}
+
+
+procedure TMainForm.ResetMatrix;
+var ii1, ii2, ii3 : integer;
+begin
+ for ii1:=1 to 9 do
+ for ii2:=1 to 12 do
+ for ii3:=1 to 10 do
+   iwx[ii1,ii2,ii3] :=0;
+
+ for ii1:=1 to 8 do
+ for ii2:=1 to 12 do
+ for ii3:=1 to 25 do
+   wx[ii1,ii2,ii3] :=0;
+
+ for ii1:=1 to 8 do
+ for ii2:=1 to 12 do
+ for ii3:=1 to 15 do
+   pw[ii1,ii2,ii3] :=0;
+end;
+
+procedure TMainForm.GetDataFromMainForm;
+var LF : integer;
+begin
+  IWX[6,1,1] := StrToInt(edtTestAmount.Text);
+  L[6]:=1;
+
+  IWX[6,1,2] := StrToInt(edtTracePointAmount.Text); //кол-во точек траектории
+  IWX[7,7,7] := cbRLSType.ItemIndex+2;
+
+  L[3] :=1;
+  wx[2,1,8]:= StrToFloat(edtRLS_Range.Text); //135.0;{ДАЛЬНОСТЬ КМ}
+  wx[2,1,9]:= StrToFloat(edtRLS_H.Text)/1000; //0.012; {ВЫСОТА АНТЕННЫ В КМ}
+  wx[3,1,1]:= StrToFloat(edtPeriodObzora.Text);
+  wx[2,1,1]:={0.000032;}3.2/cmbkm;   {ДЛИНА ВОЛНЫ В КM}
+  wx[2,1,2]:= StrToFloat(edtRLS_BearElev.Text)*Radian;// {0.0628;}3;    {ШИРИНА ЛУЧА ПО УГЛУ МЕСТА}
+  wx[2,1,7]:= StrToFloat(edtRLS_BeamBear.Text)*Radian;//{0.0314;}1.2;  {ШИРИНА ЛУЧА ПО ПЕЛЕНГУ}
+  wx[2,1,20]:=StrToFloat(edtSigD.Text)/TD;//40 {ошибка измерения по дальности}
+  wx[2,1,21]:=StrToFloat(edtSigPel.Text)/TD;//2 {ошибка измерения по пеленгу}
+  wx[2,1,22]:=StrToFloat(edtSigElev.Text)/TD;//2 {ошибка измерения по углу места}
+  iwx[2,1,9]:=1;
+  wx[2,1,4]:=1.0;{дисперсия}
+  wx[2,1,5]:=0.0;{матожидание}
+  wx[2,1,6]:=1.0;{po2}
+
+  L[5]:=1;
+  iwx[5,1,1] := 1;
+
+{ ---------------- Параметры фильтрации ----------------}
+  L[7] := cmbxSKF.ItemIndex; //С-ма координат фильтрации
+  if cmbxSKF.Visible then L[7] := cmbxSKF.ItemIndex
+                     else L[7] := 1; //для Байеса - всегда Декарт
+  if cmbxSKPVI.Visible then //C-ма координат для выход. инф-ции
+    IWX[7,1,1] := cmbxSKPVI.ItemIndex
+  else
+    IWX[7,1,1] := 1; //'сферич' для выходн информации
+
+  IWX[7,1,2] := cmbxVVX.ItemIndex;  //Величины выходных характеристик
+
+{--------------- Параметры фильтра --------------}
+if cmbxFltr.ItemIndex=0 then
+
+case cmbxKalman.ItemIndex+1 of
+ 1: begin // Искуств. стар ошибок (Калман)
+  If chkOdnovr.Checked then Begin
+    if chkMemReset.Checked then LF := 3
+                           else LF := 2;
+    wx[4,LF,4] := StrToFloat(edtPorogD.Text);   //по D
+    wx[4,LF,5] := StrToFloat(edtPorogPel.Text); //Пеленгу
+    wx[4,LF,6] := StrToFloat(edtPorogElev.Text);//Углу места
+    End
+  Else Begin
+    LF:=1;
+    IWX[4,LF,3] := cmbxLogika.ItemIndex+1;
+    if IWX[4,LF,3]=2 then begin //логика 2 из 2
+      IWX[4,LF,1] :=2;
+      IWX[4,LF,2] :=3;
+      end;
+  End;
+    wx[4,LF,2]:= StrToFloat(edtGamma1.Text);{0.8}
+    wx[4,LF,3]:= StrToFloat(edtGamma2.Text);{0.8}
+  end;
+2: begin;  // раздельная фильтрация (Калман)
+   LF:= rdgrpAdaptObnManevra.ItemIndex+4;
+   IWX[4,LF,1] := StrToInt(edtFiltrMem.Text); //эффективн память фильтра
+   IWX[4,LF,4] := cmbxLogikaRazdFltr.ItemIndex+1; //тип логики
+   if LF=5 then begin //корректировка Ку
+     wx[4,LF,1]:=0.62;wx[4,LF,2]:=0.7;wx[4,LF,3]:=0.73;wx[4,LF,4]:=0.82; //!читать из файла
+     wx[4,LF,5]:=0.44;wx[4,LF,6]:=0.56;wx[4,LF,7]:=0.62;wx[4,LF,8]:=0.8;
+     wx[4,LF,9]:=0.3;wx[4,LF,10]:=0.8;wx[4,LF,11]:=4.0;wx[4,LF,12]:=6.0;
+     iwx[4,LF,2]:=3;
+     end;
+   end;
+3: begin //одновремен фильтрация (Калман)
+     LF :=9;
+     iwx[4,LF,1] := StrToInt(edtMemAtNoManevr.Text);
+     iwx[4,LF,2] := StrToInt(edtMemAtManevr.Text);
+     iwx[4,LF,3] := StrToInt(edtPorogUp.Text);
+     iwx[4,LF,4] := StrToInt(edtPorogLow.Text);
+   end;
+end //case
+
+else begin
+
+  LF:= 7-Integer(chbFull.Checked);
+  iwx[4,LF,1] := sedtChanlNum.Value;
+  if sedtChanlNum.Value =2 then begin
+    wx[4,LF,1]:=UslVer2[1]; wx[4,LF,2]:=UslVer2[2]; wx[4,LF,3]:=UslVer2[3];
+    wx[4,LF,4]:=UslVer2[4]; wx[4,LF,5]:=UslVer2[5]; wx[4,LF,6]:=UslVer2[6];
+    wx[4,LF,7]:=UslVer2[7]; wx[4,LF,8]:=UslVer2[8]; wx[4,LF,9]:=UslVer2[9];
+    wx[4,LF,10]:=UslVer2[10]; wx[4,LF,11]:=UslVer2[11]; wx[4,LF,12]:=UslVer2[12];
+  end else begin
+    pw[4,LF,1]:=UslVer3[1]; pw[4,LF,2]:=UslVer3[2]; pw[4,LF,3]:=UslVer3[3];
+    pw[4,LF,4]:=UslVer3[4]; pw[4,LF,5]:=UslVer3[5]; pw[4,LF,6]:=UslVer3[6];
+    pw[4,LF,7]:=UslVer3[7]; pw[4,LF,8]:=UslVer3[8]; pw[4,LF,9]:=UslVer3[9];
+    pw[4,LF,10]:=UslVer3[10]; pw[4,LF,11]:=UslVer3[11]; pw[4,LF,12]:=UslVer3[12];
+  end;
+
+  //if LF=7 then wx[4,LF,13] := 5.0;
+ {  wx[4,LF,10] := StrToFloat(edtVer1.Text);
+  wx[4,LF,11] := StrToFloat(edtVer2.Text);
+  wx[4,LF,12] := StrToFloat(edtVer3.Text);}
+  wx[4,LF,14] := StrToFloat(edtManevrUsckor.Text);
+  wx[4,LF,13] := StrToFLoat(edtExtraCoef.Text);
+end;
+
+L[4] :=LF;
+
+{----- Какие графики выводим ------}
+ PARAM_DV:=0; OCV:=0; OCQ:=0; OCH:=0;
+
+ if chkSKOv.Checked or chkSKO_HQ.Checked then
+   PARAM_DV:=1;
+
+ if chkSKOv.Checked then OCV:=1;
+ if chkSKO_HQ.Checked and (cmbxSKO_HQ.ItemIndex=0) then OCH:=1;
+ if chkSKO_HQ.Checked and (cmbxSKO_HQ.ItemIndex=1) then OCQ:=1;
+
+
+ disk:=0;
+ SHAG_SGL:=cboAxeX.ItemIndex;
+
+ if chbKachkiMatrix.Checked and (chbKachkiMatrix.Tag =0) then
+   ShowMessage('Не задан массив для получения ошибок.'+#13+'Расчёт без его учета');
+ sig_izm := Integer(chbKachkiMatrix.Checked and (chbKachkiMatrix.Tag =1));
+
+ if (cboTraek.ItemIndex=11) and (cboTraek.Tag =0) then
+   ShowMessage('Не задан массив координат для траекторий.'+#13+'Расчёт без его учета');
+ ism_is := Integer((cboTraek.ItemIndex=11) and (cboTraek.Tag =1));
+
+// ism_is := 0;
+
+end;
+
+procedure TMainForm.FormCreate(Sender: TObject);
+var TrParamsForm: TTrParamsForm;
+    j : integer;
+begin
+  cmbxSKF.ItemIndex    :=0;
+  cmbxSKPVI.ItemIndex  :=0;
+  cmbxVVX.ItemIndex    :=0;
+  cmbxFltr.ItemIndex   :=0;
+  cmbxKalman.ItemIndex :=0;
+  cmbxLogika.ItemIndex :=0;
+  cbRLSType.ItemIndex  :=0;
+  cmbxLogikaRazdFltr.ItemIndex:=0;
+  cmbxSKO_HQ.ItemIndex :=0;
+  cboAxeX.ItemIndex    :=0;
+  cboTraek.ItemIndex :=0;
+  InitTraekParams;
+
+   UslVer3[1]:=0.9; UslVer3[2]:=0.1; UslVer3[3]:=0.0;
+   UslVer3[4]:=0.2; UslVer3[5]:=0.8; UslVer3[6]:=0.0;
+   UslVer3[7]:=0.0; UslVer3[8]:=0.0; UslVer3[9]:=0.0;
+   UslVer3[10]:=0.1; UslVer3[11]:=0.9; UslVer3[12]:=0.0;
+  
+   UslVer2[1]:=0.7; UslVer2[2]:=0.2; UslVer2[3]:=0.1;
+   UslVer2[4]:=0.3; UslVer2[5]:=0.7; UslVer2[6]:=0.0;
+   UslVer2[7]:=0.3; UslVer2[8]:=0.0; UslVer2[9]:=0.7;
+   UslVer2[10]:=0.15; UslVer2[11]:=0.7; UslVer2[12]:=0.15;
+
+   edtVer1.Text := FloatToStr(UslVer2[10]);
+   edtVer2.Text := FloatToStr(UslVer2[11]);
+   edtVer3.Text := FloatToStr(UslVer2[12]);
+
+  VecUslVer.RowHeights[0]:= Trunc(VecUslVer.DefaultRowHeight*0.7);
+
+  for j:=1 to VecUslVerSize do
+    if sedtChanlNum.Value=2 then
+       VecUslVer.Cells [j-1,1] := FloatToStr(UslVer2[j])
+    else
+       VecUslVer.Cells [j-1,1] := FloatToStr(UslVer3[j]);
+
+ //по умолчанию - горка
+  L[1]:=4;
+end;
+
+procedure TMainForm.chkOdnovrClick(Sender: TObject);
+var Check : Boolean;
+        i : Byte;
+begin
+  Check := chkOdnovr.Checked;
+  chkMemReset.Enabled := Check;
+  lblLogika.Enabled := not(Check);
+  cmbxLogika.Enabled:= not(Check);
+
+  for i:=0 to grpbxPorogi.ControlCount-1 do
+    grpbxPorogi.Controls[I].Enabled := Check;
+  if Check then grpbxPorogi.Font.Color := clBlack
+           else grpbxPorogi.Font.Color := clInactiveCaption;
+end;
+
+procedure TMainForm.cmbxFltrChange(Sender: TObject);
+begin
+  pnlKalman.Visible := (cmbxFltr.ItemIndex = 0);
+  pnlBayes.Visible := not(pnlKalman.Visible);
+  cmbxSKF.Visible := (cmbxFltr.ItemIndex=0); //При Байесе только декарт
+  if (cmbxFltr.ItemIndex=1) then begin
+    cmbxSKPVI.Visible          := True;
+//    stxtDubl_cmbxSKPVI.Visible := False;
+  end else begin //при Калмане
+    if cmbxSKF.ItemIndex =0 then begin // для сферич. Выходную блокировать
+      cmbxSKPVI.Visible          := False;
+  //    stxtDubl_cmbxSKPVI.Visible := True;
+    end;
+  end;
+end;
+
+procedure TMainForm.rdbtnKorKuClick(Sender: TObject);
+begin
+  Label14.Enabled     := True;
+  StringGrid2.Enabled := True;
+  Label13.Enabled     := False;
+  cmbxLogikaRazdFltr.Enabled := False;
+end;
+
+procedure TMainForm.rdbtnMemResetClick(Sender: TObject);
+begin
+  Label14.Enabled     := False;
+  StringGrid2.Enabled := False;
+  Label13.Enabled     := True;
+  cmbxLogikaRazdFltr.Enabled := True;
+end;
+
+procedure TMainForm.cmbxKalmanChange(Sender: TObject);
+begin
+  pnlIStrOsh.Visible    := False;
+  pnlRazdFltr.Visible   := False;
+  pnlOdnovrFltr.Visible := False;
+
+  case cmbxKalman.ItemIndex of
+    0: pnlIStrOsh.Visible    := True;
+    1: pnlRazdFltr.Visible   := True;
+    2: pnlOdnovrFltr.Visible := True;
+  end;
+end;
+
+
+procedure TMainForm.cmbxSKFChange(Sender: TObject);
+begin
+  cmbxSKPVI.Visible          := (cmbxSKF.ItemIndex = 1);
+  stxtDubl_cmbxSKPVI.Visible := (cmbxSKF.ItemIndex = 0);
+end;
+
+
+
+procedure TMainForm.Button2Click(Sender: TObject);
+begin
+  Close;
+end;
+
+
+procedure TMainForm.sb1Click(Sender: TObject);
+begin
+  {if sb1.Tag=0 then sb1.Tag :=1
+               else sb1.Tag :=0;
+
+  sb1.Glyph := nil;
+  il1.GetBitmap (sb1.Tag,sb1.Glyph);}
+
+{  if sb1.Tag=0 then begin
+    shpRLS.Height := 161;
+    shpRLSW.Height:= 161;
+    pnlRLS.Height := 170;
+    end
+  else begin
+    shpRLS.Height := 293;
+    shpRLSW.Height := 293;
+    pnlRLS.Height := 301;
+
+  end;}
+  pnlTraek.Top := pnlRLS.Top+pnlRLS.Height+10;
+  pnlGraphicParams.Top := pnlTraek.Top+pnlTraek.Height+10;
+end;
+
+
+procedure TMainForm.spbtRefTableClick(Sender: TObject);
+var RefTableForm : TRefTableForm;
+begin
+  RefTableForm :=TRefTableForm.Create(Application);
+  try
+    RefTableForm.ShowModal;
+  finally
+    RefTableForm.Free;
+    RefTableForm := nil;
+  end;
+end;
+
+procedure TMainForm.sbtnTraekParClick(Sender: TObject);
+var TrParamsForm: TTrParamsForm;
+    p : integer;
+    S : string;
+begin
+  If sbtnTraekPar.Caption ='Параметры' then begin
+
+    TrParamsForm :=TTrParamsForm.Create(Application);
+
+    S := cboTraek.Text;
+    p := Pos('-',S);
+    TrParamsForm.stxtTraekType.Caption :=Copy(S,p+2,Length(S)-p);
+    TrParamsForm.Left:= pnlGraphs.ClientOrigin.x;
+    TrParamsForm.Top := pnlGraphs.ClientOrigin.y;
+    try
+      if TrParamsForm.ShowModal=mrOk then
+        TrParamsForm.GetData;
+    finally
+      TrParamsForm.Free;
+      TrParamsForm := nil;
+    end;
+  End Else
+    spbTraekMatrixClick;
+end;
+
+procedure TMainForm.chbxRLSAdvParaClick(Sender: TObject);
+begin
+  edtRLS_Range.ReadOnly    := not(chbxRLSAdvPara.Checked);
+  edtRLS_H.ReadOnly        := not(chbxRLSAdvPara.Checked);
+  edtRLS_BearElev.ReadOnly := not(chbxRLSAdvPara.Checked);
+  edtRLS_BeamBear.ReadOnly := not(chbxRLSAdvPara.Checked);
+  if chbxRLSAdvPara.Checked then begin
+    edtRLS_Range.Color    := clWindow;
+    edtRLS_H.Color        := clWindow;
+    edtRLS_BearElev.Color := clWindow;
+    edtRLS_BeamBear.Color := clWindow;
+    end
+  else begin
+    edtRLS_Range.Color    := clInactiveBorder;
+    edtRLS_H.Color        := clInactiveBorder;
+    edtRLS_BearElev.Color := clInactiveBorder;
+    edtRLS_BeamBear.Color := clInactiveBorder;
+    end
+end;
+
+
+procedure TMainForm.imgTraekClick(Sender: TObject);
+//var //KatalogForm : TKatalogForm;
+
+ procedure SaveKatalogFormPos;
+ begin
+   with KatalogForm do begin
+     frmKatalogPos.Top    := Top;
+     frmKatalogPos.Left   := Left;
+     frmKatalogPos.Right  := Width;
+     frmKatalogPos.Bottom := Height;
+     frmKatalogScrlBarPos := sbxKatalog.VertScrollBar.Position;
+   end;
+ end;
+
+ procedure SetKatalogFormPos;
+ begin
+   if frmKatalogPos.Right > 0 then
+     with KatalogForm do begin
+       Position := poDesigned;
+       Top      := frmKatalogPos.Top;
+       Left     := frmKatalogPos.Left;
+       Width    := frmKatalogPos.Right;
+       Height   := frmKatalogPos.Bottom;
+       Tag      := frmKatalogScrlBarPos;
+     end
+   else begin
+     KatalogForm.Left:= pnlGraphs.ClientOrigin.x;
+     KatalogForm.Top := pnlGraphs.ClientOrigin.y;
+   end;
+ end;
+
+begin //of procedure TMainForm.imgTraekClick
+  
+  KatalogForm := TKatalogForm.Create(Application);
+  SetKatalogFormPos;
+  KatalogForm.SelectTraek (imgTraek.Tag);
+  try
+    KatalogForm.ShowModal;
+    SaveKatalogFormPos;
+    if (KatalogForm.ModalResult = mrOk) and
+        (KatalogForm.SelectedTraekNo > 0) then
+      ShowTraekOnMainForm;
+  finally
+    KatalogForm.Free;
+    KatalogForm := nil;
+  end;
+end;
+
+procedure TMainForm.actShowTraekKatalogExecute(Sender: TObject);
+begin
+  if pcrlParams.ActivePage = tshtTraek then
+    imgTraekClick(nil);
+end;
+
+
+procedure TMainForm.tbstGraphicChange(Sender: TObject; NewTab: Integer;
+  var AllowChange: Boolean);
+begin
+{  if NewTab>0 then begin
+    Series1.Active := False;
+    Series2.Active := True;
+    end
+  else begin
+    Series1.Active := True;
+    Series2.Active := False;
+    end}
+end;
+
+procedure TMainForm.chkSKO_HQClick(Sender: TObject);
+begin
+  cmbxSKO_HQ.Enabled := chkSKO_HQ.Checked;
+end;
+
+procedure TMainForm.cboTraekChange(Sender: TObject);
+begin
+  If cboTraek.ItemIndex < 11 then begin
+    sbtnTraekPar.Caption := 'Параметры';
+    imgTraek.Visible := True;
+
+    KatalogForm := TKatalogForm.Create(Application);
+    if KatalogForm.SelectTraek (cboTraek.ItemIndex+1) then
+      ShowTraekOnMainForm
+  End Else Begin
+    sbtnTraekPar.Caption := 'Загрузить';
+    imgTraek.Visible := False;
+  End;
+end;
+
+procedure TMainForm.ShowTraekOnMainForm;
+begin
+  if not(imgTraek.Tag = KatalogForm.SelectedTraekNo) then begin
+    imgTraek.Picture.Assign (nil);
+    imgTraek.Picture.Assign (KatalogForm.SelectedTraekPic);
+    cboTraek.ItemIndex := KatalogForm.SelectedTraekNo-1;
+    imgTraek.Tag := KatalogForm.SelectedTraekNo;
+
+    if KatalogForm.SelectedTraekNo<5 then
+      L[1]:= KatalogForm.SelectedTraekNo
+    else
+      L[1]:= KatalogForm.SelectedTraekNo+1;
+
+    iwx[2,L[1],5]:=1;
+    iwx[1,L[1],6]:=2;
+    //виз. проверка перескока номера траектории
+    lblTraelNo.Caption := IntToStr(L[1]);
+    end;
+end;
+
+
+procedure TMainForm.StatusBar1Resize(Sender: TObject);
+begin
+  if StatusBar1.HandleAllocated then
+    InvalidateRect(StatusBar1.Handle, nil, True);
+end;
+
+procedure TMainForm.sbtnExitClick(Sender: TObject);
+begin
+  Application.Terminate; 
+end;
+
+procedure TMainForm.FormMouseWheelDown(Sender: TObject; Shift: TShiftState;
+  MousePos: TPoint; var Handled: Boolean);
+begin
+  Handled:= True;
+{  if pcrlParams.ActivePage = tshtMainPar then
+    sbxMainPar.VertScrollBar.Position := sbxMainPar.VertScrollBar.Position +
+                                        sbxMainPar.VertScrollBar.Increment
+  else
+    sbxFilterPar.VertScrollBar.Position := sbxFilterPar.VertScrollBar.Position +
+                                        sbxFilterPar.VertScrollBar.Increment;}
+
+end;
+
+procedure TMainForm.FormMouseWheelUp(Sender: TObject; Shift: TShiftState;
+  MousePos: TPoint; var Handled: Boolean);
+begin
+  Handled:= True;
+{  if pcrlParams.ActivePage = tshtMainPar then
+    sbxMainPar.VertScrollBar.Position := sbxMainPar.VertScrollBar.Position -
+                                        sbxMainPar.VertScrollBar.Increment
+  else
+    sbxFilterPar.VertScrollBar.Position := sbxFilterPar.VertScrollBar.Position -
+                                        sbxFilterPar.VertScrollBar.Increment;}
+end;
+
+procedure TMainForm.pcrlGraphsMouseDown(Sender: TObject;
+  Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
+begin
+  {чтобы при первом щелчке на закладке панель графиков
+   получила фокус и можно было с помощью Arrow Keys
+  перемещаться по закладкам, иначе нужен повторный щелчек}
+  pcrlGraphs.SetFocus;
+end;
+
+procedure TMainForm.bbtnCalcClick(Sender: TObject);
+begin
+{  tshtD.TabVisible := chkCalcOn1Realiz.Checked;
+  tshtAz.TabVisible := chkCalcOn1Realiz.Checked;
+  tshtE.TabVisible := chkCalcOn1Realiz.Checked and(cbRLSType.ItemIndex=1);
+
+  tshtSKOElev.TabVisible := (cbRLSType.ItemIndex=1);
+  tshtSKOv.TabVisible := chkSKOv.Checked;
+
+  tshtSKOH.TabVisible := chkSKO_HQ.Checked and(cmbxSKO_HQ.ItemIndex=0);
+  tshtSKOQ.TabVisible := chkSKO_HQ.Checked and(cmbxSKO_HQ.ItemIndex=1);
+
+  GetDataFromMainForm;
+  }
+end; //of procedure
+
+
+procedure TMainForm.FormShow(Sender: TObject);
+begin
+  tshtD.TabVisible    := False;
+  tshtAz.TabVisible   := False;
+  tshtE.TabVisible    := False;
+  tshtSKOE.TabVisible := False;
+  tshtSKOv.TabVisible := False;
+  tshtSKOH.TabVisible := False;
+  tshtSKOQ.TabVisible := False;
+
+
+  edtPorogD.Text    := FloatToStr(StrToFloat(edtSigD.Text)*PorogD);
+  edtPorogPel.Text  := FloatToStr(StrToFloat(edtSigPel.Text)*PorogB);
+  edtPorogElev.Text := FloatToStr(StrToFloat(edtSigElev.Text)*PorogE);
+end;
+
+procedure TMainForm.sbtnCalcClick(Sender: TObject);
+var
+  i: integer;
+procedure ShowInterpolGraph (Tab : TAdvTabSheet; GraphNo : integer);
+{имя графика (за искл. приставки) совпадает с именем
+ закладки на к-рой он лежит; x - всегда tt, y - rdspr}
+
+const Res=300; // число точек на интерполяцию
+var  x, y, grid, y2diff, z : array of Extended;
+     XInterp, YInterp : array of Extended;
+     i : integer;
+     Step: Extended;
+     Chart : TChart;
+     ChartNm : string;
+     Raz:integer;
+begin
+  if Tab.TabVisible then begin
+    ChartNm := 'chart'+Copy(Tab.Name,5,Length(Tab.Name)-4);
+    Chart := TChart(FindComponent(ChartNm));
+    Chart.SeriesList[0].Clear;
+
+    Raz:=IWX[6,1,2]-1; //исходное число тчк - число точек траект
+    SetLength(x,Raz);
+    SetLength(y,Raz);
+    SetLength(y2diff,Raz);
+    SetLength(XInterp,Res+1);
+    SetLength(YInterp,Res+1);
+
+    for i := 1 to Raz do begin
+      x[i-1]:=tt[i];
+      y[i-1]:=rdspr[GraphNo,i];
+      end;
+
+    Step:= (tt[Raz]-tt[1])/Res;
+    for i:=0 to Res do
+      XInterp[i]:= tt[1]+Step*i;
+
+    Spline(x, y, XInterp, y2diff, YInterp);
+
+    for i := 0 to High(YInterp) do
+      Chart.SeriesList[0].AddXY(xInterp[i],yInterp[i],'',clRed);
+  end;
+end;
+
+procedure RenameGraphs(SK : Boolean);
+{SK=True - декарт, False - сферич}
+begin
+  if SK then begin //декарт
+    tshtSKOD.Caption := 'СКО X';
+    tshtSKOAz.Caption := 'СКО Y';
+    tshtSKOE.Caption := 'СКО Z';
+    tshtD.Caption := 'X';
+    tshtAz.Caption := 'Y';
+    tshtE.Caption := 'Z';
+
+    chartSKOD.Title.Text.Text  :='СКО ошибки оценки X';
+    chartSKOD.LeftAxis.Title.Caption :='X, м';
+
+    chartSKOAz.Title.Text.Text :='СКО ошибки оценки Y';
+    chartSKOAz.LeftAxis.Title.Caption :='Y, м';
+
+    chartSKOE.Title.Text.Text :='СКО ошибки оценки Z';
+    chartSKOE.LeftAxis.Title.Caption :='Z, м';
+
+    chartD.Title.Text.Text :='Зависимость относительной ошибки измерения и фильтрации X';
+    chartD.LeftAxis.Title.Caption :='X, м';
+
+    chartAz.Title.Text.Text :='Зависимость относительной ошибки измерения и фильтрации Y';
+    chartAz.LeftAxis.Title.Caption :='Y, м';
+
+    chartE.Title.Text.Text :='Зависимость относительной ошибки измерения и фильтрации Z';
+    chartE.LeftAxis.Title.Caption :='Z, м';
+
+  end else begin //сферич
+    tshtSKOD.Caption := 'СКО Д';
+    tshtSKOAz.Caption := 'СКО Аз';
+    tshtSKOE.Caption := 'СКО УМ';
+    tshtD.Caption := 'Дальность';
+    tshtAz.Caption := 'Пеленг';
+    tshtE.Caption := 'УМ';
+    chartSKOD.Title.Text.Text :='СКО ошибки оценки дальности';
+    chartSKOD.LeftAxis.Title.Caption :='Дальность, м';
+
+    chartSKOAz.Title.Text.Text :='СКО ошибки оценки азимута';
+    chartSKOAz.LeftAxis.Title.Caption :='Азимут, мрад';
+
+    chartSKOE.Title.Text.Text :='СКО ошибки оценки угла места';
+    chartSKOE.LeftAxis.Title.Caption :='Угол места, мрад';
+
+    chartD.Title.Text.Text :='Зависимость относительной ошибки измерения и фильтрации дальности';
+    chartD.LeftAxis.Title.Caption :='Дальность, м';
+
+    chartAz.Title.Text.Text :='Зависимость относительной ошибки измерения и фильтрации пеленга';
+    chartAz.LeftAxis.Title.Caption :='Пеленг, мрад';
+
+    chartE.Title.Text.Text :='Зависимость относительной ошибки измерения и фильтрации угла места';
+    chartE.LeftAxis.Title.Caption :='Угол места, мрад';
+  end;
+
+end;
+
+begin
+  tshtD.TabVisible := chkCalcOn1Realiz.Checked;
+  tshtAz.TabVisible := chkCalcOn1Realiz.Checked;
+  tshtE.TabVisible := chkCalcOn1Realiz.Checked and(cbRLSType.ItemIndex=1);
+
+  tshtSKOE.TabVisible := (cbRLSType.ItemIndex=1);
+
+  tshtSKOv.TabVisible := chkSKOv.Checked;
+
+  tshtSKOH.TabVisible := chkSKO_HQ.Checked and(cmbxSKO_HQ.ItemIndex=0);
+  tshtSKOQ.TabVisible := chkSKO_HQ.Checked and(cmbxSKO_HQ.ItemIndex=1);
+
+ //Аргумент - Шаг сглажив или Время
+  ChartSKOD.BottomAxis.Title.Caption :=cboAxeX.Text;
+  ChartSKOAz.BottomAxis.Title.Caption :=cboAxeX.Text;
+
+  RandSeed := 100;
+
+  sbtnCalc.Enabled := False;
+  GetDataFromMainForm;
+
+  OSNOWA_CKO;
+
+  sbtnCalc.Enabled := True;
+
+  RenameGraphs(cmbxSKPVI.Visible and (cmbxSKPVI.ItemIndex=0));
+
+  ShowInterpolGraph(tshtSKOD,1);
+  ShowInterpolGraph(tshtSKOAz,2);
+  ShowInterpolGraph(tshtSKOE,3);
+  ShowInterpolGraph(tshtSKOv,4);
+  ShowInterpolGraph(tshtSKOH,5);
+  ShowInterpolGraph(tshtSKOQ,5);
+
+  if chkCalcOn1Realiz.Checked then begin
+    chartD.SeriesList[0].Clear ;
+    chartD.SeriesList[1].Clear ;
+    chartAz.SeriesList[0].Clear ;
+    chartAz.SeriesList[1].Clear ;
+    chartE.SeriesList[0].Clear ;
+    chartE.SeriesList[1].Clear ;
+
+//    If cmbxFltr.ItemIndex=0 then
+      for i := 1 to IWX[6,1,2]-1 do begin
+        chartD.SeriesList[0].AddXY(tt[i],DELKO[1,i+1],'');
+        chartD.SeriesList[1].AddXY(tt[i],DELKO[5,i+1],'');
+
+        chartAz.SeriesList[0].AddXY(tt[i],DELKO[2,i+1],'',clRed);
+        chartAz.SeriesList[1].AddXY(tt[i],DELKO[6,i+1],'',clYellow);
+
+        chartE.SeriesList[0].AddXY(tt[i],DELKO[3,i+1],'',clRed);
+        chartE.SeriesList[1].AddXY(tt[i],DELKO[7,i+1],'',clYellow);
+        end
+   (* Else
+      for i := 1 to IWX[6,1,2]-1 do begin
+        chartD.SeriesList[0].AddXY(tt[i],CKO_ed[1,i+1],'',clRed);
+        chartD.SeriesList[1].AddXY(tt[i],CKO_ed[5,i+1],'',clYellow);
+
+        chartAz.SeriesList[0].AddXY(tt[i],CKO_ed[2,i+1],'',clRed);
+        chartAz.SeriesList[1].AddXY(tt[i],CKO_ed[6,i+1],'',clYellow);
+
+        chartE.SeriesList[0].AddXY(tt[i],CKO_ed[3,i+1],'',clRed);
+        chartE.SeriesList[1].AddXY(tt[i],CKO_ed[7,i+1],'',clYellow);
+        end;*)
+  end;
+
+//  ResetMatrix;
+end;
+
+procedure TMainForm.sbtnOpenSKOFileClick(Sender: TObject);
+begin
+ // sbtnSKOParView.Glyph := nil;
+//ilGlyfz.GetBitmap (1,sbtnSKOParViewlyph);
+
+  lblSigD.Caption := 'Данные из файла ...';
+  lblSigPel.Visible  := False;
+  lblSigElev.Visible := False;
+  edtSigD.Visible    := False;
+  edtSigPel.Visible  := False;
+  edtSigElev.Visible := False;
+end;
+
+procedure TMainForm.sbtnSKOParViewClick(Sender: TObject);
+begin
+//sbtnSKOParView.Glyph := nil;
+//ilGlyfz.GetBitmap (0,sbtnSKOParView.Glyph);
+
+  lblSigD.Caption := 'дальность, м';
+  lblSigPel.Visible  := True;
+  lblSigElev.Visible := True;
+  edtSigD.Visible    := True;
+  edtSigPel.Visible  := True;
+  edtSigElev.Visible := True;
+end;
+
+procedure TMainForm.chkVarDiskretMatrixClick(Sender: TObject);
+begin
+  cboAxeX.Enabled := not(chkVarDiskretMatrix.Checked);
+  if chkVarDiskretMatrix.Checked then
+    cboAxeX.ItemIndex := 0;
+  sbtnVarDiskretMatrix.Enabled := chkVarDiskretMatrix.Checked;
+end;
+
+procedure TMainForm.chbKachkiMatrixClick(Sender: TObject);
+begin
+  sbtnKachkiMatrix.Enabled := chbKachkiMatrix.Checked ;
+end;
+
+procedure TMainForm.ApplicationEvents1ShortCut(var Msg: TWMKey;
+  var Handled: Boolean);
+begin
+  if Assigned(KatalogForm) then
+   with KatalogForm do
+    case Msg.CharCode of
+      VK_LEFT:  SelectTraek(SelectedTraekNo-1);
+      VK_RIGHT: SelectTraek(SelectedTraekNo+1);
+      VK_UP:   SelectTraek(SelectedTraekNo-ColCount-1);
+      VK_DOWN: SelectTraek(SelectedTraekNo+ColCount+1);
+    end;
+end;
+
+procedure TMainForm.lblRLSAddOnClick(Sender: TObject);
+begin
+   if pnlRLS.Height = 248 then begin
+    lblRLSAddOn.Caption := 'Дополнительно <<';
+    pnlRLS.Height := 384
+    end
+  else begin
+    lblRLSAddOn.Caption := 'Дополнительно >>';
+    pnlRLS.Height := 248
+    end
+end;
+
+procedure TMainForm.sbtnKachkiMatrixClick(Sender: TObject);
+var kt,i,j : integer;
+    MatrixForm : TMatrixForm;
+begin
+  kt := StrToInt(edtTracePointAmount.Text);
+
+  MatrixForm := TMatrixForm.Create(Application);
+  MatrixForm.Set3D(kt);
+  if chbKachkiMatrix.Tag =1 then begin
+    MatrixForm.edtFileName.Text := KachkiMatrixFileName;
+    for i:=1 to 3 do
+      for j:=1 to kt do
+       MatrixForm.MatrixGrid.Cells [j-1,i] := FloatToStr(sigug[i,j]);
+  end;
+  try
+    MatrixForm.ShowModal;
+    if MatrixForm.edtFileName.Text <> '*.txt' then begin
+      for i:=1 to 3 do
+        for j:=1 to kt do
+          sigug[i,j] := MatrixForm.MatrixGrid.CellToReal(j-1,i);
+      chbKachkiMatrix.Tag :=1; // флаг: sigug заполнен нормально
+      KachkiMatrixFileName := MatrixForm.edtFileName.Text;
+    end;
+  finally
+    MatrixForm.Free;
+    MatrixForm := nil;
+  end;
+
+end;
+
+
+procedure TMainForm.spbTraekMatrixClick;
+var kt,i,j : integer;
+    MatrixForm : TMatrixForm;
+begin
+  kt := StrToInt(edtTracePointAmount.Text);
+
+  MatrixForm := TMatrixForm.Create(Application);
+  MatrixForm.Set3D(kt);
+  if cboTraek.Tag =1 then
+    MatrixForm.edtFileName.Text := TraekMatrixFileName;
+    for j:=1 to kt do begin
+      MatrixForm.MatrixGrid.Cells [j-1,1] := FloatToStr(Dizm[j]);
+      MatrixForm.MatrixGrid.Cells [j-1,2] := FloatToStr(Bizm[j]);
+      MatrixForm.MatrixGrid.Cells [j-1,3] := FloatToStr(Eizm[j]);
+      end;
+  try
+    MatrixForm.ShowModal;
+    if MatrixForm.edtFileName.Text <> '*.txt' then begin
+      for j:=1 to kt do begin
+        MatrixForm.MatrixGrid.CellToReal(j-1,i);
+        Dizm[j] := MatrixForm.MatrixGrid.CellToReal(j-1,1);
+        Bizm[j] := MatrixForm.MatrixGrid.CellToReal(j-1,2);
+        Eizm[j] := MatrixForm.MatrixGrid.CellToReal(j-1,3);
+        end;
+      cboTraek.Tag :=1;
+      TraekMatrixFileName := MatrixForm.edtFileName.Text;
+    end;
+  finally
+    MatrixForm.Free;
+    MatrixForm := nil;
+  end;
+end;
+
+procedure TMainForm.sbtnVarDiskretMatrixClick(Sender: TObject);
+  var kt,i,j : integer;
+    MatrixForm : TMatrixForm;
+begin
+  kt := StrToInt(edtTracePointAmount.Text);
+
+  MatrixForm := TMatrixForm.Create(Application);
+
+  MatrixForm.Set1D(kt-1);
+  if chkVarDiskretMatrix.Tag =1 then begin
+    MatrixForm.edtFileName.Text := VarDiskretMatrixFileName;
+    for j:=1 to kt-1 do
+       MatrixForm.MatrixGrid.Cells [j-1,1] := FloatToStr(dt_sek[j]);
+  end;
+
+  try
+    MatrixForm.ShowModal;
+    if MatrixForm.edtFileName.Text <> '*.txt' then begin
+      for j:=1 to kt-1 do
+        dt_sek[j] := MatrixForm.MatrixGrid.CellToReal(j-1,1);
+      chkVarDiskretMatrix.Tag :=1;
+      VarDiskretMatrixFileName := MatrixForm.edtFileName.Text;
+    end;
+  finally
+    MatrixForm.Free;
+    MatrixForm := nil;
+  end;
+end;
+
+
+procedure TMainForm.sedtChanlNumChange(Sender: TObject);
+var kt,j : integer;
+begin
+  if sedtChanlNum.Value=2 then begin
+   UslVer3[10] := StrToFloat(edtVer1.Text);
+   UslVer3[11] := StrToFloat(edtVer2.Text);
+   UslVer3[12] := StrToFloat(edtVer3.Text);
+
+   edtVer1.Text := FloatToStr(UslVer2[10]);
+   edtVer2.Text := FloatToStr(UslVer2[11]);
+   edtVer3.Text := FloatToStr(UslVer2[12]);
+  end else begin
+    UslVer2[10] := StrToFloat(edtVer1.Text);
+    UslVer2[11] := StrToFloat(edtVer2.Text);
+    UslVer2[12] := StrToFloat(edtVer3.Text);
+
+    edtVer1.Text := FloatToStr(UslVer3[10]);
+    edtVer2.Text := FloatToStr(UslVer3[11]);
+    edtVer3.Text := FloatToStr(UslVer3[12]);
+  end;
+
+  for j:=1 to VecUslVerSize do
+    if sedtChanlNum.Value=2 then begin
+       UslVer3[j] := VecUslVer.CellToReal(j-1,1);
+       VecUslVer.Cells [j-1,1] := FloatToStr(UslVer2[j])
+     end else begin
+       UslVer2[j] := VecUslVer.CellToReal(j-1,1);
+       VecUslVer.Cells [j-1,1] := FloatToStr(UslVer3[j]);
+     end;
+
+end;
+
+
+
+procedure TMainForm.SpeedButton1Click(Sender: TObject);
+begin
+  ChartEditor1.Chart := chartD;
+  ChartEditor1.Title:='Параметры рисунка';  { <-- change Editor Title }
+  ChartEditor1.Execute;  { <---- show editor ! }
+end;
+
+procedure TMainForm.chartDBeforeDrawSeries(Sender: TObject);
+var i : integer;
+    YPosition:Longint;
+    YZeroPos : LongInt;
+begin
+  YZeroPos := chartD.LeftAxis.CalcYPosValue(0);
+  YPosition:=chartD.LeftAxis.CalcYPosValue(strtoFloat(edtY.Text));
+
+  With ChartD do
+   with Canvas do
+    begin
+     if (YPosition<ChartRect.Bottom) and (YPosition> ChartRect.Top) then begin
+       Pen.Width:=1;
+       Pen.Style:=psSolid;
+       Pen.Color:=clLime;
+
+       MoveTo(ChartRect.Left,YPosition);
+       LineTo(ChartRect.Left,YPosition);
+       LineTo(ChartRect.Right,YPosition);
+     end;
+
+   //отрисовать ось в 0 
+   if (YZeroPos<ChartRect.Bottom) and (YZeroPos>ChartRect.Top)  then begin
+      Pen.Width:=1;
+      Pen.Style:=psSolid;
+      Pen.Color:=clBlack;
+
+      MoveTo(ChartRect.Left,YZeroPos);
+      LineTo(ChartRect.Left,YZeroPos);
+      LineTo(ChartRect.Right,YZeroPos);
+
+      Pen.Width:=1;
+      Pen.Style:=psDot;
+      Pen.Color:=clWhite;
+
+      MoveTo(ChartRect.Left,YZeroPos);
+      LineTo(ChartRect.Left,YZeroPos);
+      LineTo(ChartRect.Right,YZeroPos);
+    end;
+  end;
+end;
+
+
+procedure TMainForm.Button1Click(Sender: TObject);
+begin
+  chartDBeforeDrawSeries(nil);
+  chartD.Repaint;
+end;
+
+procedure TMainForm.chartDAllowScroll(Sender: TChartAxis; var AMin,
+  AMax: Double; var AllowScroll: Boolean);
+var cfBt, cfLf:double;
+begin
+  if ChartD.Zoomed then begin
+    cfBt:=0.1;
+    cfLf:=0.5;
+    end
+  else begin
+    cfBt:=0;
+    cfLf:=0;
+  end;
+
+  if Sender = ChartD.BottomAxis then
+    if (AMax>ChartD.MaxXValue(ChartD.BottomAxis)+ChartD.BottomAxis.Increment*cfBt) or
+       (Amin<ChartD.MinXValue(ChartD.BottomAxis)-ChartD.BottomAxis.Increment*cfBt) then
+         AllowScroll := False ;
+
+  if Sender = ChartD.LeftAxis then
+    if (AMax > ChartD.MaxYValue(ChartD.LeftAxis)+ChartD.LeftAxis.Increment*cfLf) or
+       (Amin<ChartD.MinYValue(ChartD.LeftAxis)-ChartD.LeftAxis.Increment*cfLf) then
+         AllowScroll := False ;
+end;
+
+
+procedure TMainForm.chartDZoom(Sender: TObject);
+const cfBt=0.1; cfLf=0.5;
+begin
+  With ChartD do begin
+    if (BottomAxis.Maximum > MaxXValue(BottomAxis)+BottomAxis.Increment*cfBt) then
+      BottomAxis.Maximum:=MaxXValue(BottomAxis)+BottomAxis.Increment*cfBt;
+    if (BottomAxis.Minimum<MinXValue(BottomAxis)-BottomAxis.Increment*cfBt) then
+      BottomAxis.Minimum:=MinXValue(BottomAxis)-BottomAxis.Increment*cfBt;
+
+    if (LeftAxis.Maximum > MaxYValue(LeftAxis)+LeftAxis.Increment*cfLf) then
+      LeftAxis.Maximum := MaxYValue(LeftAxis)+LeftAxis.Increment*cfLf;
+     if (LeftAxis.Minimum<MinYValue(LeftAxis)-LeftAxis.Increment*cfLf) then
+      LeftAxis.Minimum := MinYValue(LeftAxis)-LeftAxis.Increment*cfLf;
+  End;
+end;
+
+end.

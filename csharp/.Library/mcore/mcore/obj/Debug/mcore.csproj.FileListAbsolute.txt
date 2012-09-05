@@ -1,0 +1,5 @@
+E:\.PersonalProjects\CSharp\.Library\mcore\mcore\bin\Debug\mcore.dll
+E:\.PersonalProjects\CSharp\.Library\mcore\mcore\bin\Debug\mcore.pdb
+E:\.PersonalProjects\CSharp\.Library\mcore\mcore\obj\Debug\ResolveAssemblyReference.cache
+E:\.PersonalProjects\CSharp\.Library\mcore\mcore\obj\Debug\mcore.dll
+E:\.PersonalProjects\CSharp\.Library\mcore\mcore\obj\Debug\mcore.pdb

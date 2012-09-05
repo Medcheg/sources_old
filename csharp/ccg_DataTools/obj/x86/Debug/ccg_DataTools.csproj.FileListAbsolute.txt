@@ -1,0 +1,11 @@
+D:\.Work\CSharp\ccg_DataTools\bin\Debug\ccg_DataTools.exe
+D:\.Work\CSharp\ccg_DataTools\bin\Debug\ccg_DataTools.pdb
+D:\.Work\CSharp\ccg_DataTools\bin\Debug\ccgcore.dll
+D:\.Work\CSharp\ccg_DataTools\bin\Debug\ccgcore.pdb
+D:\.Work\CSharp\ccg_DataTools\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\.Work\CSharp\ccg_DataTools\obj\x86\Debug\ccg_DataTools.Form1.resources
+D:\.Work\CSharp\ccg_DataTools\obj\x86\Debug\ccg_DataTools.Properties.Resources.resources
+D:\.Work\CSharp\ccg_DataTools\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\.Work\CSharp\ccg_DataTools\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\.Work\CSharp\ccg_DataTools\obj\x86\Debug\ccg_DataTools.exe
+D:\.Work\CSharp\ccg_DataTools\obj\x86\Debug\ccg_DataTools.pdb

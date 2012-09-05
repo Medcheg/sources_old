@@ -1,0 +1,29 @@
+Functions called:
+ fflush (4 times)
+ delete (11 times)
+ free (20 times)
+ log10 (1120 times)
+ sqrt (2080 times)
+ sin (7280 times)
+ cos (7280 times)
+ exp (2080 times)
+ memset (2 times)
+ log (2088 times)
+ SysReallocMem (54 times)
+ new (11 times)
+ SysFreeMem (1927 times)
+ SysGetMem (1927 times)
+ lstrlenA (1 times)
+ lstrcpyA (4 times)
+ calloc (4 times)
+ strlen (65 times)
+ realloc (11 times)
+ strdup (1 times)
+ malloc (4 times)
+ memcpy (2 times)
+Resource types used:
+ object (11 allocs, 11 max)
+ memory block (1947 allocs, 624 max)
+Modules used:
+ 00400000 10/21/2004 12:53:44 D:\_Programs\Work\Ach_Fch_Draw\Ach_Fch_Draw.exe
+==========================================

@@ -1,0 +1,15 @@
+program Stab;
+
+uses
+  Forms,
+  Unit_Main in 'Unit_Main.pas' {Form1},
+  unit_GL in 'unit_GL.pas' {frmOpenGL};
+
+{$R *.RES}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TfrmOpenGL, frmOpenGL);
+  Application.Run;
+end.

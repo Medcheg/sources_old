@@ -1,0 +1,58 @@
+// --------------------------------------------------------------
+// --- Ресурсы с подчеркиванием - это ресурсы которые -----------
+// --- отображаются в диалоговых окнах --------------------------
+// --------------------------------------------------------------
+// --- Имена ресурсов должны совпадать с именами классов --------
+// --------------------------------------------------------------
+ 
+
+TTargetMove	 BITMAP		Inputs\TTargetMove.bmp
+// ---------------------------------------------------------------
+                            
+_TPolinom	 BITMAP		Linear\_TPolinom.bmp
+_TSinusoid	 BITMAP		Linear\_TSinusoid.bmp
+_TIzodrom        BITMAP		Linear\_TIzodrom.bmp
+
+TIzodrom         BITMAP		Linear\TIzodrom.bmp
+TAperiodic       BITMAP		Linear\TAperiodic.bmp
+TAperiodicForce1 BITMAP		Linear\TAperiodicForce1.bmp
+TDiffer          BITMAP		Linear\TDiffer.bmp
+TDifferConst     BITMAP		Linear\TDifferConst.bmp
+TIntegral        BITMAP		Linear\TIntegral.bmp
+TWave            BITMAP		Linear\TWave.bmp
+TWaveForce1      BITMAP		Linear\TWaveForce1.bmp
+TWaveForce2      BITMAP		Linear\TWaveForce2.bmp
+
+// ---------------------------------------------------------------
+
+TAbsolute			BITMAP		NoLinear\TAbsolute.bmp
+TArcCosinus			BITMAP		NoLinear\TArcCosinus.bmp
+TArcSinus			BITMAP		NoLinear\TArcSinus.bmp
+TArcTanges			BITMAP		NoLinear\TArcTanges.bmp
+TArcTanges180			BITMAP		NoLinear\TArcTanges180.bmp
+TArcTanges360			BITMAP		NoLinear\TArcTanges360.bmp
+TBoundaries			BITMAP		NoLinear\TBoundaries.bmp
+TCosinus			BITMAP		NoLinear\TCosinus.bmp
+TDivider1			BITMAP		NoLinear\TDivider1.bmp
+TDivider2			BITMAP		NoLinear\TDivider2.bmp
+TExtrapoljator			BITMAP		NoLinear\TExtrapoljator.bmp
+TLuft				BITMAP		NoLinear\TLuft.bmp
+TLuft_and_Boundaries		BITMAP		NoLinear\TLuft_and_Boundaries.bmp
+TNonSensitivity			BITMAP		NoLinear\TNonSensitivity.bmp
+TNonSensitivity_and_Boundaries	BITMAP		NoLinear\TNonSensitivity_and_Boundaries.bmp
+TPower				BITMAP		NoLinear\TPower.bmp
+TRele				BITMAP		NoLinear\TRele.bmp
+TReleGisteresis			BITMAP		NoLinear\TReleGisteresis.bmp
+TReleNonSensitivity		BITMAP		NoLinear\TReleNonSensitivity.bmp
+TReleThird			BITMAP		NoLinear\TReleThird.bmp
+TSignature			BITMAP		NoLinear\TSignature.bmp
+TSinus				BITMAP		NoLinear\TSinus.bmp
+TStartJump_and_Boundaries	BITMAP		NoLinear\TStartJump_and_Boundaries.bmp
+
+// ---------------------------------------------------------------
+                                            
+_TLogicKey	BITMAP		Keys\_TLogicKey.bmp
+_TTimeKey	BITMAP		Keys\_TTimeKey.bmp
+
+TLogicKey	BITMAP		Keys\TLogicKey.bmp
+TTimeKey	BITMAP		Keys\TTimeKey.bmp

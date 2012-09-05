@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2008.07.21 15:23:18.218.cpp,D:\_Projects\temp\Unit6.cpp=D:\_Projects\Gyro_Cpp\UmanahAlgo\Unit6.cpp</Transaction>
+    <Transaction>2008.07.21 15:23:18.218.h,D:\_Projects\temp\Unit6.h=D:\_Projects\Gyro_Cpp\UmanahAlgo\Unit6.h</Transaction>
+    <Transaction>2008.07.21 15:23:18.218.dfm,D:\_Projects\temp\Unit6.dfm=D:\_Projects\Gyro_Cpp\UmanahAlgo\Unit6.dfm</Transaction>
+    <Transaction>2008.07.21 15:23:27.437.bdsproj,D:\_Projects\temp\Project6.bdsproj=D:\_Projects\Gyro_Cpp\UmanahAlgo\UmanahAlgo.bdsproj</Transaction>
+  </Transactions>
+</BorlandProject>

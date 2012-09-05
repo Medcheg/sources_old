@@ -1,0 +1,44 @@
+<?xml version="1.0" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/Program Files/Analog Devices/VisualDSP 5.0/System/linker_log.xsl"?>
+<DOCUMENT gen_time='Mon Apr 13 19:37:50 2009
+'>
+<MSG id='00C3E198' mid='li3201' type='Informational' suppressed=''>
+<TEXT><![CDATA[Successfully eliminated 220 bytes in processor 'p0'
+]]></TEXT>
+<EXTENDED_INFO><![CDATA[Eliminated object (flagbb, flagbb+0x1) of size 5 bytes from '.\pb804.doj(seg_dmda)'
+Eliminated object (cizm, cizm+0x1) of size 5 bytes from '.\pb804.doj(seg_dmda)'
+Eliminated object (pdat, pdat+0x1) of size 5 bytes from '.\pb804.doj(seg_dmda)'
+Eliminated object (tksr, tksr+0x1) of size 5 bytes from '.\pb804.doj(seg_dmda)'
+Eliminated object (fsr, fsr+0x1) of size 5 bytes from '.\pb804.doj(seg_dmda)'
+Eliminated object (vol1, vol1+0x1) of size 5 bytes from '.\pb804.doj(seg_dmda)'
+Eliminated object (vol2, vol2+0x1) of size 5 bytes from '.\pb804.doj(seg_dmda)'
+Eliminated object (vol3, vol3+0x1) of size 5 bytes from '.\pb804.doj(seg_dmda)'
+Eliminated object (vol4, vol4+0x1) of size 5 bytes from '.\pb804.doj(seg_dmda)'
+Eliminated object (bbbbb2, bbbbb2+0x1) of size 5 bytes from '.\pb804.doj(seg_dmda)'
+Eliminated object (bbbbb3, bbbbb3+0x1) of size 5 bytes from '.\pb804.doj(seg_dmda)'
+Eliminated object (bbbbb4, bbbbb4+0x1) of size 5 bytes from '.\pb804.doj(seg_dmda)'
+Eliminated object (phaza, phaza+0x1) of size 5 bytes from '.\pb804.doj(seg_dmda)'
+Eliminated object (phaza2, phaza2+0x1) of size 5 bytes from '.\pb804.doj(seg_dmda)'
+Eliminated object (deltafi, deltafi+0x1) of size 5 bytes from '.\pb804.doj(seg_dmda)'
+Eliminated object (cosdata2, cosdata2+0x1) of size 5 bytes from '.\pb804.doj(seg_dmda)'
+Eliminated object (sindata2, sindata2+0x1) of size 5 bytes from '.\pb804.doj(seg_dmda)'
+Eliminated object (cosdata3, cosdata3+0x1) of size 5 bytes from '.\pb804.doj(seg_dmda)'
+Eliminated object (mk, mk+0x1) of size 5 bytes from '.\pb804.doj(seg_dmda)'
+Eliminated object (goutk, goutk+0x1) of size 5 bytes from '.\pb804.doj(seg_dmda)'
+Eliminated object (pbuf, pbuf+0x1) of size 5 bytes from '.\pb804.doj(seg_dmda)'
+Eliminated object (sumfp, sumfp+0x1) of size 5 bytes from '.\pb804.doj(seg_dmda)'
+Eliminated object (sumuz, sumuz+0x1) of size 5 bytes from '.\pb804.doj(seg_dmda)'
+Eliminated object (aveb0, aveb0+0x1) of size 5 bytes from '.\pb804.doj(seg_dmda)'
+Eliminated object (avefm, avefm+0x1) of size 5 bytes from '.\pb804.doj(seg_dmda)'
+Eliminated object (aveexcit, aveexcit+0x1) of size 5 bytes from '.\pb804.doj(seg_dmda)'
+Eliminated object (avequad, avequad+0x1) of size 5 bytes from '.\pb804.doj(seg_dmda)'
+Eliminated object (avetmp, avetmp+0x1) of size 5 bytes from '.\pb804.doj(seg_dmda)'
+Eliminated object (pdt, pdt+0x1) of size 5 bytes from '.\pb804.doj(seg_dmda)'
+Eliminated object (sine_data, sine_data+0xb) of size 55 bytes from '.\pdes804.doj(seg_dmda)'
+Eliminated object (vola0, vola0+0x1) of size 5 bytes from '.\pdes804.doj(seg_dmda)'
+Eliminated object (vola1, vola1+0x1) of size 5 bytes from '.\pdes804.doj(seg_dmda)'
+Eliminated object (vola2, vola2+0x1) of size 5 bytes from '.\pdes804.doj(seg_dmda)'
+Eliminated object (vola3, vola3+0x1) of size 5 bytes from '.\pdes804.doj(seg_dmda)'
+]]></EXTENDED_INFO>
+</MSG>
+</DOCUMENT>

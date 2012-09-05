@@ -1,0 +1,49 @@
+<?xml version="1.0" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/Program Files/Analog Devices/VisualDSP 5.0/System/linker_log.xsl"?>
+<DOCUMENT gen_time='Thu Jul 02 13:12:49 2009
+'>
+<MSG id='01573088' mid='li3201' type='Informational' suppressed=''>
+<TEXT><![CDATA[Successfully eliminated 7994 bytes in processor 'p0'
+]]></TEXT>
+<EXTENDED_INFO><![CDATA[Eliminated object (_i, _i+0x1) of size 5 bytes from '.\Release\gc.doj(seg_dmda)'
+Eliminated object (_k, _k+0x1) of size 5 bytes from '.\Release\gc.doj(seg_dmda)'
+Eliminated object (_zz, _zz+0x1) of size 5 bytes from '.\Release\gc.doj(seg_dmda)'
+Eliminated object (_g, _g+0x1) of size 5 bytes from '.\Release\gc.doj(seg_dmda)'
+Eliminated object (_i, _i+0x1) of size 5 bytes from '.\gclib.doj(seg_dmda)'
+Eliminated object (_buff, _buff+0x1) of size 5 bytes from '.\gclib.doj(seg_dmda)'
+Eliminated object (_global_a, _global_a+0x1) of size 5 bytes from '.\gclib.doj(seg_dmda)'
+Eliminated object (_global_b, _global_b+0x1) of size 5 bytes from '.\gclib.doj(seg_dmda)'
+Eliminated object (_global_p, _global_p+0x1) of size 5 bytes from '.\gclib.doj(seg_dmda)'
+Eliminated object (0x17,0x18) of size 5 bytes from '.\gclib.doj(seg_dmda)'
+Eliminated object (_WrUART, ._WrUART.end) of size 258 bytes from '.\gclib.doj(seg_pmco)'
+Eliminated object (_Delay3, ._Delay3.end) of size 138 bytes from '.\gclib.doj(seg_pmco)'
+Eliminated object (_ForPack, ._ForPack.end) of size 1326 bytes from '.\gclib.doj(seg_pmco)'
+Eliminated object (_Init_Debug_Param, ._Init_Debug_Param.end) of size 24 bytes from '.\Release\pmInit.doj(seg_pmco)'
+Eliminated object (_Init_PhaseDetector, ._Init_PhaseDetector.end) of size 252 bytes from '.\Release\pmInit.doj(seg_pmco)'
+Eliminated object (_Init_PeriodDetector, ._Init_PeriodDetector.end) of size 252 bytes from '.\Release\pmInit.doj(seg_pmco)'
+Eliminated object (_Calc_Period_External, ._Calc_Period_External.end) of size 492 bytes from '.\Release\pmMath.doj(seg_pmco)'
+Eliminated object (_Calc_Period, ._Calc_Period.end) of size 288 bytes from '.\Release\pmMath.doj(seg_pmco)'
+Eliminated object (_Get_PhaseInvert_180, ._Get_PhaseInvert_180.end) of size 642 bytes from '.\Release\pmMath.doj(seg_pmco)'
+Eliminated object (_Calc_Phase_180, ._Calc_Phase_180.end) of size 642 bytes from '.\Release\pmMath.doj(seg_pmco)'
+Eliminated object (_Calc_Phase, ._Calc_Phase.end) of size 540 bytes from '.\Release\pmMath.doj(seg_pmco)'
+Eliminated object (_Input_Filtration, ._Input_Filtration.end) of size 198 bytes from '.\Release\pmMath.doj(seg_pmco)'
+Eliminated object (_Get_SliderMean_bad, ._Get_SliderMean_bad.end) of size 264 bytes from '.\Release\pmMath.doj(seg_pmco)'
+Eliminated object (_calloc, ._calloc.end) of size 138 bytes from 'libc36x.dlb[malloc2136x_rev_0.0.doj](seg_pmco)'
+Eliminated object (___udiv, .___udiv.end) of size 342 bytes from 'libc36x.dlb[int_sprt2136x_rev_0.0.doj](seg_pmco)'
+Eliminated object (___modsi3, .___modsi3.end) of size 216 bytes from 'libc36x.dlb[int_sprt2136x_rev_0.0.doj](seg_pmco)'
+Eliminated object (___ulmod, .___ulmod.end) of size 228 bytes from 'libc36x.dlb[int_sprt2136x_rev_0.0.doj](seg_pmco)'
+Eliminated object (___dtoi, .___dtoi.end) of size 54 bytes from 'libc36x.dlb[int_sprt2136x_rev_0.0.doj](seg_pmco)'
+Eliminated object (___dtoui, .___dtoui.end) of size 54 bytes from 'libc36x.dlb[int_sprt2136x_rev_0.0.doj](seg_pmco)'
+Eliminated object (__heap_install, .__heap_install.end) of size 444 bytes from 'libc36x.dlb[alc_type2136x_rev_0.0.doj](seg_pmco)'
+Eliminated object (__heap_lookup_name, .__heap_lookup_name.end) of size 246 bytes from 'libc36x.dlb[alc_type2136x_rev_0.0.doj](seg_pmco)'
+Eliminated object (_set_alloc_type, ._set_alloc_type.end) of size 78 bytes from 'libc36x.dlb[alc_type2136x_rev_0.0.doj](seg_pmco)'
+Eliminated object (__heap_switch, .__heap_switch.end) of size 36 bytes from 'libc36x.dlb[alc_type2136x_rev_0.0.doj](seg_pmco)'
+Eliminated object (___lib_find_heap_number_from_address, .___lib_find_heap_number_from_address.end) of size 186 bytes from 'libc36x.dlb[alc_type2136x_rev_0.0.doj](seg_pmco)'
+Eliminated object (___lib_dtoi, .___lib_dtoi.end) of size 126 bytes from 'libc36x.dlb[mth_sprt2136x_rev_0.0.doj](seg_pmco)'
+Eliminated object (___lib_dtoui, .___lib_dtoui.end) of size 198 bytes from 'libc36x.dlb[mth_sprt2136x_rev_0.0.doj](seg_pmco)'
+Eliminated object (___lib_itod, .___lib_itod.end) of size 72 bytes from 'libc36x.dlb[mth_sprt2136x_rev_0.0.doj](seg_pmco)'
+Eliminated object (___lib_dtox, .___lib_dtox.end) of size 90 bytes from 'libc36x.dlb[mth_sprt2136x_rev_0.0.doj](seg_pmco)'
+Eliminated object (___lib_xtod, .___lib_xtod.end) of size 120 bytes from 'libc36x.dlb[mth_sprt2136x_rev_0.0.doj](seg_pmco)'
+]]></EXTENDED_INFO>
+</MSG>
+</DOCUMENT>

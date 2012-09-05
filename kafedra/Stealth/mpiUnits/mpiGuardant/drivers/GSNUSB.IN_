@@ -1,0 +1,67 @@
+;------------------------------------------------------------------------------
+;INF file for Guardant Stealth I/II USB dongles (Windows 95/98/Me/2000/XP/2003)
+;(C) 2000-04 Aktiv Co.
+;------------------------------------------------------------------------------
+
+[Version]
+Signature="$CHICAGO$"
+Class=USB
+ClassGuid={36fc9e60-c465-11cf-8056-444553540000}
+DriverVer=10/04/2004,4.8.1.0
+provider=%Aktiv%
+;LayoutFile=layout.inf
+
+[Manufacturer]
+%Aktiv%=Aktiv
+
+[Aktiv]
+%USB\VID_0A89&PID_0001.DeviceDesc%=NVKEYUSB, USB\VID_0A89&PID_0001
+%USB\VID_0A89&PID_0003.DeviceDesc%=NVKEYUSB, USB\VID_0A89&PID_0003
+
+[PreCopySection]
+HKR,,NoSetupUI,,1
+
+[ControlFlags]
+ExcludeFromSelect=USB\VID_0A89&PID_0001, USB\VID_0A89&PID_0003
+
+[DestinationDirs]
+NVKEYUSB.SysCopy = 10,System
+NVKEYUSB.SysCopy.NT = 10,System32\drivers
+
+[NVKEYUSB]
+;CopyFiles=NVKEYUSB.SysCopy
+AddReg=NVKEYUSB.AddReg
+
+[NVKEYUSB.NT]
+;CopyFiles=NVKEYUSB.SysCopy.NT
+AddReg=NVKEYUSB.AddReg.NT
+
+[NVKEYUSB.NT.Services]
+AddService=NVKEYUSB,0x00000002,NVKEYUSB.AddService
+
+[NVKEYUSB.AddService]
+DisplayName    = %NVKEYUSB.SvcDesc%
+ServiceType    = 1 ; SERVICE_KERNEL_DRIVER
+StartType      = 3 ; SERVICE_AUTO_START
+ErrorControl   = 1 ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\NVKEYUSB.SYS
+LoadOrderGroup = Base
+
+[NVKEYUSB.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,NVKEYUSB.SYS
+
+[NVKEYUSB.AddReg.NT]
+HKR,,EnumPropPages32,,"sysclass.dll,USBEnumPropPages"
+
+[NVKEYUSB.SysCopy]
+NVKEYUSB.SYS
+
+[NVKEYUSB.SysCopy.NT]
+NVKEYUSB.SYS
+
+[Strings]
+Aktiv="Aktiv Co."
+USB\VID_0A89&PID_0001.DeviceDesc="Guardant Stealth/Net USB Key"
+USB\VID_0A89&PID_0003.DeviceDesc="Guardant Stealth/Net II USB Key"
+NVKEYUSB.SvcDesc="Guardant Stealth I/II USB Key"

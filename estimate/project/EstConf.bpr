@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="EstConf.exe"/>
+    <OBJFILES value="EstConf.obj _EstConf\Unit_Main.obj _Shared\mpiTypes.obj 
+      _Shared\mpiDeclaration.obj _Shared\frmAbout\Unit_About.obj 
+      _Shared\mpiLibrary.obj _EstConf\Unit_BigTree.obj 
+      _Shared\mpiSaveDSTParam.obj _Shared\mpiErrors_and_Warning.obj 
+      _Shared\mpiGuardant\mpiGuardant.obj"/>
+    <RESFILES value="EstConf.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) _EstConf\Unit_Main.dfm _Shared\frmAbout\Unit_About.dfm 
+      _EstConf\Unit_BigTree.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="vcl.lib rtl.lib"/>
+    <SPARELIBS value="rtl.lib vcl.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi adortl.bpi vcldb.bpi vclx.bpi bdertl.bpi 
+      vcldbx.bpi ibxpress.bpi cds.bpi dsnap.bpi bdecds.bpi qrpt.bpi teeui.bpi 
+      teedb.bpi tee.bpi dss.bpi teeqr.bpi visualclx.bpi visualdbclx.bpi 
+      dsnapcrba.bpi dsnapcon.bpi bcbsmp.bpi"/>
+    <PATHCPP value=".;_EstConf;_Shared;_Shared\frmAbout;_Shared\mpiGuardant"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="EstConf.cpp"/>
+    <INCLUDEPATH value="_Shared\mpiGuardant;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;_Shared;_Shared\frmAbout;_EstConf;Sshared;..\..\..\_Components\FloatEdit;shared;&quot;C:\Program Files\Borland\CBuilder5\Projects&quot;;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="_Shared\mpiGuardant;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;_Shared;_Shared\frmAbout;_EstConf;Sshared;..\..\..\_Components\FloatEdit;shared;&quot;C:\Program Files\Borland\CBuilder5\Projects&quot;;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I_Shared\mpiGuardant -I&quot;C:\Program Files\Borland\CBuilder6\Projects&quot; 
+      -I_Shared -I_Shared\frmAbout -I_EstConf -ISshared 
+      -I..\..\..\_Components\FloatEdit -Ishared 
+      -I&quot;C:\Program Files\Borland\CBuilder5\Projects&quot; -I$(BCB)\include 
+      -I$(BCB)\include\vcl -src_suffix cpp -D_DEBUG -boa"/>
+    <CFLAG1 value="-Od -H=c:\PROGRA~1\borland\CBUILD~1\lib\vcl60.csm -Hc -Vx -Ve -X- -r- -a8 
+      -b- -k -y -v -vi- -c -tW -tWM"/>
+    <PFLAGS value="-$YD -$W -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zd"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="EstConf.cpp" FORMNAME="" UNITNAME="EstConf" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="EstConf.res" FORMNAME="" UNITNAME="EstConf" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="_EstConf\Unit_Main.cpp" FORMNAME="frmMain" UNITNAME="Unit_Main" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="_Shared\mpiTypes.cpp" FORMNAME="" UNITNAME="mpiTypes" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="_Shared\mpiDeclaration.cpp" FORMNAME="" UNITNAME="mpiDeclaration" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="_Shared\frmAbout\Unit_About.cpp" FORMNAME="frmAbout" UNITNAME="Unit_About" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="_Shared\mpiLibrary.cpp" FORMNAME="" UNITNAME="mpiLibrary" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="_EstConf\Unit_BigTree.cpp" FORMNAME="frmBigTree" UNITNAME="Unit_BigTree" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="_Shared\mpiSaveDSTParam.cpp" FORMNAME="" UNITNAME="mpiSaveDSTParam" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="_Shared\mpiErrors_and_Warning.cpp" FORMNAME="" UNITNAME="mpiErrors_and_Warning" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="_Shared\NVKEYERR.H" FORMNAME="" UNITNAME="NVKEYERR.H" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="_Shared\NVSKEY32.H" FORMNAME="" UNITNAME="NVSKEY32.H" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="_Shared\mpiGuardant\mpiGuardant.cpp" FORMNAME="" UNITNAME="mpiGuardant" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1058
+CodePage=1251
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=3
+Item0=_Shared\mpiGuardant;C:\Program Files\Borland\CBuilder6\Projects;_Shared;_Shared\frmAbout;_EstConf;Sshared;..\..\..\_Components\FloatEdit;shared;C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\include;$(BCB)\include\vcl
+Item1=_Shared;_Shared\frmAbout;_EstConf;Sshared;..\..\..\_Components\FloatEdit;shared;C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\include;$(BCB)\include\vcl
+Item2=Sshared;..\..\..\_Components\FloatEdit;shared;C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=3
+Item0=_Shared\mpiGuardant;C:\Program Files\Borland\CBuilder6\Projects;_Shared;_Shared\frmAbout;_EstConf;Sshared;..\..\..\_Components\FloatEdit;shared;C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item1=_Shared;_Shared\frmAbout;_EstConf;Sshared;..\..\..\_Components\FloatEdit;shared;C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item2=Sshared;..\..\..\_Components\FloatEdit;shared;C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+  </IDEOPTIONS>
+</PROJECT>

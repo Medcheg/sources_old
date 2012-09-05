@@ -1,0 +1,68 @@
+Error 00051. 0x300010 (Thread 0x0608):
+Resource leak: The memory block (0x1240D30) was never freed
+
+The memory block (0x01240D30) [size: 36 bytes] was allocated with SysGetMem
+Call Tree:
+   0x00DF74A3
+   0x00E02255
+   0x00E023C3
+   0x00D614BC
+   0x77F86F17(=ntdll.dll:0x01:005F17)
+   0x77F94A47(=ntdll.dll:0x01:013A47)
+
+------------------------------------------
+Error 00052. 0x300010 (Thread 0x0608):
+Resource leak: The memory block (0x1253AAC) was never freed
+
+The memory block (0x01253AAC) [size: 200 bytes] was allocated with SysGetMem
+Call Tree:
+   0x00DFBB93
+   0x00DFBAA9
+   0x00DFE034
+   0x00DFD795
+   0x0CD0A4C7(=CG32.DLL:0x07:CC48C2F)
+   0x00D77F7F
+
+------------------------------------------
+Functions called:
+ fflush (1 times)
+ ceil (53 times)
+ delete (32 times)
+ free (2987 times)
+ exp (24 times)
+ cos (41889 times)
+ sqrt (27643 times)
+ memset (2 times)
+ sin (40560 times)
+ vsnprintf (18 times)
+ new (32 times)
+ SysReallocMem (116 times)
+ SysFreeMem (1687 times)
+ lstrlenA (1 times)
+ lstrcpynA (4 times)
+ SysGetMem (1689 times)
+ malloc (2987 times)
+ memcpy (1 times)
+Resource types used:
+ object (32 allocs, 24 max)
+ memory block (4676 allocs, 600 max)
+Modules used:
+ 00400000 08/30/2005 00:27:36
+ D:\_Programs\Work\Kvant\Far_2_1_Zhenja_dll\Test_dll_Delphi_5_project\Test_dll
+_Delphi_5_project.exe
+ 41000000 08/11/1999 05:00:00 C:\PROGRA~1\Borland\Delphi5\Bin\borlndmm.dll
+ 6E380000 03/22/2000 16:00:00 C:\WINNT\system32\INDICDLL.dll
+ 75950000 06/19/2003 12:05:04 C:\WINNT\system32\LZ32.DLL
+ 75E00000 06/19/2003 12:05:04 C:\WINNT\system32\IMM32.DLL
+ 770F0000 06/19/2003 12:05:04 C:\WINNT\system32\RPCRT4.DLL
+ 777F0000 06/19/2003 12:05:04 C:\WINNT\system32\version.dll
+ 779B0000 06/19/2003 12:05:04 C:\WINNT\system32\oleaut32.dll
+ 77A50000 06/19/2003 12:05:04 C:\WINNT\system32\ole32.dll
+ 77B50000 06/19/2003 12:05:04 C:\WINNT\system32\comctl32.dll
+ 77E10000 06/19/2003 12:05:04 C:\WINNT\system32\user32.dll
+ 77F40000 06/19/2003 12:05:04 C:\WINNT\system32\GDI32.DLL
+ 77F80000 06/19/2003 12:05:04 C:\WINNT\system32\ntdll.dll
+ 79060000 06/19/2003 12:05:04 C:\WINNT\system32\advapi32.dll
+ 793A0000 06/19/2003 12:05:04 C:\WINNT\system32\kernel32.dll
+ FFFFE898 03/28/2004 00:00:02 C:\PROGRA~1\Borland\CBUILD~1\Bin\CG32.DLL
+==========================================

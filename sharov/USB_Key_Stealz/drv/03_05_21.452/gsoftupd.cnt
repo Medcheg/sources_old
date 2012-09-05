@@ -1,0 +1,950 @@
+; List of contents of archive files       
+;======================================== 
+;!   Size   !   Date   !Time ! File Name  
+;======================================== 
+
+F apipdfgn.pak
+C     510363 15/12/2002 18:53 api\api guardant net.pdf
+
+F apipdfgs.pak
+C     570441 15/12/2002 18:57 api\api guardant stealth and fidus.pdf
+
+F api_help.pak
+C     212434 15/12/2002 15:32 doc\guardant api.chm
+
+F apudos.pak
+C      77383 20/05/2003 15:45 nsdkey.exe
+C        115 04/01/2002 14:03 nsdkey.msg
+
+F apuw16.pak
+C     118472 20/05/2003 13:46 nwkey.exe
+C        127 04/01/2002 14:03 nwkey.msg
+
+F apuw32.pak
+C      33046 08/04/1997 19:09 demo.wav
+C      42086 08/04/1997 19:03 notfound.wav
+C     198144 20/05/2003 18:04 nwkey32.exe
+C        127 04/01/2002 14:04 nwkey32.msg
+C         34 14/04/1997 13:22 nwkey32.snd
+C      39934 08/04/1997 19:16 syserr.wav
+C      46446 08/04/1997 18:56 wrongkey.wav
+
+F chk_ga.pak
+C      38483 06/12/2001 11:59 chkkey.exe
+C      50274 06/12/2001 11:56 chkkeyw.exe
+
+F chk_gn.pak
+C      49846 21/05/2003 17:39 chknsk.exe
+C     104480 21/05/2003 17:40 chknsk32.exe
+C      65057 21/05/2003 17:40 chknskw.exe
+
+F com.pak
+C      19082 11/03/1999 16:13 clocktst.exe
+C       5683 05/06/2002 16:43 filelist.txt
+C      22897 21/05/2003 15:28 readme.txt
+C         36 21/05/2003 18:23 version
+
+F drivers.pak
+C       1444 10/04/2003 12:33 drivers\gsnusb.in_
+C      60313 10/07/2002 13:23 drivers\inst.dll\dialog.c
+C       4718 30/04/1999 13:45 drivers\inst.dll\grd_key.bmp
+C      42783 21/05/2003 17:08 drivers\inst.dll\iapib.obj
+C      69281 21/05/2003 17:08 drivers\inst.dll\iapimml.obj
+C      69286 21/05/2003 17:08 drivers\inst.dll\iapimmt.obj
+C      99328 21/05/2003 17:06 drivers\inst.dll\instdemo.exe
+C      45942 30/04/2003 13:30 drivers\inst.dll\instdemo.ide
+C       1801 08/12/1998 12:42 drivers\inst.dll\instdemo.mak
+C      11006 21/05/2003 17:08 drivers\inst.dll\instdms.lib
+C      11624 12/09/2002 14:03 drivers\inst.dll\instdrv.c
+C     103936 21/05/2003 17:08 drivers\inst.dll\instdrv.dll
+C       4463 25/06/2002 18:46 drivers\inst.dll\instdrv.h
+C       4710 21/05/2003 16:31 drivers\inst.dll\instdrv.ico
+C       3072 21/05/2003 17:08 drivers\inst.dll\instdrv.lib
+C      19364 16/07/2002 16:09 drivers\inst.dll\instdrv.rc
+C       2553 10/07/2002 12:52 drivers\inst.dll\instdrvf.h
+C       6215 10/09/2002 13:37 drivers\inst.dll\instdrvs.h
+C       5113 25/06/2002 18:44 drivers\inst.dll\inststr.h
+C        191 20/09/2000 12:31 drivers\inst.dll\mk_demo.bat
+C     147968 21/05/2003 17:05 drivers\instdrv.exe
+C       4984 21/06/2002 12:09 drivers\instdrv.ini
+C      14611 08/01/2003 16:06 drivers\instdrv.txt
+C        626 27/05/1998 19:12 drivers\nvkey4nt.sys
+C      77873 20/05/2003 18:27 drivers\nvkey95.vx_
+C       3392 06/12/2002 15:56 drivers\nvkey98u.sys
+C      68704 20/05/2003 18:29 drivers\nvkeynt.sys
+C      67296 20/05/2003 18:29 drivers\nvkeynt4.sys
+C      30272 04/01/2003 17:12 drivers\nvkeyu95.sys
+C      30288 04/01/2003 17:07 drivers\nvkeyusb.sys
+C       8704 23/11/1998 11:16 drivers\nvkeyvdd.dll
+
+F gsoftupd.pak
+C     585728 16/05/2003 13:43 gsoftupd.exe
+
+F guardant.pak
+C     475136 19/05/2003 16:20 guardant.exe
+C      15303 20/05/2003 17:34 guardant.ini
+
+F guide.pak
+C    5673602 15/12/2002 18:47 doc\guide.pdf
+
+F info_api.pak
+C        376 15/06/2001 17:38 api\dirinfo.txt
+
+F info_ga.pak
+C       1980 15/06/2001 16:40 api\aptus\dirinfo.txt
+
+F info_gn.pak
+C       1534 15/06/2001 16:41 api\net\dirinfo.txt
+
+F info_gs.pak
+C       1911 15/06/2001 16:41 api\stealth\dirinfo.txt
+
+F info_gsa.pak
+C       2182 15/06/2001 16:42 api\stealth.apt\dirinfo.txt
+
+F instruct.pak
+C     168143 06/06/2002 16:49 doc\instruct.pdf
+C       5464 06/06/2002 16:49 doc\instruct.txt
+C     104256 18/01/2001 12:08 doc\scheme.tif
+
+F nmon.pak
+C      25102 19/05/2003 15:40 nnkmon.exe
+C     147968 21/05/2003 18:09 nnkmon32.exe
+C      47441 19/05/2003 15:40 nnkmonw.exe
+
+F nserv32.pak
+C     430080 21/05/2003 18:10 nnksrv32.exe
+C       1606 21/05/2003 15:45 nnksrv32.ini
+
+F qstart.pak
+C    1636085 25/06/2002 15:36 doc\qstart.pdf
+
+F rcom_ga.pak
+C       1024 17/12/2002 17:04 api\aptus\lib\gaimp16.lib
+C       1024 17/12/2002 17:04 api\aptus\lib\gaimp32.lib
+C      20992 18/10/1999 17:04 api\aptus\lib\gajava32.dll
+C      16211 17/12/2002 17:04 api\aptus\lib\ga_c32w.obj
+C      13440 17/12/2002 17:04 api\aptus\lib\grdntapt.bin
+C      13440 17/12/2002 17:04 api\aptus\lib\novexkey.bin
+C       5307 19/03/2002 12:29 api\aptus\lib\nplib.ash
+C       5372 06/04/2001 17:05 api\aptus\lib\nplib.h
+C       5371 06/04/2001 17:05 api\aptus\lib\nplib32.h
+C      15476 17/12/2002 17:04 api\aptus\lib\nvk32gw.obj
+C      15872 17/12/2002 17:04 api\aptus\lib\nvk32w.lib
+C      14794 17/12/2002 17:04 api\aptus\lib\nvk32w.obj
+C      14752 17/12/2002 17:04 api\aptus\lib\nvk32wd.obj
+C      12206 17/12/2002 17:04 api\aptus\lib\nvkcn.bin
+C      20446 17/12/2002 17:04 api\aptus\lib\nvkey.dll
+C       3677 06/04/2001 17:05 api\aptus\lib\nvkey.fd
+C       5807 19/03/2002 12:36 api\aptus\lib\nvkey.h
+C      27136 17/12/2002 17:04 api\aptus\lib\nvkey.lib
+C      12506 17/12/2002 17:04 api\aptus\lib\nvkey.obj
+C      69632 17/12/2002 17:04 api\aptus\lib\nvkey32.dll
+C       7276 19/03/2002 12:37 api\aptus\lib\nvkey32.h
+C      12288 17/12/2002 17:04 api\aptus\lib\nvkey32.lib
+C      11281 17/12/2002 17:04 api\aptus\lib\nvkey32.obj
+C      15872 17/12/2002 17:04 api\aptus\lib\nvkey32w.lib
+C      14811 02/12/2002 17:42 api\aptus\lib\nvkey32w.obj
+C      13046 17/12/2002 17:04 api\aptus\lib\nvkeycl.obj
+C       4432 19/09/2002 17:27 api\aptus\lib\nvkeyerr.ash
+C       6858 13/02/2002 17:04 api\aptus\lib\nvkeyerr.h
+C      12588 17/12/2002 17:04 api\aptus\lib\nvkeyt.obj
+C      12591 17/12/2002 17:04 api\aptus\lib\nvkeytd.obj
+C      12800 17/12/2002 17:04 api\aptus\lib\nvkeyw.lib
+C      11671 17/12/2002 17:04 api\aptus\lib\nvkeyw.obj
+C      12504 17/12/2002 17:04 api\aptus\lib\nvksti.obj
+C      11671 17/12/2002 17:04 api\aptus\lib\nvkwdll.obj
+
+F rcom_gf.pak
+C       7359 06/06/2002 16:49 api\fidus\info.txt
+
+F rcom_gn.pak
+C      12419 16/09/2002 19:03 api\net\lib\clar16.inc
+C      12818 16/09/2002 19:05 api\net\lib\clar32.inc
+C      12237 19/09/2002 20:08 api\net\lib\gdefs.ash
+C       2048 12/02/2003 14:06 api\net\lib\gnimp16.lib
+C       2560 12/02/2003 14:06 api\net\lib\gnimp32.lib
+C     118612 19/05/2003 15:46 api\net\lib\gn_c32w.obj
+C      48938 16/05/2003 18:14 api\net\lib\grdntnet.bin
+C       2699 12/02/2003 14:07 api\net\lib\nnclp.obj
+C     106496 19/05/2003 15:46 api\net\lib\nnk32w.lib
+C     104377 16/05/2003 18:14 api\net\lib\nnk32w.obj
+C     104314 16/05/2003 18:14 api\net\lib\nnk32wd.obj
+C      49904 16/05/2003 18:14 api\net\lib\nnkclp.obj
+C        951 14/08/2001 12:14 api\net\lib\nnkclw32.lib
+C      84148 16/05/2003 18:14 api\net\lib\nnkey.dll
+C      50688 19/05/2003 15:46 api\net\lib\nnkey.lib
+C      49369 16/05/2003 18:14 api\net\lib\nnkey.obj
+C     159744 19/05/2003 15:46 api\net\lib\nnkey32.dll
+C     425173 03/12/2002 14:47 api\net\lib\nnkey32w.dmp
+C     107008 16/05/2003 18:14 api\net\lib\nnkey32w.lib
+C     105042 16/05/2003 18:14 api\net\lib\nnkey32w.obj
+C      49054 16/05/2003 18:14 api\net\lib\nnkeyt.obj
+C      74752 19/05/2003 15:46 api\net\lib\nnkeyw.lib
+C      73263 16/05/2003 18:14 api\net\lib\nnkeyw.obj
+C       4074 19/09/2002 20:12 api\net\lib\nnkfunc.ash
+C      73133 16/05/2003 18:14 api\net\lib\nnkwdll.obj
+C      48938 16/05/2003 18:14 api\net\lib\novexnet.bin
+C       5307 19/03/2002 13:29 api\net\lib\nplib.ash
+C       5807 19/03/2002 13:36 api\net\lib\nvkey.h
+C       7276 19/03/2002 13:37 api\net\lib\nvkey32.h
+C       4432 19/09/2002 18:27 api\net\lib\nvkeyerr.ash
+C       6858 13/02/2002 18:04 api\net\lib\nvkeyerr.h
+C      18708 19/03/2002 13:38 api\net\lib\nvskclp.h
+C      47700 16/05/2003 18:14 api\net\lib\nvskcnl.bin
+C      10446 13/02/2002 17:57 api\net\lib\nvskey.cla
+C      12326 19/03/2002 13:39 api\net\lib\nvskey.fd
+C      19693 16/09/2002 19:36 api\net\lib\nvskey.h
+C      21962 10/02/2003 17:23 api\net\lib\nvskey32.h
+C      10897 17/09/2002 18:51 api\net\lib\nvsk_sys.h
+C      11812 16/09/2002 19:11 api\net\lib\nvslib.ash
+
+F rcom_gs.pak
+C      12419 16/09/2002 18:03 api\stealth\lib\clar16.inc
+C      12818 16/09/2002 18:05 api\stealth\lib\clar32.inc
+C      12237 19/09/2002 19:08 api\stealth\lib\gdefs.ash
+C      29672 12/02/2003 13:06 api\stealth\lib\grdntstl.bin
+C       2048 12/02/2003 13:06 api\stealth\lib\gsimp16.lib
+C       2560 12/02/2003 13:06 api\stealth\lib\gsimp32.lib
+C      40960 14/10/1999 14:49 api\stealth\lib\gsjava32.dll
+C      42025 12/02/2003 13:06 api\stealth\lib\gs_c32w.obj
+C      29672 12/02/2003 13:06 api\stealth\lib\novexst.bin
+C       5307 19/03/2002 12:29 api\stealth\lib\nplib.ash
+C        920 25/07/2001 11:32 api\stealth\lib\nskclw32.lib
+C      29542 12/02/2003 13:06 api\stealth\lib\nskcn.bin
+C       3489 19/09/2002 19:13 api\stealth\lib\nskfunc.ash
+C       5807 19/03/2002 12:36 api\stealth\lib\nvkey.h
+C       7276 19/03/2002 12:37 api\stealth\lib\nvkey32.h
+C       4432 19/09/2002 17:27 api\stealth\lib\nvkeyerr.ash
+C       6858 13/02/2002 17:04 api\stealth\lib\nvkeyerr.h
+C       2265 12/02/2003 13:07 api\stealth\lib\nvsclp.obj
+C      38343 12/02/2003 13:07 api\stealth\lib\nvsdr32w.obj
+C      29046 12/02/2003 13:07 api\stealth\lib\nvsdrw.obj
+C      39067 12/02/2003 13:07 api\stealth\lib\nvsk32gw.obj
+C      40448 12/02/2003 13:06 api\stealth\lib\nvsk32w.lib
+C      38360 12/02/2003 13:07 api\stealth\lib\nvsk32w.obj
+C      38297 12/02/2003 13:07 api\stealth\lib\nvsk32wd.obj
+C      18708 19/03/2002 12:38 api\stealth\lib\nvskclp.h
+C      30242 12/02/2003 13:07 api\stealth\lib\nvskclp.obj
+C      28442 12/02/2003 13:06 api\stealth\lib\nvskcn.bin
+C      10446 13/02/2002 16:57 api\stealth\lib\nvskey.cla
+C      37552 12/02/2003 13:06 api\stealth\lib\nvskey.dll
+C      12326 19/03/2002 12:39 api\stealth\lib\nvskey.fd
+C      19693 16/09/2002 18:36 api\stealth\lib\nvskey.h
+C      31232 12/02/2003 13:06 api\stealth\lib\nvskey.lib
+C      29712 12/02/2003 13:07 api\stealth\lib\nvskey.obj
+C      90112 12/02/2003 13:06 api\stealth\lib\nvskey32.dll
+C      21962 10/02/2003 16:23 api\stealth\lib\nvskey32.h
+C      37376 12/02/2003 13:06 api\stealth\lib\nvskey32.lib
+C      35091 12/02/2003 13:07 api\stealth\lib\nvskey32.obj
+C      40448 12/02/2003 13:06 api\stealth\lib\nvskey3w.lib
+C      38734 12/02/2003 13:07 api\stealth\lib\nvskey3w.obj
+C      29834 12/02/2003 13:07 api\stealth\lib\nvskeydd.obj
+C      30044 12/02/2003 13:07 api\stealth\lib\nvskeyt.obj
+C      30046 12/02/2003 13:07 api\stealth\lib\nvskeytd.obj
+C      30720 12/02/2003 13:06 api\stealth\lib\nvskeyw.lib
+C      29044 12/02/2003 13:07 api\stealth\lib\nvskeyw.obj
+C      29712 12/02/2003 13:07 api\stealth\lib\nvsksti.obj
+C      28878 12/02/2003 13:07 api\stealth\lib\nvskwdl.obj
+C      10897 17/09/2002 17:51 api\stealth\lib\nvsk_sys.h
+C      11812 16/09/2002 18:11 api\stealth\lib\nvslib.ash
+
+F rcom_gsa.pak
+C      12237 19/09/2002 19:08 api\stealth.apt\lib\gdefs.ash
+C      29672 17/12/2002 17:04 api\stealth.apt\lib\grdntstl.bin
+C       2048 17/12/2002 17:04 api\stealth.apt\lib\gsimp16.lib
+C       2560 17/12/2002 17:04 api\stealth.apt\lib\gsimp32.lib
+C      40960 14/10/1999 14:49 api\stealth.apt\lib\gsjava32.dll
+C      42081 17/12/2002 17:04 api\stealth.apt\lib\gs_c32w.obj
+C      29672 17/12/2002 17:04 api\stealth.apt\lib\novexst.bin
+C       5307 19/03/2002 12:29 api\stealth.apt\lib\nplib.ash
+C      29542 17/12/2002 17:04 api\stealth.apt\lib\nskcn.bin
+C       3489 19/09/2002 19:13 api\stealth.apt\lib\nskfunc.ash
+C       5807 19/03/2002 12:36 api\stealth.apt\lib\nvkey.h
+C       7276 19/03/2002 12:37 api\stealth.apt\lib\nvkey32.h
+C       4432 19/09/2002 17:27 api\stealth.apt\lib\nvkeyerr.ash
+C       6858 13/02/2002 17:04 api\stealth.apt\lib\nvkeyerr.h
+C       2265 17/12/2002 17:04 api\stealth.apt\lib\nvsclp.obj
+C      38379 17/12/2002 17:04 api\stealth.apt\lib\nvsdr32w.obj
+C      29046 17/12/2002 17:04 api\stealth.apt\lib\nvsdrw.obj
+C      39103 17/12/2002 17:04 api\stealth.apt\lib\nvsk32gw.obj
+C      40448 17/12/2002 17:04 api\stealth.apt\lib\nvsk32w.lib
+C      38396 17/12/2002 17:04 api\stealth.apt\lib\nvsk32w.obj
+C      38333 17/12/2002 17:04 api\stealth.apt\lib\nvsk32wd.obj
+C      18708 19/03/2002 12:38 api\stealth.apt\lib\nvskclp.h
+C      30242 17/12/2002 17:04 api\stealth.apt\lib\nvskclp.obj
+C      28442 17/12/2002 17:04 api\stealth.apt\lib\nvskcn.bin
+C      10446 13/02/2002 16:57 api\stealth.apt\lib\nvskey.cla
+C      37552 17/12/2002 17:04 api\stealth.apt\lib\nvskey.dll
+C      12326 19/03/2002 12:39 api\stealth.apt\lib\nvskey.fd
+C      19693 16/09/2002 18:36 api\stealth.apt\lib\nvskey.h
+C      31232 17/12/2002 17:04 api\stealth.apt\lib\nvskey.lib
+C      29712 17/12/2002 17:04 api\stealth.apt\lib\nvskey.obj
+C      90112 17/12/2002 17:04 api\stealth.apt\lib\nvskey32.dll
+C      21577 19/09/2002 17:55 api\stealth.apt\lib\nvskey32.h
+C      37376 17/12/2002 17:04 api\stealth.apt\lib\nvskey32.lib
+C      35127 17/12/2002 17:04 api\stealth.apt\lib\nvskey32.obj
+C      40448 17/12/2002 17:04 api\stealth.apt\lib\nvskey3w.lib
+C      38770 17/12/2002 17:04 api\stealth.apt\lib\nvskey3w.obj
+C      29834 17/12/2002 17:04 api\stealth.apt\lib\nvskeydd.obj
+C      30044 17/12/2002 17:04 api\stealth.apt\lib\nvskeyt.obj
+C      30046 17/12/2002 17:04 api\stealth.apt\lib\nvskeytd.obj
+C      30720 17/12/2002 17:04 api\stealth.apt\lib\nvskeyw.lib
+C      29044 17/12/2002 17:04 api\stealth.apt\lib\nvskeyw.obj
+C      29712 17/12/2002 17:04 api\stealth.apt\lib\nvsksti.obj
+C      28878 17/12/2002 17:04 api\stealth.apt\lib\nvskwdl.obj
+C      10897 17/09/2002 17:51 api\stealth.apt\lib\nvsk_sys.h
+C      11812 16/09/2002 18:11 api\stealth.apt\lib\nvslib.ash
+
+F rdos_ga.pak
+C        211 30/11/1998 17:19 api\aptus\borlandc\bc.bat
+C         18 14/06/2001 16:52 api\aptus\borlandc\dirinfo.txt
+C       4137 06/04/2001 17:05 api\aptus\borlandc\test.c
+C        277 30/11/1998 17:23 api\aptus\borlandc.sti\bc.bat
+C         46 15/06/2001 18:02 api\aptus\borlandc.sti\dirinfo.txt
+C       4137 06/04/2001 17:05 api\aptus\borlandc.sti\test.c
+C        247 30/11/1998 17:24 api\aptus\bpascal\bpas.bat
+C        263 30/11/1998 17:24 api\aptus\bpascal\bpasp.bat
+C         23 14/06/2001 16:53 api\aptus\bpascal\dirinfo.txt
+C       7082 06/04/2001 17:05 api\aptus\bpascal\test.pas
+C         20 15/06/2001 17:27 api\aptus\clarion\dirinfo.txt
+C       7071 06/04/2001 17:05 api\aptus\clarion\test.cla
+C        187 18/05/2000 12:39 api\aptus\clarion\test.pr
+C        289 20/09/1999 12:27 api\aptus\clarion.210\cla2.bat
+C         20 15/06/2001 17:28 api\aptus\clarion.210\dirinfo.txt
+C       6981 06/04/2001 17:05 api\aptus\clarion.210\test.cla
+C        346 30/11/1998 17:36 api\aptus\clipper\clp.bat
+C        350 30/11/1998 17:35 api\aptus\clipper\clpb.bat
+C        356 30/11/1998 17:35 api\aptus\clipper\clpp.bat
+C         20 15/06/2001 17:30 api\aptus\clipper\dirinfo.txt
+C       3568 06/04/2001 17:25 api\aptus\clipper\gagetid.c
+C       6680 06/04/2001 17:05 api\aptus\clipper\test.prg
+C         15 15/06/2001 14:00 api\aptus\foxpro\dirinfo.txt
+C       9153 06/04/2001 17:05 api\aptus\foxpro\test.prg
+C         21 15/06/2001 10:57 api\aptus\masm\dirinfo.txt
+C        328 30/11/1998 17:47 api\aptus\masm\msm.bat
+C       1341 06/04/1995 16:06 api\aptus\masm\mvs_lib.asm
+C       5660 06/04/2001 17:05 api\aptus\masm\test.asm
+C         13 15/06/2001 11:09 api\aptus\msc\dirinfo.txt
+C        222 30/11/1998 17:47 api\aptus\msc\msc.bat
+C       4137 06/04/2001 17:05 api\aptus\msc\test.c
+C         16 15/06/2001 11:15 api\aptus\qc\dirinfo.txt
+C        207 30/11/1998 17:47 api\aptus\qc\quickc.bat
+C       4137 06/04/2001 17:05 api\aptus\qc\test.c
+C         19 15/06/2001 11:17 api\aptus\symantec\dirinfo.txt
+C        219 30/11/1998 17:48 api\aptus\symantec\symantc.bat
+C       4137 06/04/2001 17:05 api\aptus\symantec\test.c
+C         32 15/06/2001 11:23 api\aptus\tasm\dirinfo.txt
+C       2067 04/07/1997 16:21 api\aptus\tasm\mvs_lib.asm
+C       7085 06/04/2001 17:05 api\aptus\tasm\test.asm
+C        320 30/11/1998 17:49 api\aptus\tasm\tsm.bat
+C        258 30/11/1998 17:49 api\aptus\tiny\bc.bat
+C         31 15/06/2001 11:41 api\aptus\tiny\dirinfo.txt
+C       4137 06/04/2001 17:05 api\aptus\tiny\test.c
+C         29 15/06/2001 11:43 api\aptus\tpascal\dirinfo.txt
+C       7079 06/04/2001 17:05 api\aptus\tpascal\test.pas
+C        232 30/11/1998 17:49 api\aptus\tpascal\tpas.bat
+C         16 15/06/2001 11:53 api\aptus\turboc\dirinfo.txt
+C        235 30/11/1998 17:50 api\aptus\turboc\tc.bat
+C       4137 06/04/2001 17:05 api\aptus\turboc\test.c
+C         17 15/06/2001 12:17 api\aptus\watcomc\dirinfo.txt
+C       4137 06/04/2001 17:05 api\aptus\watcomc\test.c
+C        212 30/11/1998 17:51 api\aptus\watcomc\wtc.bat
+C         17 15/06/2001 12:19 api\aptus\watcomc.32\dirinfo.txt
+C       4755 06/04/2001 17:05 api\aptus\watcomc.32\test32.c
+C        249 12/11/1999 11:33 api\aptus\watcomc.32\wtc32.bat
+C         18 15/06/2001 12:34 api\aptus\zortechc\dirinfo.txt
+C       4137 06/04/2001 17:05 api\aptus\zortechc\test.c
+C        214 30/11/1998 17:56 api\aptus\zortechc\zortc.bat
+C         18 15/06/2001 12:38 api\aptus\zortechc.32\dirinfo.txt
+C       4248 06/04/2001 17:05 api\aptus\zortechc.32\test32.c
+C        246 30/11/1998 18:07 api\aptus\zortechc.32\zortc3.bat
+
+F rdos_gn.pak
+C        198 02/12/1998 15:12 api\net\borlandc\bc.bat
+C         18 14/06/2001 16:52 api\net\borlandc\dirinfo.txt
+C      13950 10/12/2002 15:28 api\net\borlandc\test.c
+C        179 02/12/1998 15:18 api\net\bpascal\bpas.bat
+C        260 02/12/1998 16:18 api\net\bpascal\bpasp.bat
+C         23 14/06/2001 16:53 api\net\bpascal\dirinfo.txt
+C      25652 19/03/2002 12:35 api\net\bpascal\test.pas
+C         20 15/06/2001 17:27 api\net\clarion\dirinfo.txt
+C      19292 20/03/2002 14:27 api\net\clarion\test.cla
+C        251 18/05/2000 14:37 api\net\clarion\test.pr
+C        351 02/12/1998 15:20 api\net\clipper\clp.bat
+C        348 02/12/1998 15:20 api\net\clipper\clpb.bat
+C        379 02/12/1998 15:20 api\net\clipper\clpp.bat
+C         20 15/06/2001 17:30 api\net\clipper\dirinfo.txt
+C      12445 06/03/2002 17:19 api\net\clipper\test.prg
+C         13 15/06/2001 11:09 api\net\msc\dirinfo.txt
+C        180 02/12/1998 15:45 api\net\msc\msc.bat
+C      13692 10/12/2002 15:28 api\net\msc\test.c
+C         16 15/06/2001 11:15 api\net\qc\dirinfo.txt
+C        170 02/12/1998 15:47 api\net\qc\quickc.bat
+C      13660 10/12/2002 15:30 api\net\qc\test.c
+C         19 15/06/2001 11:17 api\net\symantec\dirinfo.txt
+C        201 02/12/1998 16:37 api\net\symantec\symc.bat
+C      13629 10/12/2002 15:32 api\net\symantec\test.c
+C        292 02/12/1998 16:38 api\net\tiny\bc.bat
+C         31 15/06/2001 11:41 api\net\tiny\dirinfo.txt
+C      13656 10/12/2002 15:33 api\net\tiny\test.c
+C         29 15/06/2001 11:43 api\net\tpascal\dirinfo.txt
+C      25260 19/03/2002 12:39 api\net\tpascal\test.pas
+C        169 02/12/1998 17:33 api\net\tpascal\tpas.bat
+C         16 15/06/2001 11:53 api\net\turboc\dirinfo.txt
+C        225 02/12/1998 17:35 api\net\turboc\tc.bat
+C      13667 10/12/2002 15:34 api\net\turboc\test.c
+C         17 15/06/2001 12:17 api\net\watcomc\dirinfo.txt
+C      13659 10/12/2002 15:35 api\net\watcomc\test.c
+C        199 02/12/1998 17:38 api\net\watcomc\wtc.bat
+C         18 15/06/2001 12:34 api\net\zortechc\dirinfo.txt
+C      13800 10/12/2002 15:47 api\net\zortechc\test.c
+C        175 02/12/1998 17:45 api\net\zortechc\zorc.bat
+
+F rdos_gs.pak
+C        211 02/12/1998 11:00 api\stealth\borlandc\bc.bat
+C         18 14/06/2001 16:52 api\stealth\borlandc\dirinfo.txt
+C      13289 06/04/2001 17:05 api\stealth\borlandc\test.c
+C        272 02/12/1998 17:49 api\stealth\borlandc.sti\bc_sti.bat
+C         46 15/06/2001 18:02 api\stealth\borlandc.sti\dirinfo.txt
+C      13585 06/04/2001 17:05 api\stealth\borlandc.sti\test.c
+C        187 02/12/1998 17:50 api\stealth\bpascal\bpas.bat
+C        267 02/12/1998 17:50 api\stealth\bpascal\bpasp.bat
+C         23 14/06/2001 16:53 api\stealth\bpascal\dirinfo.txt
+C      23268 06/04/2001 17:05 api\stealth\bpascal\test.pas
+C         20 15/06/2001 17:28 api\stealth\clarion\dirinfo.txt
+C      18781 06/04/2001 17:05 api\stealth\clarion\test.cla
+C        188 28/08/2000 16:24 api\stealth\clarion\test.pr
+C        521 21/09/1999 13:48 api\stealth\clarion.210\cla2_dw.bat
+C        521 21/09/1999 13:48 api\stealth\clarion.210\cla2_str.bat
+C         20 15/06/2001 17:28 api\stealth\clarion.210\dirinfo.txt
+C      12382 06/04/2001 17:05 api\stealth\clarion.210\test_dw.cla
+C      12273 06/04/2001 17:05 api\stealth\clarion.210\test_str.cla
+C        368 02/12/1998 17:54 api\stealth\clipper\clp.bat
+C        362 02/12/1998 17:55 api\stealth\clipper\clpb.bat
+C        374 02/12/1998 17:54 api\stealth\clipper\clpp.bat
+C         20 15/06/2001 17:30 api\stealth\clipper\dirinfo.txt
+C      12075 06/04/2001 17:05 api\stealth\clipper\test.prg
+C        264 19/09/2002 19:00 api\stealth\masm\msm.bat
+C      19057 19/09/2002 18:54 api\stealth\masm\test.asm
+C         13 15/06/2001 11:09 api\stealth\msc\dirinfo.txt
+C        270 06/09/2000 13:58 api\stealth\msc\msc.bat
+C      13289 06/04/2001 17:05 api\stealth\msc\test.c
+C         16 15/06/2001 11:15 api\stealth\qc\dirinfo.txt
+C        183 02/12/1998 18:07 api\stealth\qc\quickc.bat
+C      13289 06/04/2001 17:05 api\stealth\qc\test.c
+C         19 15/06/2001 11:17 api\stealth\symantec\dirinfo.txt
+C        214 02/12/1998 18:08 api\stealth\symantec\symc.bat
+C      13289 06/04/2001 17:05 api\stealth\symantec\test.c
+C      19057 19/09/2002 18:54 api\stealth\tasm\test.asm
+C        275 19/09/2002 16:54 api\stealth\tasm\tsm.bat
+C        258 02/12/1998 18:08 api\stealth\tiny\bc.bat
+C         31 15/06/2001 11:41 api\stealth\tiny\dirinfo.txt
+C      13289 06/04/2001 17:05 api\stealth\tiny\test.c
+C         29 15/06/2001 11:43 api\stealth\tpascal\dirinfo.txt
+C      23268 06/04/2001 17:05 api\stealth\tpascal\test.pas
+C        181 02/12/1998 18:08 api\stealth\tpascal\tpas.bat
+C         16 15/06/2001 11:53 api\stealth\turboc\dirinfo.txt
+C        236 02/12/1998 18:08 api\stealth\turboc\tc.bat
+C      13289 06/04/2001 17:05 api\stealth\turboc\test.c
+C         17 15/06/2001 12:17 api\stealth\watcomc\dirinfo.txt
+C      13289 06/04/2001 17:05 api\stealth\watcomc\test.c
+C        212 02/12/1998 18:11 api\stealth\watcomc\wtc.bat
+C         17 15/06/2001 12:19 api\stealth\watcomc.32\dirinfo.txt
+C      13293 06/04/2001 17:05 api\stealth\watcomc.32\test32.c
+C        273 15/11/1999 16:09 api\stealth\watcomc.32\wtc32.bat
+C         18 15/06/2001 12:34 api\stealth\zortechc\dirinfo.txt
+C      13289 06/04/2001 17:05 api\stealth\zortechc\test.c
+C        188 02/12/1998 18:15 api\stealth\zortechc\zorc.bat
+C         18 15/06/2001 12:38 api\stealth\zortechc.32\dirinfo.txt
+C      13032 06/04/2001 17:05 api\stealth\zortechc.32\test32.c
+C        247 02/12/1998 18:15 api\stealth\zortechc.32\zortc3.bat
+
+F rdos_gsa.pak
+C        215 03/12/1998 11:56 api\stealth.apt\borlandc\bc.bat
+C         18 14/06/2001 16:52 api\stealth.apt\borlandc\dirinfo.txt
+C       4727 06/04/2001 17:05 api\stealth.apt\borlandc\test.c
+C        302 03/12/1998 11:57 api\stealth.apt\borlandc.sti\bc.bat
+C         46 15/06/2001 18:02 api\stealth.apt\borlandc.sti\dirinfo.txt
+C       4718 06/04/2001 17:05 api\stealth.apt\borlandc.sti\test.c
+C        237 03/12/1998 11:58 api\stealth.apt\bpascal\bpas.bat
+C        309 03/12/1998 11:59 api\stealth.apt\bpascal\bpasp.bat
+C         23 14/06/2001 16:53 api\stealth.apt\bpascal\dirinfo.txt
+C       7395 06/04/2001 17:05 api\stealth.apt\bpascal\test.pas
+C         20 15/06/2001 17:28 api\stealth.apt\clarion\dirinfo.txt
+C       7079 06/04/2001 17:05 api\stealth.apt\clarion\test.cla
+C        188 18/05/2000 12:37 api\stealth.apt\clarion\test.pr
+C        343 03/12/1998 12:05 api\stealth.apt\clipper\clp.bat
+C        347 03/12/1998 12:05 api\stealth.apt\clipper\clpb.bat
+C        353 03/12/1998 12:05 api\stealth.apt\clipper\clpp.bat
+C         20 15/06/2001 17:30 api\stealth.apt\clipper\dirinfo.txt
+C       6647 06/04/2001 17:05 api\stealth.apt\clipper\test.prg
+C         15 15/06/2001 13:59 api\stealth.apt\foxpro\dirinfo.txt
+C       9180 06/04/2001 17:05 api\stealth.apt\foxpro\test.prg
+C         21 15/06/2001 10:57 api\stealth.apt\masm\dirinfo.txt
+C        326 03/12/1998 12:25 api\stealth.apt\masm\msm.bat
+C       1341 06/04/1995 16:06 api\stealth.apt\masm\mvs_lib.asm
+C       7595 06/04/2001 17:05 api\stealth.apt\masm\test.asm
+C         13 15/06/2001 11:09 api\stealth.apt\msc\dirinfo.txt
+C        217 03/12/1998 12:25 api\stealth.apt\msc\msc.bat
+C       4722 06/04/2001 17:05 api\stealth.apt\msc\test.c
+C         16 15/06/2001 11:15 api\stealth.apt\qc\dirinfo.txt
+C        205 03/12/1998 12:26 api\stealth.apt\qc\quickc.bat
+C       4696 06/04/2001 17:05 api\stealth.apt\qc\test.c
+C         19 15/06/2001 11:17 api\stealth.apt\symantec\dirinfo.txt
+C        214 03/12/1998 12:27 api\stealth.apt\symantec\symantc.bat
+C       4698 06/04/2001 17:05 api\stealth.apt\symantec\test.c
+C         32 15/06/2001 11:23 api\stealth.apt\tasm\dirinfo.txt
+C       1341 06/04/1995 16:06 api\stealth.apt\tasm\mvs_lib.asm
+C       7590 06/04/2001 17:05 api\stealth.apt\tasm\test.asm
+C        318 03/12/1998 12:37 api\stealth.apt\tasm\tsm.bat
+C        258 03/12/1998 12:38 api\stealth.apt\tiny\bc.bat
+C         31 15/06/2001 11:41 api\stealth.apt\tiny\dirinfo.txt
+C       4723 06/04/2001 17:05 api\stealth.apt\tiny\test.c
+C         29 15/06/2001 11:43 api\stealth.apt\tpascal\dirinfo.txt
+C       7390 06/04/2001 17:05 api\stealth.apt\tpascal\test.pas
+C        229 03/12/1998 12:01 api\stealth.apt\tpascal\tpas.bat
+C         16 15/06/2001 11:53 api\stealth.apt\turboc\dirinfo.txt
+C        233 03/12/1998 12:39 api\stealth.apt\turboc\tc.bat
+C       4699 06/04/2001 17:05 api\stealth.apt\turboc\test.c
+C         17 15/06/2001 12:17 api\stealth.apt\watcomc\dirinfo.txt
+C       4723 06/04/2001 17:05 api\stealth.apt\watcomc\test.c
+C        209 03/12/1998 12:56 api\stealth.apt\watcomc\wtc.bat
+C         17 15/06/2001 12:19 api\stealth.apt\watcomc.32\dirinfo.txt
+C       4828 06/04/2001 17:05 api\stealth.apt\watcomc.32\test32.c
+C        270 18/05/2000 18:09 api\stealth.apt\watcomc.32\wtc32.bat
+C         18 15/06/2001 12:34 api\stealth.apt\zortachc\dirinfo.txt
+C       4698 06/04/2001 17:05 api\stealth.apt\zortachc\test.c
+C        233 30/11/1998 16:12 api\stealth.apt\zortachc\zortc.bat
+C         18 15/06/2001 12:38 api\stealth.apt\zortachc.32\dirinfo.txt
+C       4879 06/04/2001 17:05 api\stealth.apt\zortachc.32\test32.c
+C        256 30/11/1998 16:12 api\stealth.apt\zortachc.32\zortc3.bat
+
+F rw16_ga.pak
+C         18 14/06/2001 16:52 api\aptus\access\dirinfo.txt
+C      98304 06/04/2001 17:05 api\aptus\access\test.mdb
+C       5435 06/04/2001 17:05 api\aptus\access\test.txt
+C         23 14/06/2001 16:54 api\aptus\delphi\dirinfo.txt
+C       8311 06/04/2001 17:05 api\aptus\delphi\test.dpr
+C         17 14/06/2001 17:20 api\aptus\excel\dirinfo.txt
+C       5468 06/04/2001 17:05 api\aptus\excel\test.txt
+C      37888 06/04/2001 17:05 api\aptus\excel\test.xls
+C         28 15/06/2001 14:00 api\aptus\foxprow.dll\dirinfo.txt
+C       7102 06/04/2001 17:05 api\aptus\foxprow.dll\test.prg
+C         24 15/06/2001 12:02 api\aptus\visbas\dirinfo.txt
+C       5838 06/04/2001 17:05 api\aptus\visbas\test.bas
+C        490 02/04/2001 13:38 api\aptus\visbas\test.mak
+C         43 15/06/2001 12:24 api\aptus\win_dll\dirinfo.txt
+C       4173 06/04/2001 17:05 api\aptus\win_dll\test.c
+C        261 30/11/1998 17:55 api\aptus\win_dll\test.def
+C        249 02/12/1998 11:49 api\aptus\win_dll\windll.bat
+C         39 15/06/2001 12:31 api\aptus\win_obj\dirinfo.txt
+C       4139 06/04/2001 17:05 api\aptus\win_obj\test.c
+C        255 09/04/1999 13:18 api\aptus\win_obj\winobj.bat
+
+F rw16_gn.pak
+C         18 14/06/2001 16:52 api\net\access\dirinfo.txt
+C     163840 18/03/2002 13:01 api\net\access\test.mdb
+C      19834 19/03/2002 12:33 api\net\access\test.txt
+C         20 10/09/2001 13:38 api\net\clarion5\dirinfo.txt
+C      12951 06/03/2002 16:54 api\net\clarion5\test.clw
+C        275 10/09/2001 13:34 api\net\clarion5\test.prj
+C         23 14/06/2001 16:54 api\net\delphi\dirinfo.txt
+C        402 04/02/2002 13:43 api\net\delphi\test.def
+C      26930 20/03/2002 15:50 api\net\delphi\test.dpr
+C         19 15/06/2001 12:57 api\net\foxprow\dirinfo.txt
+C      19513 19/03/2002 19:08 api\net\foxprow\test.prg
+C         24 15/06/2001 12:02 api\net\visbasic\dirinfo.txt
+C      19639 19/03/2002 12:40 api\net\visbasic\test.bas
+C        410 02/04/2001 13:46 api\net\visbasic\test.mak
+C         43 15/06/2001 12:24 api\net\win_dll\dirinfo.txt
+C      13682 10/12/2002 15:36 api\net\win_dll\test.c
+C        865 16/09/2002 19:39 api\net\win_dll\test.def
+C        233 02/12/1998 17:39 api\net\win_dll\windll.bat
+C         39 15/06/2001 12:31 api\net\win_obj\dirinfo.txt
+C      14144 10/12/2002 15:45 api\net\win_obj\test.c
+C        402 04/02/2002 13:43 api\net\win_obj\test.def
+C        258 02/12/1998 12:00 api\net\win_obj\winobj.bat
+
+F rw16_gs.pak
+C         18 14/06/2001 16:52 api\stealth\access\dirinfo.txt
+C     131072 06/04/2001 17:05 api\stealth\access\test.mdb
+C      19679 06/04/2001 17:05 api\stealth\access\test.txt
+C         20 10/09/2001 13:38 api\stealth\clarion5\dirinfo.txt
+C      11943 10/09/2001 13:24 api\stealth\clarion5\test.clw
+C        275 10/09/2001 13:31 api\stealth\clarion5\test.prj
+C         23 14/06/2001 16:54 api\stealth\delphi\dirinfo.txt
+C      24494 06/04/2001 17:05 api\stealth\delphi\test.dpr
+C         17 14/06/2001 17:20 api\stealth\excel\dirinfo.txt
+C      19784 06/04/2001 17:05 api\stealth\excel\test.txt
+C      60416 06/04/2001 17:05 api\stealth\excel\test.xls
+C         19 15/06/2001 12:57 api\stealth\foxprow\dirinfo.txt
+C      18464 13/09/2000 18:00 api\stealth\foxprow\test.prg
+C         24 15/06/2001 12:02 api\stealth\visbasic\dirinfo.txt
+C      19680 06/04/2001 17:05 api\stealth\visbasic\test.bas
+C        416 02/04/2001 13:49 api\stealth\visbasic\test.mak
+C         43 15/06/2001 12:24 api\stealth\win_dll\dirinfo.txt
+C      13289 06/04/2001 17:05 api\stealth\win_dll\testdll.c
+C        463 02/12/1998 18:12 api\stealth\win_dll\testdll.def
+C        252 02/12/1998 18:12 api\stealth\win_dll\windll.bat
+C         39 15/06/2001 12:31 api\stealth\win_obj\dirinfo.txt
+C      13141 06/04/2001 17:05 api\stealth\win_obj\testw.c
+C        272 13/04/1999 17:12 api\stealth\win_obj\winobj.bat
+
+F rw16_gsa.pak
+C         18 15/06/2001 13:57 api\stealth.apt\access\dirinfo.txt
+C      98304 06/04/2001 17:05 api\stealth.apt\access\test.mdb
+C       5598 06/04/2001 17:05 api\stealth.apt\access\test.txt
+C         23 14/06/2001 16:54 api\stealth.apt\delphi\dirinfo.txt
+C       8460 06/04/2001 17:05 api\stealth.apt\delphi\test.dpr
+C         17 14/06/2001 17:20 api\stealth.apt\excel\dirinfo.txt
+C       5538 06/04/2001 17:05 api\stealth.apt\excel\test.txt
+C      37376 06/04/2001 17:05 api\stealth.apt\excel\test.xls
+C         28 15/06/2001 14:00 api\stealth.apt\foxprow.dll\dirinfo.txt
+C       7186 06/04/2001 17:05 api\stealth.apt\foxprow.dll\test.prg
+C         24 15/06/2001 12:02 api\stealth.apt\visbas\dirinfo.txt
+C       5916 06/04/2001 17:05 api\stealth.apt\visbas\test.bas
+C        386 02/04/2001 13:55 api\stealth.apt\visbas\test.mak
+C         43 15/06/2001 12:24 api\stealth.apt\win_dll\dirinfo.txt
+C       4755 06/04/2001 17:05 api\stealth.apt\win_dll\test.c
+C        203 03/12/1998 12:57 api\stealth.apt\win_dll\test.def
+C        253 03/12/1998 12:57 api\stealth.apt\win_dll\windll.bat
+C         39 15/06/2001 12:31 api\stealth.apt\win_obj\dirinfo.txt
+C       4725 06/04/2001 17:05 api\stealth.apt\win_obj\test.c
+C        272 02/12/1998 14:55 api\stealth.apt\win_obj\winobj.bat
+
+F rw32_ga.pak
+C         18 14/06/2001 16:52 api\aptus\access.32\dirinfo.txt
+C       5561 06/04/2001 17:05 api\aptus\access.32\test32.txt
+C        243 30/11/1998 17:19 api\aptus\borlandc.32\bc32.bat
+C         18 14/06/2001 16:52 api\aptus\borlandc.32\dirinfo.txt
+C       4771 06/04/2001 17:05 api\aptus\borlandc.32\test32.c
+C         28 14/06/2001 16:53 api\aptus\cbuilder.32\dirinfo.txt
+C        816 08/12/1998 16:42 api\aptus\cbuilder.32\project1.cpp
+C       1825 30/11/1998 15:23 api\aptus\cbuilder.32\project1.mak
+C       5980 06/04/2001 17:05 api\aptus\cbuilder.32\test.cpp
+C      17433 06/04/2001 17:31 api\aptus\cbuilder.32\test.dfm
+C        969 09/07/1997 10:47 api\aptus\cbuilder.32\test.h
+C         23 14/06/2001 17:20 api\aptus\delphi.32\dirinfo.txt
+C       8390 06/04/2001 17:05 api\aptus\delphi.32\test32.dpr
+C         19 14/06/2001 17:20 api\aptus\fortran.32\dirinfo.txt
+C        218 30/11/1998 17:59 api\aptus\fortran.32\msfort.bat
+C       3602 02/12/1998 13:34 api\aptus\fortran.32\test32.for
+C       2023 19/10/1999 11:28 api\aptus\java.32\aptus.class
+C       3594 22/11/1999 17:57 api\aptus\java.32\aptus.java
+C         13 14/06/2001 16:52 api\aptus\java.32\dirinfo.txt
+C       1052 18/10/1999 16:58 api\aptus\java.32\dll\aptus.c
+C       2866 18/10/1999 16:58 api\aptus\java.32\dll\aptus.h
+C       1076 18/10/1999 17:03 api\aptus\java.32\dll\gajava32.c
+C        764 17/09/1999 11:38 api\aptus\java.32\dll\makefile
+C        411 15/10/1999 15:14 api\aptus\java.32\java32.bat
+C       2852 06/04/2001 17:05 api\aptus\java.32\test.class
+C       4815 06/04/2001 17:05 api\aptus\java.32\test.java
+C         20 15/06/2001 11:11 api\aptus\msvc.32\dirinfo.txt
+C        245 30/11/1998 17:59 api\aptus\msvc.32\msvc32.bat
+C       4248 06/04/2001 17:05 api\aptus\msvc.32\test32.c
+C         25 15/06/2001 11:50 api\aptus\vfoxpro.32\dirinfo.txt
+C       7916 02/12/1998 13:37 api\aptus\vfoxpro.32\test.prg
+C         24 15/06/2001 12:04 api\aptus\visbas.32\dirinfo.txt
+C       5847 06/04/2001 17:05 api\aptus\visbas.32\test32.bas
+C        605 02/04/2001 13:39 api\aptus\visbas.32\test32.vbp
+C         43 15/06/2001 12:28 api\aptus\win_dll.32\dirinfo.txt
+C       5376 06/04/2001 17:05 api\aptus\win_dll.32\test32w.c
+C        152 02/12/1998 11:51 api\aptus\win_dll.32\test32w.def
+C        246 19/03/1999 13:40 api\aptus\win_dll.32\windll32.bat
+C         40 15/06/2001 12:33 api\aptus\win_obj.32\dirinfo.txt
+C       5337 06/04/2001 17:05 api\aptus\win_obj.32\test32w.c
+C        306 02/12/1998 11:53 api\aptus\win_obj.32\test32w.def
+C        316 02/12/1998 11:53 api\aptus\win_obj.32\winobj32.bat
+
+F rw32_gn.pak
+C        236 02/12/1998 16:13 api\net\borlandc.32\bc32.bat
+C         18 14/06/2001 17:52 api\net\borlandc.32\dirinfo.txt
+C      13720 10/12/2002 16:29 api\net\borlandc.32\test32.c
+C        404 06/12/2002 18:13 api\net\c#.32\c_sharp.bat
+C         29 06/12/2002 17:22 api\net\c#.32\dirinfo.txt
+C       3360 02/12/2002 13:46 api\net\c#.32\grd_erre.cs
+C       3321 02/12/2002 13:47 api\net\c#.32\grd_errr.cs
+C      24895 06/12/2002 17:34 api\net\c#.32\guardant.cs
+C      15019 09/12/2002 17:46 api\net\c#.32\test.cs
+C         28 14/06/2001 17:53 api\net\cbuilder.32\dirinfo.txt
+C        816 08/12/1998 17:43 api\net\cbuilder.32\project1.cpp
+C       1816 25/06/1998 12:26 api\net\cbuilder.32\project1.mak
+C      15743 18/03/2002 16:22 api\net\cbuilder.32\test.cpp
+C      17492 06/04/2001 18:31 api\net\cbuilder.32\test.dfm
+C        969 09/07/1997 11:47 api\net\cbuilder.32\test.h
+C         20 10/09/2001 14:37 api\net\clarion5.32\dirinfo.txt
+C      13021 06/03/2002 18:13 api\net\clarion5.32\test.clw
+C        278 25/11/2002 15:20 api\net\clarion5.32\test.prj
+C        897 20/05/2003 14:39 api\net\comobj.32\comobj\dlldata.c
+C       6292 20/05/2003 14:39 api\net\comobj.32\comobj\gnd.cpp
+C       2541 08/12/2000 16:20 api\net\comobj.32\comobj\gnd.h
+C       1956 08/12/2000 13:47 api\net\comobj.32\comobj\grdnet.cpp
+C        220 08/12/2000 13:47 api\net\comobj.32\comobj\grdnet.def
+C        174 08/12/2000 13:47 api\net\comobj.32\comobj\grdnet.dep
+C       7873 08/12/2000 17:06 api\net\comobj.32\comobj\grdnet.dsp
+C        535 08/12/2000 13:59 api\net\comobj.32\comobj\grdnet.dsw
+C      21224 20/05/2003 14:39 api\net\comobj.32\comobj\grdnet.h
+C       2654 18/04/2001 13:03 api\net\comobj.32\comobj\grdnet.idl
+C      12014 18/04/2001 13:39 api\net\comobj.32\comobj\grdnet.mak
+C       5177 08/12/2000 13:58 api\net\comobj.32\comobj\grdnet.rc
+C        646 08/12/2000 13:51 api\net\comobj.32\comobj\grdnet.rgs
+C       9692 20/05/2003 13:56 api\net\comobj.32\comobj\grdnet.vcproj
+C        248 08/12/2000 13:50 api\net\comobj.32\comobj\grdnetps.def
+C       4082 20/05/2003 14:39 api\net\comobj.32\comobj\grdnet_i.c
+C       2384 08/12/2000 16:40 api\net\comobj.32\comobj\grdstl.idl
+C      69536 13/05/1998 00:00 api\net\comobj.32\comobj\netapi32.lib
+C       2111 08/12/2000 13:51 api\net\comobj.32\comobj\resource.h
+C        315 07/12/2000 18:43 api\net\comobj.32\comobj\stdafx.cpp
+C        908 07/12/2000 18:43 api\net\comobj.32\comobj\stdafx.h
+C         37 15/06/2001 18:45 api\net\comobj.32\dirinfo.txt
+C        491 18/04/2001 13:24 api\net\comobj.32\make.bat
+C       1196 08/12/2000 17:58 api\net\comobj.32\readme.txt
+C        294 07/12/2000 14:28 api\net\comobj.32\stdafx.cpp
+C        814 07/12/2000 14:56 api\net\comobj.32\stdafx.h
+C      12486 20/05/2003 14:02 api\net\comobj.32\test.cpp
+C        154 08/12/2000 17:58 api\net\comobj.32\test.dep
+C       6442 08/12/2000 17:58 api\net\comobj.32\test.dsp
+C        725 08/12/2000 17:58 api\net\comobj.32\test.dsw
+C       9092 18/04/2001 13:12 api\net\comobj.32\test.mak
+C       2710 20/05/2003 11:40 api\net\comobj.32\test.sln
+C       5946 20/05/2003 11:40 api\net\comobj.32\test.vcproj
+C         23 14/06/2001 18:20 api\net\delphi.32\dirinfo.txt
+C      28209 19/03/2002 13:38 api\net\delphi.32\test.dpr
+C         19 14/06/2001 18:20 api\net\fortran.32\dirinfo.txt
+C        236 08/12/1998 14:39 api\net\fortran.32\msfort.bat
+C     239364 29/08/1995 19:53 api\net\fortran.32\netapi32.lib
+C      11735 07/03/2002 13:40 api\net\fortran.32\test32.for
+C         23 06/12/2002 17:23 api\net\java.32\dirinfo.txt
+C       3359 29/11/2002 13:14 api\net\java.32\grd_erre.java
+C       3320 29/11/2002 13:14 api\net\java.32\grd_errr.java
+C      24276 06/12/2002 17:33 api\net\java.32\guardant.java
+C        301 29/11/2002 18:18 api\net\java.32\java32.bat
+C         21 09/12/2002 18:37 api\net\java.32\run.bat
+C      15211 10/12/2002 18:40 api\net\java.32\test.java
+C         20 15/06/2001 12:11 api\net\msvc.32\dirinfo.txt
+C        248 11/11/2002 18:09 api\net\msvc.32\msvc.bat
+C        345 06/12/2002 17:30 api\net\msvc.32\msvc_clr.bat
+C      14205 10/12/2002 16:29 api\net\msvc.32\test32.c
+C         25 15/06/2001 12:50 api\net\vfoxpro.32\dirinfo.txt
+C       8580 24/06/1998 16:50 api\net\vfoxpro.32\test.pjt
+C       1453 24/06/1998 16:50 api\net\vfoxpro.32\test.pjx
+C      22358 20/03/2002 14:52 api\net\vfoxpro.32\test.prg
+C         24 15/06/2001 13:04 api\net\visbasic.32\dirinfo.txt
+C      19405 19/03/2002 13:41 api\net\visbasic.32\test.bas
+C        803 02/04/2001 14:46 api\net\visbasic.32\test32.vbp
+C         43 15/06/2001 13:28 api\net\win_dll.32\dirinfo.txt
+C      15443 07/03/2002 12:42 api\net\win_dll.32\tst32w.c
+C        599 16/09/2002 20:35 api\net\win_dll.32\tst32w.def
+C        236 02/12/1998 19:41 api\net\win_dll.32\windll32.bat
+C         40 15/06/2001 13:33 api\net\win_obj.32\dirinfo.txt
+C      15939 07/03/2002 12:58 api\net\win_obj.32\tst32w.c
+C        257 02/12/1998 12:59 api\net\win_obj.32\winobj32.bat
+
+F rw32_gs.pak
+C         18 14/06/2001 17:52 api\stealth\access.32\dirinfo.txt
+C     278528 06/04/2001 18:44 api\stealth\access.32\test32.mdb
+C      19725 06/04/2001 18:05 api\stealth\access.32\test32.txt
+C        252 02/12/1998 18:48 api\stealth\borlandc.32\bc32.bat
+C         18 14/06/2001 17:52 api\stealth\borlandc.32\dirinfo.txt
+C      13293 06/04/2001 18:05 api\stealth\borlandc.32\test32.c
+C        404 06/12/2002 18:12 api\stealth\c#.32\c_sharp.bat
+C         29 06/12/2002 17:22 api\stealth\c#.32\dirinfo.txt
+C       3360 02/12/2002 13:46 api\stealth\c#.32\grd_erre.cs
+C       3321 02/12/2002 13:47 api\stealth\c#.32\grd_errr.cs
+C      24896 06/12/2002 17:34 api\stealth\c#.32\guardant.cs
+C      13971 05/12/2002 16:24 api\stealth\c#.32\test.cs
+C         28 14/06/2001 17:53 api\stealth\cbuilder.32\dirinfo.txt
+C        757 02/11/1998 13:45 api\stealth\cbuilder.32\project1.cpp
+C       2470 02/11/1998 13:46 api\stealth\cbuilder.32\project1.mak
+C      15132 06/04/2001 18:05 api\stealth\cbuilder.32\test.cpp
+C      17483 06/04/2001 18:31 api\stealth\cbuilder.32\test.dfm
+C        969 09/07/1997 11:47 api\stealth\cbuilder.32\test.h
+C         20 10/09/2001 14:37 api\stealth\clarion5.32\dirinfo.txt
+C      11943 10/09/2001 14:25 api\stealth\clarion5.32\test.clw
+C        278 26/02/2002 17:31 api\stealth\clarion5.32\test.prj
+C        897 20/05/2003 14:38 api\stealth\comobj.32\comobj\dlldata.c
+C       1964 08/12/2000 13:34 api\stealth\comobj.32\comobj\grdstl.cpp
+C        220 08/12/2000 13:34 api\stealth\comobj.32\comobj\grdstl.def
+C        174 08/12/2000 13:35 api\stealth\comobj.32\comobj\grdstl.dep
+C       7804 08/12/2000 15:27 api\stealth\comobj.32\comobj\grdstl.dsp
+C        535 08/12/2000 13:42 api\stealth\comobj.32\comobj\grdstl.dsw
+C      18774 20/05/2003 14:38 api\stealth\comobj.32\comobj\grdstl.h
+C       2384 08/12/2000 16:40 api\stealth\comobj.32\comobj\grdstl.idl
+C      11657 18/04/2001 13:19 api\stealth\comobj.32\comobj\grdstl.mak
+C       5217 08/12/2000 13:57 api\stealth\comobj.32\comobj\grdstl.rc
+C        678 08/12/2000 13:40 api\stealth\comobj.32\comobj\grdstl.rgs
+C       9666 20/05/2003 11:29 api\stealth\comobj.32\comobj\grdstl.vcproj
+C        248 08/12/2000 13:39 api\stealth\comobj.32\comobj\grdstlps.def
+C       4098 20/05/2003 14:38 api\stealth\comobj.32\comobj\grdstl_i.c
+C       5322 20/05/2003 14:37 api\stealth\comobj.32\comobj\gsd.cpp
+C       2387 08/12/2000 16:41 api\stealth\comobj.32\comobj\gsd.h
+C       2113 08/12/2000 13:40 api\stealth\comobj.32\comobj\resource.h
+C        315 07/12/2000 14:05 api\stealth\comobj.32\comobj\stdafx.cpp
+C        971 08/12/2000 14:51 api\stealth\comobj.32\comobj\stdafx.h
+C         37 15/06/2001 18:45 api\stealth\comobj.32\dirinfo.txt
+C        503 18/04/2001 13:23 api\stealth\comobj.32\make.bat
+C       1196 08/12/2000 17:59 api\stealth\comobj.32\readme.txt
+C        294 07/12/2000 14:28 api\stealth\comobj.32\stdafx.cpp
+C        814 07/12/2000 14:56 api\stealth\comobj.32\stdafx.h
+C      12461 09/12/2000 15:44 api\stealth\comobj.32\test.cpp
+C        154 08/12/2000 17:59 api\stealth\comobj.32\test.dep
+C       6439 08/12/2000 17:59 api\stealth\comobj.32\test.dsp
+C        725 08/12/2000 17:59 api\stealth\comobj.32\test.dsw
+C       8280 18/04/2001 13:20 api\stealth\comobj.32\test.mak
+C       2722 20/05/2003 11:29 api\stealth\comobj.32\test.sln
+C       5943 20/05/2003 11:29 api\stealth\comobj.32\test.vcproj
+C         23 14/06/2001 18:20 api\stealth\delphi.32\dirinfo.txt
+C      24365 06/04/2001 18:05 api\stealth\delphi.32\test.dpr
+C         17 15/06/2001 14:20 api\stealth\excel.32\dirinfo.txt
+C      19722 06/04/2001 18:05 api\stealth\excel.32\test.txt
+C      84992 06/04/2001 18:05 api\stealth\excel.32\test.xls
+C         19 14/06/2001 18:20 api\stealth\fortran.32\dirinfo.txt
+C        235 08/12/1998 13:59 api\stealth\fortran.32\msfort.bat
+C      11070 06/04/2001 18:05 api\stealth\fortran.32\test32.for
+C         23 06/12/2002 17:23 api\stealth\java.32\dirinfo.txt
+C       3359 29/11/2002 13:14 api\stealth\java.32\grd_erre.java
+C       3320 29/11/2002 13:14 api\stealth\java.32\grd_errr.java
+C      24276 06/12/2002 17:35 api\stealth\java.32\guardant.java
+C        301 29/11/2002 18:18 api\stealth\java.32\java32.bat
+C         18 29/11/2002 18:21 api\stealth\java.32\run.bat
+C      14435 05/12/2002 17:45 api\stealth\java.32\test.java
+C         20 15/06/2001 12:11 api\stealth\msvc.32\dirinfo.txt
+C        247 11/11/2002 16:48 api\stealth\msvc.32\msvc.bat
+C        332 11/11/2002 16:58 api\stealth\msvc.32\msvc_clr.bat
+C      13144 12/11/2002 14:36 api\stealth\msvc.32\test32.c
+C         25 15/06/2001 12:50 api\stealth\vfoxpro.32\dirinfo.txt
+C      21028 11/09/2000 17:40 api\stealth\vfoxpro.32\test.prg
+C         24 15/06/2001 13:04 api\stealth\visbasic.32\dirinfo.txt
+C      19756 06/04/2001 18:05 api\stealth\visbasic.32\test32.bas
+C        895 02/04/2001 14:49 api\stealth\visbasic.32\test32.vbp
+C         25 25/08/2000 14:38 api\stealth\visbasic.32\test32.vbw
+C         43 15/06/2001 13:28 api\stealth\win_dll.32\dirinfo.txt
+C      15274 06/04/2001 18:05 api\stealth\win_dll.32\tstdll32.c
+C        357 06/09/2000 18:23 api\stealth\win_dll.32\tstdll32.def
+C        255 02/12/1998 19:13 api\stealth\win_dll.32\windll32.bat
+C         40 15/06/2001 13:33 api\stealth\win_obj.32\dirinfo.txt
+C      15118 06/04/2001 18:05 api\stealth\win_obj.32\tst32w.c
+C        272 02/12/1998 19:14 api\stealth\win_obj.32\winobj32.bat
+
+F rw32_gsa.pak
+C         18 14/06/2001 16:52 api\stealth.apt\access.32\dirinfo.txt
+C       5568 06/04/2001 17:05 api\stealth.apt\access.32\test32.txt
+C        244 03/12/1998 11:56 api\stealth.apt\borlandc.32\bc32.bat
+C         18 14/06/2001 16:52 api\stealth.apt\borlandc.32\dirinfo.txt
+C       5006 06/04/2001 17:05 api\stealth.apt\borlandc.32\test32.c
+C         23 14/06/2001 17:20 api\stealth.apt\delphi.32\dirinfo.txt
+C       8452 06/04/2001 17:05 api\stealth.apt\delphi.32\test32.dpr
+C         20 15/06/2001 11:11 api\stealth.apt\msvc.32\dirinfo.txt
+C        236 03/12/1998 12:26 api\stealth.apt\msvc.32\msvc32.bat
+C       4842 06/04/2001 17:05 api\stealth.apt\msvc.32\test32.c
+C         25 15/06/2001 11:50 api\stealth.apt\vfoxpro.32\dirinfo.txt
+C       8325 08/12/1998 16:59 api\stealth.apt\vfoxpro.32\test.prg
+C         24 15/06/2001 12:04 api\stealth.apt\visbas.32\dirinfo.txt
+C       5924 06/04/2001 17:05 api\stealth.apt\visbas.32\test.bas
+C        783 02/04/2001 13:55 api\stealth.apt\visbas.32\test32.vbp
+C         43 15/06/2001 12:28 api\stealth.apt\win_dll.32\dirinfo.txt
+C       5495 06/04/2001 17:05 api\stealth.apt\win_dll.32\test32w.c
+C        146 03/12/1998 12:59 api\stealth.apt\win_dll.32\test32w.def
+C        254 03/12/1998 12:59 api\stealth.apt\win_dll.32\windll32.bat
+C         40 15/06/2001 12:33 api\stealth.apt\win_obj.32\dirinfo.txt
+C       5503 06/04/2001 17:05 api\stealth.apt\win_obj.32\test32w.c
+C        273 03/12/1998 13:02 api\stealth.apt\win_obj.32\winobj32.bat
+
+F setup.pak
+C     160256 21/05/2003 17:45 setup.exe
+
+F srcgen.pak
+C      12804 19/12/2002 18:23 borlandc16.lng
+C      12569 21/10/2002 17:22 borlandc32.lng
+C      18273 21/10/2002 17:24 clarion32.lng
+C      16070 21/10/2002 17:46 delphi32.lng
+C      22207 31/01/2002 15:48 foxpro32.lng
+C      16576 21/10/2002 17:40 pascal16.lng
+C    1335296 21/05/2003 15:54 srcgen.exe
+C        836 29/03/2002 12:39 srcgen_e.cnt
+C     129024 30/08/2002 11:28 srcgen_e.hlp
+C        952 29/03/2002 13:18 srcgen_r.cnt
+C     139264 29/08/2002 13:28 srcgen_r.hlp
+C      37046 21/10/2002 17:33 tasm16.lng
+C      26529 21/10/2002 17:35 tasm32.lng
+C      21229 21/10/2002 17:36 vbasic32.lng
+
+F test_ga.pak
+C      52520 19/05/2003 17:13 tst_ga.exe
+C      81920 19/05/2003 17:13 tst_ga32.exe
+C      47490 19/05/2003 17:13 tst_gaw.exe
+
+F test_gn.pak
+C        954 21/05/2003 15:45 gnclient.ini
+C      64524 19/05/2003 17:13 tst_gn.exe
+C     176128 19/05/2003 17:13 tst_gn32.exe
+C      97719 19/05/2003 17:13 tst_gnw.exe
+
+F test_gs.pak
+C      48930 19/05/2003 17:13 tst_gs.exe
+C     106496 19/05/2003 17:13 tst_gs32.exe
+C      62582 19/05/2003 17:13 tst_gsw.exe
+
+F uloc_ga.pak
+C     117248 14/09/2000 13:24 nkutil.exe
+C      35088 09/03/1999 15:43 nkutil.hlp
+C       3310 19/04/2001 18:12 nkutil.ico
+C      33094 14/09/2000 13:11 timeutil.exe
+
+F uloc_gn.pak
+C      17146 02/12/2002 14:45 nnkey32.dli
+C     159744 19/05/2003 15:46 nnkey32.dll
+C      56168 05/12/2002 14:30 nsktutil.exe
+C      90112 21/05/2003 17:50 nskucm32.exe
+C      51936 05/12/2002 14:30 nskucmd.exe
+C     729088 21/05/2003 17:50 nskutil.exe
+C        650 10/12/2002 18:43 nskutile.cnt
+C      61440 10/12/2002 18:43 nskutile.hlp
+C        653 10/12/2002 15:33 nskutilr.cnt
+C      71680 10/12/2002 18:43 nskutilr.hlp
+C      16840 27/11/2002 13:30 nvskey32.dli
+C      90112 12/02/2003 14:06 nvskey32.dll
+
+F uninst.pak
+C     118784 21/05/2003 18:19 uninst.exe
+
+F urmt_ga.pak
+C      31222 14/09/2000 13:11 nkinst.exe
+C       1255 22/08/2000 13:06 nkinst.mse
+C       1334 22/08/2000 13:07 nkinst.msg
+C      28332 14/09/2000 13:11 timechk.exe
+
+F urmt_gn.pak
+C     311296 20/05/2003 18:01 gsremote.exe
+C      80416 05/12/2002 14:28 nskinst.exe
+C      82512 05/12/2002 14:30 nsktchk.exe
+
+F use_ga.pak
+C         15 22/09/2000 13:41 use_ga.key
+
+F use_gf.pak
+C         15 22/09/2000 13:41 use_gf.key
+
+F use_gn.pak
+C         15 22/09/2000 13:41 use_gn.key
+
+F use_gs.pak
+C         15 22/09/2000 13:41 use_gs.key
+
+F vac_dos.pak
+C     123948 20/05/2003 17:15 nk.dat
+
+F vac_w16.pak
+C     219997 20/05/2003 13:46 novex.exe
+
+F vac_w32.pak
+C     344064 20/05/2003 13:36 novex32.dll
+
+F wizard.pak
+C        995 23/10/1997 13:55 nsdkey.pif
+C        995 23/10/1997 12:57 nwkey.pif
+C        967 10/03/1999 12:11 sysprot.pif
+C    1934848 21/05/2003 15:56 wizard.exe
+C      46123 02/09/2002 11:34 wizardge.hlp
+C      41681 30/08/2002 15:28 wizardgr.hlp

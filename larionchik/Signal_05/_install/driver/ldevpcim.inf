@@ -1,0 +1,79 @@
+[Version]
+Signature="$CHICAGO$"
+Class=L-Card_PCI_Devices
+ClassGUID={99B07100-C45F-11D4-8481-000021FCB2E5}
+Provider=%LCARD%
+DriverVer=6/03/2003,4.0.0.0
+LayoutFile=layout.inf
+
+[Manufacturer]
+%MfgName%=LCard, NTx86, NTamd64
+
+[LCard]
+%L-Card.DeviceDesc0% = LCARD.Dev, PCI\VEN_1172&DEV_0791&SUBSYS_4C373931&REV_00
+
+[LCard.NTx86]
+%L-Card.DeviceDesc0% = LCARD.Dev, PCI\VEN_1172&DEV_0791&SUBSYS_4C373931&REV_00
+;%L-Card.DeviceDesc0% = LCARD.Dev, PCI\VEN_0FFF&DEV_0FFF&SUBSYS_4C373931&REV_01
+
+[LCard.NTamd64]
+%L-Card.DeviceDesc0% = LCARD.Dev, PCI\VEN_1172&DEV_0791&SUBSYS_4C373931&REV_00
+
+
+[ClassInstall]
+Addreg=Class_AddReg
+
+; NT Style
+[ClassInstall32]
+Addreg=Class_AddReg
+
+[Class_AddReg]
+HKR,,,,%DeviceClassName%
+HKR,,Icon,,"-5"
+
+[PreCopySection]
+HKR,,NoSetupUI,,1
+
+[DestinationDirs]
+LCARD.Files.Ext = 10,System32\Drivers
+LCARD.Files.Inf = 10,INF
+
+[LCARD.Dev]
+CopyFiles=LCARD.Files.Ext,LCARD.Files.Inf
+AddReg=LCARD.AddReg
+
+[LCARD.Dev.NT]
+CopyFiles=LCARD.Files.Ext,LCARD.Files.Inf
+AddReg=LCARD.AddReg
+
+[LCARD.Dev.NT.Services]
+Addservice = ldevpcim, 0x00000002, LCARD.AddService
+
+[LCARD.AddService]
+DisplayName    = %LCARD.SvcDesc%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 2                  ; SERVICE_AUTO_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %10%\System32\Drivers\ldevpcim.sys
+LoadOrderGroup = Base
+
+[LCARD.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,ldevpcim.sys
+HKR,"Parameters","BoardType",0x00010001,19
+
+[LCARD.Files.Ext]
+;ldevs.sys
+;ldevpcim.sys
+
+[LCARD.Files.Inf]
+;lcardpcim.inf
+
+;---------------------------------------------------------------;
+
+[Strings]
+LCARD="L-Card Ltd."
+MfgName="L-Card"
+L-Card.DeviceDesc0 = "L791"
+LCARD.SvcDesc="LDevpcim.Sys WDM Driver for L-Card PCI BusMaster boards."
+DeviceClassName="L-Card ADC/DAC PCI boards"

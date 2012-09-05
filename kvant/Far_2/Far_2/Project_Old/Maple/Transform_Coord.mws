@@ -1,0 +1,54 @@
+{VERSION 4 0 "IBM INTEL NT" "4.0" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 1 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 
+0 0 1 }{CSTYLE "2D Output" 2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 1 }
+{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 
+2 2 1 1 1 1 }1 1 0 0 0 0 1 0 1 0 2 2 0 1 }{PSTYLE "Maple Output" -1 
+11 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 1 1 1 }3 3 0 
+0 0 0 1 0 1 0 2 2 0 1 }}
+{SECT 0 {EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 528 "with(linalg):\n\nq(
+1,1) :=   cos(qq);\nq(1,2) :=  -sin(qq);\nq(1,3) :=   0;\nq(2,1) :=   \+
+sin(qq);\nq(2,2) :=   cos(qq);\nq(2,3) :=   0;\nq(3,1) :=   0;\nq(3,2)
+ :=   0;\nq(3,3) :=   1;\n\n_e(1,1) :=  cos(ee);\n_e(1,2) :=  0;\n_e(1
+,3) :=  sin(ee);\n_e(2,1) :=  0;\n_e(2,2) :=  1;\n_e(2,3) :=  0;\n_e(3
+,1) :=  -sin(ee);\n_e(3,2) :=  0;\n_e(3,3) :=   cos(ee);\n\naa(1,1) :=
+ 1;\naa(1,2) := 0;\naa(1,3) := 0;\naa(2,1) := 0;\naa(2,2) := 0;\naa(2,
+3) := 0;\naa(3,1) := 0;\naa(3,2) := 0;\naa(3,3) := 0;\n\nQ := matrix(3
+,3,q);\nE := matrix(3,3,_e);\nEE := matrix(3,3,aa);\n " }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#>-%\"qG6$\"\"\"F'-%$cosG6#%#qqG" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6#>-%\"qG6$\"\"\"\"\"#,$-%$sinG6#%#qqG!\"\"" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#>-%\"qG6$\"\"\"\"\"$\"\"!" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6#>-%\"qG6$\"\"#\"\"\"-%$sinG6#%#qqG" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6#>-%\"qG6$\"\"#F'-%$cosG6#%#qqG" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>-%\"qG6$\"\"#\"\"$\"\"!" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#>-%\"qG6$\"\"$\"\"\"\"\"!" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>-%
+\"qG6$\"\"$\"\"#\"\"!" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>-%\"qG6$\"\"
+$F'\"\"\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>-%#_eG6$\"\"\"F'-%$cosG6
+#%#eeG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>-%#_eG6$\"\"\"\"\"#\"\"!" }
+}{PARA 11 "" 1 "" {XPPMATH 20 "6#>-%#_eG6$\"\"\"\"\"$-%$sinG6#%#eeG" }
+}{PARA 11 "" 1 "" {XPPMATH 20 "6#>-%#_eG6$\"\"#\"\"\"\"\"!" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#>-%#_eG6$\"\"#F'\"\"\"" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>-%#_eG6$\"\"#\"\"$\"\"!" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#>-%#_eG6$\"\"$\"\"\",$-%$sinG6#%#eeG!\"\"" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>-%#_eG6$\"\"$\"\"#\"\"!" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#>-%#_eG6$\"\"$F'-%$cosG6#%#eeG" }}{PARA 11 "" 1 "" {XPPMATH 20 "
+6#>-%#aaG6$\"\"\"F'F'" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>-%#aaG6$\"\"
+\"\"\"#\"\"!" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>-%#aaG6$\"\"\"\"\"$\"
+\"!" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>-%#aaG6$\"\"#\"\"\"\"\"!" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>-%#aaG6$\"\"#F'\"\"!" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#>-%#aaG6$\"\"#\"\"$\"\"!" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>-%#aaG6$\"\"$\"\"\"\"\"!" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#>-%#aaG6$\"\"$\"\"#\"\"!" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>-%#
+aaG6$\"\"$F'\"\"!" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%\"QG-%'matrixG6
+#7%7%-%$cosG6#%#qqG,$-%$sinGF,!\"\"\"\"!7%F/F*F27%F2F2\"\"\"" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#>%\"EG-%'matrixG6#7%7%-%$cosG6#%#eeG\"\"!-%$
+sinGF,7%F.\"\"\"F.7%,$F/!\"\"F.F*" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>
+%#EEG-%'matrixG6#7%7%\"\"\"\"\"!F+7%F+F+F+F," }}}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 64 "R1     := transpose(multiply(E, Q));\nResult := \+
+multiply(R1, EE);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%#R1G-%'matrixG6
+#7%7%*&-%$cosG6#%#qqG\"\"\"-F,6#%#eeGF/-%$sinGF-,$*&F+F/-F4F1F/!\"\"7%
+,$*&F3F/F0F/F8F+*&F3F/F7F/7%F7\"\"!F0" }}{PARA 11 "" 1 "" {XPPMATH 20 
+"6#>%'ResultG-%'matrixG6#7%7%*&-%$cosG6#%#qqG\"\"\"-F,6#%#eeGF/\"\"!F3
+7%,$*&-%$sinGF-F/F0F/!\"\"F3F37%-F8F1F3F3" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}}{MARK "1 2 0" 0 }{VIEWOPTS 1 1 0 1 1 1803 1 1 
+1 1 }{PAGENUMBERS 0 1 2 33 1 1 }

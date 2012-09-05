@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2010.04.09 10:41:41.109.cpp,D:\My Documents\RAD Studio\Projects\Unit11.cpp=D:\_Projects\Gyro_Cpp\MTTTY\CVGProg_02\forms\unit_main.cpp</Transaction>
+    <Transaction>2010.04.09 10:41:41.109.h,D:\My Documents\RAD Studio\Projects\Unit11.h=D:\_Projects\Gyro_Cpp\MTTTY\CVGProg_02\forms\unit_main.h</Transaction>
+    <Transaction>2010.04.09 10:41:41.109.dfm,D:\My Documents\RAD Studio\Projects\Unit11.dfm=D:\_Projects\Gyro_Cpp\MTTTY\CVGProg_02\forms\unit_main.dfm</Transaction>
+    <Transaction>2010.04.09 10:41:48.000.cbproj,D:\My Documents\RAD Studio\Projects\Project11.cbproj=D:\_Projects\Gyro_Cpp\MTTTY\CVGProg_02\forms\CVGProg.cbproj</Transaction>
+    <Transaction>2010.04.09 10:45:48.234.cbproj,D:\_Projects\Gyro_Cpp\MTTTY\CVGProg_02\forms\CVGProg.cbproj=D:\_Projects\Gyro_Cpp\MTTTY\CVGProg_02\CVGProg.cbproj</Transaction>
+    <Transaction>2010.04.09 17:09:01.812.cpp,D:\_Projects\Gyro_Cpp\MTTTY\CVGProg_02\Unit1.cpp=D:\_Projects\Gyro_Cpp\MTTTY\CVGProg_02\units\pmSerialPort.cpp</Transaction>
+    <Transaction>2010.04.09 17:09:01.812.h,D:\_Projects\Gyro_Cpp\MTTTY\CVGProg_02\Unit1.h=D:\_Projects\Gyro_Cpp\MTTTY\CVGProg_02\units\pmSerialPort.h</Transaction>
+    <Transaction>2010.04.13 11:31:39.593.ico,D:\_Projects\Gyro_Cpp\CVGProg\CVGProg_02\Icon\icon_16_16.ico=</Transaction>
+    <Transaction>2010.04.13 11:31:40.171.ico,D:\_Projects\Gyro_Cpp\CVGProg\CVGProg_02\Icon\icon_32_32.ico=</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="Far_2.exe"/>
+    <OBJFILES value="Far_2.obj Unit_Main.obj mpiDeclaration.obj mpiTypes.obj mpiIndicator.obj 
+      Library\Wave\Unit_Wave.obj Unit_ProjectParam.obj mpiFAR.obj mpiTarget.obj 
+      mpiSetupMatrix.obj mpiMath.obj Unit_FarParam.obj Unit_TargetList.obj 
+      Unit_SimulationDiagram.obj Unit_TargetIndicator.obj mpiDiagram.obj 
+      Unit_Simulation3DDiagram.obj mpiLibrary.obj Unit_FiltrParam.obj 
+      mpiFILTRS.obj Library\Ach_Fch_Form\Unit_AchFch.obj 
+      Library\Ach_Fch_Form\Unit_AchFchParam.obj Unit_DrawPerehodProcess.obj 
+      Unit_GraphicList.obj Library\Wave\mpiWave.obj mpiGraph.obj 
+      Unit_TargetsParam.obj Unit_About.obj Unit_TargetIndicator_Param.obj 
+      Unit_PelengCharacteristic.obj mpi_Save_DST_Param.obj"/>
+    <RESFILES value="Far_2.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) Unit_Main.dfm Library\Wave\Unit_Wave.dfm Unit_ProjectParam.dfm 
+      Unit_FarParam.dfm Unit_TargetList.dfm Unit_SimulationDiagram.dfm 
+      Unit_TargetIndicator.dfm Unit_Simulation3DDiagram.dfm Unit_FiltrParam.dfm 
+      Library\Ach_Fch_Form\Unit_AchFch.dfm 
+      Library\Ach_Fch_Form\Unit_AchFchParam.dfm Unit_DrawPerehodProcess.dfm 
+      Unit_GraphicList.dfm Unit_TargetsParam.dfm Unit_About.dfm 
+      Unit_TargetIndicator_Param.dfm Unit_PelengCharacteristic.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="bcbsmp.lib vclx.lib tee.lib vcl.lib rtl.lib"/>
+    <SPARELIBS value="rtl.lib vcl.lib tee.lib vclx.lib bcbsmp.lib"/>
+    <PACKAGES value=""/>
+    <PATHCPP value=".;Library\Wave;Library\Ach_Fch_Form"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="Far_2.cpp"/>
+    <INCLUDEPATH value="Library\Ach_Fch_Form;..\..\..\..\_components\minuteedit;..\..\..\..\_components\gradusedit;..\..\..\..\_components\floatedit;..\..\..\..\_components\intedit;Library\Wave;&quot;C:\Program Files\Borland\CBuilder5\Projects\&quot;;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="Library\Ach_Fch_Form;..\..\..\..\_components\minuteedit;..\..\..\..\_components\gradusedit;..\..\..\..\_components\floatedit;..\..\..\..\_components\intedit;..\..\..\..\__components\_edits\_tminuteedit;..\..\..\..\__components\_edits\_tfloatedit;..\..\..\..\__components\_edits\_tintedit;Library\Wave;..\..\..\..\__components\_edits\_tgradusedit;..\..\..\__components\_edits\_tgradusedit;&quot;C:\Program Files\Borland\CBuilder5\Projects\&quot;;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-src_suffix cpp -D_DEBUG -ILibrary\Ach_Fch_Form 
+      -I..\..\..\..\_components\minuteedit -I..\..\..\..\_components\gradusedit 
+      -I..\..\..\..\_components\floatedit -I..\..\..\..\_components\intedit 
+      -I..\..\..\..\__components\_edits\_tminuteedit 
+      -I..\..\..\..\__components\_edits\_tfloatedit 
+      -I..\..\..\..\__components\_edits\_tintedit -ILibrary\Wave 
+      -I..\..\..\..\__components\_edits\_tgradusedit 
+      -I..\..\..\__components\_edits\_tgradusedit 
+      -I&quot;C:\Program Files\Borland\CBuilder5\Projects\.&quot; -I$(BCB)\include 
+      -I$(BCB)\include\vcl -boa"/>
+    <CFLAG1 value="-Od -H=c:\PROGRA~1\borland\CBUILD~1\lib\vcl60.csm -Hc -Vx -Ve -X- -r- -a8 
+      -b- -k -y -v -vi- -c -tW -tWM"/>
+    <PFLAGS value="-$Y+ -$W -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zi"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="Far_2.cpp" FORMNAME="" UNITNAME="Far_2" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Far_2.res" FORMNAME="" UNITNAME="Far_2" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit_Main.cpp" FORMNAME="frmMain" UNITNAME="Unit_Main" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mpiDeclaration.cpp" FORMNAME="" UNITNAME="mpiDeclaration" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mpiTypes.cpp" FORMNAME="" UNITNAME="mpiTypes" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mpiIndicator.cpp" FORMNAME="" UNITNAME="mpiIndicator" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Library\Wave\Unit_Wave.cpp" FORMNAME="frmWave" UNITNAME="Unit_Wave" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit_ProjectParam.cpp" FORMNAME="frmProjectParam" UNITNAME="Unit_ProjectParam" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mpiFAR.cpp" FORMNAME="" UNITNAME="mpiFAR" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mpiMatrix.h" FORMNAME="" UNITNAME="mpiMatrix" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mpiTarget.cpp" FORMNAME="" UNITNAME="mpiTarget" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mpiSetupMatrix.cpp" FORMNAME="" UNITNAME="mpiSetupMatrix" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mpiMath.cpp" FORMNAME="" UNITNAME="mpiMath" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit_FarParam.cpp" FORMNAME="frmFarParam" UNITNAME="Unit_FarParam" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit_TargetList.cpp" FORMNAME="frmTargetList" UNITNAME="Unit_TargetList" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit_SimulationDiagram.cpp" FORMNAME="frmSimulationDiagram" UNITNAME="Unit_SimulationDiagram" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit_TargetIndicator.cpp" FORMNAME="frmTargetIndicator" UNITNAME="Unit_TargetIndicator" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mpiDiagram.cpp" FORMNAME="" UNITNAME="mpiDiagram" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit_Simulation3DDiagram.cpp" FORMNAME="frmSimulation3DDiagram" UNITNAME="Unit_Simulation3DDiagram" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mpiLibrary.cpp" FORMNAME="" UNITNAME="mpiLibrary" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit_FiltrParam.cpp" FORMNAME="frmFiltrParam" UNITNAME="Unit_FiltrParam" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mpiFILTRS.cpp" FORMNAME="" UNITNAME="mpiFILTRS" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Library\Ach_Fch_Form\Unit_AchFch.cpp" FORMNAME="frmAchFch" UNITNAME="Unit_AchFch" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Library\Ach_Fch_Form\Unit_AchFchParam.cpp" FORMNAME="frmAchFchParam" UNITNAME="Unit_AchFchParam" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit_DrawPerehodProcess.cpp" FORMNAME="frmDrawPerehodProcess" UNITNAME="Unit_DrawPerehodProcess" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit_GraphicList.cpp" FORMNAME="frmGraphicList" UNITNAME="Unit_GraphicList" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Library\Wave\mpiWave.cpp" FORMNAME="" UNITNAME="mpiWave" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mpiGraph.cpp" FORMNAME="" UNITNAME="mpiGraph" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit_TargetsParam.cpp" FORMNAME="frmTargetsParam" UNITNAME="Unit_TargetsParam" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit_About.cpp" FORMNAME="frmAbout" UNITNAME="Unit_About" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit_TargetIndicator_Param.cpp" FORMNAME="frmTargetIndicator_Param" UNITNAME="Unit_TargetIndicator_Param" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit_PelengCharacteristic.cpp" FORMNAME="frmPelengCharacteristic" UNITNAME="Unit_PelengCharacteristic" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mpi_Save_DST_Param.cpp" FORMNAME="" UNITNAME="mpi_Save_DST_Param" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=1
+MajorVer=1
+MinorVer=0
+Release=0
+Build=23
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1058
+CodePage=1251
+
+[Version Info Keys]
+CompanyName=DST
+FileDescription=
+FileVersion=1.0.0.23
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+
+[HistoryLists\hlIncludePath]
+Count=3
+Item0=Library\Ach_Fch_Form;..\..\..\..\_components\minuteedit;..\..\..\..\_components\gradusedit;..\..\..\..\_components\floatedit;..\..\..\..\_components\intedit;..\..\..\..\__components\_edits\_tminuteedit;..\..\..\..\__components\_edits\_tfloatedit;..\..\..\..\__components\_edits\_tintedit;Library\Wave;..\..\..\..\__components\_edits\_tgradusedit;..\..\..\__components\_edits\_tgradusedit;C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\include;$(BCB)\include\vcl
+Item1=..\..\..\..\_components\minuteedit;..\..\..\..\_components\gradusedit;..\..\..\..\_components\floatedit;..\..\..\..\_components\intedit;..\..\..\..\__components\_edits\_tminuteedit;..\..\..\..\__components\_edits\_tfloatedit;..\..\..\..\__components\_edits\_tintedit;Library\Wave;..\..\..\..\__components\_edits\_tgradusedit;..\..\..\__components\_edits\_tgradusedit;C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\include;$(BCB)\include\vcl
+Item2=..\..\..\..\__components\_edits\_tminuteedit;..\..\..\..\__components\_edits\_tfloatedit;..\..\..\..\__components\_edits\_tintedit;Library\Wave;..\..\..\..\__components\_edits\_tgradusedit;..\..\..\__components\_edits\_tgradusedit;C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=3
+Item0=Library\Ach_Fch_Form;..\..\..\..\_components\minuteedit;..\..\..\..\_components\gradusedit;..\..\..\..\_components\floatedit;..\..\..\..\_components\intedit;..\..\..\..\__components\_edits\_tminuteedit;..\..\..\..\__components\_edits\_tfloatedit;..\..\..\..\__components\_edits\_tintedit;Library\Wave;..\..\..\..\__components\_edits\_tgradusedit;..\..\..\__components\_edits\_tgradusedit;C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item1=..\..\..\..\_components\minuteedit;..\..\..\..\_components\gradusedit;..\..\..\..\_components\floatedit;..\..\..\..\_components\intedit;..\..\..\..\__components\_edits\_tminuteedit;..\..\..\..\__components\_edits\_tfloatedit;..\..\..\..\__components\_edits\_tintedit;Library\Wave;..\..\..\..\__components\_edits\_tgradusedit;..\..\..\__components\_edits\_tgradusedit;C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item2=..\..\..\..\__components\_edits\_tminuteedit;..\..\..\..\__components\_edits\_tfloatedit;..\..\..\..\__components\_edits\_tintedit;Library\Wave;..\..\..\..\__components\_edits\_tgradusedit;..\..\..\__components\_edits\_tgradusedit;C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+  </IDEOPTIONS>
+</PROJECT>

@@ -1,0 +1,286 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{FDF3D85A-4753-496A-B5FD-8AF17582C863}</ProjectGuid>
+			<ProjectType>CppVCLApplication</ProjectType>
+			<MainSource>Signal_05.cpp</MainSource>
+			<Config Condition="'$(Config)'==''">Debug</Config>
+			<ProjectVersion>12.0</ProjectVersion>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_1)'!=''">
+			<Cfg_1>true</Cfg_1>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_2)'!=''">
+			<Cfg_2>true</Cfg_2>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base)'!=''">
+			<LinkPackageStatics>vcl.lib;rtl.lib;vclx.lib;tee.lib</LinkPackageStatics>
+			<IncludePath>mpiUnits\mpi_Demo;mpiUnits\mpi_L761;mpiUnits;mpiUnits\mpi_L761\Include;ProjectForms;$(IncludePath)</IncludePath>
+			<TASM_Defines>_DEBUG;$(TASM_Defines)</TASM_Defines>
+			<PackageImports>vcl.bpi;rtl.bpi;dbrtl.bpi;adortl.bpi;vcldb.bpi;vclx.bpi;bdertl.bpi;vcldbx.bpi;ibxpress.bpi;dsnap.bpi;dsnapcon.bpi;dsnap.bpi;teeui.bpi;teedb.bpi;tee.bpi;dss.bpi;dsnapcon.bpi;bcbsmp.bpi</PackageImports>
+			<ILINK_FullDebugInfo>true</ILINK_FullDebugInfo>
+			<BRCC_Defines>_DEBUG;$(BRCC_Defines)</BRCC_Defines>
+			<DCC_CBuilderOutput>JPHNE</DCC_CBuilderOutput>
+			<BCC_Defines>NO_STRICT;$(BCC_Defines)</BCC_Defines>
+			<ILINK_AppType>Windows</ILINK_AppType>
+			<DCC_UnitSearchPath>.\;$(BDS)\lib;$(BDS)\lib\obj;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+			<BCC_PCHCache>true</BCC_PCHCache>
+			<BRCC_IncludePath>mpiUnits\mpi_Demo;ProjectForms;mpiUnits\mpi_L761\Include;mpiUnits\mpi_L761;mpiUnits;ProjectForms\frmMain;C:\Program Files\Borland\CBuilder6\Projects;$(BDS)\include;$(BDS)\include\vcl;$(BDS)\include\dinkumware;$(BRCC_IncludePath)</BRCC_IncludePath>
+			<BRCC_UserSuppliedOptions> -ImpiUnits\mpi_Demo;ProjectForms;mpiUnits\mpi_L761\Include;mpiUnits\mpi_L761;mpiUnits;ProjectForms\frmMain;C:\Program Files\Borland\CBuilder6\Projects;$(BDS)\include;$(BDS)\include\vcl;$(BDS)\include\dinkumware</BRCC_UserSuppliedOptions>
+			<BCC_SourceDebuggingOn>true</BCC_SourceDebuggingOn>
+			<BRCC_OutputDir>_out\</BRCC_OutputDir>
+			<DCC_IncludePath>.\;$(BDS)\lib;$(BDS)\lib\obj;$(DCC_IncludePath)</DCC_IncludePath>
+			<DCC_ObjOutput>_out\</DCC_ObjOutput>
+			<BCC_IncludePath>mpiUnits\mpi_Demo;ProjectForms;mpiUnits\mpi_L761\Include;mpiUnits\mpi_L761;mpiUnits;ProjectForms\frmMain;C:\Program Files\Borland\CBuilder6\Projects;$(BDS)\include;$(BDS)\include\vcl;$(BDS)\include\dinkumware;$(BCC_IncludePath)</BCC_IncludePath>
+			<TASM_IncludePath>mpiUnits\mpi_Demo;ProjectForms;mpiUnits\mpi_L761\Include;mpiUnits\mpi_L761;mpiUnits;ProjectForms\frmMain;C:\Program Files\Borland\CBuilder6\Projects;$(BDS)\include;$(BDS)\include\vcl;$(BDS)\include\dinkumware;$(TASM_IncludePath)</TASM_IncludePath>
+			<BCC_UserSuppliedOptions> -Vx -r- -k -Ve</BCC_UserSuppliedOptions>
+			<BCC_GenerateMultithreaded>true</BCC_GenerateMultithreaded>
+			<AllPackageLibs>vcl.lib;rtl.lib;vclx.lib;tee.lib</AllPackageLibs>
+			<FinalOutputDir>_out\</FinalOutputDir>
+			<BCC_DisableOptimizations>true</BCC_DisableOptimizations>
+			<TASM_AdditionalSwitches> /w2 _out\</TASM_AdditionalSwitches>
+			<TASM_Debugging>Full</TASM_Debugging>
+			<ILINK_IntermediateOutputPath>_out</ILINK_IntermediateOutputPath>
+			<ILINK_BpiLibOutputDir>_out</ILINK_BpiLibOutputDir>
+			<DCC_DcuOutput>_out\</DCC_DcuOutput>
+			<BCC_DebugLineNumbers>true</BCC_DebugLineNumbers>
+			<BCC_InlineFunctionExpansion>false</BCC_InlineFunctionExpansion>
+			<ILINK_LibraryPath>mpiUnits\mpi_Demo;ProjectForms;mpiUnits\mpi_L761\Include;mpiUnits\mpi_L761;mpiUnits;ProjectForms\frmMain;C:\Program Files\Borland\CBuilder6\Projects;$(BDS)\lib\obj;$(BDS)\lib;$(BDS)\lib\psdk;$(ILINK_LibraryPath)</ILINK_LibraryPath>
+			<Multithreaded>true</Multithreaded>
+			<BCC_GenerateWindowsApp>true</BCC_GenerateWindowsApp>
+			<BCC_OutputDir>_out\</BCC_OutputDir>
+			<DCC_AdditionalSwitches> -M</DCC_AdditionalSwitches>
+			<OutputExt>exe</OutputExt>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_1)'!=''">
+			<BCC_Defines>_DEBUG;$(BCC_Defines);$(BCC_Defines)</BCC_Defines>
+			<ILINK_LibraryPath>$(BDS)\lib\debug;$(ILINK_LibraryPath);$(ILINK_LibraryPath)</ILINK_LibraryPath>
+			<IntermediateOutputDir>Debug_Build</IntermediateOutputDir>
+			<DCC_Define>DEBUG;$(DCC_Define);$(DCC_Define)</DCC_Define>
+			<DCC_AdditionalSwitches> -M -V</DCC_AdditionalSwitches>
+			<ILINK_DisableIncrementalLinking>true</ILINK_DisableIncrementalLinking>
+			<TASM_DisplaySourceLines>true</TASM_DisplaySourceLines>
+			<DCC_DebugInfoInExe>true</DCC_DebugInfoInExe>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2)'!=''">
+			<BCC_Defines>NDEBUG;$(BCC_Defines);$(BCC_Defines)</BCC_Defines>
+			<BCC_UserSuppliedOptions> -Vx -r- -k -Ve -r</BCC_UserSuppliedOptions>
+			<BCC_OptimizeForSpeed>true</BCC_OptimizeForSpeed>
+			<IntermediateOutputDir>Release_Build</IntermediateOutputDir>
+			<DCC_AdditionalSwitches> -M -$O+</DCC_AdditionalSwitches>
+			<TASM_Debugging>None</TASM_Debugging>
+			<ILINK_LibraryPath>$(BDS)\lib\release;$(ILINK_LibraryPath);$(ILINK_LibraryPath)</ILINK_LibraryPath>
+			<BCC_InlineFunctionExpansion>true</BCC_InlineFunctionExpansion>
+		</PropertyGroup>
+		<ItemGroup>
+			<CppCompile Include="mpiUnits\mpiChart.cpp">
+				<BuildOrder>32</BuildOrder>
+				<DependentOn>mpiUnits\mpiChart.h</DependentOn>
+				<BuildOrder>0</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="mpiUnits\mpi_Demo\mpi_Demo.cpp">
+				<BuildOrder>35</BuildOrder>
+				<DependentOn>mpiUnits\mpi_Demo\mpi_Demo.h</DependentOn>
+				<BuildOrder>1</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="mpiUnits\mpiThread.cpp">
+				<BuildOrder>26</BuildOrder>
+				<BuildOrder>2</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="ProjectForms\Unit_ACPSetting.cpp">
+				<BuildOrder>29</BuildOrder>
+				<Form>frmACPSetting</Form>
+				<DependentOn>ProjectForms\Unit_ACPSetting.h</DependentOn>
+				<BuildOrder>3</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="ProjectForms\Unit_FFTAnaliz.cpp">
+				<BuildOrder>44</BuildOrder>
+				<Form>frmFFTAnaliz</Form>
+				<DependentOn>ProjectForms\Unit_FFTAnaliz.h</DependentOn>
+				<BuildOrder>4</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="ProjectForms\Unit_Postajanki.cpp">
+				<BuildOrder>47</BuildOrder>
+				<Form>frmPostajanki</Form>
+				<DependentOn>ProjectForms\Unit_Postajanki.h</DependentOn>
+				<BuildOrder>5</BuildOrder>
+			</CppCompile>
+			<None Include="mpiUnits\mpi_L761\Include\IOCTL.H">
+				<BuildOrder>38</BuildOrder>
+				<BuildOrder>6</BuildOrder>
+			</None>
+			<None Include="mpiUnits\mpi_L761\Include\wlcomp.h">
+				<BuildOrder>41</BuildOrder>
+				<BuildOrder>7</BuildOrder>
+			</None>
+			<CppCompile Include="ProjectForms\Unit_Main.cpp">
+				<BuildOrder>8</BuildOrder>
+				<Form>frmMain</Form>
+				<DependentOn>ProjectForms\Unit_Main.h</DependentOn>
+				<BuildOrder>8</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="mpiUnits\PCH.cpp">
+				<BuildOrder>11</BuildOrder>
+				<BuildOrder>9</BuildOrder>
+			</CppCompile>
+			<ResFiles Include="Signal_05.res">
+				<BuildOrder>2</BuildOrder>
+				<BuildOrder>10</BuildOrder>
+			</ResFiles>
+			<CppCompile Include="Signal_05.cpp">
+				<BuildOrder>5</BuildOrder>
+				<BuildOrder>11</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="mpiUnits\mpiCollection.cpp">
+				<BuildOrder>20</BuildOrder>
+				<DependentOn>mpiUnits\mpiCollection.h</DependentOn>
+				<BuildOrder>12</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="mpiUnits\mpi_L761\mpi_L761.cpp">
+				<BuildOrder>23</BuildOrder>
+				<DependentOn>mpiUnits\mpi_L761\mpi_L761.h</DependentOn>
+				<BuildOrder>13</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="mpiUnits\mpiBaseADC.cpp">
+				<BuildOrder>14</BuildOrder>
+				<DependentOn>mpiUnits\mpiBaseADC.h</DependentOn>
+				<BuildOrder>14</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="mpiUnits\mpiGlobals.cpp">
+				<BuildOrder>17</BuildOrder>
+				<DependentOn>mpiUnits\mpiGlobals.h</DependentOn>
+				<BuildOrder>15</BuildOrder>
+			</CppCompile>
+			<FormResources Include="ProjectForms\Unit_ACPSetting.dfm"/>
+			<FormResources Include="ProjectForms\Unit_FFTAnaliz.dfm"/>
+			<FormResources Include="ProjectForms\Unit_Postajanki.dfm"/>
+			<FormResources Include="ProjectForms\Unit_Main.dfm"/>
+			<BuildConfiguration Include="Base">
+				<Key>Base</Key>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Release">
+				<Key>Cfg_2</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Debug">
+				<Key>Cfg_1</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+		</ItemGroup>
+		<Import Project="$(BDS)\Bin\CodeGear.Cpp.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Cpp.Targets')"/>
+		<ProjectExtensions>
+			<Borland.Personality>CPlusPlusBuilder.Personality.12</Borland.Personality>
+			<Borland.ProjectType>CppVCLApplication</Borland.ProjectType>
+			<BorlandProject>
+				<CPlusPlusBuilder.Personality>
+					<VersionInfo>
+						<VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+						<VersionInfo Name="AutoIncBuild">False</VersionInfo>
+						<VersionInfo Name="MajorVer">1</VersionInfo>
+						<VersionInfo Name="MinorVer">3</VersionInfo>
+						<VersionInfo Name="Release">1</VersionInfo>
+						<VersionInfo Name="Build">17</VersionInfo>
+						<VersionInfo Name="Debug">False</VersionInfo>
+						<VersionInfo Name="PreRelease">False</VersionInfo>
+						<VersionInfo Name="Special">False</VersionInfo>
+						<VersionInfo Name="Private">False</VersionInfo>
+						<VersionInfo Name="DLL">False</VersionInfo>
+						<VersionInfo Name="Locale">1058</VersionInfo>
+						<VersionInfo Name="CodePage">1251</VersionInfo>
+					</VersionInfo>
+					<VersionInfoKeys>
+						<VersionInfoKeys Name="CompanyName"/>
+						<VersionInfoKeys Name="FileDescription"/>
+						<VersionInfoKeys Name="FileVersion">1.3.1.17</VersionInfoKeys>
+						<VersionInfoKeys Name="InternalName"/>
+						<VersionInfoKeys Name="LegalCopyright"/>
+						<VersionInfoKeys Name="LegalTrademarks"/>
+						<VersionInfoKeys Name="OriginalFilename"/>
+						<VersionInfoKeys Name="ProductName"/>
+						<VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="Comments"/>
+					</VersionInfoKeys>
+					<HistoryLists_hlIncludePath>
+						<HistoryLists_hlIncludePath Name="Count">4</HistoryLists_hlIncludePath>
+						<HistoryLists_hlIncludePath Name="Item0">mpiUnits\mpi_Demo;ProjectForms;mpiUnits\mpi_L761\Include;mpiUnits\mpi_L761;mpiUnits;ProjectForms\frmMain;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl</HistoryLists_hlIncludePath>
+						<HistoryLists_hlIncludePath Name="Item1">ProjectForms;mpiUnits\mpi_L761\Include;mpiUnits\mpi_L761;mpiUnits;ProjectForms\frmMain;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl</HistoryLists_hlIncludePath>
+						<HistoryLists_hlIncludePath Name="Item2">mpiUnits;ProjectForms\frmMain;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl</HistoryLists_hlIncludePath>
+						<HistoryLists_hlIncludePath Name="Item3">mpiUnits;ProjectForms\frmMain;C:\Program Files\Borland\CBuilder6\Projects;D:\_Programs\Work\Larionchik\pmaz\pmaz_01\ProjectForms\frmMain;$(BCB)\include;$(BCB)\include\vcl</HistoryLists_hlIncludePath>
+					</HistoryLists_hlIncludePath>
+					<HistoryLists_hlLibraryPath>
+						<HistoryLists_hlLibraryPath Name="Count">4</HistoryLists_hlLibraryPath>
+						<HistoryLists_hlLibraryPath Name="Item0">mpiUnits\mpi_Demo;ProjectForms;mpiUnits\mpi_L761\Include;mpiUnits\mpi_L761;mpiUnits;ProjectForms\frmMain;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\lib\obj;$(BCB)\lib</HistoryLists_hlLibraryPath>
+						<HistoryLists_hlLibraryPath Name="Item1">ProjectForms;mpiUnits\mpi_L761\Include;mpiUnits\mpi_L761;mpiUnits;ProjectForms\frmMain;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\lib\obj;$(BCB)\lib</HistoryLists_hlLibraryPath>
+						<HistoryLists_hlLibraryPath Name="Item2">mpiUnits;ProjectForms\frmMain;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\lib\obj;$(BCB)\lib</HistoryLists_hlLibraryPath>
+						<HistoryLists_hlLibraryPath Name="Item3">mpiUnits;ProjectForms\frmMain;C:\Program Files\Borland\CBuilder6\Projects;D:\_Programs\Work\Larionchik\pmaz\pmaz_01\ProjectForms\frmMain;$(BCB)\lib\obj;$(BCB)\lib</HistoryLists_hlLibraryPath>
+					</HistoryLists_hlLibraryPath>
+					<HistoryLists_hlDebugSourcePath>
+						<HistoryLists_hlDebugSourcePath Name="Count">1</HistoryLists_hlDebugSourcePath>
+						<HistoryLists_hlDebugSourcePath Name="Item0">$(BCB)\source\vcl</HistoryLists_hlDebugSourcePath>
+					</HistoryLists_hlDebugSourcePath>
+					<HistoryLists_hlConditionals>
+						<HistoryLists_hlConditionals Name="Count">1</HistoryLists_hlConditionals>
+						<HistoryLists_hlConditionals Name="Item0">_DEBUG</HistoryLists_hlConditionals>
+					</HistoryLists_hlConditionals>
+					<HistoryLists_hlIntOutputDir>
+						<HistoryLists_hlIntOutputDir Name="Count">1</HistoryLists_hlIntOutputDir>
+						<HistoryLists_hlIntOutputDir Name="Item0">_out</HistoryLists_hlIntOutputDir>
+					</HistoryLists_hlIntOutputDir>
+					<HistoryLists_hlFinalOutputDir>
+						<HistoryLists_hlFinalOutputDir Name="Count">2</HistoryLists_hlFinalOutputDir>
+						<HistoryLists_hlFinalOutputDir Name="Item0">_out\</HistoryLists_hlFinalOutputDir>
+						<HistoryLists_hlFinalOutputDir Name="Item1">_out</HistoryLists_hlFinalOutputDir>
+					</HistoryLists_hlFinalOutputDir>
+					<HistoryLists_hIBPIOutputDir>
+						<HistoryLists_hIBPIOutputDir Name="Count">1</HistoryLists_hIBPIOutputDir>
+						<HistoryLists_hIBPIOutputDir Name="Item0">_out</HistoryLists_hIBPIOutputDir>
+					</HistoryLists_hIBPIOutputDir>
+					<Debugging>
+						<Debugging Name="DebugSourceDirs">$(BCB)\source\vcl</Debugging>
+					</Debugging>
+					<Parameters>
+						<Parameters Name="RunParams"/>
+						<Parameters Name="Launcher"/>
+						<Parameters Name="UseLauncher">False</Parameters>
+						<Parameters Name="DebugCWD"/>
+						<Parameters Name="HostApplication"/>
+						<Parameters Name="RemoteHost"/>
+						<Parameters Name="RemotePath"/>
+						<Parameters Name="RemoteLauncher"/>
+						<Parameters Name="RemoteCWD"/>
+						<Parameters Name="RemoteDebug">False</Parameters>
+						<Parameters Name="RemoteParams"/>
+						<Parameters Name="UseRemoteLauncher">False</Parameters>
+						<Parameters Name="Debug Symbols Search Path"/>
+						<Parameters Name="LoadAllSymbols">True</Parameters>
+						<Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+					</Parameters>
+					<Compiler>
+						<Compiler Name="ShowInfoMsgs">0</Compiler>
+						<Compiler Name="LinkDebugVcl">0</Compiler>
+						<Compiler Name="LinkCGLIB">0</Compiler>
+					</Compiler>
+					<CORBA>
+						<CORBA Name="AddServerUnit">1</CORBA>
+						<CORBA Name="AddClientUnit">1</CORBA>
+						<CORBA Name="PrecompiledHeaders">1</CORBA>
+					</CORBA>
+					<ProjectProperties>
+						<ProjectProperties Name="AutoShowDeps">False</ProjectProperties>
+						<ProjectProperties Name="ManagePaths">True</ProjectProperties>
+						<ProjectProperties Name="VerifyPackages">True</ProjectProperties>
+					</ProjectProperties>
+					<Source>
+						<Source Name="MainSource">Signal_05.cpp</Source>
+					</Source>
+				</CPlusPlusBuilder.Personality>
+			</BorlandProject>
+			<ProjectFileVersion>12</ProjectFileVersion>
+		</ProjectExtensions>
+	</Project>

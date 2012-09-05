@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="Hameg_8132.exe"/>
+    <OBJFILES value="Hameg_8132.obj unit_Main.obj mpi_rep_SerialInfo.obj"/>
+    <RESFILES value="Hameg_8132.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) unit_Main.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="tee.lib rtl.lib vcl.lib"/>
+    <SPARELIBS value="vcl.lib rtl.lib tee.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi adortl.bpi vcldb.bpi vclx.bpi bdertl.bpi 
+      vcldbx.bpi ibxpress.bpi cds.bpi dsnap.bpi bdecds.bpi qrpt.bpi teeui.bpi 
+      teedb.bpi tee.bpi dss.bpi teeqr.bpi visualclx.bpi visualdbclx.bpi 
+      dsnapcrba.bpi dsnapcon.bpi bcbsmp.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="Hameg_8132.cpp"/>
+    <INCLUDEPATH value="&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;D:\_Project\#_GYRO\_Hameg\Hameg_8132;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;D:\_Project\#_GYRO\_Hameg\Hameg_8132;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I&quot;C:\Program Files\Borland\CBuilder6\Projects&quot; 
+      -ID:\_Project\#_GYRO\_Hameg\Hameg_8132 -I$(BCB)\include 
+      -I$(BCB)\include\vcl -src_suffix cpp -D_DEBUG -boa"/>
+    <CFLAG1 value="-Od -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -r- -a8 -b- -k -y -v -vi- -c 
+      -tW -tWM"/>
+    <PFLAGS value="-$YD -$W -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zd"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="Hameg_8132.res" FORMNAME="" UNITNAME="Hameg_8132.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Hameg_8132.cpp" FORMNAME="" UNITNAME="Hameg_8132" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="unit_Main.cpp" FORMNAME="Form1" UNITNAME="unit_Main" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mpi_rep_SerialInfo.cpp" FORMNAME="" UNITNAME="mpi_rep_SerialInfo" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1058
+CodePage=1251
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[Excluded Packages]
+c:\program files\borland\cbuilder6\Projects\Bpl\IIStreamSupportPkg6.bpl=Innovative Streaming Support
+c:\program files\borland\cbuilder6\Projects\Bpl\IIIoCompPkg6.bpl=Innovative IoComp Interface (Run Time)
+c:\progra~1\borland\cbuild~1\projects\bpl\Iocomp60.bpl=Iocomp Package VCL
+c:\program files\borland\cbuilder6\Projects\Bpl\IIIoCompDsn6.bpl=Innovative IoComp Interface (Design Time)
+c:\progra~1\borland\cbuild~1\projects\bpl\OpenWireDsnCB6.bpl=OpenWire Project (Design Time)
+c:\program files\borland\cbuilder6\Projects\Bpl\IICalientePkg6.bpl=Innovative Caliente (Run Time)
+c:\progra~1\borland\cbuild~1\projects\bpl\IISupport6.bpl=Innovative Support Classes
+c:\program files\borland\cbuilder6\Projects\Bpl\IICalienteDsn6.bpl=Innovative Caliente (Design Time)
+c:\program files\borland\cbuilder6\Projects\Bpl\IIAnalysisPkg6.bpl=Innovative Analysis (Run Time)
+c:\program files\borland\cbuilder6\Projects\Bpl\IIAnalysisDsn6.bpl=Innovative Analysis (Design Time)
+c:\program files\borland\cbuilder6\Projects\Bpl\OpenWirePkg6.bpl=OPENWIREPKG6
+c:\program files\borland\cbuilder6\Projects\Bpl\OpenWireDsn6.bpl=OPENWIREDSN6
+c:\program files\borland\cbuilder6\Projects\Bpl\IIAspiDsn6.bpl=Innovative ASPI Design-Time Components
+c:\progra~1\borland\cbuild~1\projects\bpl\IIAspiPkg6.bpl=Innovative ASPI Run-Time Components
+c:\progra~1\borland\cbuild~1\projects\bpl\IIDataSet6.bpl=Innovative Data Set Components
+c:\program files\borland\cbuilder6\Projects\Bpl\IIVideoSupportPkg6.bpl=Innovative Video Support 
+c:\program files\borland\cbuilder6\Projects\Bpl\IIImagePkg6.bpl=Innovative Ipl
+c:\program files\borland\cbuilder6\Projects\Bpl\IIChicoDsn6.bpl=Innovative Chico (Design Time)
+c:\progra~1\borland\cbuild~1\projects\bpl\IIChicoPkg6.bpl=Innovative Chico (Run Time)
+c:\progra~1\borland\cbuild~1\projects\bpl\IIDriverX6.bpl=IIDriverX6
+c:\program files\borland\cbuilder6\Projects\Bpl\IIMatadorPkg6.bpl=Innovative Matador Family (Run Time)
+c:\progra~1\borland\cbuild~1\projects\bpl\IIPismoPkg6.bpl=Innovative Pismo
+c:\progra~1\borland\cbuild~1\projects\bpl\IIDspSupportPkg6.bpl=Innovative Armada-Compatible Dsp Support Package (Run Time)
+c:\program files\borland\cbuilder6\Projects\Bpl\IIMatadorDsn6.bpl=Innovative Matador Family (Design Time)
+c:\program files\borland\cbuilder6\Projects\Bpl\IIDspSupportDsn6.bpl=Innovative Armada-Compatible Dsp Support (Design Time)
+c:\program files\borland\cbuilder6\Projects\Bpl\IIVelociaPkg6.bpl=Innovative Velocia Family (Run Time)
+c:\program files\borland\cbuilder6\Projects\Bpl\IIVelociaDsn6.bpl=Innovative Velocia Family (Design Time)
+c:\program files\borland\cbuilder6\Projects\Bpl\IIUserInterface6.bpl=Innovative User Interface Components
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+  </IDEOPTIONS>
+</PROJECT>

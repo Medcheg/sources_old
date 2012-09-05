@@ -1,0 +1,19 @@
+;--------------------------------------------------------------------------
+; Файл описания сегментов
+; Фоpмат описания сегмента:
+; SEGMENT NAME="<имя сегмента>" TYPE=boot|code|data
+;                               BASE=<адpес_начала>
+;                               SIZE=<pазмеp_сегмента>
+;--------------------------------------------------------------------------
+
+; !!!!!!!!!!!!!!!!!!!!! ADSP-2184 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+SEGMENT   NAME="Internal PM"   TYPE=boot   BASE=0x0      SIZE=0x0C00
+SEGMENT   NAME="Internal DM"   TYPE=data   BASE=0x2000   SIZE=0x1000
+
+; !!!!!!!!!!!!!!!!!!!!! ADSP-2185 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+;SEGMENT   NAME="Internal PM"   TYPE=boot   BASE=0x0      SIZE=0x4000
+;SEGMENT   NAME="Internal DM"   TYPE=data   BASE=0x0      SIZE=0x3FDF
+
+; !!!!!!!!!!!!!!!!!!!!! ADSP-2186 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+;SEGMENT   NAME="Internal PM"   TYPE=boot   BASE=0x0      SIZE=0x1800
+;SEGMENT   NAME="Internal DM"   TYPE=data   BASE=0x2000   SIZE=0x1FDF

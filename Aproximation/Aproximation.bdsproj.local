@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2008.05.20 11:17:54.174.cpp,D:\_Projects\temp\Unit6.cpp=D:\_Projects\Tools\Aproximation\Unit_Main.cpp</Transaction>
+    <Transaction>2008.05.20 11:17:54.174.h,D:\_Projects\temp\Unit6.h=D:\_Projects\Tools\Aproximation\Unit_Main.h</Transaction>
+    <Transaction>2008.05.20 11:17:54.174.dfm,D:\_Projects\temp\Unit6.dfm=D:\_Projects\Tools\Aproximation\Unit_Main.dfm</Transaction>
+    <Transaction>2008.05.20 11:17:59.111.bdsproj,D:\_Projects\temp\Project6.bdsproj=D:\_Projects\Tools\Aproximation\Aproximation.bdsproj</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2009.02.03 09:29:02.438.cpp,E:\My Documents\RAD Studio\Projects\Unit1.cpp=E:\_Programs\.Suka_Inna\Aproximation\Aproximation_reseach\Forms\frmMain.cpp</Transaction>
+    <Transaction>2009.02.03 09:29:02.458.h,E:\My Documents\RAD Studio\Projects\Unit1.h=E:\_Programs\.Suka_Inna\Aproximation\Aproximation_reseach\Forms\frmMain.h</Transaction>
+    <Transaction>2009.02.03 09:29:02.458.dfm,E:\My Documents\RAD Studio\Projects\Unit1.dfm=E:\_Programs\.Suka_Inna\Aproximation\Aproximation_reseach\Forms\frmMain.dfm</Transaction>
+    <Transaction>2009.02.03 09:29:08.977.cbproj,E:\My Documents\RAD Studio\Projects\Project1.cbproj=E:\_Programs\.Suka_Inna\Aproximation\Aproximation_reseach\Aproximation_reseach.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>

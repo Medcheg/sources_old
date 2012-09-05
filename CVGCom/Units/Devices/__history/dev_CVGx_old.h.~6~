@@ -1,0 +1,60 @@
+//===========================================================================
+#ifndef dev_CVGx_oldH
+#define dev_CVGx_oldH
+//===========================================================================
+#define CVGx_OLD_LOCAL_ARRAY_SIZE 255
+class CCVGx_old: public CBaseDevice
+{
+private:
+    int    ControllersCount;
+    int    GyrosCountOnOneController;
+
+    int    OnlineCanalCountForOneGyro;
+
+    double DeviceFrequency_mode_1_2;
+    double DeviceFrequency_mode_3_4;
+
+
+    virtual void InitDeviceBeforeStart();
+    virtual bool WriteCommand();
+    virtual void DeCompositeData();
+    virtual void RealTimeProcessing(double *in_out_array);
+private:
+
+    bool   isFirstThreadInput;
+
+    //bool   isStorageInited;
+    int    OnlineCanalCountForOneGyro;
+    bool   isDebugGyroModeInited;
+    //int    GyrosCount;
+    //int    ParametersCount;
+
+    double DeviceFrequency_mode_1_2;
+    double DeviceFrequency_mode_3_4;
+    char   SendValue1[256];
+    char   SendValue2[256];
+    char   SendValue3[256];
+
+
+//    float   CurrValues  [ CVGx_old_LOCAL_ARRAY_SIZE ];
+//    float   MeanValues  [ CVGx_old_LOCAL_ARRAY_SIZE ];
+    double   SummValues    [ CVGx_OLD_LOCAL_ARRAY_SIZE ];
+    double   OnlineValues  [ CVGx_OLD_LOCAL_ARRAY_SIZE ];
+    char    BaseCanalsName[ 64 ][ CVGx_OLD_LOCAL_ARRAY_SIZE ];
+    //char    OnlineNames   [ 64 ][ CVGx_old_LOCAL_ARRAY_SIZE ][ CVGx_old_LOCAL_ARRAY_SIZE ];
+
+//    bool    isWorkError( CCVGx_old *gd );
+    bool    isReadPackedCS_OK( CCVGx_old *gd );
+    void    WriteCommand( CCVGx_old *gd );
+    void    SetupCountDeviceChanels( CCVGx_old *gd, int aControllerNumber, int aGyroNumber, int aCanalNumber1, int aCanalNumber2 );
+protected:
+public:
+    // -------
+    virtual int  Start();
+    virtual void Stop ();
+    // -------
+	CCVGx_old();
+	virtual ~CCVGx_old();
+};
+//===========================================================================
+#endif

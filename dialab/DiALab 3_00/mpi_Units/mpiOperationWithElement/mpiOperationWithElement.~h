@@ -1,0 +1,9 @@
+//---------------------------------------------------------------------------
+#ifndef mpiOperationWithElementH
+#define mpiOperationWithElementH
+//---------------------------------------------------------------------------
+#include "mpiElement.h"
+//---------------------------------------------------------------------------
+extern void *FindElementByID(int aId, TElement **aElementList, int aElementList_Count);
+//---------------------------------------------------------------------------
+#endif

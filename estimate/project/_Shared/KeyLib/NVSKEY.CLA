@@ -1,0 +1,177 @@
+!***************************************************************************!
+!   (C) 1997-2002 Aktiv Co. All rights reserved.                            !
+!       Header for Clarion.                                                 !
+!***************************************************************************!
+
+!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+! ATTENTION!!!  Because Clarion 2 cannot accept names longer than 12 symbols,
+!               we change thier names to shorter.
+!               Original names are in the comments at the end of each string.
+!______________________________________________________________________________
+
+!--- Demo codes ---
+ns_DEMONVK     EQUATE(1368487351) ! (0x519175B7) Demo public code
+ns_DEMORDO     EQUATE(1368487493) ! (0x51917645) Demo private read code
+ns_DEMOPRF     EQUATE(1368487427) ! (0x51917603) Demo private write code
+ns_DEMOMST     EQUATE(1368487308) ! (0x5191758C) Demo private master code
+
+!--- Dongle models ---
+nskm_GS        EQUATE(0)     ! Guardant Stealth
+nskm_GU        EQUATE(1)     ! Guardant USB
+nskm_GF        EQUATE(2)     ! Guardant Fidus
+nskm_G2        EQUATE(3)     ! Guardant StealthII
+
+!--- Dongle Types ---
+nskt_DOS       EQUATE(0)     ! DOS Guardant dongle
+nskt_Win       EQUATE(0)     ! Windows Guardant dongle
+nskt_LAN       EQUATE(1)     ! LAN Guardant dongle
+nskt_Time      EQUATE(2)     ! Time Guardant dongle
+
+!--- Flags for nskSetMode() ---
+!- Search for the dongle with specified
+nsf_NProg      EQUATE(1)     ! wKeyNProg == wNProg
+nsf_ID         EQUATE(2)     ! dwKeyID == dwKeyID
+nsf_SN         EQUATE(4)     ! Serial Number
+nsf_Ver        EQUATE(8)     ! bKeyVersion >= bVer
+nsf_Mask       EQUATE(16)    ! wKeyMask & wMask == wMask
+nsf_Type       EQUATE(32)    ! wKeyType & wType == wType
+!- Input: Operation Mode Flags
+nsf_SAM        EQUATE(128)   ! Enables SAM (System Address Mode) in read/write 
+                             ! operations ( nsf_SysAddrMode)
+                             ! (UAM is a default mode)
+nsf_CodeIsSt   EQUATE(256)   ! Reserved (used by NNKCOMMAND() function only) 
+                             ! ( nsf_CodeIsString )
+nsf_NoRetry    EQUATE(512)   ! Disables auto configuration of communication protocol
+nsf_NoCatch    EQUATE(1024)  ! Disables full capture of the parallel port resource  
+                             ! ( nsf_NoFullAccess )
+nsf_LPT1       EQUATE(2048)  ! Enables search for the key in LPT1 only (address 0x378)
+                             ! ( nsf_OnlyStdLPT1 ) 
+nsf_LPT2       EQUATE(4096)  ! Enables search for the key in LPT2 only (address 0x278) 
+                             ! ( nsf_OnlyStdLPT2 )
+nsf_LPT3       EQUATE(8192)  ! Enables search for the key in LPT3 only (address 0x3BC) 
+                             ! ( nsf_OnlyStdLPT3 )
+                             ! If none of these 3 flags is set, the key will be 
+                             ! searched for in all LPT ports available.
+nsf_NoMem32    EQUATE(16384) ! Indicates that data segment is different from the standard 
+                             ! one used by NNKCOMMAND() function only in 32-bit API 
+                             ! ( nsf_NoAutoMem32   )
+nsfUseOldCRC   EQUATE(32768) ! Reserved ( nsf_UseOldCRC     )
+
+!--- UAM Addresses of Fields ---
+uam_bNProg     EQUATE(0)     ! 00h Programm number
+uam_bVer       EQUATE(1)     ! 01h Version
+uam_wSN        EQUATE(2)     ! 02h Serial number
+uam_wMask      EQUATE(4)     ! 04h Bit mask
+uam_wGP        EQUATE(6)     ! 06h Counter #1 (GP)
+uam_wLANRes    EQUATE(8)     ! 08h Current network license limit  ( uam_wRealLANRes  )
+uam_dwIndex    EQUATE(10)    ! 0Ah Index
+uam_AlgAddr    EQUATE(14)    ! 0Eh User data, algorithm descriptors ( uam_abAlgoAddr   )
+
+! --- SAM Addresses of Fields  ---
+! Used by nsc_ChkNSK command
+! Fields protection against nsc_Init, nsc_Protect, nsc_Write commands
+!    * - Partial protection: nsc_Protect can be executed only after nsc_Init
+!    X - Full protection
+! Protection against command:         Init Protect Write
+sam_bModel     EQUATE(0)     !  0h   X     X     X    ( bKeyModelAddr    )
+sam_bMemSize   EQUATE(1)     !  1h   X     X     X    ( bKeyMemSizeAddr  )
+sam_bProgVer   EQUATE(2)     !  2h   X     X     X    ( bKeyProgVerAddr  )
+sam_bProtocl   EQUATE(3)     !  3h   X     X     X    ( bKeyProtocolAddr )
+sam_wClntVer   EQUATE(4)     !  4h   X     X     X    ( wClientVerAddr   )
+sam_bUserAddr  EQUATE(6)     !  6h   X     X     X    ( bKeyUserAddrAddr )
+sam_bAlgoAddr  EQUATE(7)     !  7h   X     X     X    ( bKeyAlgoAddrAddr )
+sam_wPrnport   EQUATE(8)     !  8h   X     X     X    ( wPrnportAddr     )
+sam_PublCode   EQUATE(14)    !  Eh   X     X     X    ( sam_dwPublicCode )
+sam_bVersion   EQUATE(18)    ! 12h   X     X     X
+sam_bLANRes    EQUATE(19)    ! 13h   X     X     X
+sam_wType      EQUATE(20)    ! 14h   X     X     X
+sam_dwID       EQUATE(22)    ! 16h   X     X     X
+sam_bWrProt    EQUATE(26)    ! 1Ah         *     X    ( sam_bWriteProtect)
+sam_bRdProt    EQUATE(27)    ! 1Bh         *     X    ( sam_bReadProtect )
+sam_bNumFunc   EQUATE(28)    ! 1Ch         *     X
+sam_bRes2      EQUATE(29)    ! 1Dh         *     X    ( sam_bReserved2   )
+sam_bNProg     EQUATE(30)    ! 1Eh   X     X
+sam_bVer       EQUATE(31)    ! 1Fh   X     X
+sam_wSN        EQUATE(32)    ! 20h   X     X
+sam_wMask      EQUATE(34)    ! 22h   X     X
+sam_wGP        EQUATE(36)    ! 24h   X     X
+sam_wLANRes    EQUATE(38)    ! 26h   X     X          ( sam_wRealLANRes  )
+sam_dwIndex    EQUATE(40)    ! 28h   X     X
+sam_AlgAddr    EQUATE(44)    ! 2Ch                    ( sam_abAlgoAddr   )
+
+!--- Guardant Stealth Algorithm Numbers ---
+nsan_AutoPr    EQUATE(0)     !  For automatic protection ( nsan_AutoProtect )
+nsan_Fast      EQUATE(1)     !  For CodeInit (EnCode/DeCode) operation
+nsan_Random    EQUATE(2)     !  Random number generator
+nsan_DEMO      EQUATE(3)     !  For Transform operation
+
+!--- Default query/answer length of the algorithms ---
+nsars_AProt    EQUATE(4)     !  For automatic protection ( nsars_AutoProtect)
+nsars_Fast     EQUATE(32)    !  For CodeInit (EnCode/DeCode) operation
+nsars_Random   EQUATE(4)     !  Random number generator
+nsars_DEMO     EQUATE(4)     !  For Transform operation
+
+!--- Reversible Conversion Methods for EnCode/DeCode ---
+nsat_Algo0     EQUATE(0)     !  Basic method
+nsat_AlgASC    EQUATE(1)     !  Character method ( nsat_AlgoASCII   )
+nsat_AlgFile   EQUATE(2)     !  File method      ( nsat_AlgoFile    )
+
+! --- CRC Starting value ---
+ns_StartCRC    EQUATE(-1)    ! Starting value for 'continued' CRC
+
+!---  Error Codes  ---
+nse_Ok       EQUATE(0)       ! No errors
+nse_NoKey    EQUATE(1)       ! Dongle with specified search conditions not found
+                             ! ( nse_KeyNotFound )
+                 ! (2)         not used
+nse_BigAddr  EQUATE(3)       ! The specified address is too big 
+                             !(nse_AddressTooBig)
+                 ! (4)         not used
+nse_GPis0    EQUATE(5)       ! GP executions counter exhausted (has 0 value)
+nse_BadComd  EQUATE(6)       ! Bad key call command (nse_BadCommand)
+                 ! (7)         not used
+nse_Verify   EQUATE(8)       ! Write verification error (nse_VerifyError)
+nse_L_NoProt EQUATE(9)       ! Network protocol not found (nse_LANNoProtNotFound )
+nse_L_NoRes  EQUATE(10)      ! License counter of Guardant Net exhausted 
+                             ! (nse_LANResourceExhaust)
+nse_ConLost  EQUATE(11)      ! Connection with Guardant Net server was lost 
+                             ! (nse_ConnectionLost )
+nse_L_NoPlgs EQUATE(12)      ! Guardant Net server not found (nse_LANplugsNotFound)
+nse_L_Mem    EQUATE(13)      ! Guardant Net server memory allocation error 
+                             ! (nse_LANserverMemory)
+nse_L_DPMI   EQUATE(14)      ! Guardant Net server found DPMI error  
+                             ! (nse_LANDPMIError)
+nse_Internal EQUATE(15)      ! Guardant Net server internal error
+nse_SrvRel   EQUATE(16)      ! Guardant Net server has been reloaded 
+                             ! (nse_ServerReloaded)
+nse_TooOld   EQUATE(17)      ! This command is not supported by this key version 
+                             !(the version is too old) (nse_VersionTooOld)
+nse_BadDrv   EQUATE(18)      ! Windows NT driver is required	(nse_BadDriver)
+nse_NetBIOS  EQUATE(19)      ! Network protocol error (nse_LANNetBIOS)
+nse_LANpckt  EQUATE(20)      ! Network packet format is not supported (nse_LANpacket)
+nse_L_Login  EQUATE(21)      ! Logging in Guardant Net server is required 
+                             ! (nse_LANneedLogin)
+nse_L_Logout EQUATE(22)      ! Logging out from Guardant Net server is required 
+                             ! (nse_LANneedLogout)
+nse_L_Busy   EQUATE(23)      ! Guardant Net is busy locked by another copy of 
+                             ! protected application (nse_LANKeyBusy)
+nse_DrvBusy  EQUATE(24)      ! Guardant driver cannot capture the parallel 
+                             ! port (nse_DriverBusy)
+                             ! 25 - 29 not used
+nse_CRCError EQUATE(30)      ! CRC error occurred while attempting to call the key
+nse_CRCErrRd EQUATE(31)      ! CRC error occurred while attempting to read data 
+                             ! from the key (nse_CRCErrorRead)
+nse_CRCErrWr EQUATE(32)      ! CRC error occurred while attempting to write data to 
+                             ! the key (nse_CRCErrorWrite)
+nse_Over_bnd EQUATE(33)      ! The boundary of the key's memory has been override 
+                             ! (nse_Overbound)
+nse_AlgNoFnd EQUATE(34)      ! The hardware algorithm with this number has not 
+                             ! been found in the key (nse_AlgoNotFound)
+nse_CRCFunc  EQUATE(35)      ! CRC error of the hardware algorithm (nse_CRCErrorFunc)
+nse_CRCChk   EQUATE(36)      ! CRC error occurred while attempting to execute 
+                             ! (nse_CRCChkNSK)
+nse_NotSup   EQUATE(37)      ! ChkNSK operation, or all keys found Guardant API 
+                             ! release is too old (nse_ProtocolNotSup)
+nse_CnvType  EQUATE(38)      ! Non-existent reversible conversion method has been 
+                             ! specified (nse_CnvTypeError)
+nse_LastErr  EQUATE(39)      ! (nse_LastError)

@@ -1,0 +1,175 @@
+;List of files available to download
+
+;In 'KEYS' column example: 'S' - component for Stealth uses codes
+;                          's' - component for Stealth doesn't use codes
+;'#' - Partition (# Partition Name)
+;'@' - File information
+;'R' - Russian comments
+;'$' - Additionlly needed files
+;'B' - dongle Birthday (first release date) 
+
+;Release
+N 4.52
+V 21/05/2003
+
+;Used Keys
+K A=A,Guardant Aptus
+B 01/12/1994
+K S=S,Guardant Stealth
+B 01/01/1997
+K N=S,Guardant Net
+B 01/01/1997
+K F=S,Guardant Fidus
+B 01/10/2000
+
+;Items
+;==================================================================================================
+;  File Name  |   Size   |   Date   |Time |  CRC   | Ver |  KEYS  | Additional |  Remarks
+;==================================================================================================
+# Drivers&search utilities
+R Драйверы и утилиты поиска
+@  drivers.pak     505386 21/05/2003 13:11 817D61A9  4.60     asnf ------------ Guardant drivers
+R Драйверы Guardant
+@   chk_ga.pak      80941 14/01/2002 14:40 DBFE60EE              a ------------ Guardant Aptus dongle search utilities
+R Утилиты для поиска ключей Guardant Aptus
+@   chk_gn.pak     172279 21/05/2003 13:42 7472A9B7            snf ------------ Guardant Fidus/Stealth/Net dongle search utilities
+R Утилиты для поиска ключей Guardant Fidus/Stealth/Net
+# Guardant dongle test utilities
+R Утилиты тестирования ключей
+@  test_ga.pak     126307 21/05/2003 14:08 67F6C5F3              A ------------ Guardant Aptus dongle test utilities
+R Тесты для Guardant Aptus
+@  test_gs.pak     173605 21/05/2003 14:08 A9495B06             Sf ------------ Guardant Fidus/Stealth dongle test utilities
+R Тесты для Guardant Stealth
+@  test_gn.pak     273346 21/05/2003 14:08 FF857466              n ------------ Guardant Net dongle test utilities
+R Тесты для Guardant Net
+# Automatic protection vaccines
+R Вакцины автоматической защиты
+@  vac_dos.pak     106199 20/05/2003 13:31 CF6F7719  4.52     ASnf ------------ For DOS platform
+R Для платформы DOS
+@  vac_w16.pak     149146 20/05/2003 14:02 37B493FF  4.42     ASnf ------------ For Win16 platform
+R Для платформы Win16
+@  vac_w32.pak     245246 20/05/2003 14:06 73E61DB2  4.42     ASnf ------------ For Win32 platform
+R Для платформы Win32
+# Automatic protection utilities
+R Утилиты автоматической защиты
+@   apudos.pak      77310 20/05/2003 13:30 E6E1F13C  4.52     ASnf  vac_dos.pak For DOS platform
+R Для платформы DOS
+@   apuw16.pak     118438 20/05/2003 14:02 020A1933  4.42     ASnf  vac_w16.pak For Win16 platform
+R Для платформы Win16
+@   apuw32.pak     331146 20/05/2003 14:04 15B0CEF1  4.42     ASnf  vac_w32.pak For Win32 platform
+R Для платформы Win32
+# Guardant Aptus API (Libraries and samples)
+R Guardant Aptus API (Библиотеки и примеры)
+@  rcom_ga.pak     320587 17/12/2002 14:17 563B0457              a ------------ Guardant Aptus API libraries
+R Библиотеки Guardant Aptus API 
+@  rdos_ga.pak      36772 06/12/2002 15:08 35FF9BB5              a  rcom_ga.pak Samples for DOS platform
+R Примеры для платформы DOS
+@  rw16_ga.pak      64221 06/12/2002 15:08 7BF76570              a  rcom_ga.pak Samples for Win16 platform
+R Примеры для платформы Win16
+@  rw32_ga.pak      37930 06/12/2002 15:09 94E31DA0              a  rcom_ga.pak Samples for Win32 platform
+R Примеры для платформы Win32
+# Guardant Fidus/Stealth API (Libraries and samples)
+R Guardant Fidus/Stealth API (Библиотеки и примеры)
+@  rcom_gf.pak       3597 06/06/2002 12:52 E98B7951              f ------------ Guardant Fidus API notes
+R Замечания для Guardant Fidus API
+@  rcom_gs.pak     820265 12/02/2003 14:31 5AB9948E             sf ------------ Guardant Fidus/Stealth API libraries
+R Библиотеки Guardant Fidus/Stealth API
+@  rdos_gs.pak      77253 06/12/2002 15:17 DA15540C             sf  rcom_gs.pak Samples for DOS platform
+R Примеры для платформы DOS
+@  rw16_gs.pak     110162 06/12/2002 15:17 E874C3E0             sf  rcom_gs.pak Samples for Win16 platform
+R Примеры для платформы Win16
+@  rw32_gs.pak     250195 20/05/2003 13:27 770A0D9E             sf  rcom_gs.pak Samples for Win32 platform
+R Примеры для платформы Win32
+# Guardant Fidus/Stealth API (compatibility function)
+R Guardant Fidus/Stealth API (Функция совместимости)
+@ rcom_gsa.pak     811213 17/12/2002 14:17 B4B570B3             sf ------------ Guardant Fidus/Stealth API libraries
+R Библиотеки Guardant Fidus/Stealth API
+@ rdos_gsa.pak      34478 06/12/2002 15:19 3CBFFAB0             sf rcom_gsa.pak Samples for DOS platform
+R Примеры для платформы DOS
+@ rw16_gsa.pak      60565 06/12/2002 15:19 061B14D2             sf rcom_gsa.pak Samples for Win16 platform
+R Примеры для платформы Win16
+@ rw32_gsa.pak      16320 06/12/2002 15:19 27377A14             sf rcom_gsa.pak Samples for Win32 platform
+R Примеры для платформы Win32
+# Guardant Net API (Libraries and samples)
+R Guardant Net API (Библиотеки и примеры)
+@  rcom_gn.pak    1328108 20/05/2003 13:26 0783935C              n ------------ Guardant Net API libraries
+R Библиотеки Guardant Net API
+@  rdos_gn.pak      50619 15/12/2002 16:21 305875E6              n  rcom_gn.pak Samples for DOS platform
+R Примеры для платформы DOS
+@  rw16_gn.pak      85067 15/12/2002 16:21 EAD4A79E              n  rcom_gn.pak Samples for Win16 platform
+R Примеры для платформы Win16
+@  rw32_gn.pak     167720 20/05/2003 13:26 821AC0CF              n  rcom_gn.pak Samples for Win32 platform
+R Примеры для платформы Win32
+# Guardant dongle programming utilities
+R Утилиты программирования ключей
+@  uloc_ga.pak     163763 23/05/2001 13:00 A8BE2A29              A  vac_dos.pak Guardant Aptus utilities
+R Утилиты для Guardant Aptus
+@  uloc_gn.pak    1105238 21/05/2003 13:50 4C926842   2.0      Snf  vac_dos.pak Guardant Fidus/Stealth/Net programming utilities
+R Утилиты для Guardant Fidus/Stealth/Net
+$                                                                   vac_w16.pak
+# Guardant dongle remote programming utilities
+R Утилиты удаленного программирования
+@  urmt_ga.pak      60801 14/09/2000 09:29 70E29A96              A ------------ Guardant Aptus utilities
+R Утилиты для Guardant Aptus              
+@  urmt_gn.pak     275518 20/05/2003 14:01 8E40A5D8            Snf  vac_w32.pak Guardant Fidus/Stealth/Net remote programming utilities
+R Утилиты для Guardant Fidus/Stealth/Net
+# Servers and network monitors for Guardant Net dongle
+R Серверы и сетевые мониторы для Guardant Net
+@  nserv32.pak     380836 21/05/2003 14:10 44A99B26   2.3        n  vac_w32.pak Win32 platform server
+R Сервер для платформы Win32
+@     nmon.pak     205426 21/05/2003 14:09 C9BB0260   4.1        n ------------ Guardant Net monitors
+R Мониторы для Guardant Net
+# Information
+R Информация
+@   qstart.pak     715202 20/05/2003 14:23 3FF93ADF                ------------ Getting started with Guardant
+R Руководство "Приступая к работе"
+@    guide.pak    2599896 20/05/2003 14:23 1F32B4D4                ------------ Guardant user's manual
+R Руководство пользователя Guardant
+@ api_help.pak     206388 20/05/2003 14:23 9BD08658                ------------ Guardant API help
+R Справка по Guardant API
+@ instruct.pak     264062 20/05/2003 14:23 C6CE7B0F                ------------ Instruction on operating Guardant dongles
+R Инструкция по эксплуатации электронных ключей Guardant
+@ info_api.pak        263 15/12/2002 16:10 980BF06B           asnf ------------ Information file for Guardant API
+R Информационный файл API Guardant
+@  info_gs.pak        798 15/12/2002 16:10 B7C55FBD              s ------------ Information file for Guardant Stealth API
+R Информационный файл API Guardant Stealth
+@ info_gsa.pak        881 15/12/2002 16:10 0B2234BE              n ------------ Information file for Guardant Stealth API (compatibility function)
+R Информационный файл API Guardant Stealth (функция совместимости)
+@  info_gn.pak        660 15/12/2002 16:10 1C23C93E             as ------------ Information file for Guardant Net API
+R Информационный файл API Guardant Net
+@  info_ga.pak        813 15/12/2002 16:10 5FE653D1              a ------------ Information file for Guardant Aptus API
+R Информационный файл API Guardant Aptus
+@ apipdfgs.pak     167176 15/12/2002 16:10 B8F77DE6             sf ------------ API Guardant Stealth and Fidus description
+R Описание API Guardant Stealth и Fidus
+@ apipdfgn.pak     157898 15/12/2002 16:10 F8D980E5              n ------------ API Guardant Net description
+R Описание API Guardant Net
+# Others
+R Разное
+@ guardant.pak     257228 20/05/2003 13:35 005B7B3B   1.1          ------------ Guardant Integrator
+R Guardant Integrator
+@ gsoftupd.pak     284808 20/05/2003 13:32 5B1D0174   1.1          ------------ Guardant software on-line update utility
+R Мастер удаленного обновления ПО
+@   srcgen.pak     892594 21/05/2003 13:48 1B8EFA45   1.0       Sf ------------ Source code generator
+R Генератор исходных текстов
+@   wizard.pak     819121 21/05/2003 13:52 304B33AC                  apudos.pak Auto Protection Wizard
+R Мастер автоматической защиты
+$                                                                    apuw16.pak
+$                                                                    apuw32.pak
+$                                                                   vac_dos.pak
+$                                                                   vac_w16.pak
+$                                                                   vac_w32.pak
+$                                                                   drivers.pak
+@      com.pak      32379 21/05/2003 14:23 46AEFD3D  4.52          ------------ Version, Readme, Filelist
+R Версия, Readme, Лист с файлами
+@   uninst.pak      62713 21/05/2003 14:22 37927086                ------------ Uninstall
+R Программа деинсталляции
+@    setup.pak     153115 21/05/2003 13:45 925D0CD1                ------------ "setup.exe" installation program
+R Программа установки "setup.exe"
+@   use_ga.pak         67 22/09/2000 09:43 99FE2A1F              a ------------ Service files for Guardant Aptus
+R Служебные файлы Guardant Aptus
+@   use_gf.pak         68 22/09/2000 09:43 FFD5FAB4              f ------------ Service files for Guardant Fidus
+R Служебные файлы Guardant Fidus
+@   use_gs.pak         67 22/09/2000 09:43 4BA846C2              s ------------ Service files for Guardant Stealth
+R Служебные файлы Guardant Stealth
+@   use_gn.pak         68 22/09/2000 09:43 6453B5ED              n ------------ Service files for Guardant Net
+R Служебные файлы Guardant Net

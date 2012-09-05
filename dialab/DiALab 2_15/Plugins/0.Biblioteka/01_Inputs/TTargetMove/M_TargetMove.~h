@@ -1,0 +1,46 @@
+//===========================================================================
+#ifndef M_TargetMoveH
+#define M_TargetMoveH
+//===========================================================================
+#include "mpiElement.h"
+#include "mpiManeuver.h"
+//===========================================================================
+class TTargetMove : public TElement {
+private:
+     // ----------------  Входные параметры ------------
+        TFloat H0;
+        TFloat Betta0;
+        TFloat V0;
+        TFloat R0;
+        TFloat K0;
+        TFloat t1; // --- Время до розворота -----
+        TFloat GLoad;       // ---- Перегрузка на развороте ------
+        TFloat fi; // ---- Угол разворота ----
+        TFloat radius;      // ---- радиус разворота *-----
+        TFloat a1;      // ---- ускорение на 1 участке ------
+        TFloat a3;      // ---- ускорение на 3 участке ------
+
+        TFloat sigma1;   // ---- Шум в канале дальности ----
+        TFloat sigma2;   // ---- Шум в азимутальном канале ----
+        TFloat sigma3;   // ---- Шум в угломестном канале ---
+     // ----------------
+        TTargetTraektory *TargetTraektory;
+public:
+        TTargetMove();
+        virtual ~TTargetMove();
+
+
+
+        virtual void     SaveToStream(TStream *aStream);
+        virtual void     LoadFromStream(TStream *aStream);
+        virtual void     DrawElementFace();
+        virtual void     Edit();
+        virtual void     Copy(void *aElement);
+        virtual void     Init();
+        virtual void     InitBeforeRun();
+        virtual void     Run();
+        virtual void     DoneRun(){};
+        static  TTargetMove *Create() { return new TTargetMove(); };
+};
+//===========================================================================
+#endif

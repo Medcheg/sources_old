@@ -1,0 +1,67 @@
+//---------------------------------------------------------------------------
+#include <vcl.h>
+#pragma hdrstop
+
+#include "mpiErrors_and_Warning.h"
+#include "mpiDeclaration.h"
+
+//---------------------------------------------------------------------------
+
+#pragma package(smart_init)
+//===========================================================================
+void Warning_if_Model_Is_Runnig(HWND aHandle)
+{
+   AnsiString aCaption =  ApplicationName +  " - Ошибка ввода";
+   MessageBox(aHandle, "Редактирование свойств элемента не доступно. \nОстановите моделирование.", aCaption.c_str(), MB_APPLMODAL|MB_OK|MB_ICONWARNING);
+}
+
+//===========================================================================
+void Error_Loading_Scheme_File(HWND aHandle, AnsiString aFileName)
+{
+   AnsiString aCaption =  ApplicationName +  " - Ошибка загрузки";
+   AnsiString aMes = "Ошибка загрузки файла '" + aFileName + "' . Возможные ошибки:\n\n  *Ошибка совместного доступу к файлу.\n  *Испорчена внутренняя архитектура файла.";
+   MessageBox(aHandle, aMes.c_str() , aCaption.c_str(), MB_APPLMODAL|MB_OK|MB_ICONERROR);
+}
+
+//===========================================================================
+void InputError_None_Digital_Value(HWND aHandle)
+{
+   AnsiString aCaption =  ApplicationName +  " - Ошибка ввода данных";
+   MessageBox(aHandle, "Введeно не числовое значение", aCaption.c_str(), MB_OK|MB_SYSTEMMODAL|MB_ICONERROR);
+}
+
+//===========================================================================
+void InputError_None_Integer_Value(HWND aHandle)
+{
+   AnsiString aCaption =  ApplicationName +  " - Ошибка ввода параметров";
+   MessageBox(aHandle, "Введено не целочисленное значение", aCaption.c_str(), MB_APPLMODAL|MB_OK|MB_ICONERROR);
+}
+
+//===========================================================================
+void InputError_SumatorParam1(HWND aHandle)
+{
+   AnsiString aCaption =  ApplicationName +  " - Ошибка ввода";
+   MessageBox(aHandle, "Ошибка ввода параметров сумматора \nНеобходимо вводить только символы '+' или '-'", aCaption.c_str(), MB_APPLMODAL|MB_OK|MB_ICONERROR);
+}
+
+//===========================================================================
+void InputError_SumatorParam2(HWND aHandle)
+{
+   AnsiString aCaption =  ApplicationName +  " - Ошибка ввода";
+   MessageBox(aHandle, "Ошибка ввода параметров сумматора \nМинимальное количество входов сумматора >= 1", aCaption.c_str(), MB_APPLMODAL|MB_OK|MB_ICONERROR);
+ }
+
+//===========================================================================
+void Error_None_LicenseProgram(HWND aHandle)
+{
+   AnsiString aCaption =  ApplicationName +  " - Ошибка лицензии";
+   MessageBox(aHandle, "Не лицензионная версия программы ... . \n\n По вопросам приобретения лицензии обращайтесь в компанию 'Цифровые системы и технологии'\n\n mailto:info@dst.com.ua", aCaption.c_str(), MB_APPLMODAL|MB_OK|MB_ICONWARNING);
+}
+
+//===========================================================================
+void Warning_Edit_Link_Properties(HWND aHandle)
+{
+   AnsiString aCaption =  ApplicationName +  " - Нередактируемые свойства";
+   MessageBox(aHandle, "Редактирование свойств данной связи не доступно.\nДля получения возможности редактирования свойств связи необходимо отметить пунтк:\n\n 'Редактор->Установка цвета связи 'Выходных елементов''", aCaption.c_str(), MB_APPLMODAL|MB_OK|MB_ICONINFORMATION);
+}
+

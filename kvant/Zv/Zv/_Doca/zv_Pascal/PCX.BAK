@@ -1,0 +1,31 @@
+   unit pcx;
+   interface
+   uses pcx_tp,gx_tp,graph,crt;
+   procedure save(st:string);
+   procedure setdisplay(a:byte);
+   var ffff:text;
+   implementation
+   var retcode:integer;
+   procedure setdisplay(a:byte);
+   begin
+   retcode:=gxsetdisplay({pcxega_10}a);  {pcxvga_12,13}
+   if retcode<0 then outtextxy(100,100,'display isn''t initialized');
+   end;
+   procedure save(st:string);
+   var frt:file;
+   begin
+   retcode:=pcxdisplayfile(st,0,0,639,349,0);
+   if retcode<0 then begin;
+   assign(frt,st);
+   erase(frt);
+   textmode(c80);
+   textcolor(15);
+   gotoxy(18,12);write('     Ошибка записи. Нет места на диске !');
+   close(ffff);
+   asm
+   mov ax,$4c00
+   int $21
+   end;
+   end;
+   end;
+   end.

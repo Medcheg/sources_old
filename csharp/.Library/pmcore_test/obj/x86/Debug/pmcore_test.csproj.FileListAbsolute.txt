@@ -1,0 +1,8 @@
+E:\.PersonalProjects\CSharp\.Library\pmcore_test\bin\Debug\pmcore_test.exe.config
+E:\.PersonalProjects\CSharp\.Library\pmcore_test\bin\Debug\pmcore_test.exe
+E:\.PersonalProjects\CSharp\.Library\pmcore_test\bin\Debug\pmcore_test.pdb
+E:\.PersonalProjects\CSharp\.Library\pmcore_test\bin\Debug\pmcore.dll
+E:\.PersonalProjects\CSharp\.Library\pmcore_test\bin\Debug\pmcore.pdb
+E:\.PersonalProjects\CSharp\.Library\pmcore_test\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\.PersonalProjects\CSharp\.Library\pmcore_test\obj\x86\Debug\pmcore_test.exe
+E:\.PersonalProjects\CSharp\.Library\pmcore_test\obj\x86\Debug\pmcore_test.pdb

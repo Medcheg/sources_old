@@ -1,0 +1,28 @@
+Functions called:
+ fflush (4 times)
+ delete (11 times)
+ free (13 times)
+ cos (4334 times)
+ sin (4334 times)
+ sqrt (40 times)
+ memset (2 times)
+ ceil (107 times)
+ vsnprintf (2 times)
+ SysReallocMem (183 times)
+ new (11 times)
+ SysFreeMem (10773 times)
+ SysGetMem (10773 times)
+ lstrlenA (1 times)
+ lstrcpyA (4 times)
+ calloc (1 times)
+ strlen (57 times)
+ realloc (4331 times)
+ strdup (1 times)
+ malloc (8 times)
+ memcpy (2 times)
+Resource types used:
+ object (11 allocs, 11 max)
+ memory block (10786 allocs, 2470 max)
+Modules used:
+ 00400000 08/27/2004 09:42:36 D:\_Programs\Work\Kvant\Zv\Project\Zv.exe
+==========================================

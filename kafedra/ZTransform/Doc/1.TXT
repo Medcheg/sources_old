@@ -1,0 +1,2 @@
+k0 := A1*(1 + 2*Zetta_2e*T_2e*w + sqr(T_2e*w))*(1 + 2*Zetta_4e*T_4e*w + sqr(T_4e*w))*(1 + T_6e*w)*(1 + T_8e*w)*(1 + T_10e*w)*(1 + T_12e*w);
+

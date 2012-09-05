@@ -1,0 +1,4 @@
+E:\.PersonalProjects\CSharp\test1\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\.PersonalProjects\CSharp\test1\obj\x86\Debug\test1.MainForm.resources
+E:\.PersonalProjects\CSharp\test1\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\.PersonalProjects\CSharp\test1\obj\x86\Debug\GenerateResource.write.1.tlog

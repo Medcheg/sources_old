@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.05.03"/>
+    <PROJECT value="Far_2.exe"/>
+    <OBJFILES value="Far_2.obj Unit_Main.obj mpiDeclaration.obj mpiTypes.obj mpiIndicator.obj 
+      Library\Wave\Unit_Wave.obj Unit_ProjectParam.obj mpiFAR.obj mpiTarget.obj 
+      mpiSetupMatrix.obj mpiMath.obj Unit_FarParam.obj Unit_TargetList.obj 
+      Unit_SimulationDiagram.obj Unit_TargetIndicator.obj mpiDiagram.obj 
+      Unit_Simulation3DDiagram.obj mpiLibrary.obj Unit_FiltrParam.obj 
+      mpiFILTRS.obj Library\Ach_Fch_Form\Unit_AchFch.obj 
+      Library\Ach_Fch_Form\Unit_AchFchParam.obj Unit_DrawPerehodProcess.obj 
+      Unit_GraphicList.obj Library\Wave\mpiWave.obj mpiGraph.obj 
+      Unit_TargetsParam.obj Unit_About.obj Unit_TargetIndicator_Param.obj 
+      Unit_PelengCharacteristic.obj mpi_Save_DST_Param.obj"/>
+    <RESFILES value="Far_2.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) Unit_Main.dfm Library\Wave\Unit_Wave.dfm Unit_ProjectParam.dfm 
+      Unit_FarParam.dfm Unit_TargetList.dfm Unit_SimulationDiagram.dfm 
+      Unit_TargetIndicator.dfm Unit_Simulation3DDiagram.dfm Unit_FiltrParam.dfm 
+      Library\Ach_Fch_Form\Unit_AchFch.dfm 
+      Library\Ach_Fch_Form\Unit_AchFchParam.dfm Unit_DrawPerehodProcess.dfm 
+      Unit_GraphicList.dfm Unit_TargetsParam.dfm Unit_About.dfm 
+      Unit_TargetIndicator_Param.dfm Unit_PelengCharacteristic.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="bcbsmp50.lib Vclx50.lib Tee50.lib SenseiPackage.lib Vcl50.lib"/>
+    <SPARELIBS value="Vcl50.lib SenseiPackage.lib Tee50.lib Vclx50.lib bcbsmp50.lib"/>
+    <PACKAGES value="Vcl50.bpi Vclx50.bpi bcbsmp50.bpi TeeQR50.bpi vclie50.bpi Vcldb50.bpi 
+      Inetdb50.bpi Inet50.bpi NMFast50.bpi webmid50.bpi dclocx50.bpi 
+      Package1.bpi Qrpt50.bpi SenseiPackage.bpi"/>
+    <PATHCPP value=".;Library\Wave;Library\Ach_Fch_Form"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="tlink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="Far_2.cpp"/>
+    <INCLUDEPATH value="Library\Ach_Fch_Form;..\..\..\..\_components\minuteedit;..\..\..\..\_components\gradusedit;..\..\..\..\_components\floatedit;..\..\..\..\_components\intedit;..\..\..\..\__components\_edits\_tminuteedit;..\..\..\..\__components\_edits\_tfloatedit;..\..\..\..\__components\_edits\_tintedit;Library\Wave;..\..\..\..\__components\_edits\_tgradusedit;..\..\..\__components\_edits\_tgradusedit;&quot;C:\Program Files\Borland\CBuilder5\Projects\&quot;;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="Library\Ach_Fch_Form;..\..\..\..\_components\minuteedit;..\..\..\..\_components\gradusedit;..\..\..\..\_components\floatedit;..\..\..\..\_components\intedit;..\..\..\..\__components\_edits\_tminuteedit;..\..\..\..\__components\_edits\_tfloatedit;..\..\..\..\__components\_edits\_tintedit;Library\Wave;..\..\..\..\__components\_edits\_tgradusedit;..\..\..\__components\_edits\_tgradusedit;&quot;C:\Program Files\Borland\CBuilder5\Projects\&quot;;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-ILibrary\Ach_Fch_Form -I..\..\..\..\_components\minuteedit 
+      -I..\..\..\..\_components\gradusedit -I..\..\..\..\_components\floatedit 
+      -I..\..\..\..\_components\intedit 
+      -I..\..\..\..\__components\_edits\_tminuteedit 
+      -I..\..\..\..\__components\_edits\_tfloatedit 
+      -I..\..\..\..\__components\_edits\_tintedit -ILibrary\Wave 
+      -I..\..\..\..\__components\_edits\_tgradusedit 
+      -I..\..\..\__components\_edits\_tgradusedit 
+      -I&quot;C:\Program Files\Borland\CBuilder5\Projects\.&quot; -I$(BCB)\include 
+      -I$(BCB)\include\vcl -src_suffix cpp -D_DEBUG -boa"/>
+    <CFLAG1 value="-Od -H=$(BCB)\lib\vcl50.csm -Hc -Vx -Ve -X- -r- -a8 -b- -k -y -v -vi- -c 
+      -tW -tWM"/>
+    <PFLAGS value="-$Y+ -$W -$O- -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zi"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn -v"/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+  </LINKER>
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=1
+MajorVer=1
+MinorVer=0
+Release=0
+Build=23
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1058
+CodePage=1251
+
+[Version Info Keys]
+CompanyName=DST
+FileDescription=
+FileVersion=1.0.0.23
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+
+[HistoryLists\hlIncludePath]
+Count=3
+Item0=Library\Ach_Fch_Form;..\..\..\..\_components\minuteedit;..\..\..\..\_components\gradusedit;..\..\..\..\_components\floatedit;..\..\..\..\_components\intedit;..\..\..\..\__components\_edits\_tminuteedit;..\..\..\..\__components\_edits\_tfloatedit;..\..\..\..\__components\_edits\_tintedit;Library\Wave;..\..\..\..\__components\_edits\_tgradusedit;..\..\..\__components\_edits\_tgradusedit;C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\include;$(BCB)\include\vcl
+Item1=..\..\..\..\_components\minuteedit;..\..\..\..\_components\gradusedit;..\..\..\..\_components\floatedit;..\..\..\..\_components\intedit;..\..\..\..\__components\_edits\_tminuteedit;..\..\..\..\__components\_edits\_tfloatedit;..\..\..\..\__components\_edits\_tintedit;Library\Wave;..\..\..\..\__components\_edits\_tgradusedit;..\..\..\__components\_edits\_tgradusedit;C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\include;$(BCB)\include\vcl
+Item2=..\..\..\..\__components\_edits\_tminuteedit;..\..\..\..\__components\_edits\_tfloatedit;..\..\..\..\__components\_edits\_tintedit;Library\Wave;..\..\..\..\__components\_edits\_tgradusedit;..\..\..\__components\_edits\_tgradusedit;C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=3
+Item0=Library\Ach_Fch_Form;..\..\..\..\_components\minuteedit;..\..\..\..\_components\gradusedit;..\..\..\..\_components\floatedit;..\..\..\..\_components\intedit;..\..\..\..\__components\_edits\_tminuteedit;..\..\..\..\__components\_edits\_tfloatedit;..\..\..\..\__components\_edits\_tintedit;Library\Wave;..\..\..\..\__components\_edits\_tgradusedit;..\..\..\__components\_edits\_tgradusedit;C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item1=..\..\..\..\_components\minuteedit;..\..\..\..\_components\gradusedit;..\..\..\..\_components\floatedit;..\..\..\..\_components\intedit;..\..\..\..\__components\_edits\_tminuteedit;..\..\..\..\__components\_edits\_tfloatedit;..\..\..\..\__components\_edits\_tintedit;Library\Wave;..\..\..\..\__components\_edits\_tgradusedit;..\..\..\__components\_edits\_tgradusedit;C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item2=..\..\..\..\__components\_edits\_tminuteedit;..\..\..\..\__components\_edits\_tfloatedit;..\..\..\..\__components\_edits\_tintedit;Library\Wave;..\..\..\..\__components\_edits\_tgradusedit;..\..\..\__components\_edits\_tgradusedit;C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+  </IDEOPTIONS>
+</PROJECT>

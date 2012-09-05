@@ -1,0 +1,25 @@
+<?xml version="1.0" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/Program Files/Analog Devices/VisualDSP 5.0/System/linker_log.xsl"?>
+<DOCUMENT gen_time='Wed Mar 03 17:35:26 2010
+'>
+<MSG id='01515990' mid='li3201' type='Informational' suppressed=''>
+<TEXT><![CDATA[Successfully eliminated 2462 bytes in processor 'p0'
+]]></TEXT>
+<EXTENDED_INFO><![CDATA[Eliminated object (_i, _i+0x1) of size 5 bytes from '.\Release\gc.doj(seg_dmda)'
+Eliminated object (_k, _k+0x1) of size 5 bytes from '.\Release\gc.doj(seg_dmda)'
+Eliminated object (_zz, _zz+0x1) of size 5 bytes from '.\Release\gc.doj(seg_dmda)'
+Eliminated object (_g, _g+0x1) of size 5 bytes from '.\Release\gc.doj(seg_dmda)'
+Eliminated object (_Pasha, ._Pasha.end) of size 48 bytes from '.\Release\gc.doj(seg_pmco)'
+Eliminated object (_i, _i+0x1) of size 5 bytes from '.\gclib.doj(seg_dmda)'
+Eliminated object (_buff, _buff+0x1) of size 5 bytes from '.\gclib.doj(seg_dmda)'
+Eliminated object (_global_a, _global_a+0x1) of size 5 bytes from '.\gclib.doj(seg_dmda)'
+Eliminated object (_global_b, _global_b+0x1) of size 5 bytes from '.\gclib.doj(seg_dmda)'
+Eliminated object (_global_p, _global_p+0x1) of size 5 bytes from '.\gclib.doj(seg_dmda)'
+Eliminated object (0x17,0x18) of size 5 bytes from '.\gclib.doj(seg_dmda)'
+Eliminated object (_WrUART, ._WrUART.end) of size 258 bytes from '.\gclib.doj(seg_pmco)'
+Eliminated object (_Delay3, ._Delay3.end) of size 138 bytes from '.\gclib.doj(seg_pmco)'
+Eliminated object (_ForPack, ._ForPack.end) of size 1326 bytes from '.\gclib.doj(seg_pmco)'
+Eliminated object (_Get_PhaseInvert_180, ._Get_PhaseInvert_180.end) of size 642 bytes from '.\Release\pmMath.doj(seg_pmco)'
+]]></EXTENDED_INFO>
+</MSG>
+</DOCUMENT>

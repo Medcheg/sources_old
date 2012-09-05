@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2009.02.03 13:42:56.864.cpp,E:\My Documents\RAD Studio\Projects\Unit1.cpp=E:\_Programs\.Suka_Inna\Interpolation\Unit_main.cpp</Transaction>
+    <Transaction>2009.02.03 13:42:56.864.h,E:\My Documents\RAD Studio\Projects\Unit1.h=E:\_Programs\.Suka_Inna\Interpolation\Unit_main.h</Transaction>
+    <Transaction>2009.02.03 13:42:56.864.dfm,E:\My Documents\RAD Studio\Projects\Unit1.dfm=E:\_Programs\.Suka_Inna\Interpolation\Unit_main.dfm</Transaction>
+    <Transaction>2009.02.03 13:43:07.188.cbproj,E:\My Documents\RAD Studio\Projects\Project1.cbproj=E:\_Programs\.Suka_Inna\Interpolation\Interpolation_zn.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>

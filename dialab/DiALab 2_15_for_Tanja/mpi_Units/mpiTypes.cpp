@@ -1,0 +1,15 @@
+//===========================================================================
+#include <vcl.h>
+#pragma hdrstop
+
+#include "mpiTypes.h"
+//===========================================================================
+//===========================================================================
+TColor ColorArray[] = {clRed, clBlue, clMaroon, clLime, clAqua, clPurple, clYellow, clFuchsia, clBlack, clOlive, clLime, clWhite, clBlack, clTeal, clDkGray, clFuchsia, clGray, clLtGray, clLime, clNavy, clYellow, clSilver, clWhite};
+
+//---------------------------------------------------------------------------
+const TFloat pi              = 3.1415926535897932384626433832795;
+const TFloat pi_div_2        = 1.5707963267948966192313216916398;
+const TFloat tri_pi_div_2    = 4.7123889803846898576939650749193;
+const TFloat two_pi          = 6.283185307179586476925286766559;
+

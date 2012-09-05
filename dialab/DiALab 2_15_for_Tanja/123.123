@@ -1,0 +1,23 @@
+Вираж на Н=const 1
+     (2)Сумматор 1     (2)Сумматор 2     (2)Сумматор 3     (1)no caption     (3)Байесовский фильтр Калмана 1     (1)DST фильтр C0 + С1*t 1     (1)Байесовский фильтр Калмана 1     (2)Байесовский фильтр Калмана 1     (1)no caption     (1)Оценка Х     (1)Полином 1     (1)no caption     (1)DST фильтр C0 + С1*t 2     (1)Байесовский фильтр Калмана 2     (2)Байесовский фильтр Калмана 2     (3)Байесовский фильтр Калмана 2     (1)no caption     (1)Оценка Y     (2)Полином 1     (1)no caption     (1)no caption     (1)Оценка Z     (3)Полином 1     (1)Сумматор 1     (1)Стандартный выход 4     (1)Сумматор 2     (2)Стандартный выход 4     (1)Сумматор 3     (3)Стандартный выход 4
+
+
+( E:\_Programs\Work\DiALab\DiALab 2_15_for_Tanja\_Schemes_\Байесовский фильтр.dls )Вираж на Н=const 1
+( Фильтрация канала Х )no caption
+( Фильтрация канала Х )DST фильтр C0 + С1*t 1
+( Фильтрация канала Х )Байесовский фильтр Калмана 1
+( Фильтрация канала Х )no caption
+( E:\_Programs\Work\DiALab\DiALab 2_15_for_Tanja\_Schemes_\Байесовский фильтр.dls )Оценка Х
+( Фильтрация канала Y )no caption
+( Фильтрация канала Y )DST фильтр C0 + С1*t 2
+( Фильтрация канала Y )Байесовский фильтр Калмана 2
+( Фильтрация канала Y )no caption
+( E:\_Programs\Work\DiALab\DiALab 2_15_for_Tanja\_Schemes_\Байесовский фильтр.dls )Оценка Y
+( Фильтрация канала Z )no caption
+( Фильтрация канала Z )no caption
+( E:\_Programs\Work\DiALab\DiALab 2_15_for_Tanja\_Schemes_\Байесовский фильтр.dls )Оценка Z
+( E:\_Programs\Work\DiALab\DiALab 2_15_for_Tanja\_Schemes_\Байесовский фильтр.dls )Полином 1
+( E:\_Programs\Work\DiALab\DiALab 2_15_for_Tanja\_Schemes_\Байесовский фильтр.dls )Сумматор 1
+( E:\_Programs\Work\DiALab\DiALab 2_15_for_Tanja\_Schemes_\Байесовский фильтр.dls )Сумматор 2
+( E:\_Programs\Work\DiALab\DiALab 2_15_for_Tanja\_Schemes_\Байесовский фильтр.dls )Сумматор 3
+( E:\_Programs\Work\DiALab\DiALab 2_15_for_Tanja\_Schemes_\Байесовский фильтр.dls )Стандартный выход 4

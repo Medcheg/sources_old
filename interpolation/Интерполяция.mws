@@ -1,0 +1,58 @@
+{VERSION 4 0 "IBM INTEL NT" "4.0" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 1 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 
+0 0 1 }{CSTYLE "2D Output" 2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 1 }
+{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 
+2 2 1 1 1 1 }1 1 0 0 0 0 1 0 1 0 2 2 0 1 }{PSTYLE "Maple Output" -1 
+11 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 1 1 1 }3 3 0 
+0 0 0 1 0 1 0 2 2 0 1 }{PSTYLE "Maple Output" -1 12 1 {CSTYLE "" -1 
+-1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 1 1 1 }1 3 0 0 0 0 1 0 1 0 2 2 
+0 1 }}
+{SECT 0 {EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 378 "a0 :=  ANodeBuffer[
+zn];\na1 :=  - 11/6*ANodeBuffer[zn] + 3.0*ANodeBuffer[zn+1] - 9/6*ANod
+eBuffer[zn+2] + 2/6*ANodeBuffer[zn+3];\na2 :=         ANodeBuffer[zn] \+
+- 2.5*ANodeBuffer[zn+1] + 2.0*ANodeBuffer[zn+2] - 0.5*ANodeBuffer[zn+3
+];\na3 :=  -  1/6*ANodeBuffer[zn] + 0.5*ANodeBuffer[zn+1] - 0.5*ANodeB
+uffer[zn+2] + 1/6*ANodeBuffer[zn+3];\n\n    Dest :=  a0 + a1*t + a2*t*
+t + a3*t*t*t;\n" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%#a0G&%,ANodeBuffe
+rG6#%#znG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%#a1G,*&%,ANodeBufferG6#
+%#znG#!#6\"\"'*&$\"#I!\"\"\"\"\"&F'6#,&F)F1F1F1F1F1*&#\"\"$\"\"#F1&F'6
+#,&F)F1F8F1F1F0*&#F1F7F1&F'6#,&F)F1F7F1F1F1" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%#a2G,*&%,ANodeBufferG6#%#znG\"\"\"*&$\"#D!\"\"F*&F'6#
+,&F)F*F*F*F*F.*&$\"#?F.F*&F'6#,&F)F*\"\"#F*F*F**&$\"\"&F.F*&F'6#,&F)F*
+\"\"$F*F*F." }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%#a3G,*&%,ANodeBufferG
+6#%#znG#!\"\"\"\"'*&$\"\"&F+\"\"\"&F'6#,&F)F0F0F0F0F0*&$F/F+F0&F'6#,&F
+)F0\"\"#F0F0F+*&#F0F,F0&F'6#,&F)F0\"\"$F0F0F0" }}{PARA 12 "" 1 "" 
+{XPPMATH 20 "6#>%%DestG,*&%,ANodeBufferG6#%#znG\"\"\"*&,*F&#!#6\"\"'*&
+$\"#I!\"\"F*&F'6#,&F)F*F*F*F*F**&#\"\"$\"\"#F*&F'6#,&F)F*F:F*F*F3*&#F*
+F9F*&F'6#,&F)F*F9F*F*F*F*%\"tGF*F**&,*F&F**&$\"#DF3F*F4F*F3*&$\"#?F3F*
+F;F*F**&$\"\"&F3F*F@F*F3F*)FCF:F*F**&,*F&#F3F/*&$FNF3F*F4F*F**&$FNF3F*
+F;F*F3*&#F*F/F*F@F*F*F*)FCF9F*F*" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 0 "" }{TEXT -1 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 
+1 0 24 "dest_ex := expand(Dest);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%
+(dest_exG,<&%,ANodeBufferG6#%#znG\"\"\"*&#\"#6\"\"'F**&%\"tGF*F&F*F*!
+\"\"*($\"#IF1F*F0F*&F'6#,&F)F*F*F*F*F**&#\"\"$\"\"#F**&F0F*&F'6#,&F)F*
+F;F*F*F*F1*(#F*F:F*F0F*&F'6#,&F)F*F:F*F*F**&)F0F;F*F&F*F**($\"#DF1F*FF
+F*F5F*F1*($\"#?F1F*FFF*F=F*F**($\"\"&F1F*FFF*FBF*F1*&#F*F.F**&)F0F:F*F
+&F*F*F1*($FOF1F*FSF*F5F*F**($FOF1F*FSF*F=F*F1*(#F*F.F*FSF*FBF*F*" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 312 "simplify(dest_ex, \{ANodeBu
+ffer[zn+1], ANodeBuffer[zn+2], ANodeBuffer[zn+3]\});\nsimplify(dest_ex
+, \{ANodeBuffer[zn+0], ANodeBuffer[zn+2], ANodeBuffer[zn+3]\});\nsimpl
+ify(dest_ex, \{ANodeBuffer[zn+0], ANodeBuffer[zn+1], ANodeBuffer[zn+3]
+\});\nsimplify(dest_ex, \{ANodeBuffer[zn+0], ANodeBuffer[zn+1], ANodeB
+uffer[zn+2]\});\n" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,*&%,ANodeBufferG
+6#%#znG\"\"\"*($\"+LLLL=!\"*F(%\"tGF(F$F(!\"\"*&)F-\"\"#F(F$F(F(*($\"+
+nmmm;!#5F()F-\"\"$F(F$F(F." }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,(*&%\"t
+G\"\"\"&%,ANodeBufferG6#,&%#znGF&F&F&F&$\"\"$\"\"!*($\"+++++D!\"*F&)F%
+\"\"#F&F'F&!\"\"*($\"+++++]!#5F&)F%F-F&F'F&F&" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#,(*&%\"tG\"\"\"&%,ANodeBufferG6#,&%#znGF&\"\"#F&F&$!+++
+++:!\"**($F,\"\"!F&)F%F,F&F'F&F&*($\"+++++]!#5F&)F%\"\"$F&F'F&!\"\"" }
+}{PARA 11 "" 1 "" {XPPMATH 20 "6#,(*&%\"tG\"\"\"&%,ANodeBufferG6#,&%#z
+nGF&\"\"$F&F&$\"+LLLLL!#5*($\"+++++]F/F&)F%\"\"#F&F'F&!\"\"*($\"+nmmm;
+F/F&)F%F,F&F'F&F&" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 100 "ANode
+Buffer*t*ANodeBuffer[zn+3]-.5000000000*t^2*ANodeBuffer[zn+3]+.16666666
+67*t^3*ANodeBuffer[zn+3];" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+100 "ANodeBuffer*t*ANodeBuffer[zn+1]-2.500000000*t^2*ANodeBuffer[zn+1]
++.5000000000*t^3*ANodeBuffer[zn+1];" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 0 "" }}}}{MARK "3 2 0" 0 }{VIEWOPTS 1 1 0 1 1 1803 1 1 1 
+1 }{PAGENUMBERS 0 1 2 33 1 1 }

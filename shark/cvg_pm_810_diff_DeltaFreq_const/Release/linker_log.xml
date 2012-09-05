@@ -1,0 +1,45 @@
+<?xml version="1.0" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/Program Files/Analog Devices/VisualDSP 5.0/System/linker_log.xsl"?>
+<DOCUMENT gen_time='Tue Oct 12 17:10:47 2010
+'>
+<MSG id='016132A8' mid='li3201' type='Informational' suppressed=''>
+<TEXT><![CDATA[Successfully eliminated 330857 bytes in processor 'p0'
+]]></TEXT>
+<EXTENDED_INFO><![CDATA[Eliminated object (_S_TABLE, _S_TABLE+0x4000) of size 81920 bytes from '.\Release\gc.doj(seg_dmda)'
+Eliminated object (_i, _i+0x1) of size 5 bytes from '.\Release\gc.doj(seg_dmda)'
+Eliminated object (_k, _k+0x1) of size 5 bytes from '.\Release\gc.doj(seg_dmda)'
+Eliminated object (_zz, _zz+0x1) of size 5 bytes from '.\Release\gc.doj(seg_dmda)'
+Eliminated object (_g, _g+0x1) of size 5 bytes from '.\Release\gc.doj(seg_dmda)'
+Eliminated object (_i, _i+0x1) of size 5 bytes from '.\gclib.doj(seg_dmda)'
+Eliminated object (_buff, _buff+0x1) of size 5 bytes from '.\gclib.doj(seg_dmda)'
+Eliminated object (_global_a, _global_a+0x1) of size 5 bytes from '.\gclib.doj(seg_dmda)'
+Eliminated object (_global_b, _global_b+0x1) of size 5 bytes from '.\gclib.doj(seg_dmda)'
+Eliminated object (_global_p, _global_p+0x1) of size 5 bytes from '.\gclib.doj(seg_dmda)'
+Eliminated object (0x17,0x18) of size 5 bytes from '.\gclib.doj(seg_dmda)'
+Eliminated object (_WrUART, ._WrUART.end) of size 258 bytes from '.\gclib.doj(seg_pmco)'
+Eliminated object (_Delay3, ._Delay3.end) of size 138 bytes from '.\gclib.doj(seg_pmco)'
+Eliminated object (_ForPack, ._ForPack.end) of size 1326 bytes from '.\gclib.doj(seg_pmco)'
+Eliminated object (_S_TABLE, _S_TABLE+0x4000) of size 81920 bytes from '.\Release\pmInit.doj(seg_dmda)'
+Eliminated object (_Init_CascadFiltration, ._Init_CascadFiltration.end) of size 102 bytes from '.\Release\pmInit.doj(seg_pmco)'
+Eliminated object (_Init_ZForm, ._Init_ZForm.end) of size 168 bytes from '.\Release\pmInit.doj(seg_pmco)'
+Eliminated object (_Run_LowPass_IRFiltr_1rstOrder, ._Run_LowPass_IRFiltr_1rstOrder.end) of size 72 bytes from '.\Release\pmLibrary.doj(seg_pmco)'
+Eliminated object (_S_TABLE, _S_TABLE+0x4000) of size 81920 bytes from '.\Release\pmMath.doj(seg_dmda)'
+Eliminated object (_Run_Demod, ._Run_Demod.end) of size 222 bytes from '.\Release\pmMath.doj(seg_pmco)'
+Eliminated object (_S_TABLE, _S_TABLE+0x4000) of size 81920 bytes from '.\Release\pmSinCos.doj(seg_dmda)'
+Eliminated object (_sincos_KTable, _sincos_KTable+0x1) of size 5 bytes from '.\Release\pmSinCos.doj(seg_dmda)'
+Eliminated object (_sincos_K, _sincos_K+0x1) of size 5 bytes from '.\Release\pmSinCos.doj(seg_dmda)'
+Eliminated object (_sincos_n1, _sincos_n1+0x1) of size 5 bytes from '.\Release\pmSinCos.doj(seg_dmda)'
+Eliminated object (_sincos_n2, _sincos_n2+0x1) of size 5 bytes from '.\Release\pmSinCos.doj(seg_dmda)'
+Eliminated object (_sincos_n3, _sincos_n3+0x1) of size 5 bytes from '.\Release\pmSinCos.doj(seg_dmda)'
+Eliminated object (_sincos_n4, _sincos_n4+0x1) of size 5 bytes from '.\Release\pmSinCos.doj(seg_dmda)'
+Eliminated object (_sincos_n1_1, _sincos_n1_1+0x1) of size 5 bytes from '.\Release\pmSinCos.doj(seg_dmda)'
+Eliminated object (_sincos_n2_1, _sincos_n2_1+0x1) of size 5 bytes from '.\Release\pmSinCos.doj(seg_dmda)'
+Eliminated object (_sincos_n3_1, _sincos_n3_1+0x1) of size 5 bytes from '.\Release\pmSinCos.doj(seg_dmda)'
+Eliminated object (_sincos_n4_1, _sincos_n4_1+0x1) of size 5 bytes from '.\Release\pmSinCos.doj(seg_dmda)'
+Eliminated object (_sincos_mask, _sincos_mask+0x1) of size 5 bytes from '.\Release\pmSinCos.doj(seg_dmda)'
+Eliminated object (_cos_tab_q, ._cos_tab_q.end) of size 252 bytes from '.\Release\pmSinCos.doj(seg_pmco)'
+Eliminated object (_sin_tab_q, ._sin_tab_q.end) of size 246 bytes from '.\Release\pmSinCos.doj(seg_pmco)'
+Eliminated object (_GenerateSineTable, ._GenerateSineTable.end) of size 288 bytes from '.\Release\pmSinCos.doj(seg_pmco)'
+]]></EXTENDED_INFO>
+</MSG>
+</DOCUMENT>

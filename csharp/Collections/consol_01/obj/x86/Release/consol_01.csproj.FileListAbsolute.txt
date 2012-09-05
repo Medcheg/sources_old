@@ -1,0 +1,5 @@
+D:\.Work\CSharp\console\consol_01\obj\x86\Release\ResolveAssemblyReference.cache
+D:\.Work\CSharp\console\consol_01\bin\Release\consol_01.exe
+D:\.Work\CSharp\console\consol_01\bin\Release\consol_01.pdb
+D:\.Work\CSharp\console\consol_01\obj\x86\Release\consol_01.exe
+D:\.Work\CSharp\console\consol_01\obj\x86\Release\consol_01.pdb

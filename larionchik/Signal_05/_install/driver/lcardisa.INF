@@ -1,0 +1,313 @@
+[Version]
+Signature="$CHICAGO$"
+Class=L-Card_ISA_Devices
+;GUID for ISA boards
+ClassGUID={BDA8A384-723D-443b-BD1C-0E73133CBD25}
+Provider=%LCARD%
+LayoutFile=layout.inf
+DriverVer=07/04/2003,2.0
+
+[Manufacturer]
+%MfgName%=LCard
+
+[LCard]
+%L-Card.DeviceDesc0% = LCARD_L1250A.Dev, Root\L1250-10
+%L-Card.DeviceDesc1% = LCARD_L1250B.Dev, Root\L1250-20
+%L-Card.DeviceDesc2% = LCARD_L1251A.Dev, Root\L1251-10
+%L-Card.DeviceDesc3% = LCARD_L1251B.Dev, Root\L1251-20
+%L-Card.DeviceDesc4% = LCARD_L1450A.Dev, Root\L1450-2184
+%L-Card.DeviceDesc5% = LCARD_L1450B.Dev, Root\L1450-2185
+%L-Card.DeviceDesc6% = LCARD_L1221.Dev,  Root\L1221-2186
+%L-Card.DeviceDesc7% = LCARD_L305.Dev,   Root\L305-10
+%L-Card.DeviceDesc8% = LCARD_L264.Dev,   Root\L264-10
+%L-Card.DeviceDesc9% = LCARD_L032.Dev,   Root\L032
+
+[ClassInstall]
+Addreg=Class_AddReg
+
+; NT Style
+[ClassInstall32]
+Addreg=Class_AddReg
+
+[Class_AddReg]
+HKR,,,,%DeviceClassName%
+HKR,,Icon,,"-5"
+
+[PreCopySection]
+HKR,,NoSetupUI,,1
+
+[DestinationDirs]
+LCARD.Files.Ext = 10,System32\Drivers
+LCARD.Files.Inf = 10,INF
+
+
+;// for 032 (0M none) //////////////////////////////////////////////////////
+[LCARD_L032.Dev]
+CopyFiles=LCARD.Files.Ext,LCARD.Files.Inf
+AddReg=LCARD.AddReg,LCARD_032.AddReg
+LogConfig=LCARD.LC4, LCARD.LC5
+
+[LCARD_L032.Dev.NT]
+CopyFiles=LCARD.Files.Ext,LCARD.Files.Inf
+AddReg=LCARD_032.AddReg
+LogConfig=LCARD.LC4, LCARD.LC5
+
+[LCARD_032.AddReg]
+HKR,"Parameters","Type",0x00010001,12
+HKR,"Parameters","DSPType",0x00010001,0
+
+[LCARD_L032.Dev.NT.Services]
+Addservice = ldevisa, 0x00000002, LCARD.AddService
+
+
+;// for 264 (10M 2105) //////////////////////////////////////////////////////
+[LCARD_L264.Dev]
+CopyFiles=LCARD.Files.Ext,LCARD.Files.Inf
+AddReg=LCARD.AddReg,LCARD_264.AddReg
+LogConfig=LCARD.LC0, LCARD.LC1, LCARD.LC2, LCARD.LC3
+
+[LCARD_L264.Dev.NT]
+CopyFiles=LCARD.Files.Ext,LCARD.Files.Inf
+AddReg=LCARD_264.AddReg
+LogConfig=LCARD.LC0, LCARD.LC1, LCARD.LC2, LCARD.LC3
+
+[LCARD_264.AddReg]
+HKR,"Parameters","Type",0x00010001,8
+HKR,"Parameters","DSPType",0x00010001,21050
+
+[LCARD_L264.Dev.NT.Services]
+Addservice = ldevisa, 0x00000002, LCARD.AddService
+
+
+;// for 305 (10M 2105) //////////////////////////////////////////////////////
+[LCARD_L305.Dev]
+CopyFiles=LCARD.Files.Ext,LCARD.Files.Inf
+AddReg=LCARD.AddReg,LCARD_305.AddReg
+LogConfig=LCARD.LC0, LCARD.LC1, LCARD.LC2, LCARD.LC3
+
+[LCARD_L305.Dev.NT]
+CopyFiles=LCARD.Files.Ext,LCARD.Files.Inf
+AddReg=LCARD_305.AddReg
+LogConfig=LCARD.LC0, LCARD.LC1, LCARD.LC2, LCARD.LC3
+
+[LCARD_305.AddReg]
+HKR,"Parameters","Type",0x00010001,9
+HKR,"Parameters","DSPType",0x00010001,21050
+
+[LCARD_L305.Dev.NT.Services]
+Addservice = ldevisa, 0x00000002, LCARD.AddService
+
+
+;// for 1250A (10M 2105) //////////////////////////////////////////////////////
+[LCARD_L1250A.Dev]
+CopyFiles=LCARD.Files.Ext,LCARD.Files.Inf
+AddReg=LCARD.AddReg,LCARD_1250A.AddReg
+LogConfig=LCARD.LC0, LCARD.LC1, LCARD.LC2, LCARD.LC3
+
+[LCARD_L1250A.Dev.NT]
+CopyFiles=LCARD.Files.Ext,LCARD.Files.Inf
+AddReg=LCARD_1250A.AddReg
+LogConfig=LCARD.LC0, LCARD.LC1, LCARD.LC2, LCARD.LC3
+
+[LCARD_1250A.AddReg]
+HKR,"Parameters","Type",0x00010001,1
+HKR,"Parameters","DSPType",0x00010001,21050
+
+[LCARD_L1250A.Dev.NT.Services]
+Addservice = ldevisa, 0x00000002, LCARD.AddService
+
+;// for 1250B (20M 2105) //////////////////////////////////////////////////////
+[LCARD_L1250B.Dev]
+CopyFiles=LCARD.Files.Ext,LCARD.Files.Inf
+AddReg=LCARD.AddReg,LCARD_1250B.AddReg
+LogConfig=LCARD.LC0, LCARD.LC1, LCARD.LC2, LCARD.LC3
+
+[LCARD_L1250B.Dev.NT]
+CopyFiles=LCARD.Files.Ext,LCARD.Files.Inf
+AddReg=LCARD_1250B.AddReg
+LogConfig=LCARD.LC0, LCARD.LC1, LCARD.LC2, LCARD.LC3
+
+[LCARD_1250B.AddReg]
+HKR,"Parameters","Type",0x00010001,1
+HKR,"Parameters","DSPType",0x00010001,21051
+
+[LCARD_L1250B.Dev.NT.Services]
+Addservice = ldevisa, 0x00000002, LCARD.AddService
+
+;// for 1251-10 //////////////////////////////////////////////////////////////////
+[LCARD_L1251A.Dev]
+CopyFiles=LCARD.Files.Ext,LCARD.Files.Inf
+AddReg=LCARD.AddReg,LCARD_1251A.AddReg
+LogConfig=LCARD.LC0, LCARD.LC1, LCARD.LC2, LCARD.LC3
+
+[LCARD_L1251.Dev.NT]
+CopyFiles=LCARD.Files.Ext,LCARD.Files.Inf
+AddReg=LCARD_1251A.AddReg
+LogConfig=LCARD.LC0, LCARD.LC1, LCARD.LC2, LCARD.LC3
+
+[LCARD_1251A.AddReg]
+HKR,"Parameters","Type",0x00010001,3 
+HKR,"Parameters","DSPType",0x00010001,21050
+
+[LCARD_L1251A.Dev.NT.Services]
+Addservice = ldevisa, 0x00000002, LCARD.AddService
+
+;// for 1251-20 //////////////////////////////////////////////////////////////////
+[LCARD_L1251B.Dev]
+CopyFiles=LCARD.Files.Ext,LCARD.Files.Inf
+AddReg=LCARD.AddReg,LCARD_1251B.AddReg
+LogConfig=LCARD.LC0, LCARD.LC1, LCARD.LC2, LCARD.LC3
+
+[LCARD_L1251B.Dev.NT]
+CopyFiles=LCARD.Files.Ext,LCARD.Files.Inf
+AddReg=LCARD_1251B.AddReg
+LogConfig=LCARD.LC0, LCARD.LC1, LCARD.LC2, LCARD.LC3
+
+[LCARD_1251B.AddReg]
+HKR,"Parameters","Type",0x00010001,3 
+HKR,"Parameters","DSPType",0x00010001,21051
+
+[LCARD_L1251B.Dev.NT.Services]
+Addservice = ldevisa, 0x00000002, LCARD.AddService
+
+
+;// for 1221 //////////////////////////////////////////////////////////////////
+[LCARD_L1221.Dev]
+CopyFiles=LCARD.Files.Ext,LCARD.Files.Inf
+AddReg=LCARD.AddReg,LCARD_1221.AddReg
+LogConfig=LCARD.LC0, LCARD.LC1
+
+[LCARD_L1221.Dev.NT]
+CopyFiles=LCARD.Files.Ext,LCARD.Files.Inf
+AddReg=LCARD_1221.AddReg
+LogConfig=LCARD.LC0, LCARD.LC1
+
+[LCARD_1221.AddReg]
+HKR,"Parameters","Type",0x00010001,4
+HKR,"Parameters","DSPType",0x00010001,2186
+
+[LCARD_L1221.Dev.NT.Services]
+Addservice = ldevisa, 0x00000002, LCARD.AddService
+
+
+;// for 1450A //////////////////////////////////////////////////////////////////
+[LCARD_L1450A.Dev]
+CopyFiles=LCARD.Files.Ext,LCARD.Files.Inf
+AddReg=LCARD.AddReg,LCARD_1450A.AddReg
+LogConfig=LCARD.LC0, LCARD.LC1, LCARD.LC2, LCARD.LC3
+
+[LCARD_L1450A.Dev.NT]
+CopyFiles=LCARD.Files.Ext,LCARD.Files.Inf
+AddReg=LCARD_1450A.AddReg
+LogConfig=LCARD.LC0, LCARD.LC1, LCARD.LC2, LCARD.LC3
+
+[LCARD_1450A.AddReg]
+HKR,"Parameters","Type",0x00010001,11
+HKR,"Parameters","DSPType",0x00010001,2184
+
+[LCARD_L1450A.Dev.NT.Services]
+Addservice = ldevisa, 0x00000002, LCARD.AddService
+
+;// for 1450B //////////////////////////////////////////////////////////////////
+[LCARD_L1450B.Dev]
+CopyFiles=LCARD.Files.Ext,LCARD.Files.Inf
+AddReg=LCARD.AddReg,LCARD_1450B.AddReg
+LogConfig=LCARD.LC0, LCARD.LC1, LCARD.LC2, LCARD.LC3
+
+[LCARD_L1450B.Dev.NT]
+CopyFiles=LCARD.Files.Ext,LCARD.Files.Inf
+AddReg=LCARD_1450B.AddReg
+LogConfig=LCARD.LC0, LCARD.LC1, LCARD.LC2, LCARD.LC3
+
+[LCARD_1450B.AddReg]
+HKR,"Parameters","Type",0x00010001,11
+HKR,"Parameters","DSPType",0x00010001,2185
+
+[LCARD_L1450B.Dev.NT.Services]
+Addservice = ldevisa, 0x00000002, LCARD.AddService
+
+[LCARD.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,ldevisa.sys
+
+;// hardware configurations ///////////////////////////////////////////////////
+[LCARD.LC0]
+ConfigPriority=DESIRED
+IOConfig=300-30f  
+IRQConfig=10
+
+[LCARD.LC1]
+ConfigPriority=NORMAL
+IOConfig=300-30f, 310-31f, 330-33f, 340-34f
+IRQConfig=3,4,5,7,9,10,11,12,15
+
+
+[LCARD.LC2]
+ConfigPriority=NORMAL
+IOConfig=300-30f, 310-31f, 330-33f, 340-34f
+IRQConfig=3,4,5,7,9,10,11,12,15
+DMAConfig=5,6
+
+[LCARD.LC3]
+ConfigPriority=NORMAL
+IOConfig=300-30f, 310-31f, 330-33f, 340-34f
+IRQConfig=3,4,5,7,9,10,11,12,15
+DMAConfig=5
+DMAConfig=6
+
+[LCARD.LC4]
+ConfigPriority=DESIRED
+IOConfig=300-304  
+
+
+[LCARD.LC5]
+ConfigPriority=NORMAL
+IOConfig=300-303, 304-307, 308-30B, 30C-30F,310-313, 314-317, 318-31B, 31C-31F,330-333, 334-337, 338-33B, 33C-33F,340-343, 344-347, 348-34B, 34C-34F
+
+[LCARD.AddService]
+DisplayName    = %LCARD.SvcDesc%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 2                  ; SERVICE_AUTO_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %10%\System32\Drivers\ldevisa.sys
+LoadOrderGroup = Extended Base
+
+[LCARD.Files.Ext]
+;ldevisa.sys
+;ldevs.sys
+;uncomment this to install driver by pure inf
+
+[LCARD.Files.Inf]
+;lcardisa.inf
+;uncomment this to install driver by pure inf
+
+;---------------------------------------------------------------;
+
+[Strings]
+; board types
+;L1250  = 1
+;N1250  = 2
+;L1251  = 3
+;L1221  = 4
+;PCIA   = 5
+;PCIB   = 6
+;L264   = 8
+;L305   = 9
+;L1450C = 10
+;L1450  = 11
+;L032  = 12
+
+LCARD="L-Card Ltd."
+MfgName="L-Card"
+L-Card.DeviceDesc0 = "L1250-10"
+L-Card.DeviceDesc1 = "L1250-20"
+L-Card.DeviceDesc2 = "L1251-10"
+L-Card.DeviceDesc3 = "L1251-20"
+L-Card.DeviceDesc4 = "L1450-2184"
+L-Card.DeviceDesc5 = "L1450-2185"
+L-Card.DeviceDesc6 = "L1221-2186"
+L-Card.DeviceDesc7 = "L264-10"
+L-Card.DeviceDesc8 = "L305-10"
+L-Card.DeviceDesc9 = "L032"
+LCARD.SvcDesc="LDevIsa.Sys WDM Driver for L-Card ISA boards."
+DeviceClassName="L-Card ADC/DAC ISA boards"

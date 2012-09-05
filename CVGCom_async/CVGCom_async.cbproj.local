@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2010.05.01 14:59:44.765.cpp,D:\My Documents\RAD Studio\Projects\Unit15.cpp=D:\_Projects\Cpp_Gyro\CVGCom\CVGCom_new\forms\unit_Main.cpp</Transaction>
+    <Transaction>2010.05.01 14:59:44.765.h,D:\My Documents\RAD Studio\Projects\Unit15.h=D:\_Projects\Cpp_Gyro\CVGCom\CVGCom_new\forms\unit_Main.h</Transaction>
+    <Transaction>2010.05.01 14:59:44.765.dfm,D:\My Documents\RAD Studio\Projects\Unit15.dfm=D:\_Projects\Cpp_Gyro\CVGCom\CVGCom_new\forms\unit_Main.dfm</Transaction>
+    <Transaction>2010.05.01 15:00:21.062.cbproj,D:\My Documents\RAD Studio\Projects\Project15.cbproj=D:\_Projects\Cpp_Gyro\CVGCom\CVGCom_new\CVGCom_new.cbproj</Transaction>
+    <Transaction>2010.05.01 15:38:21.218.cpp,D:\_Projects\Cpp_Gyro\CVGCom\CVGCom_new\units\pmDevice.cpp=</Transaction>
+    <Transaction>2010.05.01 15:54:46.078.cpp,D:\_Projects\Cpp_Gyro\CVGCom\CVGCom_new\units\pmBaseDevice.cpp=</Transaction>
+    <Transaction>2010.05.01 15:54:49.406.cpp,D:\_Projects\Cpp_Gyro\CVGCom\CVGCom_new\units\pmChart.cpp=</Transaction>
+    <Transaction>2010.05.01 15:54:50.359.cpp,D:\_Projects\Cpp_Gyro\CVGCom\CVGCom_new\units\pmChartAxis.cpp=</Transaction>
+    <Transaction>2010.05.01 15:54:51.140.cpp,D:\_Projects\Cpp_Gyro\CVGCom\CVGCom_new\units\pmChartManager.cpp=</Transaction>
+    <Transaction>2010.05.01 15:54:51.875.cpp,D:\_Projects\Cpp_Gyro\CVGCom\CVGCom_new\units\pmCollection.cpp=</Transaction>
+    <Transaction>2010.05.01 15:54:52.531.cpp,D:\_Projects\Cpp_Gyro\CVGCom\CVGCom_new\units\pmCRC.cpp=</Transaction>
+    <Transaction>2010.05.01 15:54:53.187.cpp,D:\_Projects\Cpp_Gyro\CVGCom\CVGCom_new\units\pmDevices.cpp=</Transaction>
+    <Transaction>2010.05.01 15:54:53.812.cpp,D:\_Projects\Cpp_Gyro\CVGCom\CVGCom_new\units\pmGlobals.cpp=</Transaction>
+    <Transaction>2010.05.01 15:54:54.390.cpp,D:\_Projects\Cpp_Gyro\CVGCom\CVGCom_new\units\pmLibrary.cpp=</Transaction>
+    <Transaction>2010.05.01 15:54:55.000.cpp,D:\_Projects\Cpp_Gyro\CVGCom\CVGCom_new\units\pmPCH.cpp=</Transaction>
+    <Transaction>2010.05.01 15:54:55.531.cpp,D:\_Projects\Cpp_Gyro\CVGCom\CVGCom_new\units\pmSerialInfo.cpp=</Transaction>
+    <Transaction>2010.05.01 15:54:56.093.cpp,D:\_Projects\Cpp_Gyro\CVGCom\CVGCom_new\units\pmSerialPort.cpp=</Transaction>
+    <Transaction>2010.05.01 15:55:00.984.cpp,D:\_Projects\Cpp_Gyro\CVGCom\CVGCom_new\units\CallBacks\callback_CVGx.cpp=</Transaction>
+    <Transaction>2010.05.01 15:55:01.984.cpp,D:\_Projects\Cpp_Gyro\CVGCom\CVGCom_new\units\CallBacks\callback_GoldenRing.cpp=</Transaction>
+    <Transaction>2010.05.01 15:55:04.234.cpp,D:\_Projects\Cpp_Gyro\CVGCom\CVGCom_new\forms\Unit_DeviceSetting.cpp=</Transaction>
+    <Transaction>2010.05.01 15:55:04.234.dfm,D:\_Projects\Cpp_Gyro\CVGCom\CVGCom_new\forms\Unit_DeviceSetting.dfm=</Transaction>
+    <Transaction>2010.05.01 15:55:05.203.cpp,D:\_Projects\Cpp_Gyro\CVGCom\CVGCom_new\forms\Unit_Result_1.cpp=</Transaction>
+    <Transaction>2010.05.01 15:55:05.203.dfm,D:\_Projects\Cpp_Gyro\CVGCom\CVGCom_new\forms\Unit_Result_1.dfm=</Transaction>
+    <Transaction>2010.05.01 15:55:05.953.cpp,D:\_Projects\Cpp_Gyro\CVGCom\CVGCom_new\forms\Unit_Result_1_Report.cpp=</Transaction>
+    <Transaction>2010.05.01 15:55:05.953.dfm,D:\_Projects\Cpp_Gyro\CVGCom\CVGCom_new\forms\Unit_Result_1_Report.dfm=</Transaction>
+    <Transaction>2010.05.01 17:14:55.640.cpp,D:\_Projects\Cpp_Gyro\CVGCom\CVGCom_new\forms\Unit_AlanCalculateExtern.cpp=</Transaction>
+    <Transaction>2010.05.01 17:14:55.640.dfm,D:\_Projects\Cpp_Gyro\CVGCom\CVGCom_new\forms\Unit_AlanCalculateExtern.dfm=</Transaction>
+    <Transaction>2010.05.01 17:14:55.640.cpp,D:\_Projects\Cpp_Gyro\CVGCom\CVGCom_new\forms\Unit_AlanCalculateExtern_Zeros.cpp=</Transaction>
+    <Transaction>2010.05.01 17:14:55.640.dfm,D:\_Projects\Cpp_Gyro\CVGCom\CVGCom_new\forms\Unit_AlanCalculateExtern_Zeros.dfm=</Transaction>
+    <Transaction>2010.05.01 17:51:47.046.cbproj,D:\_Projects\Cpp_Gyro\CVGCom\CVGCom_new\CVGCom_new.cbproj=D:\_Projects\Cpp_Gyro\CVGCom\CVGCom_new\CVGCom_async.cbproj</Transaction>
+    <Transaction>2010.05.01 18:09:17.093.cpp,D:\_Projects\Cpp_Gyro\CVGCom\CVGCom_async\forms\Unit_AlanCalculate_Zeros.cpp=</Transaction>
+    <Transaction>2010.05.01 18:09:17.093.dfm,D:\_Projects\Cpp_Gyro\CVGCom\CVGCom_async\forms\Unit_AlanCalculate_Zeros.dfm=</Transaction>
+    <Transaction>2010.05.06 22:09:07.505.cpp,E:\.Work\.CppProjects\CVGCom_async\Unit1.cpp=E:\.Work\.CppProjects\CVGCom_async\forms\Unit_DeviceMonitor.cpp</Transaction>
+    <Transaction>2010.05.06 22:09:07.515.h,E:\.Work\.CppProjects\CVGCom_async\Unit1.h=E:\.Work\.CppProjects\CVGCom_async\forms\Unit_DeviceMonitor.h</Transaction>
+    <Transaction>2010.05.06 22:09:07.515.dfm,E:\.Work\.CppProjects\CVGCom_async\Unit1.dfm=E:\.Work\.CppProjects\CVGCom_async\forms\Unit_DeviceMonitor.dfm</Transaction>
+    <Transaction>2010.05.25 14:44:21.093.cpp,D:\.Work\.coding\CVG\CVGCom_async\Unit1.cpp=D:\.Work\.coding\CVG\CVGCom_async\units\CallBacks\callback_Multimetr.cpp</Transaction>
+    <Transaction>2010.05.25 14:44:21.093.h,D:\.Work\.coding\CVG\CVGCom_async\Unit1.h=D:\.Work\.coding\CVG\CVGCom_async\units\CallBacks\callback_Multimetr.h</Transaction>
+    <Transaction>2010.05.26 16:48:42.250.cpp,D:\.Work\.coding\CVG\CVGCom_async\Unit1.cpp=D:\.Work\.coding\CVG\CVGCom_async\units\CallBacks\callback_AME_1204_USB.cpp</Transaction>
+    <Transaction>2010.05.26 16:48:42.250.h,D:\.Work\.coding\CVG\CVGCom_async\Unit1.h=D:\.Work\.coding\CVG\CVGCom_async\units\CallBacks\callback_AME_1204_USB.h</Transaction>
+    <Transaction>2010.05.27 14:06:46.312.cpp,D:\.Work\.coding\CVG\CVGCom_async\Unit1.cpp=D:\.Work\.coding\CVG\CVGCom_async\units\CallBacks\callback_BKPrecision5492.cpp</Transaction>
+    <Transaction>2010.05.27 14:06:46.312.h,D:\.Work\.coding\CVG\CVGCom_async\Unit1.h=D:\.Work\.coding\CVG\CVGCom_async\units\CallBacks\callback_BKPrecision5492.h</Transaction>
+    <Transaction>2010.05.27 14:50:00.953.cpp,D:\.Work\.coding\CVG\CVGCom_async\Unit1.cpp=D:\.Work\.coding\CVG\CVGCom_async\units\CallBacks\callback_EK_12T_01.cpp</Transaction>
+    <Transaction>2010.05.27 14:50:00.953.h,D:\.Work\.coding\CVG\CVGCom_async\Unit1.h=D:\.Work\.coding\CVG\CVGCom_async\units\CallBacks\callback_EK_12T_01.h</Transaction>
+    <Transaction>2010.05.31 12:00:16.187.cpp,D:\.Work\.coding\CVG\CVGCom_async\Unit1.cpp=D:\.Work\.coding\CVG\CVGCom_async\forms\Unit_DeviceParam.cpp</Transaction>
+    <Transaction>2010.05.31 12:00:16.187.h,D:\.Work\.coding\CVG\CVGCom_async\Unit1.h=D:\.Work\.coding\CVG\CVGCom_async\forms\Unit_DeviceParam.h</Transaction>
+    <Transaction>2010.05.31 12:00:16.187.dfm,D:\.Work\.coding\CVG\CVGCom_async\Unit1.dfm=D:\.Work\.coding\CVG\CVGCom_async\forms\Unit_DeviceParam.dfm</Transaction>
+    <Transaction>2010.06.02 14:44:34.906.cpp,D:\.Work\.coding\CVG\CVGCom_async\units\CallBacks\callback_Multimetr.cpp=D:\.Work\.coding\CVG\CVGCom_async\units\CallBacks\callback_LCD_Meter.cpp</Transaction>
+    <Transaction>2010.06.02 14:44:34.906.h,D:\.Work\.coding\CVG\CVGCom_async\units\CallBacks\callback_Multimetr.h=D:\.Work\.coding\CVG\CVGCom_async\units\CallBacks\callback_LCD_Meter.h</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,7 @@
+D:\.Work\CSharp\test\bin\Debug\test.exe
+D:\.Work\CSharp\test\bin\Debug\test.pdb
+D:\.Work\CSharp\test\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\.Work\CSharp\test\obj\x86\Debug\test.MainForm.resources
+D:\.Work\CSharp\test\obj\x86\Debug\test.csproj.GenerateResource.Cache
+D:\.Work\CSharp\test\obj\x86\Debug\test.exe
+D:\.Work\CSharp\test\obj\x86\Debug\test.pdb

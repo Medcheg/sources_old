@@ -1,0 +1,8 @@
+USEFORM("Library\Wave\Unit_Wave.cpp", frmWave);
+USEFORM("Project_Forms\frmSetupWaves\Unit_SetupWaves.cpp", frmSetupWaves);
+USEFORM("Project_Forms\frmTestForm\Unit_TestForm.cpp", Form1);
+USEFORM("Unit2.cpp", frmShowWave);
+//---------------------------------------------------------------------------
+This file is used by the project manager only and should be treated like the project file
+
+DllEntryPoint

@@ -1,0 +1,31 @@
+Functions called:
+ fflush (4 times)
+ ceil (398 times)
+ atan (2192 times)
+ exp (4 times)
+ delete (1091 times)
+ free (19676 times)
+ cos (737286 times)
+ sin (644478 times)
+ vsnprintf (388 times)
+ sqrt (369831 times)
+ memset (1811 times)
+ pow (2 times)
+ new (1091 times)
+ SysReallocMem (824 times)
+ SysFreeMem (26269 times)
+ SysGetMem (26293 times)
+ lstrlenA (1 times)
+ lstrcpyA (4 times)
+ calloc (1 times)
+ strlen (57 times)
+ realloc (2510 times)
+ strdup (1 times)
+ malloc (19646 times)
+ memcpy (2 times)
+Resource types used:
+ object (1091 allocs, 47 max)
+ memory block (45969 allocs, 5109 max)
+Modules used:
+ 00400000 09/09/2004 21:12:48 D:\_Programs\Work\Kvant\Far_2\Project\Far_2.exe
+==========================================

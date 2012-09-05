@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="DiALab_30.exe"/>
+    <OBJFILES value="DiALab_30.obj Project_Forms\frmMain\Unit_Main.obj 
+      mpi_Units\mpiBaseClass\mpiBaseClass.obj mpi_Units\mpiLink\mpiLink.obj 
+      mpi_Units\mpiElement\mpiElement.obj mpi_Units\mpiPoints\mpiPoints.obj 
+      mpi_Units\mpiInOutPoint\mpiInOutPoint.obj 
+      mpi_Units\mpiVisualElementParam\mpiVisualElementParam.obj 
+      mpi_Units\mpiComplexMatrix\mpiComplexMatrix.obj 
+      mpi_Units\mpiOperationWithElement\mpiOperationWithElement.obj 
+      mpi_Units\mpiLinkPoints\mpiLinkPoints.obj mpi_Units\mpiTypes\mpiTypes.obj"/>
+    <RESFILES value="DiALab_30.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) Project_Forms\frmMain\Unit_Main.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value=""/>
+    <SPARELIBS value="vcl.lib rtl.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi adortl.bpi vcldb.bpi vclx.bpi bdertl.bpi 
+      vcldbx.bpi ibxpress.bpi cds.bpi dsnap.bpi bdecds.bpi qrpt.bpi teeui.bpi 
+      teedb.bpi tee.bpi dss.bpi teeqr.bpi visualclx.bpi visualdbclx.bpi 
+      dsnapcrba.bpi dsnapcon.bpi bcbsmp.bpi"/>
+    <PATHCPP value=".;Project_Forms\frmMain;mpi_Units\mpiBaseClass;mpi_Units\mpiLink;mpi_Units\mpiElement;mpi_Units\mpiPoints;mpi_Units\mpiInOutPoint;mpi_Units\mpiVisualElementParam;mpi_Units\mpiComplexMatrix;mpi_Units\mpiOperationWithElement;mpi_Units\mpiLinkPoints;mpi_Units\mpiTypes"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="_RTLDLL;NO_STRICT;USEPACKAGES"/>
+    <MAINSOURCE value="DiALab_30.cpp"/>
+    <INCLUDEPATH value="mpi_Units\mpiTypes;mpi_Units\mpiLinkPoints;mpi_Units\mpiOperationWithElement;mpi_Units\mpiComplexMatrix;mpi_Units\mpiVisualElementParam;mpi_Units\mpiInOutPoint;mpi_Units\mpiPoints;mpi_Units\mpiLink;mpi_Units\mpiBaseClass;mpi_Units\mpiElement;mpi_Units;Project_Forms\frmMain;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;&quot;D:\_Programs\Work\DiALab\DiALab 3_00\Project_Forms\frmMain&quot;;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="mpi_Units\mpiTypes;mpi_Units\mpiLinkPoints;mpi_Units\mpiOperationWithElement;mpi_Units\mpiComplexMatrix;mpi_Units\mpiVisualElementParam;mpi_Units\mpiInOutPoint;mpi_Units\mpiPoints;mpi_Units\mpiLink;mpi_Units\mpiBaseClass;mpi_Units\mpiElement;mpi_Units;Project_Forms\frmMain;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;&quot;D:\_Programs\Work\DiALab\DiALab 3_00\Project_Forms\frmMain&quot;;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-Impi_Units\mpiTypes -Impi_Units\mpiLinkPoints 
+      -Impi_Units\mpiOperationWithElement -Impi_Units\mpiComplexMatrix 
+      -Impi_Units\mpiVisualElementParam -Impi_Units\mpiInOutPoint 
+      -Impi_Units\mpiPoints -Impi_Units\mpiLink -Impi_Units\mpiBaseClass 
+      -Impi_Units\mpiElement -Impi_Units -IProject_Forms\frmMain 
+      -I&quot;C:\Program Files\Borland\CBuilder6\Projects&quot; 
+      -I&quot;D:\_Programs\Work\DiALab\DiALab 3_00\Project_Forms\frmMain&quot; 
+      -I$(BCB)\include -I$(BCB)\include\vcl -src_suffix cpp -D_DEBUG -boa"/>
+    <CFLAG1 value="-Od -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -r- -a8 -b- -k -y -v -vi- -c 
+      -tW -tWM"/>
+    <PFLAGS value="-$YD -$W -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zd"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj $(PACKAGES) Memmgr.Lib sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mti.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="DiALab_30.res" FORMNAME="" UNITNAME="DiALab_30.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="DiALab_30.cpp" FORMNAME="" UNITNAME="DiALab_30" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Project_Forms\frmMain\Unit_Main.cpp" FORMNAME="frmMain" UNITNAME="Unit_Main" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Project_Forms\frmMain\Unit_Main_StandartVoids.h" FORMNAME="" UNITNAME="Unit_Main_StandartVoids.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mpi_Units\mpiBaseClass\mpiBaseClass.cpp" FORMNAME="" UNITNAME="mpiBaseClass" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mpi_Units\mpiLink\mpiLink.cpp" FORMNAME="" UNITNAME="mpiLink" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mpi_Units\mpiElement\mpiElement.cpp" FORMNAME="" UNITNAME="mpiElement" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mpi_Units\mpiPoints\mpiPoints.cpp" FORMNAME="" UNITNAME="mpiPoints" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mpi_Units\mpiInOutPoint\mpiInOutPoint.cpp" FORMNAME="" UNITNAME="mpiInOutPoint" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mpi_Units\mpiVisualElementParam\mpiVisualElementParam.cpp" FORMNAME="" UNITNAME="mpiVisualElementParam" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mpi_Units\mpiComplexMatrix\mpiComplexMatrix.cpp" FORMNAME="" UNITNAME="mpiComplexMatrix" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mpi_Units\mpiOperationWithElement\mpiOperationWithElement.cpp" FORMNAME="" UNITNAME="mpiOperationWithElement" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mpi_Units\mpiLinkPoints\mpiLinkPoints.cpp" FORMNAME="" UNITNAME="mpiLinkPoints" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mpi_Units\mpiTypes\mpiTypes.cpp" FORMNAME="" UNITNAME="mpiTypes" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1058
+CodePage=1251
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+  </IDEOPTIONS>
+</PROJECT>

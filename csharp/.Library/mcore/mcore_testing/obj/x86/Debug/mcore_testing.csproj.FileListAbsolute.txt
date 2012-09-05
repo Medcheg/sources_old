@@ -1,0 +1,11 @@
+E:\.PersonalProjects\CSharp\.Library\mcore\mcore_testing\bin\Debug\mcore_testing.exe
+E:\.PersonalProjects\CSharp\.Library\mcore\mcore_testing\bin\Debug\mcore_testing.pdb
+E:\.PersonalProjects\CSharp\.Library\mcore\mcore_testing\bin\Debug\mcore.dll
+E:\.PersonalProjects\CSharp\.Library\mcore\mcore_testing\bin\Debug\mcore.pdb
+E:\.PersonalProjects\CSharp\.Library\mcore\mcore_testing\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\.PersonalProjects\CSharp\.Library\mcore\mcore_testing\obj\x86\Debug\nkCore_testing.Form1.resources
+E:\.PersonalProjects\CSharp\.Library\mcore\mcore_testing\obj\x86\Debug\mcore_testing.Properties.Resources.resources
+E:\.PersonalProjects\CSharp\.Library\mcore\mcore_testing\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\.PersonalProjects\CSharp\.Library\mcore\mcore_testing\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\.PersonalProjects\CSharp\.Library\mcore\mcore_testing\obj\x86\Debug\mcore_testing.exe
+E:\.PersonalProjects\CSharp\.Library\mcore\mcore_testing\obj\x86\Debug\mcore_testing.pdb

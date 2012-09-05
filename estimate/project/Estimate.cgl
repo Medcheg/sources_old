@@ -1,0 +1,12 @@
+Error 00031. 0x820000 (Thread 0x0768):
+Function failure:
+mkdir(0x00E15624 ["E:\_Programs\Work\_Estimate_\project\Projects"])=0xFFFFFFFF
+ [-1]
+
+Call Tree:
+   0x00406556(=Estimate.exe:0x01:005556) E:\_Programs\Work\_Estimate_\project\_Estimate\frmMain\Unit_Main.cpp#70
+   0x00452350(=Estimate.exe:0x01:051350)
+   0x004017C6(=Estimate.exe:0x01:0007C6) E:\_Programs\Work\_Estimate_\project\Estimate.cpp#14
+   0x004B3F8F(=Estimate.exe:0x01:0B2F8F)
+
+------------------------------------------

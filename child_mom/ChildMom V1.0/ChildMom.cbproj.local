@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2010.05.18 17:31:56.881.cbproj,C:\Documents and Settings\Admin\Мои документы\RAD Studio\Projects\Project1.cbproj=C:\Documents and Settings\Admin\Мои документы\RAD Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>2010.05.24 14:59:11.178.cbproj,C:\Documents and Settings\Admin\Мои документы\RAD Studio\Projects\Project1.cbproj=C:\Documents and Settings\Admin\Мои документы\RAD Studio\Projects\уЖ.cbproj</Transaction>
+    <Transaction>2010.05.24 15:00:04.745.cbproj,C:\Documents and Settings\Admin\Мои документы\RAD Studio\Projects\уЖ.cbproj=E:\.Work\.CppProjects\ChildMom\ChildMom V1.0\ChildMom V1.0.cbproj</Transaction>
+    <Transaction>2010.05.24 15:00:18.235.cbproj,E:\.Work\.CppProjects\ChildMom\ChildMom V1.0\ChildMom V1.0.cbproj=E:\.Work\.CppProjects\ChildMom\ChildMom V1.0\ChildMom.cbproj</Transaction>
+    <Transaction>2010.05.24 15:00:35.189.cpp,C:\Documents and Settings\Admin\Мои документы\RAD Studio\Projects\Unit1.cpp=C:\Documents and Settings\Admin\Мои документы\RAD Studio\Projects\forms\unit_Main.cpp</Transaction>
+    <Transaction>2010.05.24 15:00:35.189.h,C:\Documents and Settings\Admin\Мои документы\RAD Studio\Projects\Unit1.h=C:\Documents and Settings\Admin\Мои документы\RAD Studio\Projects\forms\unit_Main.h</Transaction>
+    <Transaction>2010.05.24 15:00:35.189.dfm,C:\Documents and Settings\Admin\Мои документы\RAD Studio\Projects\Unit1.dfm=C:\Documents and Settings\Admin\Мои документы\RAD Studio\Projects\forms\unit_Main.dfm</Transaction>
+    <Transaction>2010.05.24 15:01:20.164.cpp,E:\.Work\.CppProjects\ChildMom\ChildMom V1.0\Unit1.cpp=E:\.Work\.CppProjects\ChildMom\ChildMom V1.0\units\pmGlobals.cpp</Transaction>
+    <Transaction>2010.05.24 15:01:20.164.h,E:\.Work\.CppProjects\ChildMom\ChildMom V1.0\Unit1.h=E:\.Work\.CppProjects\ChildMom\ChildMom V1.0\units\pmGlobals.h</Transaction>
+    <Transaction>2010.05.24 15:01:54.022.cpp,C:\Documents and Settings\Admin\Мои документы\RAD Studio\Projects\forms\unit_Main.cpp=E:\.Work\.CppProjects\ChildMom\ChildMom V1.0\forms\unit_Main.cpp</Transaction>
+    <Transaction>2010.05.24 15:01:54.022.h,C:\Documents and Settings\Admin\Мои документы\RAD Studio\Projects\forms\unit_Main.h=E:\.Work\.CppProjects\ChildMom\ChildMom V1.0\forms\unit_Main.h</Transaction>
+    <Transaction>2010.05.24 15:01:54.022.dfm,C:\Documents and Settings\Admin\Мои документы\RAD Studio\Projects\forms\unit_Main.dfm=E:\.Work\.CppProjects\ChildMom\ChildMom V1.0\forms\unit_Main.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

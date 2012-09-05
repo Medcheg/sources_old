@@ -1,0 +1,6 @@
+E:\.PersonalProjects\CSharp\FirstStep\bin\Debug\FirstStep.exe.config
+E:\.PersonalProjects\CSharp\FirstStep\bin\Debug\FirstStep.exe
+E:\.PersonalProjects\CSharp\FirstStep\bin\Debug\FirstStep.pdb
+E:\.PersonalProjects\CSharp\FirstStep\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\.PersonalProjects\CSharp\FirstStep\obj\x86\Debug\FirstStep.exe
+E:\.PersonalProjects\CSharp\FirstStep\obj\x86\Debug\FirstStep.pdb

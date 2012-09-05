@@ -1,0 +1,100 @@
+object Form1: TForm1
+  Left = 34
+  Top = 118
+  Width = 837
+  Height = 730
+  Caption = 'Form1'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  OnDestroy = FormDestroy
+  OnPaint = FormPaint
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Button1: TButton
+    Left = 136
+    Top = 24
+    Width = 75
+    Height = 25
+    Caption = 'Button1'
+    TabOrder = 0
+  end
+  object Edit1: TEdit
+    Left = 32
+    Top = 16
+    Width = 121
+    Height = 21
+    TabOrder = 1
+    Text = 'Edit1'
+  end
+  object Button2: TButton
+    Left = 256
+    Top = 0
+    Width = 75
+    Height = 25
+    Caption = 'Button2'
+    TabOrder = 2
+  end
+  object ListBox1: TListBox
+    Left = 24
+    Top = 56
+    Width = 121
+    Height = 97
+    ItemHeight = 13
+    TabOrder = 3
+  end
+  object Edit2: TEdit
+    Left = 152
+    Top = 56
+    Width = 121
+    Height = 21
+    TabOrder = 4
+    Text = 'Edit2'
+  end
+  object Button3: TButton
+    Left = 8
+    Top = 8
+    Width = 75
+    Height = 25
+    Caption = 'Button1'
+    TabOrder = 5
+  end
+  object ListBox2: TListBox
+    Left = 188
+    Top = 8
+    Width = 641
+    Height = 433
+    TabStop = False
+    ItemHeight = 13
+    TabOrder = 6
+  end
+  object Button4: TButton
+    Left = 8
+    Top = 416
+    Width = 75
+    Height = 25
+    Caption = 'Delete Files'
+    TabOrder = 7
+  end
+  object Button5: TButton
+    Left = 8
+    Top = 384
+    Width = 169
+    Height = 25
+    Caption = 'Find and Delete  only Object Files'
+    Default = True
+    TabOrder = 8
+  end
+  object Button6: TButton
+    Left = 8
+    Top = 40
+    Width = 185
+    Height = 25
+    Caption = 'Find Temp C++ Builders File'
+    TabOrder = 9
+  end
+end

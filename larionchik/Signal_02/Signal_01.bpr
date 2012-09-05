@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="_out\Signal_01.exe"/>
+    <OBJFILES value="_out\Signal_01.obj _out\Unit_Main.obj _out\PCH.obj _out\mpiBaseADC.obj 
+      _out\mpiGlobals.obj _out\mpiCollection.obj _out\mpi_L761.obj 
+      _out\CREATE.obj _out\LGUIDS.obj _out\mpiThread.obj 
+      _out\Unit_ACPSetting.obj _out\mpiChart.obj _out\mpi_Demo.obj"/>
+    <RESFILES value="Signal_01.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) ProjectForms\frmMain\Unit_Main.dfm 
+      ProjectForms\Unit_ACPSetting.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value=""/>
+    <SPARELIBS value="vcl.lib rtl.lib vclx.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi adortl.bpi vcldb.bpi vclx.bpi bdertl.bpi 
+      vcldbx.bpi ibxpress.bpi cds.bpi dsnap.bpi bdecds.bpi qrpt.bpi teeui.bpi 
+      teedb.bpi tee.bpi dss.bpi teeqr.bpi visualclx.bpi visualdbclx.bpi 
+      dsnapcrba.bpi dsnapcon.bpi bcbsmp.bpi"/>
+    <PATHCPP value=".;ProjectForms\frmMain;mpiUnits;mpiUnits\mpi_L761;mpiUnits\mpi_L761\Include;ProjectForms;mpiUnits\mpi_Demo"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="_RTLDLL;NO_STRICT;USEPACKAGES"/>
+    <MAINSOURCE value="Signal_01.cpp"/>
+    <INCLUDEPATH value="mpiUnits\mpi_Demo;ProjectForms;mpiUnits\mpi_L761\Include;mpiUnits\mpi_L761;mpiUnits;ProjectForms\frmMain;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="mpiUnits\mpi_Demo;ProjectForms;mpiUnits\mpi_L761\Include;mpiUnits\mpi_L761;mpiUnits;ProjectForms\frmMain;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-ImpiUnits\mpi_Demo -IProjectForms -ImpiUnits\mpi_L761\Include 
+      -ImpiUnits\mpi_L761 -ImpiUnits -IProjectForms\frmMain 
+      -I&quot;C:\Program Files\Borland\CBuilder6\Projects&quot; -I$(BCB)\include 
+      -I$(BCB)\include\vcl -src_suffix cpp -D_DEBUG -boa"/>
+    <CFLAG1 value="-Od -H=_out\pgh.csm -Hc -Vx -Ve -X- -r- -a8 -b- -k -y -v -vi- -c -tW -tWM"/>
+    <PFLAGS value="-N2_out -N0_out -$YD -$W -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zd"/>
+    <LFLAGS value="-l_out -I_out -D&quot;&quot; -aa -Tpe -x -Gn -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj $(PACKAGES) Memmgr.Lib sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mti.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="Signal_01.res" FORMNAME="" UNITNAME="Signal_01.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Signal_01.cpp" FORMNAME="" UNITNAME="Signal_01" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ProjectForms\frmMain\Unit_Main.cpp" FORMNAME="frmMain" UNITNAME="Unit_Main" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mpiUnits\PCH.cpp" FORMNAME="" UNITNAME="PCH" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mpiUnits\mpiBaseADC.cpp" FORMNAME="" UNITNAME="mpiBaseADC" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mpiUnits\mpiGlobals.cpp" FORMNAME="" UNITNAME="mpiGlobals" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mpiUnits\mpiCollection.cpp" FORMNAME="" UNITNAME="mpiCollection" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mpiUnits\mpi_L761\mpi_L761.cpp" FORMNAME="" UNITNAME="mpi_L761" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mpiUnits\mpi_L761\Include\CREATE.cpp" FORMNAME="" UNITNAME="CREATE" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mpiUnits\mpi_L761\Include\LGUIDS.CPP" FORMNAME="" UNITNAME="LGUIDS" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mpiUnits\mpiThread.cpp" FORMNAME="" UNITNAME="mpiThread" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ProjectForms\Unit_ACPSetting.cpp" FORMNAME="frmACPSetting" UNITNAME="Unit_ACPSetting" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mpiUnits\mpiChart.cpp" FORMNAME="" UNITNAME="mpiChart" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mpiUnits\mpi_Demo\mpi_Demo.cpp" FORMNAME="" UNITNAME="mpi_Demo" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1058
+CodePage=1251
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=4
+Item0=mpiUnits\mpi_Demo;ProjectForms;mpiUnits\mpi_L761\Include;mpiUnits\mpi_L761;mpiUnits;ProjectForms\frmMain;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl
+Item1=ProjectForms;mpiUnits\mpi_L761\Include;mpiUnits\mpi_L761;mpiUnits;ProjectForms\frmMain;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl
+Item2=mpiUnits;ProjectForms\frmMain;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl
+Item3=mpiUnits;ProjectForms\frmMain;C:\Program Files\Borland\CBuilder6\Projects;D:\_Programs\Work\Larionchik\pmaz\pmaz_01\ProjectForms\frmMain;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=4
+Item0=mpiUnits\mpi_Demo;ProjectForms;mpiUnits\mpi_L761\Include;mpiUnits\mpi_L761;mpiUnits;ProjectForms\frmMain;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\lib\obj;$(BCB)\lib
+Item1=ProjectForms;mpiUnits\mpi_L761\Include;mpiUnits\mpi_L761;mpiUnits;ProjectForms\frmMain;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\lib\obj;$(BCB)\lib
+Item2=mpiUnits;ProjectForms\frmMain;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\lib\obj;$(BCB)\lib
+Item3=mpiUnits;ProjectForms\frmMain;C:\Program Files\Borland\CBuilder6\Projects;D:\_Programs\Work\Larionchik\pmaz\pmaz_01\ProjectForms\frmMain;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[HistoryLists\hlIntOutputDir]
+Count=1
+Item0=_out
+
+[HistoryLists\hlFinalOutputDir]
+Count=2
+Item0=_out\
+Item1=_out
+
+[HistoryLists\hIBPIOutputDir]
+Count=1
+Item0=_out
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>

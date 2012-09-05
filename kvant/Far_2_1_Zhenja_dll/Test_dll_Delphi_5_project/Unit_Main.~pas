@@ -1,0 +1,252 @@
+unit Unit_Main;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
+  ComCtrls, ToolWin, ExtCtrls, StdCtrls, Menus;
+
+
+type
+  TfrmMain = class(TForm)
+    ControlBar1: TControlBar;
+    ToolBar1: TToolBar;
+    ToolButton1: TToolButton;
+    ToolButton2: TToolButton;
+    ToolButton3: TToolButton;
+    ToolButton4: TToolButton;
+    Button1: TButton;
+    Button2: TButton;
+    lblBetta: TLabel;
+    lblEpsilon: TLabel;
+    Timer1: TTimer;
+    Label3: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
+    Label6: TLabel;
+    ePeleng: TEdit;
+    eEpsilon: TEdit;
+    Label7: TLabel;
+    Label8: TLabel;
+    eKa: TEdit;
+    Label9: TLabel;
+    lblDeltaBetta: TLabel;
+    lblDeltaEpsilon: TLabel;
+    Label10: TLabel;
+    Label11: TLabel;
+    Label12: TLabel;
+    Label13: TLabel;
+    egDeltaRo2: TEdit;
+    efSigma2: TEdit;
+    Label23: TLabel;
+    Label26: TLabel;
+    Bevel3: TBevel;
+    efKoefPlacingDiagram: TEdit;
+    efCutLevel: TEdit;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label14: TLabel;
+    Label15: TLabel;
+    Label16: TLabel;
+    Label17: TLabel;
+    Label18: TLabel;
+    Label19: TLabel;
+    edTimer1: TEdit;
+    egDeltaRo1: TEdit;
+    procedure ToolButton2Click(Sender: TObject);
+    procedure ToolButton3Click(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure Timer1Timer(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+  private
+  // --- Текущее модельное время -----
+     CurrentModelTime   : integer;
+     TransformTimeCoef  : integer;  // ---- Коеффициент преобразование переменной CurrentModelTime в реальное модельное время ---
+     TargetPeleng       : double;
+     TargetEpsilon      : double;
+     CurAzimFAR_Korabel : double;
+
+     CutLevel           : double;
+     KoefPlacingDiagram : double;
+     Sigma2             : double;
+     DeltaRo1           : double;
+     DeltaRo2           : double;
+     Hx, Hy, Hz         : double;
+     Sh                 : double;
+
+
+
+     SlowFreq         : integer; // ---- временная переменная ------ // ----- Медленный таймер (работает 10 раз в секунду) -----
+     Sync             : integer; // ---- временная переменная ------ // ----- Переменная синхронизации таймеров --------
+
+     NULLValue        : Double;
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+   frmMain: TfrmMain;
+
+implementation
+
+uses mpiDllConect;
+
+{$R *.DFM}
+
+procedure TfrmMain.FormCreate(Sender: TObject);
+begin
+     Randomize;
+
+     DecimalSeparator := '.';
+     TransformTimeCoef := 100;
+     NULLValue         := 0; /// ----- Закрывачка (подставить в адресса --- нулевую переменную )----
+     {
+
+var
+  pRockingData  : PTRockingData;
+
+// Процедуры
+
+// Инициализация DLL - запускается один раз при запуске системы
+Rocking_InitDLL (pRockingData);
+
+
+// Редактирование параметров
+Rocking_SetParameters ();
+
+// Запуск качек - запускается перед каждым зондированием примерно каждые (140 - 1600 мкс) - ПО КРАЙНЕЙ МЕРЕ Я ЭТО МОГУ ОСУЩЕСТВИТЬ, НО НЕ ЧАЩЕ
+Rocking_Run ();
+
+// Получение значений поправок для электронной стабилизации при качках
+Rocking_Get_Betta_Epsilon (); // Входыне и выходные параметры в структуре TRockingData
+
+// Получение значений ошибок измерения координат в режиме прерывания обзора
+Rocking_Get_Betta_Epsilon_and_TargetError (); // Входыне и выходные параметры в структуре TRockingData
+// Ты можешь в данной процедуре не рассчитывать поправки по Betta и Epsilon
+
+// Объясни назанчение данной процедуры
+Rocking_ShowModelResult ();     }
+end;
+
+
+procedure TfrmMain.ToolButton2Click(Sender: TObject);
+begin
+   if (not mpi_RockingDLLLoaded) then exit; // ----  Если ДЛЛ не загружена тогда , пшол вон отсюда :) ----
+
+   Rocking_SetParameters();
+
+end;
+
+procedure TfrmMain.ToolButton3Click(Sender: TObject);
+begin
+   if (not mpi_RockingDLLLoaded) then exit; // ----  Если ДЛЛ не загружена тогда , пшол вон отсюда :) ----
+
+   Rocking_ShowModelResult();
+end;
+
+procedure TfrmMain.Button1Click(Sender: TObject);
+begin
+  /// ----- Ето модельные параметры --------
+    TargetPeleng       := StrToFloat (ePeleng .Text) * pi / 180;
+    TargetEpsilon      := StrToFloat (eEpsilon.Text) * pi / 180;
+    CurAzimFAR_Korabel := StrToFloat (eKa     .Text) * pi / 180;
+
+    CutLevel           := StrToFloat (efCutLevel     .Text);
+    KoefPlacingDiagram := StrToFloat (efKoefPlacingDiagram.Text);
+    Sigma2             := StrToFloat (efSigma2     .Text);
+    DeltaRo1           := StrToFloat (egDeltaRo1   .Text) * pi / 180;
+    DeltaRo2           := StrToFloat (egDeltaRo2   .Text) * pi / 180;
+    Hx                 := 0.5;
+    Hy                 := 0.5;
+    Hz                 := 30;
+    Sh                 := 18;
+
+
+  // ---- Текущее модельное время ----
+    CurrentModelTime := 0;
+
+  // ---- внутренние переменные ----- ----
+    SlowFreq         := 10;        // ----- Медленный таймер (работает 10 раз в секунду) -----
+    Sync             := SlowFreq;  // ----- Переменная синхронизации таймеров --------
+
+////////////////////////////////////
+  // ----- Инициализация , переменных структуры, некоторые переменных (тут все переменные не обизательно ложить) -----
+     RockingData.pIntCurrentTime     := @CurrentModelTime;     // ---- Текущее модельное время, с (с точностью до мкс)
+     RockingData.pCurAzimFAR_Korabel := @CurAzimFAR_Korabel;   // ---- Текущий азимут вращения антенны ------
+     RockingData.pEps0               := @NULLValue;            // ----  Наклон полотна -----
+     RockingData.pDeltaEps0          := @NULLValue;            // ----  Ошибка установки наклона полотна -----
+     RockingData.pNju                := @NULLValue;            // ----  Разворот полотна (фокал )
+     RockingData.pDeltaNju           := @NULLValue;            // ----  Ошибка установки (фокала )
+
+     RockingData.CutLevel           := @CutLevel;              // ---- Уровень среза ------
+     RockingData.KoefPlacingDiagram := @KoefPlacingDiagram;    // ---- Коэффициент растоновки лучей (доли от растановки)
+     RockingData.Sh                 := @Sh;                    // ---- Отношение сигнал/шум -----
+     RockingData.Sigma2             := @Sigma2;                // ---- Величина квадратического отклонения ----
+     RockingData.DeltaRo1           := @DeltaRo1;              // ---- Дискрет изменения угла отклонения по горизонтальной оси ---
+     RockingData.DeltaRo2           := @DeltaRo2;              // ---- Дискрет изменения угла отклонения по вертикальной оси ---
+
+  // --------- Ети параметры пускай висят, они в ДЛЛ не подлючены - хотя нада былобы,---------
+     RockingData.Hx                 := @Hx;                    // ---- Смещение антенны относительно центра качания ----
+     RockingData.Hy                 := @Hy;                    // ---- Смещение антенны относительно центра качания ----
+     RockingData.Hz                 := @Hz;                    // ---- Смещение антенны относительно центра качания ----
+
+
+     RockingData.TimeTransformCoef   := TransformTimeCoef;
+////////////////////////////////////
+
+    Rocking_InitDLL(RockingData);
+
+  // ----- Запуск таймера ------
+    Timer1.Enabled := true;
+end;
+
+
+procedure TfrmMain.Button2Click(Sender: TObject);
+begin
+  // ----- Не Запуск таймера ------
+    Timer1.Enabled := false;
+end;
+
+procedure TfrmMain.Timer1Timer(Sender: TObject);
+begin
+
+   // ---- Зпускаем ДЛЛ (Тобиш внутренние ДЛЛ Качки) ------
+      Rocking_Run();
+
+
+  // ----- Если сработал медленный таймер по переменной синхронизации , тогда в средину  ---------------
+
+//   if (CurrentModelTime >= Sync) then begin
+          // -----
+             RockingData.TargetPeleng  := TargetPeleng;   // ---- Текущий пеленг цели ---------
+             RockingData.TargetEpsilon := TargetEpsilon;  // ---- Текущий угол места цели --------
+             RockingData.ImpulsCount   := 20;
+             //RockingData.ImpulsCount   := Random(20);
+
+         // ------
+
+             Rocking_Get_Betta_Epsilon();
+             Rocking_Get_Betta_Epsilon_and_TargetError();
+          // -----
+
+            lblBetta.Caption        := Format ('Betta: %5.3f грд', [RockingData.Betta * 180 / pi]);
+            lblEpsilon.Caption      := Format ('Epsilon: %5.3f грд', [RockingData.Epsilon * 180 / pi]);
+            lblDeltaBetta.Caption   := Format ('DeltaBetta: %5.3f грд', [RockingData.DeltaBetta * 180 / pi]);
+            lblDeltaEpsilon.Caption := Format ('DeltaEpsilon: %5.3f грд', [RockingData.DeltaEpsilon * 180 / pi]);
+            Label11.Caption         := Format ('DeltaBetta: %5.3f грд', [RockingData.MeasureDeltaBetta * 180 / pi]);
+            Label12.Caption         := Format ('DeltaEpsilon: %5.3f грд', [RockingData.MeasureDeltaEpsilon * 180 / pi]);
+
+            Sync                    := CurrentModelTime + SlowFreq;
+ //  end;
+
+   // -----
+     inc(CurrentModelTime);
+
+   // ----- Вывод быстрого модельно времени -------
+     edTimer1.Text := FloatToStr(CurrentModelTime / TransformTimeCoef);
+
+end;
+
+end.

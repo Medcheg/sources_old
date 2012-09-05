@@ -1,0 +1,233 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{4609E838-F486-4FC9-A1FA-97D660DA534E}</ProjectGuid>
+			<ProjectType>CppVCLApplication</ProjectType>
+			<MainSource>SoundAnalysis.cpp</MainSource>
+			<Config Condition="'$(Config)'==''">Debug</Config>
+			<ProjectVersion>12.0</ProjectVersion>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_1)'!=''">
+			<Cfg_1>true</Cfg_1>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_2)'!=''">
+			<Cfg_2>true</Cfg_2>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base)'!=''">
+			<BCC_SelectedOptimizations>true</BCC_SelectedOptimizations>
+			<IncludePath>mpiUnits\;ProjectForms\;$(IncludePath)</IncludePath>
+			<LinkPackageStatics>vcl.lib;rtl.lib;tee.lib;vclimg.lib</LinkPackageStatics>
+			<PackageImports>vcl.bpi;rtl.bpi;dbrtl.bpi;adortl.bpi;vcldb.bpi;vclx.bpi;bdertl.bpi;vcldbx.bpi;ibxpress.bpi;dsnap.bpi;dsnapcon.bpi;dsnap.bpi;teeui.bpi;teedb.bpi;tee.bpi;dss.bpi;dsnapcon.bpi;bcbsmp.bpi</PackageImports>
+			<TASM_Defines>_DEBUG;$(TASM_Defines)</TASM_Defines>
+			<BRCC_Defines>_DEBUG;$(BRCC_Defines)</BRCC_Defines>
+			<DCC_CBuilderOutput>JPHNE</DCC_CBuilderOutput>
+			<DCC_UnitSearchPath>.\;$(BDS)\lib;$(BDS)\lib\obj;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+			<ILINK_AppType>Windows</ILINK_AppType>
+			<ILINK_FullDebugInfo>true</ILINK_FullDebugInfo>
+			<BCC_IncludePath>mpiUnits;ProjectForms;..\_GyroSoundAnalis\ProjectForms;C:\Program Files\Borland\CBuilder6\Projects;$(BDS)\include;$(BDS)\include\vcl;$(BDS)\include\dinkumware;$(BCC_IncludePath)</BCC_IncludePath>
+			<BRCC_IncludePath>mpiUnits;ProjectForms;..\_GyroSoundAnalis\ProjectForms;C:\Program Files\Borland\CBuilder6\Projects;$(BDS)\include;$(BDS)\include\vcl;$(BDS)\include\dinkumware;$(BRCC_IncludePath)</BRCC_IncludePath>
+			<BCC_SourceDebuggingOn>true</BCC_SourceDebuggingOn>
+			<BCC_PCHCache>true</BCC_PCHCache>
+			<DCC_IncludePath>.\;$(BDS)\lib;$(BDS)\lib\obj;$(DCC_IncludePath)</DCC_IncludePath>
+			<TASM_IncludePath>mpiUnits;ProjectForms;..\_GyroSoundAnalis\ProjectForms;C:\Program Files\Borland\CBuilder6\Projects;$(BDS)\include;$(BDS)\include\vcl;$(BDS)\include\dinkumware;$(TASM_IncludePath)</TASM_IncludePath>
+			<BCC_Defines>NO_STRICT;$(BCC_Defines)</BCC_Defines>
+			<FinalOutputDir>.</FinalOutputDir>
+			<BCC_GenerateWindowsApp>true</BCC_GenerateWindowsApp>
+			<TASM_AdditionalSwitches> /w2</TASM_AdditionalSwitches>
+			<AllPackageLibs>vcl.lib;rtl.lib;tee.lib;vclimg.lib</AllPackageLibs>
+			<BCC_GenerateMultithreaded>true</BCC_GenerateMultithreaded>
+			<OutputExt>exe</OutputExt>
+			<Multithreaded>true</Multithreaded>
+			<ILINK_LibraryPath>mpiUnits\;ProjectForms\;mpiUnits;ProjectForms;..\_GyroSoundAnalis\ProjectForms;C:\Program Files\Borland\CBuilder6\Projects;$(BDS)\lib\obj;$(BDS)\lib;$(BDS)\lib\psdk;$(ILINK_LibraryPath)</ILINK_LibraryPath>
+			<BCC_UserSuppliedOptions> -Vx -r- -k -Ve</BCC_UserSuppliedOptions>
+			<DCC_AdditionalSwitches> -M</DCC_AdditionalSwitches>
+			<BCC_InlineFunctionExpansion>false</BCC_InlineFunctionExpansion>
+			<BCC_DebugLineNumbers>true</BCC_DebugLineNumbers>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_1)'!=''">
+			<BCC_UserSuppliedOptions> -Vx -r- -k -Ve -k</BCC_UserSuppliedOptions>
+			<ILINK_LibraryPath>$(BDS)\lib\debug;$(ILINK_LibraryPath);$(ILINK_LibraryPath)</ILINK_LibraryPath>
+			<BCC_Defines>_DEBUG;$(BCC_Defines);$(BCC_Defines)</BCC_Defines>
+			<IntermediateOutputDir>Debug_Build</IntermediateOutputDir>
+			<DCC_Define>DEBUG;$(DCC_Define);$(DCC_Define)</DCC_Define>
+			<ILINK_DisableIncrementalLinking>true</ILINK_DisableIncrementalLinking>
+			<TASM_Debugging>Full</TASM_Debugging>
+			<DCC_AdditionalSwitches> -M -V</DCC_AdditionalSwitches>
+			<TASM_DisplaySourceLines>true</TASM_DisplaySourceLines>
+			<DCC_DebugInfoInExe>true</DCC_DebugInfoInExe>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2)'!=''">
+			<BCC_DebugLineNumbers>false</BCC_DebugLineNumbers>
+			<BCC_SourceDebuggingOn>false</BCC_SourceDebuggingOn>
+			<BCC_Defines>NDEBUG;$(BCC_Defines);$(BCC_Defines)</BCC_Defines>
+			<BCC_UserSuppliedOptions> -Vx -r- -k -Ve -r</BCC_UserSuppliedOptions>
+			<BCC_OptimizeForSpeed>true</BCC_OptimizeForSpeed>
+			<IntermediateOutputDir>Release_Build</IntermediateOutputDir>
+			<DCC_AdditionalSwitches> -M -$O+</DCC_AdditionalSwitches>
+			<TASM_Debugging>None</TASM_Debugging>
+			<ILINK_LibraryPath>$(BDS)\lib\release;$(ILINK_LibraryPath);$(ILINK_LibraryPath)</ILINK_LibraryPath>
+			<BCC_InlineFunctionExpansion>true</BCC_InlineFunctionExpansion>
+		</PropertyGroup>
+		<ItemGroup>
+			<CppCompile Include="mpiUnits\mpiMatrix.cpp">
+				<BuildOrder>17</BuildOrder>
+				<BuildOrder>0</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="mpiUnits\mpiGlobals.cpp">
+				<BuildOrder>14</BuildOrder>
+				<DependentOn>mpiUnits\mpiGlobals.h</DependentOn>
+				<BuildOrder>1</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="mpiUnits\mpiVector.cpp">
+				<BuildOrder>23</BuildOrder>
+				<DependentOn>mpiUnits\mpiVector.h</DependentOn>
+				<BuildOrder>2</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="mpiUnits\mpiBaseType.cpp">
+				<BuildOrder>3</BuildOrder>
+				<DependentOn>mpiUnits\mpiBaseType.h</DependentOn>
+				<BuildOrder>20</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="SoundAnalysis.cpp">
+				<BuildOrder>5</BuildOrder>
+				<BuildOrder>4</BuildOrder>
+			</CppCompile>
+			<ResFiles Include="SoundAnalysis.res">
+				<BuildOrder>5</BuildOrder>
+				<BuildOrder>2</BuildOrder>
+			</ResFiles>
+			<CppCompile Include="ProjectForms\Unit_Main.cpp">
+				<BuildOrder>8</BuildOrder>
+				<Form>frmMain</Form>
+				<DependentOn>ProjectForms\Unit_Main.h</DependentOn>
+				<BuildOrder>7</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="mpiUnits\pmCollection.cpp">
+				<DependentOn>mpiUnits\pmCollection.h</DependentOn>
+				<BuildOrder>7</BuildOrder>
+			</CppCompile>
+			<FormResources Include="ProjectForms\Unit_Main.dfm"/>
+			<BuildConfiguration Include="Base">
+				<Key>Base</Key>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Release">
+				<Key>Cfg_2</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Debug">
+				<Key>Cfg_1</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+		</ItemGroup>
+		<Import Project="$(BDS)\Bin\CodeGear.Cpp.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Cpp.Targets')"/>
+		<ProjectExtensions>
+			<Borland.Personality>CPlusPlusBuilder.Personality.12</Borland.Personality>
+			<Borland.ProjectType>CppVCLApplication</Borland.ProjectType>
+			<BorlandProject>
+				<CPlusPlusBuilder.Personality>
+					<VersionInfo>
+						<VersionInfo Name="IncludeVerInfo">False</VersionInfo>
+						<VersionInfo Name="AutoIncBuild">False</VersionInfo>
+						<VersionInfo Name="MajorVer">1</VersionInfo>
+						<VersionInfo Name="MinorVer">0</VersionInfo>
+						<VersionInfo Name="Release">0</VersionInfo>
+						<VersionInfo Name="Build">0</VersionInfo>
+						<VersionInfo Name="Debug">False</VersionInfo>
+						<VersionInfo Name="PreRelease">False</VersionInfo>
+						<VersionInfo Name="Special">False</VersionInfo>
+						<VersionInfo Name="Private">False</VersionInfo>
+						<VersionInfo Name="DLL">False</VersionInfo>
+						<VersionInfo Name="Locale">1058</VersionInfo>
+						<VersionInfo Name="CodePage">1251</VersionInfo>
+					</VersionInfo>
+					<VersionInfoKeys>
+						<VersionInfoKeys Name="CompanyName"/>
+						<VersionInfoKeys Name="FileDescription"/>
+						<VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="InternalName"/>
+						<VersionInfoKeys Name="LegalCopyright"/>
+						<VersionInfoKeys Name="LegalTrademarks"/>
+						<VersionInfoKeys Name="OriginalFilename"/>
+						<VersionInfoKeys Name="ProductName"/>
+						<VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="Comments"/>
+					</VersionInfoKeys>
+					<ExcludedPackages>
+						<ExcludedPackages Name="c:\program files\borland\cbuilder6\Projects\Bpl\IIStreamSupportPkg6.bpl">Innovative Streaming Support</ExcludedPackages>
+						<ExcludedPackages Name="c:\program files\borland\cbuilder6\Projects\Bpl\IIIoCompPkg6.bpl">Innovative IoComp Interface (Run Time)</ExcludedPackages>
+						<ExcludedPackages Name="c:\progra~1\borland\cbuild~1\projects\bpl\Iocomp60.bpl">Iocomp Package VCL</ExcludedPackages>
+						<ExcludedPackages Name="c:\program files\borland\cbuilder6\Projects\Bpl\IIIoCompDsn6.bpl">Innovative IoComp Interface (Design Time)</ExcludedPackages>
+						<ExcludedPackages Name="c:\progra~1\borland\cbuild~1\projects\bpl\OpenWireDsnCB6.bpl">OpenWire Project (Design Time)</ExcludedPackages>
+						<ExcludedPackages Name="c:\program files\borland\cbuilder6\Projects\Bpl\IICalientePkg6.bpl">Innovative Caliente (Run Time)</ExcludedPackages>
+						<ExcludedPackages Name="c:\progra~1\borland\cbuild~1\projects\bpl\IISupport6.bpl">Innovative Support Classes</ExcludedPackages>
+						<ExcludedPackages Name="c:\program files\borland\cbuilder6\Projects\Bpl\IICalienteDsn6.bpl">Innovative Caliente (Design Time)</ExcludedPackages>
+						<ExcludedPackages Name="c:\program files\borland\cbuilder6\Projects\Bpl\IIAnalysisPkg6.bpl">Innovative Analysis (Run Time)</ExcludedPackages>
+						<ExcludedPackages Name="c:\program files\borland\cbuilder6\Projects\Bpl\IIAnalysisDsn6.bpl">Innovative Analysis (Design Time)</ExcludedPackages>
+						<ExcludedPackages Name="c:\program files\borland\cbuilder6\Projects\Bpl\OpenWirePkg6.bpl">OPENWIREPKG6</ExcludedPackages>
+						<ExcludedPackages Name="c:\program files\borland\cbuilder6\Projects\Bpl\OpenWireDsn6.bpl">OPENWIREDSN6</ExcludedPackages>
+						<ExcludedPackages Name="c:\program files\borland\cbuilder6\Projects\Bpl\IIAspiDsn6.bpl">Innovative ASPI Design-Time Components</ExcludedPackages>
+						<ExcludedPackages Name="c:\progra~1\borland\cbuild~1\projects\bpl\IIAspiPkg6.bpl">Innovative ASPI Run-Time Components</ExcludedPackages>
+						<ExcludedPackages Name="c:\progra~1\borland\cbuild~1\projects\bpl\IIDataSet6.bpl">Innovative Data Set Components</ExcludedPackages>
+						<ExcludedPackages Name="c:\program files\borland\cbuilder6\Projects\Bpl\IIVideoSupportPkg6.bpl">Innovative Video Support</ExcludedPackages>
+						<ExcludedPackages Name="c:\program files\borland\cbuilder6\Projects\Bpl\IIImagePkg6.bpl">Innovative Ipl</ExcludedPackages>
+						<ExcludedPackages Name="c:\program files\borland\cbuilder6\Projects\Bpl\IIChicoDsn6.bpl">Innovative Chico (Design Time)</ExcludedPackages>
+						<ExcludedPackages Name="c:\progra~1\borland\cbuild~1\projects\bpl\IIChicoPkg6.bpl">Innovative Chico (Run Time)</ExcludedPackages>
+						<ExcludedPackages Name="c:\progra~1\borland\cbuild~1\projects\bpl\IIDriverX6.bpl">IIDriverX6</ExcludedPackages>
+						<ExcludedPackages Name="c:\program files\borland\cbuilder6\Projects\Bpl\IIMatadorPkg6.bpl">Innovative Matador Family (Run Time)</ExcludedPackages>
+						<ExcludedPackages Name="c:\progra~1\borland\cbuild~1\projects\bpl\IIPismoPkg6.bpl">Innovative Pismo</ExcludedPackages>
+						<ExcludedPackages Name="c:\progra~1\borland\cbuild~1\projects\bpl\IIDspSupportPkg6.bpl">Innovative Armada-Compatible Dsp Support Package (Run Time)</ExcludedPackages>
+						<ExcludedPackages Name="c:\program files\borland\cbuilder6\Projects\Bpl\IIMatadorDsn6.bpl">Innovative Matador Family (Design Time)</ExcludedPackages>
+						<ExcludedPackages Name="c:\program files\borland\cbuilder6\Projects\Bpl\IIDspSupportDsn6.bpl">Innovative Armada-Compatible Dsp Support (Design Time)</ExcludedPackages>
+						<ExcludedPackages Name="c:\program files\borland\cbuilder6\Projects\Bpl\IIVelociaPkg6.bpl">Innovative Velocia Family (Run Time)</ExcludedPackages>
+						<ExcludedPackages Name="c:\program files\borland\cbuilder6\Projects\Bpl\IIVelociaDsn6.bpl">Innovative Velocia Family (Design Time)</ExcludedPackages>
+						<ExcludedPackages Name="c:\program files\borland\cbuilder6\Projects\Bpl\IIUserInterface6.bpl">Innovative User Interface Components</ExcludedPackages>
+					</ExcludedPackages>
+					<Debugging>
+						<Debugging Name="DebugSourceDirs">$(BCB)\source\vcl</Debugging>
+					</Debugging>
+					<Parameters>
+						<Parameters Name="RunParams"/>
+						<Parameters Name="Launcher"/>
+						<Parameters Name="UseLauncher">False</Parameters>
+						<Parameters Name="DebugCWD"/>
+						<Parameters Name="HostApplication"/>
+						<Parameters Name="RemoteHost"/>
+						<Parameters Name="RemotePath"/>
+						<Parameters Name="RemoteLauncher"/>
+						<Parameters Name="RemoteCWD"/>
+						<Parameters Name="RemoteDebug">False</Parameters>
+						<Parameters Name="RemoteParams"/>
+						<Parameters Name="UseRemoteLauncher">False</Parameters>
+						<Parameters Name="Debug Symbols Search Path"/>
+						<Parameters Name="LoadAllSymbols">True</Parameters>
+						<Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+					</Parameters>
+					<Compiler>
+						<Compiler Name="ShowInfoMsgs">0</Compiler>
+						<Compiler Name="LinkDebugVcl">0</Compiler>
+						<Compiler Name="LinkCGLIB">0</Compiler>
+					</Compiler>
+					<CORBA>
+						<CORBA Name="AddServerUnit">1</CORBA>
+						<CORBA Name="AddClientUnit">1</CORBA>
+						<CORBA Name="PrecompiledHeaders">1</CORBA>
+					</CORBA>
+					<ProjectProperties>
+						<ProjectProperties Name="AutoShowDeps">False</ProjectProperties>
+						<ProjectProperties Name="ManagePaths">True</ProjectProperties>
+						<ProjectProperties Name="VerifyPackages">True</ProjectProperties>
+					</ProjectProperties>
+					<Source>
+						<Source Name="MainSource">SoundAnalysis.cpp</Source>
+					</Source>
+				</CPlusPlusBuilder.Personality>
+			</BorlandProject>
+			<ProjectFileVersion>12</ProjectFileVersion>
+		</ProjectExtensions>
+	</Project>

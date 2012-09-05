@@ -1,0 +1,114 @@
+[Version]
+Signature="$CHICAGO$"
+Class=L-Card_USB_Devices
+ClassGUID={6CCD8FA1-FAC1-4823-83B8-72C7C8C5689B}
+provider=%LCARD%
+LayoutFile=layout.inf
+DriverVer=17/10/2006,4.0.0.0
+
+[Manufacturer]
+%MfgName%=LCard
+
+[LCard]
+%USB\VID_0471&PID_0440.DeviceDesc%=LCARD_E440.Dev , USB\VID_0471&PID_0440
+%USB\VID_0471&PID_0140.DeviceDesc%=LCARD_E140.Dev , USB\VID_0471&PID_0140
+
+[ClassInstall]
+Addreg=Class_AddReg
+
+; NT Style
+[ClassInstall32]
+Addreg=Class_AddReg
+
+[Class_AddReg]
+HKR,,,,%DeviceClassName%
+HKR,,Icon,,"-5"
+
+
+[PreCopySection]
+HKR,,NoSetupUI,,1
+
+[DestinationDirs]
+LCARD.Files.Ext = 10,System32\Drivers
+LCARD.Files.Inf = 10,INF
+
+;// for E440
+[LCARD_E440.Dev]
+CopyFiles=LCARD.Files.Ext,LCARD.Files.Inf
+AddReg=LCARD.AddReg,LCARD_E440.AddReg
+
+[LCARD_E440.Dev.NT]
+CopyFiles=LCARD.Files.Ext,LCARD.Files.Inf
+AddReg=LCARD_E440.AddReg
+
+[LCARD_E440.AddReg]
+HKR,"Parameters","Type",0x00010001,30
+HKR,"Parameters","DSPType",0x00010001,2185
+
+[LCARD_E440.Dev.NT.Services]
+Addservice = ldevusbu, 0x00000002, LCARD.AddService
+
+;// for E440
+[LCARD_E140.Dev]
+CopyFiles=LCARD.Files.Ext,LCARD.Files.Inf
+AddReg=LCARD.AddReg,LCARD_E140.AddReg
+
+[LCARD_E140.Dev.NT]
+CopyFiles=LCARD.Files.Ext,LCARD.Files.Inf
+AddReg=LCARD_E140.AddReg
+
+[LCARD_E140.AddReg]
+HKR,"Parameters","Type",0x00010001,31
+HKR,"Parameters","DSPType",0x00010001,0
+
+[LCARD_E140.Dev.NT.Services]
+Addservice = ldevusbu, 0x00000002, LCARD.AddService
+
+
+;/// common part
+[LCARD.AddService]
+DisplayName    = %LCARD.SvcDesc%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 2                  ; SERVICE_AUTO_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %10%\System32\Drivers\ldevusbu.sys
+LoadOrderGroup = Extended Base
+
+[LCARD.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,"wdmstub.sys,ldevusbu.sys"
+
+[LCARD.Files.Ext]
+;ldevusbu.sys
+;wdmstub.sys
+
+[LCARD.Files.Inf]
+;ldevusbu.Inf
+
+
+;---------------------------------------------------------------;
+; BoardType
+; 30 - E440
+;; 2 - PUMA
+;; 3 - S201
+;; 4 - S211
+;; 5 - E270
+;; 6 - CAN to USB
+;; 7 - E140
+;; 8 - AK9
+;; 9 - S301
+;;10 - S401
+;;11 - S402
+;;12 - LTR21
+
+
+
+[Strings]
+LCARD="L-Card Ltd."
+MfgName="L-Card"
+USB\VID_0471&PID_0440.DeviceDesc="E-440 Board(LComp)"
+USB\VID_0471&PID_0140.DeviceDesc="E-140 Board(LComp)"
+;USB\VID_0471&PID_5402.DeviceDesc="LTR21 Board"
+
+LCARD.SvcDesc="ldevusbu.sys LComp compatible USB WDM driver"
+DeviceClassName="L-Card ADC/DAC USB boards"

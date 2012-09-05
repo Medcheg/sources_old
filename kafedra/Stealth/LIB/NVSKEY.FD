@@ -1,0 +1,215 @@
+CC ***************************************************************************
+CC * (C) 1997-2002 Aktiv Co. All rights reserved.                            *
+CC * Definitions for use Guardant Stealth.                                   *
+CC ***************************************************************************
+
+
+CC--- Demo codes ---
+       INTEGER*4  ns_DEMONVK,ns_DEMORDO,ns_DEMOPRF,ns_DEMOMST
+
+       PARAMETER(ns_DEMONVK    = #0519175b7) ! Demo public code
+       PARAMETER(ns_DEMORDO    = #051917645) ! Demo private read code
+       PARAMETER(ns_DEMOPRF    = #051917603) ! Demo private write code
+       PARAMETER(ns_DEMOMST    = #05191758C) ! Demo private master code
+
+CC--- Dongle Models ---
+       INTEGER*2 nskm_GS,nskm_GU,nskm_GF,nskm_G2
+
+       PARAMETER(nskm_GS       = #0000)   ! Guardant Stealth 
+       PARAMETER(nskm_GU       = #0001)   ! Guardant USB     
+       PARAMETER(nskm_GF       = #0002)   ! Guardant Fidus   
+       PARAMETER(nskm_G2       = #0003)   ! Guardant StealthII
+
+CC--- Dongle Types ---
+       INTEGER*2 nskt_DOS,nskt_Win,nskt_LAN,nskt_Time
+
+       PARAMETER(nskt_DOS      = #0000)   ! DOS Guardant dongle
+       PARAMETER(nskt_Win      = #0000)   ! Windows Guardant dongle
+       PARAMETER(nskt_LAN      = #0001)   ! LAN Guardant dongle
+       PARAMETER(nskt_Time     = #0002)   ! Time Guardant dongle
+
+CC--- Flags for nnkSetMode() ---
+CC--- Search for the dongle with specified ---
+       INTEGER*4 nsf_NProg,nsf_ID,nsf_SN,nsf_Ver,nsf_Mask,nsf_Type
+
+       PARAMETER(nsf_NProg     = #0001)   ! wKeyNProg == wNProg
+       PARAMETER(nsf_ID        = #0002)   ! dwKeyID == dwKeyID
+       PARAMETER(nsf_SN        = #0004)   ! Serial Number
+       PARAMETER(nsf_Ver       = #0008)   ! bKeyVersion >= bVer
+       PARAMETER(nsf_Mask      = #0010)   ! wKeyMask & wMask == wMask
+       PARAMETER(nsf_Type      = #0020)   ! wKeyType & wType == wType
+
+CC--- Input: Operation Mode Flags ---
+
+       INTEGER*4 nsf_SysAddrMode,nsf_CodeIsString,nsf_NoRetry,
+     +           nsf_NoFullAccess,nsf_OnlyStdLPT1,nsf_OnlyStdLPT2,
+     +           nsf_OnlyStdLPT3,nsf_NoAutoMem32,nsf_UseOldCRC
+
+       PARAMETER(nsf_SysAddrMode  = #0080) ! Enables SAM (System Address Mode) 
+                                           ! in read/write operations
+                                           ! (UAM is a default mode)
+       PARAMETER(nsf_CodeIsString = #0100) ! Reserved (used by NNKCOMMAND() 
+                                           ! function only)
+       PARAMETER(nsf_NoRetry      = #0200) ! Disables auto configuration 
+                                           ! of communication protocol
+       PARAMETER(nsf_NoFullAccess = #0400) ! Disables full capture of the 
+                                           ! parallel port resource
+       PARAMETER(nsf_OnlyStdLPT1  = #0800) ! Enables search for the key in 
+                                           ! LPT1 only (address 0x378)
+       PARAMETER(nsf_OnlyStdLPT2  = #1000) ! Enables search for the key in 
+                                           ! LPT2 only (address 0x278)
+       PARAMETER(nsf_OnlyStdLPT3  = #2000) ! Enables search for the key in 
+                                           ! LPT3 only (address 0x3BC)
+                                           ! If none of these 3 flags is set, 
+                                           ! the key will be searched for in 
+                                           ! all LPT ports available.
+       PARAMETER(nsf_NoAutoMem32  = #4000) ! Indicates that data segment is 
+                                           ! different from the standard one 
+                                           ! used by NNKCOMMAND() function only 
+                                           ! in 32-bit API
+       PARAMETER(nsf_UseOldCRC    = #8000) ! Reserved
+
+CC--- UAM Addresses of Fields ---
+       INTEGER*1 uam_bNProg,uam_bVer,uam_wSN,uam_wMask,uam_wGP,
+     +           uam_wRealLANRes,uam_dwIndex,uam_abAlgoAddr
+
+       PARAMETER(uam_bNProg       = 0 )    ! 00h Programm number
+       PARAMETER(uam_bVer         = 1 )    ! 01h Version
+       PARAMETER(uam_wSN          = 2 )    ! 02h Serial number
+       PARAMETER(uam_wMask        = 4 )    ! 04h Bit mask
+       PARAMETER(uam_wGP          = 6 )    ! 06h Counter #1 (GP)
+       PARAMETER(uam_wRealLANRes  = 8 )    ! 08h Current network license limit
+       PARAMETER(uam_dwIndex      = 10)    ! 0Ah Index
+       PARAMETER(uam_abAlgoAddr   = 14)    ! 0Eh User data, algorithm descriptors
+
+CC--- SAM Addresses of Fields ---
+
+       INTEGER*1 sam_bKeyModelAddr,sam_bKeyMemSizeAddr,s
+     +           am_bKeyProgVerAddr, sam_bKeyProtocolAddr,
+     +           sam_wClientVerAddr,sam_bKeyUserAddrAddr,
+     +           sam_bKeyAlgoAddrAddr, sam_wPrnportAddr,
+     +           sam_dwPublicCode,sam_bVersion,sam_bLANRes,sam_wType,
+     +           sam_dwID,sam_bWriteProtect,sam_bReadProtect,
+     +           sam_bNumFunc,sam_bReserved2,sam_bNProg,sam_bVer,
+     +           sam_wSN,sam_wMask,sam_wGP,sam_wRealLANRes,
+     +           sam_dwIndex,sam_abAlgoAddr
+       PARAMETER(sam_bKeyModelAddr   = 0)
+       PARAMETER(sam_bKeyMemSizeAddr = 1)
+       PARAMETER(sam_bKeyProgVerAddr = 2)
+       PARAMETER(sam_bKeyProtocolAddr= 3)
+       PARAMETER(sam_wClientVerAddr  = 4)
+       PARAMETER(sam_bKeyUserAddrAddr= 6)
+       PARAMETER(sam_bKeyAlgoAddrAddr= 7)
+       PARAMETER(sam_wPrnportAddr    = 8)
+       PARAMETER(sam_dwPublicCode    =14)
+       PARAMETER(sam_bVersion        =18)
+       PARAMETER(sam_bLANRes         =19)
+       PARAMETER(sam_wType           =20)
+       PARAMETER(sam_dwID            =22)
+       PARAMETER(sam_bWriteProtect   =26)
+       PARAMETER(sam_bReadProtect    =27)
+       PARAMETER(sam_bNumFunc        =28)
+       PARAMETER(sam_bReserved2      =29)
+       PARAMETER(sam_bNProg          =30)
+       PARAMETER(sam_bVer            =31)
+       PARAMETER(sam_wSN             =32)
+       PARAMETER(sam_wMask           =34)
+       PARAMETER(sam_wGP             =36)
+       PARAMETER(sam_wRealLANRes     =38)
+       PARAMETER(sam_dwIndex         =40)
+       PARAMETER(sam_abAlgoAddr      =44)
+
+CC--- Guardant Stealth Algorithm Numbers ---
+       INTEGER*1 nsan_AutoProtect,nsan_Fast,nsan_Random,nsan_DEMO
+
+       PARAMETER(nsan_AutoProtect   =0)     ! For automatic protection
+       PARAMETER(nsan_Fast          =1)     ! For CodeInit (EnCode/DeCode) 
+                                            ! operation
+       PARAMETER(nsan_Random        =2)     ! Random number generator
+       PARAMETER(nsan_DEMO          =3)     ! For TRANSFORM operation
+
+CC--- Default query/answer length of the algorithms ---
+       INTEGER*1 nsars_AutoProtect,nsars_Fast,nsars_Random,nsars_DEMO
+
+       PARAMETER(nsars_AutoProtect  =4 )    ! For automatic protection
+       PARAMETER(nsars_Fast         =32)    ! For CodeInit (EnCode/DeCode)
+                                            ! operation
+       PARAMETER(nsars_Random       =4 )    ! Random number generator
+       PARAMETER(nsars_DEMO         =4 )    ! For TRANSFORM operation
+
+CC--- Reversible Conversion Methods for EnCode/DeCode ---
+       INTEGER*1 nsat_Algo0,nsat_AlgoASCII,nsat_AlgoFile
+
+       PARAMETER(nsat_Algo0         =0)     ! Basic method
+       PARAMETER(nsat_AlgoASCII     =1)     ! Character method
+       PARAMETER(nsat_AlgoFile      =2)     ! File method
+
+CC--- CRC Starting value ---
+        INTEGER*4 ns_StartCRC
+
+       PARAMETER(ns_StartCRC     =-1)       ! Starting value for 'continued' CRC
+
+CC- Error codes -----------------------------------------------
+       INTEGER*2 nse_Ok,nse_KeyNotFound,nse_AddressTooBig,nse_GPis0,
+     +           nse_BadCommand,nse_VerifyError,nse_LANProtNotFound,
+     +           nse_LANResourceExhaust,nse_ConnectionLoosed,nse_ConnectionLost,
+     +           nse_LANplugsNotFound,nse_LANserverMemory,
+     +           nse_LANDPMIError,nse_Internal,nse_ServerReloaded,
+     +           nse_VersionTooOld,nse_BadDriver,nse_CRCError,
+     +           nse_LANNetBIOS, nse_LANpacket, nse_LANneedLogin,
+     +           nse_LANneedLogout, nse_LANKeyBusy, nse_DriverBusy,
+     +           nse_CRCErrorRead,nse_CRCErrorWrite,nse_Overbound,
+     +           nse_AlgoNotFound,nse_CRCErrorFunc,nse_CRCChkNSK,
+     +           nse_ProtocolNotSup,nse_CnvTypeError,nse_LastError
+
+       PARAMETER(nse_OK                 = 0) ! No errors
+       PARAMETER(nse_KeyNotFound        = 1) ! Dongle with specified search 
+                                             ! conditions not found
+                                        ! 2)   not used
+       PARAMETER(nse_AddressTooBig      = 3) ! The specified address is too big
+                                        ! 4)   not used
+       PARAMETER(nse_GPis0              = 5) ! GP executions counter exhausted 
+                                             ! (has 0 value)
+       PARAMETER(nse_BadCommand         = 6) ! Bad key call command
+                                        ! 7)   not used
+       PARAMETER(nse_VerifyError        = 8) ! Write verification error
+       PARAMETER(nse_LANProtNotFound    = 9) ! Network protocol not found
+       PARAMETER(nse_LANResourceExhaust =10) ! License counter of Guardant Net exhausted
+       PARAMETER(nse_ConnectionLoosed   =11) ! Connection with Guardant Net server was lost
+       PARAMETER(nse_ConnectionLost     =11) ! Connection with Guardant Net server was lost
+       PARAMETER(nse_LANplugsNotFound   =12) ! Guardant Net server not found
+       PARAMETER(nse_LANserverMemory    =13) ! Guardant Net server memory allocation error
+       PARAMETER(nse_LANDPMIError       =14) ! Guardant Net server found DPMI error
+       PARAMETER(nse_Internal           =15) ! Guardant Net server internal error
+       PARAMETER(nse_ServerReloaded     =16) ! Guardant Net server has been reloaded
+       PARAMETER(nse_VersionTooOld      =17) ! This command is not supported by 
+                                             ! this key version
+                                             ! (the version is too old)
+       PARAMETER(nse_BadDriver          =18) ! Windows NT driver is required
+       PARAMETER(nse_LANNetBIOS         =19) ! Network protocol error
+       PARAMETER(nse_LANpacket          =20) ! Network packet format is not supported
+       PARAMETER(nse_LANneedLogin       =21) ! Logging in Guardant Net server is required
+       PARAMETER(nse_LANneedLogout      =22) ! Logging out from Guardant Net server 
+                                             ! is required
+       PARAMETER(nse_LANKeyBusy         =23) ! Guardant Net is busy locked by another 
+                                             ! copy of protected application
+       PARAMETER(nse_DriverBusy         =24) ! Guardant driver cannot capture 
+                                             ! the parallel port
+                                       ! 25) - 29 not used
+       PARAMETER(nse_CRCError           =30) ! CRC error occurred while attempting 
+                                             ! to call the key
+       PARAMETER(nse_CRCErrorRead       =31) ! CRC error occurred while attempting to read 
+                                             ! data from the key
+       PARAMETER(nse_CRCErrorWrite      =32) ! CRC error occurred while attempting to write
+                                             ! data to the key
+       PARAMETER(nse_Overbound          =33) ! The boundary of the key's memory 
+                                             ! has been override
+       PARAMETER(nse_AlgoNotFound       =34) ! The hardware algorithm with this number has 
+                                             ! not been found in the key
+       PARAMETER(nse_CRCErrorFunc       =35) ! CRC error of the hardware algorithm
+       PARAMETER(nse_CRCChkNSK          =36) ! CRC error occurred while attempting to execute
+       PARAMETER(nse_ProtocolNotSup     =37) ! hkNSK operation, or all keys found 
+                                             ! Guardant API release is too old
+       PARAMETER(nse_CnvTypeError       =38) ! Non-existent reversible conversion method has
+                                             ! been specified
+       PARAMETER(nse_LastError          =39) !

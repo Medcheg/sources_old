@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="Rocking.dll"/>
+    <OBJFILES value="Unit_Main.obj mpiUnits\mpiSetupWaves.obj Library\Wave\mpiWave.obj 
+      Library\Wave\Unit_Wave.obj mpiUnits\mpiTypes.obj 
+      mpiUnits\mpiDeclaration.obj 
+      Project_Forms\frmSetupWaves\Unit_SetupWaves.obj mpiUnits\mpiSetupMatrix.obj 
+      Project_Forms\frmTestForm\Unit_TestForm.obj mpiUnits\mpiDiagram.obj 
+      Project_Forms\frmShowWave\Unit_ShowWave.obj"/>
+    <RESFILES value="Rocking.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) Library\Wave\Unit_Wave.dfm 
+      Project_Forms\frmSetupWaves\Unit_SetupWaves.dfm 
+      Project_Forms\frmTestForm\Unit_TestForm.dfm 
+      Project_Forms\frmShowWave\Unit_ShowWave.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="tee.lib vcl.lib rtl.lib"/>
+    <SPARELIBS value="rtl.lib vcl.lib tee.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi adortl.bpi vcldb.bpi vclx.bpi bdertl.bpi 
+      vcldbx.bpi ibxpress.bpi cds.bpi dsnap.bpi bdecds.bpi qrpt.bpi teeui.bpi 
+      teedb.bpi tee.bpi dss.bpi teeqr.bpi visualclx.bpi visualdbclx.bpi 
+      dsnapcrba.bpi dsnapcon.bpi bcbsmp.bpi"/>
+    <PATHCPP value=".;mpiUnits;Library\Wave;Project_Forms\frmSetupWaves;Project_Forms\frmTestForm;Project_Forms\frmShowWave"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value=""/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="Rocking.bpf"/>
+    <INCLUDEPATH value="Project_Forms\frmShowWave;Project_Forms\frmTestForm;Project_Forms\frmSetupWaves;Library\Wave;mpiUnits;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;D:\_Programs\Work\Kvant\Far_2_1_Zhenja_dll;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="Project_Forms\frmShowWave;Project_Forms\frmTestForm;Project_Forms\frmSetupWaves;Library\Wave;mpiUnits;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;D:\_Programs\Work\Kvant\Far_2_1_Zhenja_dll;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-IProject_Forms\frmShowWave -IProject_Forms\frmTestForm 
+      -IProject_Forms\frmSetupWaves -ILibrary\Wave -ImpiUnits 
+      -I&quot;C:\Program Files\Borland\CBuilder6\Projects&quot; 
+      -ID:\_Programs\Work\Kvant\Far_2_1_Zhenja_dll -I$(BCB)\include 
+      -I$(BCB)\include\vcl -src_suffix cpp -boa"/>
+    <CFLAG1 value="-WD -O2 -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -a8 -b- -k- -vi -tWD -tWM -c"/>
+    <PFLAGS value="-$Y- -$L- -$D- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zn"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpd -x -Gn -Gi"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0d32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="Rocking.res" FORMNAME="" UNITNAME="Rocking.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Rocking.bpf" FORMNAME="" UNITNAME="Rocking" CONTAINERID="BPF" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit_Main.cpp" FORMNAME="" UNITNAME="Unit_Main" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mpiUnits\mpiSetupWaves.cpp" FORMNAME="" UNITNAME="mpiSetupWaves" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Library\Wave\mpiWave.cpp" FORMNAME="" UNITNAME="mpiWave" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Library\Wave\Unit_Wave.cpp" FORMNAME="frmWave" UNITNAME="Unit_Wave" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mpiUnits\mpiTypes.cpp" FORMNAME="" UNITNAME="mpiTypes" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mpiUnits\mpiDeclaration.cpp" FORMNAME="" UNITNAME="mpiDeclaration" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Project_Forms\frmSetupWaves\Unit_SetupWaves.cpp" FORMNAME="frmSetupWaves" UNITNAME="Unit_SetupWaves" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mpiUnits\mpiSetupMatrix.cpp" FORMNAME="" UNITNAME="mpiSetupMatrix" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Project_Forms\frmTestForm\Unit_TestForm.cpp" FORMNAME="Form1" UNITNAME="Unit_TestForm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mpiUnits\mpiDiagram.cpp" FORMNAME="" UNITNAME="mpiDiagram" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Project_Forms\frmShowWave\Unit_ShowWave.cpp" FORMNAME="frmShowWave" UNITNAME="Unit_ShowWave" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1058
+CodePage=1251
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=D:\_Programs\Work\Kvant\Far_2_1_Zhenja_dll\Test_dll_Delphi_5_project\Test_dll_Delphi_5_project.exe
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Linker]
+LibPrefix=
+LibSuffix=
+LibVersion=
+  </IDEOPTIONS>
+</PROJECT>

@@ -1,0 +1,9 @@
+D:\.Work\CSharp\Devices\Keithley 2700\Keithley 2700\bin\Debug\Keithley 2700.exe
+D:\.Work\CSharp\Devices\Keithley 2700\Keithley 2700\bin\Debug\Keithley 2700.pdb
+D:\.Work\CSharp\Devices\Keithley 2700\Keithley 2700\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\.Work\CSharp\Devices\Keithley 2700\Keithley 2700\obj\x86\Debug\WindowsFormsApplication1.form_Main.resources
+D:\.Work\CSharp\Devices\Keithley 2700\Keithley 2700\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+D:\.Work\CSharp\Devices\Keithley 2700\Keithley 2700\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\.Work\CSharp\Devices\Keithley 2700\Keithley 2700\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\.Work\CSharp\Devices\Keithley 2700\Keithley 2700\obj\x86\Debug\Keithley 2700.exe
+D:\.Work\CSharp\Devices\Keithley 2700\Keithley 2700\obj\x86\Debug\Keithley 2700.pdb

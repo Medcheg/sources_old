@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2009.03.18 12:46:42.250.cpp,D:\My Documents\RAD Studio\Projects\Unit3.cpp=D:\_Projects\Bogatsky\Convert_mAHRS_MTI_2_text\froms\Unit_main.cpp</Transaction>
+    <Transaction>2009.03.18 12:46:42.250.h,D:\My Documents\RAD Studio\Projects\Unit3.h=D:\_Projects\Bogatsky\Convert_mAHRS_MTI_2_text\froms\Unit_main.h</Transaction>
+    <Transaction>2009.03.18 12:46:42.250.dfm,D:\My Documents\RAD Studio\Projects\Unit3.dfm=D:\_Projects\Bogatsky\Convert_mAHRS_MTI_2_text\froms\Unit_main.dfm</Transaction>
+    <Transaction>2009.03.18 12:47:16.812.cbproj,D:\My Documents\RAD Studio\Projects\Project2.cbproj=D:\_Projects\Bogatsky\Convert_mAHRS_MTI_2_text\froms\mAHRS_MTI_2_text.cbproj</Transaction>
+    <Transaction>2009.03.18 12:58:24.281.cbproj,D:\_Projects\Bogatsky\Convert_mAHRS_MTI_2_text\froms\mAHRS_MTI_2_text.cbproj=D:\_Projects\Bogatsky\Convert_mAHRS_MTI_2_text\mAHRS_MTI_2_text.cbproj</Transaction>
+    <Transaction>2009.05.20 10:36:38.061.cbproj,D:\_Projects\Gyro_Cpp\Convert\mAHRS_MTI_2_text.cbproj=D:\_Projects\Gyro_Cpp\Convert\Convert.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>

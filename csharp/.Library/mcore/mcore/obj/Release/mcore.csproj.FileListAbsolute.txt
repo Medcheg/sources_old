@@ -1,0 +1,10 @@
+E:\.PersonalProjects\CSharp\.Library\nkcore\nkcore\bin\Release\mcore.dll
+E:\.PersonalProjects\CSharp\.Library\nkcore\nkcore\bin\Release\mcore.pdb
+E:\.PersonalProjects\CSharp\.Library\nkcore\nkcore\obj\Release\ResolveAssemblyReference.cache
+E:\.PersonalProjects\CSharp\.Library\nkcore\nkcore\obj\Release\mcore.dll
+E:\.PersonalProjects\CSharp\.Library\nkcore\nkcore\obj\Release\mcore.pdb
+E:\.PersonalProjects\CSharp\.Library\mcore\mcore\bin\Release\mcore.dll
+E:\.PersonalProjects\CSharp\.Library\mcore\mcore\bin\Release\mcore.pdb
+E:\.PersonalProjects\CSharp\.Library\mcore\mcore\obj\Release\ResolveAssemblyReference.cache
+E:\.PersonalProjects\CSharp\.Library\mcore\mcore\obj\Release\mcore.dll
+E:\.PersonalProjects\CSharp\.Library\mcore\mcore\obj\Release\mcore.pdb

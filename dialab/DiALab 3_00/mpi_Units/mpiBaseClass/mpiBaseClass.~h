@@ -1,0 +1,72 @@
+//===========================================================================
+#ifndef mpiBaseClassH
+#define mpiBaseClassH
+//===========================================================================
+#ifndef mpiTypesH
+#include "mpiTypes.h"
+#endif
+
+//===========================================================================
+typedef long double TFloat;
+//===========================================================================
+class TBaseClass {
+private:
+       int             fIndex;           // -------- Индеса елемента во всей структуре Нужен токо для названия элемента ----
+       void __fastcall Set_Index (int aIndex);
+public:
+      // ----------- Глобальные переменные по всей структуре, ---------
+      // ----------- Тобишь Список Елементов и список Линков Всей схемы ---------
+         void       ***pElementList;         // ----- Адресс списка елементов всей схемы ---------
+         int          *pElementList_Count;   // ----- Адресс переменной, которая храник количество елеметов схемы -------
+         void       ***pLinkList;            // ----- Адресс списка линков    всей схемы ---------
+         int          *pLinkList_Count;      // ----- Адресс переменной, которая храник количество Ликов схемы -------
+         TFloat       *pAnalogT0;        // ----------- Указатель на Аналоговое время дескритизации ------------
+         TFloat       *pCurModelTime;    // ----------- Указатель на Текущее модельное время ---
+         TFloat       *pEndCalcTime;     // ----------- Конечное Указатель на модельное время ---
+      // ------------------------
+
+      /* ########## */ int fCreateAdress;  /* ########## */  // ---- Адресс статического метода создания дочерного экземпляра класса ------
+
+      // -------
+         AnsiString           ClassName;       // --------- Имя класса которому принадлежит элемент -------
+         int                  ParentId;        // --------- Кому принадлежит элемент (какой подсистеме) -----
+         int                  Id;              // --------- АйДи элемента ------
+
+      // ---------------- Графические Данные --------
+         HDC                  Handle;           // --------- Контекст на которов рисуем ----------
+         HPEN                 a1;
+         HBRUSH               a2;
+      // ---------
+
+         char                 CharBuffer120[120]; // --- ВЕрменная переменная для преобразования типов --------
+         bool                 Selected;
+         bool                 ShowCaption;     // --------- Отображаем ли подпоись елмента ----------
+
+         AnsiString          CreateDate;      // --------- Дата создания , модифицирования элемента ------
+         AnsiString          DefaultName;     // --------- Базовое имя элемента  ---------
+         AnsiString          Caption;         // --------- Имя элемента с его индексом (подпись елемента) --------
+         AnsiString          Note;            // --------- Описание элемента ------
+
+         TBaseClass();
+         virtual ~TBaseClass();
+
+         virtual void                Edit() = 0;
+         virtual void                SaveToStream  (TStream *aStream);  // TStream *aStream --
+         virtual void                LoadFromStream(TStream *aStream);  // TStream *aStream --
+         virtual void                Copy(void *aElement);
+
+       __property int               CreateAdress = { read = fCreateAdress, write = fCreateAdress };
+       __property int               Index        = { read = fIndex       , write = Set_Index   }; // -------- Индеса элемента во всей структуре ----
+
+        //virtual void              Draw(TCanvas *aCanvas, int aParentId) = 0;
+        //virtual void              Draw_SelectedElement(TCanvas *aCanvas) = 0;
+        //virtual TBaseClass       *WhereMouse(int aParentId, TMouseParam &mp, int xPos, int yPos) = 0;
+        //virtual void              MoveElement(TCanvas *aCanvas, int aOffsetX, int aOffsetY) = 0;
+
+        //virtual void              EndMoveElement() = 0;
+        //virtual bool              IsElementInSelectedRegion(int aParentId, int ax1, int ay1, int ax2, int ay2) = 0;
+        //__property TBaseClass      *ParentLayer   = { read = fParentLayer  , write = fParentLayer};
+};
+//===========================================================================
+//===========================================================================
+#endif

@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="Estimate.exe"/>
+    <OBJFILES value="Estimate.obj _Estimate\frmMain\Unit_Main.obj 
+      _Estimate\Unit_LogoEstimate.obj _Shared\mpiFileMenuStack.obj 
+      _Shared\mpiTypes.obj _Shared\mpiLibrary.obj _Shared\mpiDeclaration.obj 
+      _Shared\mpiSaveDSTParam.obj 
+      _Estimate\frmElementParam\Unit_ElementParam.obj _Estimate\Unit_ProjectParam.obj 
+      _Estimate\frmExcelExport\Unit_ExcelExport.obj 
+      _Shared\mpiGuardant\mpiGuardant.obj"/>
+    <RESFILES value="Estimate.res _Shared\resource.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) _Estimate\frmMain\Unit_Main.dfm 
+      _Estimate\Unit_LogoEstimate.dfm _Estimate\frmElementParam\Unit_ElementParam.dfm 
+      _Estimate\Unit_ProjectParam.dfm 
+      _Estimate\frmExcelExport\Unit_ExcelExport.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="vclx.lib bcbsmp.lib vcl.lib rtl.lib"/>
+    <SPARELIBS value="rtl.lib vcl.lib bcbsmp.lib vclx.lib"/>
+    <PACKAGES value="rtl.bpi vcl.bpi vclx.bpi bcbsmp.bpi dbrtl.bpi vcldb.bpi adortl.bpi 
+      ibsmp.bpi bdertl.bpi vcldbx.bpi qrpt.bpi teeui.bpi teedb.bpi tee.bpi 
+      dss.bpi teeqr.bpi ibxpress.bpi SenseiPackage.bpi"/>
+    <PATHCPP value=".;_Estimate\frmMain;_Estimate;_Shared;_Estimate\frmElementParam;_Estimate\frmExcelExport;_Shared\mpiGuardant"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;_Shared"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="Estimate.cpp"/>
+    <INCLUDEPATH value="_Shared\mpiGuardant;_Estimate\frmExcelExport;_Estimate\frmElementParam;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;_Estimate\frmMain;D:\;e;te;ate;mate;imate;timate;stimate;Estimate;_Estimate;_Sshared;_shared;shared;&quot;C:\Program Files\Borland\CBuilder5\Projects&quot;;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="_Shared\mpiGuardant;_Estimate\frmExcelExport;_Estimate\frmElementParam;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;_Estimate\frmMain;D:\;e;te;ate;mate;imate;timate;stimate;Estimate;_Estimate;_Sshared;_shared;shared;&quot;C:\Program Files\Borland\CBuilder5\Projects&quot;;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I_Shared\mpiGuardant -I_Estimate\frmExcelExport 
+      -I_Estimate\frmElementParam 
+      -I&quot;C:\Program Files\Borland\CBuilder6\Projects&quot; -I_Estimate\frmMain -ID:\. 
+      -Ie -Ite -Iate -Imate -Iimate -Itimate -Istimate -IEstimate -I_Estimate 
+      -I_Sshared -I_shared -Ishared 
+      -I&quot;C:\Program Files\Borland\CBuilder5\Projects&quot; -I$(BCB)\include 
+      -I$(BCB)\include\vcl -src_suffix cpp -D_DEBUG -boa"/>
+    <CFLAG1 value="-Od -H=c:\PROGRA~1\borland\CBUILD~1\lib\vcl60.csm -Hc -Vx -Ve -X- -r- -a8 
+      -b- -k -y -v -vi- -c -tW -tWM"/>
+    <PFLAGS value="-$YD -$W -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zi"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="Estimate.cpp" FORMNAME="" UNITNAME="Estimate" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Estimate.res" FORMNAME="" UNITNAME="Estimate" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="_Estimate\frmMain\Unit_Main.cpp" FORMNAME="frmMain" UNITNAME="Unit_Main" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="_Estimate\Unit_LogoEstimate.cpp" FORMNAME="frmLogoEstimate" UNITNAME="Unit_LogoEstimate" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="_Shared\mpiFileMenuStack.cpp" FORMNAME="" UNITNAME="mpiFileMenuStack" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="_Shared\mpiTypes.cpp" FORMNAME="" UNITNAME="mpiTypes" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="_Shared\mpiLibrary.cpp" FORMNAME="" UNITNAME="mpiLibrary" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="_Shared\mpiDeclaration.cpp" FORMNAME="" UNITNAME="mpiDeclaration" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="_Shared\mpiSaveDSTParam.cpp" FORMNAME="" UNITNAME="mpiSaveDSTParam" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="_Shared\resource.rc" FORMNAME="" UNITNAME="resource.rc" CONTAINERID="RCCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="_Estimate\frmElementParam\Unit_ElementParam.cpp" FORMNAME="frmElementParam" UNITNAME="Unit_ElementParam" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="_Estimate\Unit_ProjectParam.cpp" FORMNAME="frmProjectParam" UNITNAME="Unit_ProjectParam" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="_Estimate\frmExcelExport\Unit_ExcelExport.cpp" FORMNAME="frmExcelExport" UNITNAME="Unit_ExcelExport" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="_Shared\mpiGuardant\mpiGuardant.cpp" FORMNAME="" UNITNAME="mpiGuardant" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1058
+CodePage=1251
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+  </IDEOPTIONS>
+</PROJECT>

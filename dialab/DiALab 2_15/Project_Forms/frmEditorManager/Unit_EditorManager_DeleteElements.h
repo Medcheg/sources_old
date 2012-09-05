@@ -1,0 +1,208 @@
+void TfrmEditorManager::Action_DeleteElements_DeleteLinkFromSubSystem(TBaseClass *aSS, TBaseClass *aElement)
+{
+   for (int i = 0; i < ((TSubSystem*)aSS)->InputList->Count; i++)
+      if (((TSubSystem*)aSS)->InputList->Items[i] == aElement) {
+             for (int k = 0; k < LinkList_Count; k ++){
+                    if (LinkList[k] != NULL ) {
+                         if (((TSubSystem*)aSS)->iPoints->Items[i]->CurrentLink == LinkList[k]) {
+                               LinkList[k]->SecondElement = NULL;
+                         }
+                     }
+             }
+             return;
+      }
+}
+
+void TfrmEditorManager::Action_DeleteElements_CheckLinkToPressentElement(TBaseClass *aElement)
+{
+  // --------- Если удалается элемент ко линки, которым онсопоставлен нужно, скоректировать ---------
+    for (int k = 0; k < LinkList_Count; k ++){
+          if (LinkList[k] != NULL ) {
+                 if (aElement == LinkList[k]->FirstElement )
+                                 LinkList[k]->FirstElement  = NULL;
+                 if (aElement == LinkList[k]->SecondElement)
+                                 LinkList[k]->SecondElement = NULL;
+          }
+    }
+}
+
+//============================================================================================================
+void TfrmEditorManager::Action_DeleteElements_CheckElementToPressentLink(TLink *aLink)
+{
+  // ------------- Если удаляетсяЛинк то тем элементам которым он сопоставлен нужно рахрешить прорисовка входов (выходов) ------
+
+     // ----- Востанавливаю значения входов ----------
+        if (aLink->SecondElement != NULL) {
+            ((TElement*)aLink->SecondElement)->iPoints->Items[aLink->NumberInput ]->Conected = false;
+            ((TElement*)aLink->SecondElement)->NeedRedraw = true;
+        }
+
+     // ----- Востанавливаю значения выходов (но это сложнее, потому-что, с одного выхода может идки пару связей)----------
+        if (aLink->FirstElement != NULL) {
+              bool flag = false;
+
+              for (int k = 0; k < LinkList_Count; k++) {
+
+                 if (LinkList[k] != NULL)
+                     // --- Если я нахожу любую другую связь которая тоже еще подсоедина к выходу , тогда ----
+                     if (aLink->FirstElement == LinkList[k]->FirstElement &&
+                         aLink != LinkList[k] &&
+                         aLink->NumberOutput == LinkList[k]->NumberOutput) {
+
+                        flag = true;
+                        break;
+                     }
+              }
+              ((TElement*)aLink->FirstElement)->oPoints->Items[aLink->NumberOutput]->Conected = flag;
+              ((TElement*)aLink->FirstElement)->NeedRedraw = true;
+
+        }
+}
+
+//============================================================================================================
+void TfrmEditorManager::Action_DeleteElements_DeleteElement(TBaseClass *aElement)
+{
+  // ---------------
+     if (aElement->ClassName != "TLink") {
+         for (int k = 0; k < ElementList_Count; k ++)
+                    if (ElementList[k] == aElement) {
+                            // ---- Удаляю элемент со связей других элементов -----
+                               Action_DeleteElements_CheckLinkToPressentElement(ElementList[k]);
+
+                            // ---- Если элемент вход или выход подсистемы , то нужно количество входов(выходов) уменьшить ----
+                               if (ElementList[k]->ClassName == "TSubSystemIn" || ElementList[k]->ClassName == "TSubSystemOut"){
+                                  TSubSystem *ss = (TSubSystem*)FindElementByID(ElementList[k]->ParentId);
+                                  if (ss != NULL){ // --- Если подсистему еще случайно не удалили то ----------
+                                       if (ElementList[k]->ClassName == "TSubSystemIn" ) {
+                                          int aNumberInputSS = ((TSubSystemIn*)ElementList[k])->InputIndex - 1;
+                                          if (ss->iPoints->Items[aNumberInputSS]->CurrentLink != NULL)
+                                              ((TLink*)ss->iPoints->Items[aNumberInputSS]->CurrentLink)->SecondElement = NULL;
+
+                                          // --- Находим Линки, которые принадлежат даной подсистеме, и те у которого НамберИн Выше заданого - понижаем на единицу -----------
+                                             for (int z = 0; z < LinkList_Count; z ++)
+                                                 if ( LinkList[z] != NULL)
+                                                      if (LinkList[z]->SecondElement == ss && LinkList[z]->NumberInput > aNumberInputSS)
+                                                         LinkList[z]->NumberInput = LinkList[z]->NumberInput - 1;
+
+                                          ss->Delete_Input (ElementList[k]);
+                                       }
+                                     // --- а тут сложнее нада найти все линки с выходящего елемента ----
+                                       if (ElementList[k]->ClassName == "TSubSystemOut") {
+                                          int aNumberOutPutSS = ((TSubSystemOut*)ElementList[k])->OutputIndex - 1;
+
+                                          // --- Млина ---
+                                          // --- Находим Линки, которые принадлежат даной подсистеме с конкретным выходом, и обнуляем им первый елемент --
+                                             for (int z = 0; z < LinkList_Count; z ++)
+                                                 if ( LinkList[z] != NULL)
+                                                      if (LinkList[z]->FirstElement == ss && LinkList[z]->NumberOutput == aNumberOutPutSS)
+                                                         LinkList[z]->FirstElement = NULL;
+                                          // --- Находим Линки, которые принадлежат даной подсистеме, и те у которого НамберАутПут Выше заданого - понижаем на единицу -----------
+                                             for (int z = 0; z < LinkList_Count; z ++)
+                                                 if ( LinkList[z] != NULL)
+                                                      if (LinkList[z]->FirstElement == ss && LinkList[z]->NumberOutput > aNumberOutPutSS)
+                                                         LinkList[z]->NumberOutput = LinkList[z]->NumberOutput - 1;
+
+                                          ss->Delete_OutPut(ElementList[k]);
+                                       }
+                                       ss->NeedRedraw = true;
+                                  }
+                               }
+
+                               ElementList[k] = NULL;
+                               break;
+                    }
+         for (int k = 0; k < ElementList_Count; k ++)
+               if (ElementList[k] != NULL)
+
+                  // --- Если елемент типа подсистема -----------
+                    if (ElementList[k]->ParentId == aElement->Id) {
+                           // -------- Рекурсирую по удаляемому элементу -------
+                              Action_DeleteElements_DeleteElement(ElementList[k]);
+
+                           // -------- Удаляю все связи в ПодСистеме ----
+                              for (int z = 0; z < LinkList_Count; z ++)
+                                   if (LinkList[z] != NULL)
+                                       if (LinkList[z]->ParentId == aElement->Id){
+                                            delete LinkList[z];
+                                            LinkList[z] = NULL;
+                                       }
+                    }
+     }
+  // ---------------
+     if (aElement->ClassName == "TLink") {
+         for (int k = 0; k < LinkList_Count; k ++)
+                 if (LinkList[k] == aElement) {
+                         Action_DeleteElements_CheckElementToPressentLink(LinkList[k]);
+                         LinkList[k] = NULL;
+                         break;
+                 }
+     }
+  // ---------------
+      delete aElement;
+}
+
+//============================================================================================================
+void TfrmEditorManager::PackList(TBaseClass **&aList, int &aCount)
+{
+     if (aCount == 0) return;
+
+  // -------
+     bool isAllNULL = false;
+
+  // -------
+     for (int k = 0; k < aCount; k++){
+
+          while (aList[k] == NULL) {
+               isAllNULL = true;
+               for (int z = k; z < aCount - 1; z ++){
+                 aList[z] = aList[z+1];
+                 if (aList[z] != NULL) isAllNULL = false;
+               }
+               aList[aCount - 1] = NULL;
+               if (isAllNULL) break;
+          }
+          if (isAllNULL) break;
+     }
+
+  // -------
+     int CountDelete = 0;
+     for (int k = 0; k < aCount; k++) if (aList[k] == NULL) CountDelete ++;
+
+  // -------
+     aCount -= CountDelete;
+     aList  = (TBaseClass**) realloc (aList, sizeof(TBaseClass*) * aCount);
+}
+//============================================================================================================
+void TfrmEditorManager::Action_DeleteElements()
+{
+      if (SelectedList_Count == 0) return;
+
+   // ---- Проверка на присутствие элемента в SelectedList -------
+      for (int i = 0; i < SelectedList_Count; i ++){
+          Action_DeleteElements_DeleteElement(SelectedList[i]);
+          SelectedList[i] = NULL;
+     }
+
+  // -----------
+     SelectedList_Count = 0; free (SelectedList); SelectedList = NULL;
+
+     PackList((TBaseClass**)ElementList, ElementList_Count);   // ----- Упаковываем ElementList ------
+     PackList((TBaseClass**)LinkList   , LinkList_Count   );   // ----- Упаковываем LinkList ------
+
+     aRotateElement->Enabled = false;
+     aDeleteElement->Enabled = false;
+     aFogElement   ->Enabled = false;
+     aParamElement ->Enabled = false;
+
+  // ---------  Рисуем но хитро ---------------------------------------------------
+  // ---- Потому,  что например если удаляем элемент(вход или выход подсистемы) ---
+  // ---- нужно прорисовать родительские окна (конечно елси они остались) ---------
+     for (int i = 0; i < ElementList_Count; i++){
+        if (ElementList[i]->ClassName == "TSubSystem")
+            ((TSubSystem*)ElementList[i])->EditorManager->Draw();
+     }
+  // ---------
+   // Caption = "ElementCount = " + IntToStr(ElementList_Count - 1) + "  |  LinkCount = " + IntToStr(LinkList_Count);
+  // ---------
+     ProjectModified = true;
+}

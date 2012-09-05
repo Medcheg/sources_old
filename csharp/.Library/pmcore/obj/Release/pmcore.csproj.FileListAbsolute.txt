@@ -1,0 +1,5 @@
+E:\.PersonalProjects\CSharp\.Library\pmcore\bin\Release\pmcore.dll
+E:\.PersonalProjects\CSharp\.Library\pmcore\bin\Release\pmcore.pdb
+E:\.PersonalProjects\CSharp\.Library\pmcore\obj\Release\ResolveAssemblyReference.cache
+E:\.PersonalProjects\CSharp\.Library\pmcore\obj\Release\pmcore.dll
+E:\.PersonalProjects\CSharp\.Library\pmcore\obj\Release\pmcore.pdb

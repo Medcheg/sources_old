@@ -1,0 +1,11 @@
+D:\.Work\CSharp\ccg_DataTools\obj\x86\Release\ResolveAssemblyReference.cache
+D:\.Work\CSharp\ccg_DataTools\obj\x86\Release\ccg_DataTools.Form1.resources
+D:\.Work\CSharp\ccg_DataTools\obj\x86\Release\ccg_DataTools.Properties.Resources.resources
+D:\.Work\CSharp\ccg_DataTools\obj\x86\Release\GenerateResource.read.1.tlog
+D:\.Work\CSharp\ccg_DataTools\obj\x86\Release\GenerateResource.write.1.tlog
+D:\.Work\CSharp\ccg_DataTools\bin\Release\ccg_DataTools.exe
+D:\.Work\CSharp\ccg_DataTools\bin\Release\ccg_DataTools.pdb
+D:\.Work\CSharp\ccg_DataTools\bin\Release\ccgcore.dll
+D:\.Work\CSharp\ccg_DataTools\bin\Release\ccgcore.pdb
+D:\.Work\CSharp\ccg_DataTools\obj\x86\Release\ccg_DataTools.exe
+D:\.Work\CSharp\ccg_DataTools\obj\x86\Release\ccg_DataTools.pdb

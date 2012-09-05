@@ -1,0 +1,478 @@
+[Closed Files]
+File_0=SourceModule,'C:\DOCUME~1\PAULMA~1\LOCALS~1\Temp\Rar$DI05.082\DraftViewForm.cpp',0,1,1,1,1,0,0
+File_1=SourceModule,'C:\DOCUME~1\PAULMA~1\LOCALS~1\Temp\Rar$DI01.428\DraftControl.cpp',0,1,1,23,17,0,0
+File_2=SourceModule,'C:\DOCUME~1\PAULMA~1\LOCALS~1\Temp\Rar$DI01.740\DFMVw.cpp',0,1,1,1,1,0,0
+File_3=SourceModule,'c:\program files\borland\cbuilder6\include\vcl\Types.hpp',0,1,1,1,40,0,0
+File_4=SourceModule,'D:\_Programs\Work\DiALab\DiALab 3_00\mpi_Units\mpiLinkPoints\mpiLinkPoints.cpp',0,1,1,53,29,0,0
+File_5=SourceModule,'D:\_Programs\Work\DiALab\DiALab 3_00\mpi_Units\mpiOperationWithElement\mpiOperationWithElement.cpp',0,1,1,1,2,0,0
+File_6=SourceModule,'D:\_Programs\Work\DiALab\DiALab 3_00\Project_Forms\frmMain\Unit_Main.cpp',0,1,1,47,16,1,0
+File_7=SourceModule,'D:\_Programs\Work\DiALab\DiALab 3_00\mpi_Units\mpiComplexMatrix\mpiComplexMatrix.cpp',0,1,1,1,3,0,0
+File_8=SourceModule,'D:\_Programs\Work\DiALab\DiALab 3_00\mpi_Units\mpiElement\mpiElement_Points.h',0,1,1,1,1,0,0
+File_9=SourceModule,'c:\program files\borland\cbuilder6\include\stdio.h',0,1,333,21,359,0,0
+
+[Modules]
+Module0=E:\_Programs\Work\DiALab\DiALab 3_00\mpi_Units\mpiBaseClass\mpiBaseClass.cpp
+Module1=E:\_Programs\Work\DiALab\DiALab 3_00\Project_Forms\frmMain\Unit_Main.cpp
+Module2=E:\_Programs\Work\DiALab\DiALab 3_00\mpi_Units\mpiVisualElementParam\mpiVisualElementParam.cpp
+Module3=E:\_Programs\Work\DiALab\DiALab 3_00\mpi_Units\mpiTypes\mpiTypes.cpp
+Module4=E:\_Programs\Work\DiALab\DiALab 3_00\mpi_Units\mpiPoints\mpiPoints.cpp
+Module5=E:\_Programs\Work\DiALab\DiALab 3_00\mpi_Units\mpiOperationWithElement\mpiOperationWithElement.cpp
+Module6=E:\_Programs\Work\DiALab\DiALab 3_00\mpi_Units\mpiLinkPoints\mpiLinkPoints.cpp
+Module7=E:\_Programs\Work\DiALab\DiALab 3_00\mpi_Units\mpiLink\mpiLink.cpp
+Module8=E:\_Programs\Work\DiALab\DiALab 3_00\mpi_Units\mpiInOutPoint\mpiInOutPoint.cpp
+Module9=E:\_Programs\Work\DiALab\DiALab 3_00\mpi_Units\mpiElement\mpiElement.cpp
+Module10=E:\_Programs\Work\DiALab\DiALab 3_00\mpi_Units\mpiComplexMatrix\mpiComplexMatrix.cpp
+Module11=E:\_Programs\Work\DiALab\DiALab 2_15\mpi_Units\mpiElement.cpp
+Count=12
+EditWindowCount=1
+
+[E:\_Programs\Work\DiALab\DiALab 3_00\mpi_Units\mpiBaseClass\mpiBaseClass.cpp]
+ModuleType=SourceModule
+FormState=0
+FormOnTop=0
+
+[E:\_Programs\Work\DiALab\DiALab 3_00\Project_Forms\frmMain\Unit_Main.cpp]
+ModuleType=SourceModule
+FormState=0
+FormOnTop=0
+
+[E:\_Programs\Work\DiALab\DiALab 3_00\mpi_Units\mpiVisualElementParam\mpiVisualElementParam.cpp]
+ModuleType=SourceModule
+FormState=0
+FormOnTop=0
+
+[E:\_Programs\Work\DiALab\DiALab 3_00\mpi_Units\mpiTypes\mpiTypes.cpp]
+ModuleType=SourceModule
+FormState=0
+FormOnTop=0
+
+[E:\_Programs\Work\DiALab\DiALab 3_00\mpi_Units\mpiPoints\mpiPoints.cpp]
+ModuleType=SourceModule
+FormState=0
+FormOnTop=0
+
+[E:\_Programs\Work\DiALab\DiALab 3_00\mpi_Units\mpiOperationWithElement\mpiOperationWithElement.cpp]
+ModuleType=SourceModule
+FormState=0
+FormOnTop=0
+
+[E:\_Programs\Work\DiALab\DiALab 3_00\mpi_Units\mpiLinkPoints\mpiLinkPoints.cpp]
+ModuleType=SourceModule
+FormState=0
+FormOnTop=0
+
+[E:\_Programs\Work\DiALab\DiALab 3_00\mpi_Units\mpiLink\mpiLink.cpp]
+ModuleType=SourceModule
+FormState=0
+FormOnTop=0
+
+[E:\_Programs\Work\DiALab\DiALab 3_00\mpi_Units\mpiInOutPoint\mpiInOutPoint.cpp]
+ModuleType=SourceModule
+FormState=0
+FormOnTop=0
+
+[E:\_Programs\Work\DiALab\DiALab 3_00\mpi_Units\mpiElement\mpiElement.cpp]
+ModuleType=SourceModule
+FormState=0
+FormOnTop=0
+
+[E:\_Programs\Work\DiALab\DiALab 3_00\mpi_Units\mpiComplexMatrix\mpiComplexMatrix.cpp]
+ModuleType=SourceModule
+FormState=0
+FormOnTop=0
+
+[E:\_Programs\Work\DiALab\DiALab 2_15\mpi_Units\mpiElement.cpp]
+ModuleType=SourceModule
+FormState=0
+FormOnTop=0
+
+[C:\Program Files\Borland\CBuilder6\Projects\ProjectGroup1.bpg]
+FormState=0
+FormOnTop=0
+
+[E:\_Programs\Work\DiALab\DiALab 3_00\DiALab_30.bpr]
+FormState=0
+FormOnTop=0
+
+[EditWindow0]
+ViewCount=12
+CurrentView=0
+View0=0
+View1=1
+View2=2
+View3=3
+View4=4
+View5=5
+View6=6
+View7=7
+View8=8
+View9=9
+View10=10
+View11=11
+CodeExplorer=CodeExplorer@EditWindow0
+MessageView=MessageView@EditWindow0
+ClassHierarchy=ClassHierarchy@EditWindow0
+Create=1
+Visible=1
+State=0
+Left=4
+Top=107
+Width=1276
+Height=890
+MaxLeft=-4
+MaxTop=-4
+ClientWidth=1268
+ClientHeight=863
+LeftPanelSize=170
+LeftPanelClients=CodeExplorer@EditWindow0
+LeftPanelData=000004000000000000000000000000000000000000000000000100000000000000000C000000436F64654578706C6F726572FFFFFFFF
+RightPanelSize=0
+BottomPanelSize=97
+BottomPanelClients=MessageView@EditWindow0
+BottomPanelData=0000040000000000F404000000000000026100000000000000010000000000000000000000000100000000F1040000000000000100000000F1040000000000000100000000F40400000B0000004D65737361676556696577FFFFFFFF
+
+[View0]
+Module=E:\_Programs\Work\DiALab\DiALab 3_00\mpi_Units\mpiBaseClass\mpiBaseClass.cpp
+CursorX=76
+CursorY=33
+TopLine=1
+LeftCol=1
+
+[View1]
+Module=E:\_Programs\Work\DiALab\DiALab 2_15\mpi_Units\mpiElement.cpp
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+
+[View2]
+Module=E:\_Programs\Work\DiALab\DiALab 3_00\mpi_Units\mpiComplexMatrix\mpiComplexMatrix.cpp
+CursorX=1
+CursorY=2
+TopLine=1
+LeftCol=1
+
+[View3]
+Module=E:\_Programs\Work\DiALab\DiALab 3_00\mpi_Units\mpiElement\mpiElement.cpp
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+
+[View4]
+Module=E:\_Programs\Work\DiALab\DiALab 3_00\mpi_Units\mpiInOutPoint\mpiInOutPoint.cpp
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+
+[View5]
+Module=E:\_Programs\Work\DiALab\DiALab 3_00\mpi_Units\mpiLink\mpiLink.cpp
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+
+[View6]
+Module=E:\_Programs\Work\DiALab\DiALab 3_00\mpi_Units\mpiLinkPoints\mpiLinkPoints.cpp
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+
+[View7]
+Module=E:\_Programs\Work\DiALab\DiALab 3_00\mpi_Units\mpiOperationWithElement\mpiOperationWithElement.cpp
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+
+[View8]
+Module=E:\_Programs\Work\DiALab\DiALab 3_00\mpi_Units\mpiPoints\mpiPoints.cpp
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+
+[View9]
+Module=E:\_Programs\Work\DiALab\DiALab 3_00\mpi_Units\mpiTypes\mpiTypes.cpp
+CursorX=1
+CursorY=3
+TopLine=1
+LeftCol=1
+
+[View10]
+Module=E:\_Programs\Work\DiALab\DiALab 3_00\mpi_Units\mpiVisualElementParam\mpiVisualElementParam.cpp
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+
+[View11]
+Module=E:\_Programs\Work\DiALab\DiALab 3_00\Project_Forms\frmMain\Unit_Main.cpp
+CursorX=1
+CursorY=9
+TopLine=1
+LeftCol=1
+
+[Watches]
+Count=1
+Watch0='BufferString120',256,0,18,1,0,'Watches'
+
+[Breakpoints]
+Count=0
+
+[AddressBreakpoints]
+Count=0
+
+[Main Window]
+Create=1
+Visible=1
+State=0
+Left=0
+Top=0
+Width=1280
+Height=105
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=1272
+ClientHeight=78
+
+[Components]
+Create=1
+Visible=0
+State=0
+Left=548
+Top=379
+Width=183
+Height=266
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=175
+ClientHeight=242
+
+[ProjectManager]
+Create=1
+Visible=0
+State=0
+Left=369
+Top=372
+Width=438
+Height=303
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=430
+ClientHeight=279
+TBDockHeight=303
+LRDockWidth=438
+Dockable=1
+
+[CPUWindow]
+Create=1
+Visible=0
+State=0
+Left=2
+Top=0
+Width=798
+Height=570
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=790
+ClientHeight=543
+DumpPane=79
+DisassemblyPane=187
+RegisterPane=231
+FlagPane=64
+
+[ToDo List]
+Create=1
+Visible=0
+State=0
+Left=405
+Top=387
+Width=470
+Height=250
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=462
+ClientHeight=226
+TBDockHeight=250
+LRDockWidth=470
+Dockable=1
+Column0Width=200
+Column1Width=30
+Column2Width=100
+Column3Width=70
+Column4Width=70
+SortOrder=4
+ShowHints=1
+ShowChecked=1
+
+[FPUWindow]
+Create=1
+Visible=0
+State=0
+Left=290
+Top=251
+Width=453
+Height=247
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=445
+ClientHeight=220
+RegisterPane=121
+FlagPane=59
+
+[WatchWindow]
+Create=1
+Visible=0
+State=0
+Left=0
+Top=19
+Width=1277
+Height=152
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=1269
+ClientHeight=128
+TBDockHeight=149
+LRDockWidth=421
+Dockable=1
+
+[CallStackWindow]
+Create=1
+Visible=0
+State=0
+Left=493
+Top=431
+Width=294
+Height=161
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=286
+ClientHeight=137
+TBDockHeight=161
+LRDockWidth=294
+Dockable=1
+
+[AlignmentPalette]
+Create=1
+Visible=0
+State=0
+Left=1111
+Top=13
+Width=156
+Height=82
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=150
+ClientHeight=60
+
+[PropertyInspector]
+Create=1
+Visible=1
+State=0
+Left=2
+Top=137
+Width=241
+Height=829
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=233
+ClientHeight=805
+TBDockHeight=747
+LRDockWidth=236
+Dockable=1
+SplitPos=101
+ArrangeBy=Name
+SelectedItem=
+ExpandedItems=BorderIcons,EdgeBorders,XValues,YValues
+HiddenCategories=Legacy
+
+[ObjectTree]
+Create=1
+Visible=0
+State=0
+Left=0
+Top=124
+Width=189
+Height=354
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=181
+ClientHeight=330
+TBDockHeight=354
+LRDockWidth=190
+Dockable=1
+
+[CodeguardLog]
+Create=1
+Visible=0
+State=0
+Left=0
+Top=0
+Width=1010
+Height=267
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=1002
+ClientHeight=243
+TBDockHeight=190
+LRDockWidth=448
+Dockable=1
+
+[ClassHierarchy@EditWindow0]
+Create=1
+Visible=0
+State=0
+Left=218
+Top=113
+Width=403
+Height=284
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=395
+ClientHeight=260
+TBDockHeight=284
+LRDockWidth=403
+Dockable=1
+TreeWidth=121
+Col1Width=120
+Col2Width=120
+
+[CodeExplorer@EditWindow0]
+Create=1
+Visible=1
+State=0
+Left=0
+Top=12
+Width=170
+Height=751
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=170
+ClientHeight=751
+TBDockHeight=388
+LRDockWidth=170
+Dockable=1
+ClassViewDisplayMode=0
+
+[MessageView@EditWindow0]
+Create=1
+Visible=1
+State=0
+Left=12
+Top=0
+Width=1256
+Height=97
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=1256
+ClientHeight=97
+TBDockHeight=97
+LRDockWidth=443
+Dockable=1
+
+[DockHosts]
+DockHostCount=0
+

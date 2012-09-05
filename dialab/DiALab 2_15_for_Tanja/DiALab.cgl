@@ -1,0 +1,28 @@
+Functions called:
+ fflush (4 times)
+ delete (367 times)
+ ceil (339977 times)
+ exp (12 times)
+ free (235 times)
+ memset (63 times)
+ sin (208427 times)
+ vsnprintf (5440 times)
+ new (367 times)
+ SysReallocMem (5008 times)
+ SysFreeMem (61643 times)
+ SysGetMem (61650 times)
+ lstrlenA (1 times)
+ lstrcpynA (4 times)
+ calloc (1 times)
+ strlen (63 times)
+ realloc (247 times)
+ strdup (1 times)
+ malloc (121 times)
+ memcpy (846 times)
+Resource types used:
+ object (367 allocs, 361 max)
+ memory block (61902 allocs, 5865 max)
+Modules used:
+ 00400000 06/01/2005 01:26:12 D:\_Programs\Work\DiALab\DiALab
+ 2.1.4\DiALab.exe
+==========================================

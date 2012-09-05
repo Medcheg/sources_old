@@ -1,0 +1,243 @@
+object form_Result_2: Tform_Result_2
+  Left = 315
+  Top = 103
+  Caption = 'form_Result_2'
+  ClientHeight = 333
+  ClientWidth = 905
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object pChart1: TPanel
+    Left = 0
+    Top = 0
+    Width = 169
+    Height = 333
+    Align = alLeft
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 16
+      Top = 31
+      Width = 38
+      Height = 16
+      Caption = 'Shift = '
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -15
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label2: TLabel
+      Left = 98
+      Top = 31
+      Width = 52
+      Height = 16
+      Caption = '-------------'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -15
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+    end
+    object CheckBox1: TCheckBox
+      Left = 14
+      Top = 8
+      Width = 78
+      Height = 17
+      Caption = 'Analysis'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 0
+      OnClick = CheckBox1Click
+    end
+    object ListBox1: TListBox
+      Left = 1
+      Top = 53
+      Width = 167
+      Height = 279
+      Style = lbOwnerDrawFixed
+      Align = alBottom
+      Anchors = [akLeft, akTop, akRight, akBottom]
+      ItemHeight = 32
+      MultiSelect = True
+      TabOrder = 1
+      OnClick = ListBox1Click
+    end
+  end
+  object Chart1: TChart
+    Left = 169
+    Top = 0
+    Width = 736
+    Height = 333
+    Legend.Alignment = laBottom
+    Legend.LegendStyle = lsSeries
+    Title.AdjustFrame = False
+    Title.BevelWidth = 1
+    Title.Font.Color = clBlack
+    Title.Font.Height = -19
+    Title.Font.Style = [fsBold]
+    Title.Font.Shadow.HorizSize = 2
+    Title.Font.Shadow.VertSize = 2
+    Title.Gradient.Visible = True
+    Title.Text.Strings = (
+      'TChart')
+    OnUndoZoom = Chart1UndoZoom
+    OnZoom = Chart1Zoom
+    BottomAxis.AxisValuesFormat = '#,##0.######'
+    DepthAxis.AxisValuesFormat = '#,##0.######'
+    DepthTopAxis.AxisValuesFormat = '#,##0.######'
+    LeftAxis.AxisValuesFormat = '#,##0.#########'
+    View3D = False
+    Zoom.Pen.Color = clBlack
+    Align = alClient
+    BevelInner = bvLowered
+    Color = clWhite
+    TabOrder = 1
+    OnClick = Chart1Click
+    OnMouseDown = Chart1MouseDown
+    OnMouseMove = Chart1MouseMove
+    OnMouseUp = Chart1MouseUp
+    object Series1: TLineSeries
+      Marks.Arrow.Visible = True
+      Marks.Callout.Brush.Color = clBlack
+      Marks.Callout.Arrow.Visible = True
+      Marks.Visible = False
+      LinePen.Width = 2
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.Visible = False
+      XValues.Name = 'X'
+      XValues.Order = loAscending
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+    end
+    object Series2: TLineSeries
+      Marks.Arrow.Visible = True
+      Marks.Callout.Brush.Color = clBlack
+      Marks.Callout.Arrow.Visible = True
+      Marks.Visible = False
+      LinePen.Width = 2
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.Visible = False
+      XValues.Name = 'X'
+      XValues.Order = loAscending
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+    end
+    object Series3: TLineSeries
+      Marks.Arrow.Visible = True
+      Marks.Callout.Brush.Color = clBlack
+      Marks.Callout.Arrow.Visible = True
+      Marks.Visible = False
+      SeriesColor = clLime
+      LinePen.Width = 2
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.Visible = False
+      XValues.Name = 'X'
+      XValues.Order = loAscending
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+    end
+    object Series4: TLineSeries
+      Marks.Arrow.Visible = True
+      Marks.Callout.Brush.Color = clBlack
+      Marks.Callout.Arrow.Visible = True
+      Marks.Visible = False
+      LinePen.Width = 2
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.Visible = False
+      XValues.Name = 'X'
+      XValues.Order = loAscending
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+    end
+    object Series5: TLineSeries
+      Marks.Arrow.Visible = True
+      Marks.Callout.Brush.Color = clBlack
+      Marks.Callout.Arrow.Visible = True
+      Marks.Visible = False
+      SeriesColor = 33023
+      LinePen.Width = 2
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.Visible = False
+      XValues.Name = 'X'
+      XValues.Order = loAscending
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+    end
+    object Series6: TLineSeries
+      Marks.Arrow.Visible = True
+      Marks.Callout.Brush.Color = clBlack
+      Marks.Callout.Arrow.Visible = True
+      Marks.Visible = False
+      LinePen.Width = 2
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.Visible = False
+      XValues.Name = 'X'
+      XValues.Order = loAscending
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+    end
+    object Series7: TLineSeries
+      Marks.Arrow.Visible = True
+      Marks.Callout.Brush.Color = clBlack
+      Marks.Callout.Arrow.Visible = True
+      Marks.Visible = False
+      SeriesColor = clAqua
+      LinePen.Width = 2
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.Visible = False
+      XValues.Name = 'X'
+      XValues.Order = loAscending
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+    end
+    object Series8: TLineSeries
+      Marks.Arrow.Visible = True
+      Marks.Callout.Brush.Color = clBlack
+      Marks.Callout.Arrow.Visible = True
+      Marks.Visible = False
+      LinePen.Width = 2
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.Visible = False
+      XValues.Name = 'X'
+      XValues.Order = loAscending
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+    end
+    object Series9: TLineSeries
+      Marks.Arrow.Visible = True
+      Marks.Callout.Brush.Color = clBlack
+      Marks.Callout.Arrow.Visible = True
+      Marks.Visible = False
+      LinePen.Width = 2
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.Visible = False
+      XValues.Name = 'X'
+      XValues.Order = loAscending
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+    end
+  end
+end
